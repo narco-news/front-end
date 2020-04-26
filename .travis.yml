@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - '10'
+os: linux
+cache:
+  yarn
+  directories:
+    - node_modules
+
+# block list
+branches:
+  except:
+    - master
+    - production
+
+# safe list
+branches:
+  only:
+    - development
