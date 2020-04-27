@@ -32,7 +32,7 @@ const generateRoutes = async () => {
 	// Pagination
 	let nextPage = 1;
 	do {
-		const posts = await api.posts.browse({
+		const posts = api.posts.browse({
 			limit: postsPerPage,
 			page: nextPage,
 			include: 'author,tags'
@@ -54,7 +54,7 @@ const generateRoutes = async () => {
 	} while (nextPage);
 
 	// Posts
-	const posts = await api.posts.browse({
+	const posts = api.posts.browse({
 		limit: 'all',
 		include: 'authors,tags',
 		filter: 'visibility:public'
@@ -102,7 +102,7 @@ const generateRoutes = async () => {
 	for (const tag of tags) {
 		let nextPage = 1;
 		do {
-			const posts = await api.posts.browse({
+			const posts = api.posts.browse({
 				limit: postsPerPage,
 				page: nextPage,
 				include: 'authors,tags',
@@ -134,7 +134,7 @@ const generateRoutes = async () => {
 	for (const author of authors) {
 		let nextPage = 1;
 		do {
-			const posts = await api.posts.browse({
+			const posts = api.posts.browse({
 				limit: postsPerPage,
 				page: nextPage,
 				include: 'authors,tags',
