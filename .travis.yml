@@ -6,14 +6,3 @@ cache:
   yarn: true
   directories:
     - node_modules
-
-# block list
-branches:
-  except:
-    - master
-    - production
-
-# safe list
-branches:
-  only:
-    - development
