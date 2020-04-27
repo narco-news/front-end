@@ -3,9 +3,15 @@ node_js:
   - '10'
 os: linux
 cache:
-  yarn
+  yarn: true
   directories:
     - node_modules
+
+# block list
+branches:
+  except:
+    - master
+    - production
 
 # safe list
 branches:
