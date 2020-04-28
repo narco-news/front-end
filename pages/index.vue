@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <h1>Hello Development branch!</h1>
-    </div>
+	<div></div>
 </template>
 
 <script>
-export default {}
+export default {
+	layout: 'landing',
+};
 </script>
 
 <style></style>
