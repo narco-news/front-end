@@ -4,5 +4,7 @@
 	"singleQuote": true,
 	"tabs": true,
 	"tabWidth": 2,
-	"endOfLine": "lf"
+	"endOfLine": "lf",
+	"trailingComma": "none",
+	"bracketSpacing": false
 }
