@@ -100,6 +100,7 @@ export default {
 <style lang="scss">
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import '~/node_modules/vue-navigation-bar/dist/vue-navigation-bar.css';
 
 .hello {
 	background-color: #404040 !important;
