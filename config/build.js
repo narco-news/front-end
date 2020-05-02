@@ -14,5 +14,17 @@ export default {
 
 	babel: {
 		plugins: [['@babel/plugin-proposal-export-namespace-from']]
+	},
+	postcss: {
+		plugins: {
+			// Disable a plugin by passing false as value
+			tailwindcss: true,
+			autoprefixer: true
+		},
+		preset: {
+			autoprefixer: {
+				grid: true
+			}
+		}
 	}
 };

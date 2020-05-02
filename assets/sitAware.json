@@ -1,0 +1,39 @@
+{
+	"article": [
+		{
+			"id": "01",
+			"favicon": "https://www.milenio.com/bundles/camusassets/images/icons/114x114.png",
+			"title": "Disminuye cifra de homicidios 3.5 por ciento en México; llegan a 2 mil 417 en abril",
+			"url": "https://milenio.com",
+			"date": "01.05.2020"
+		},
+		{
+			"id": "02",
+			"favicon": "https://www.eluniversal.com.mx/sites/all/themes/universal/images/icos/manifest/96.png",
+			"title": "El día que tres mujeres amenazaron al ‘Mencho’",
+			"url": "url",
+			"date": "05.03.2020"
+		},
+		{
+			"id": "03",
+			"favicon": "https://assets.guim.co.uk/images/favicons/68cbd5cf267598abd6a026f229ef6b45/114x114.png",
+			"title": "Why the mafia are taking care of everyone's business ",
+			"url": "url",
+			"date": "05.10.2020"
+		},
+		{
+			"id": "04",
+			"favicon": "https://www.animalpolitico.com/wp-content/themes/animalpolitico-2019/static/assets/meta/favicon-96x96.png",
+			"title": "Falta de apoyos y baja en el precio de la goma de opio tienen en crisis a campesinos de Guerrero",
+			"url": "url",
+			"date": "04.29.2020"
+		},
+		{
+			"id": "05",
+			"favicon": "https://lasillarotarm.blob.core.windows.net/images/launchericon-96.png",
+			"title": "Detienen a presuntos miembros de 'Los Sinaloas' en Tepito",
+			"url": "url",
+			"date": "04.28.2020"
+		}
+	]
+}

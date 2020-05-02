@@ -23,8 +23,9 @@ export default async () => {
 		meta,
 
 		css: [
-			'~/node_modules/flexgrid.io/dist/flexgrid-utils.min.css',
-			'~/assets/scss/main.scss'
+			// '~/node_modules/flexgrid.io/dist/flexgrid-utils.min.css',
+			// '~/assets/scss/main.scss',
+			'~/assets/css/tailwind.css'
 		],
 
 		loading: {color: '#171717'},
@@ -82,6 +83,8 @@ export default async () => {
 
 		plugins: [
 			//
+			{src: '~/plugins/navbar.js', mode: 'client'},
+			{src: '~/plugins/postcss.js'}
 		],
 
 		pwa: {
@@ -95,7 +98,6 @@ export default async () => {
 			}
 		},
 
-		build,
-		server: {}
+		build
 	};
 };

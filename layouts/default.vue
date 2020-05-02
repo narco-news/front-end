@@ -1,47 +1,70 @@
 <template>
-    <div>
-        <blog-navbar :settings="pageSettings" />
-        <main>
-            <nuxt />
-        </main>
-        <blog-footer :settings="pageSettings" />
-    </div>
+	<div class="grey-body">
+		<Header />
+		<client-only>
+			<Navigation />
+		</client-only>
+		<main>
+			<div class="container mx-auto p-2 m-2">
+				<!-- ... -->
+				<nuxt />
+			</div>
+		</main>
+	</div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue'
-import Footer from '~/components/Footer.vue'
+import Header from '~/components/Header.vue';
+import Navigation from '~/components/Navigation.vue';
 
 export default {
-    components: {
-        'blog-navbar': Navbar,
-        'blog-footer': Footer
-    },
+	components: {
+		Header,
+		Navigation
+	},
 
-    computed: {
-        pageSettings() {
-            return this.$store.state.pageSettings
-        },
+	computed: {
+		pageSettings() {
+			return this.$store.state.pageSettings;
+		},
 
-        codeHead() {
-            return this.pageSettings.codeinjection_head ? this.pageSettings.codeinjection_head : ''
-        },
+		codeHead() {
+			return this.pageSettings.codeinjection_head
+				? this.pageSettings.codeinjection_head
+				: '';
+		},
 
-        codeFoot() {
-            return this.pageSettings.codeinjection_foot ? this.pageSettings.codeinjection_foot : ''
-        }
-    },
+		codeFoot() {
+			return this.pageSettings.codeinjection_foot
+				? this.pageSettings.codeinjection_foot
+				: '';
+		}
+	},
 
-    beforeMount() {
-        if(this.codeHead.length !== '') {
-            const headInject = document.createRange().createContextualFragment(this.codeHead)
-            document.getElementsByTagName('head')[0].appendChild(headInject)
-        }
+	beforeMount() {
+		if (this.codeHead.length !== '') {
+			const headInject = document
+				.createRange()
+				.createContextualFragment(this.codeHead);
+			document.getElementsByTagName('head')[0].appendChild(headInject);
+		}
 
-        if(this.codeFoot.length !== '') {
-            const footInject = document.createRange().createContextualFragment(this.codeFoot)
-            document.getElementsByTagName('body')[0].appendChild(footInject)
-        }
-    }
-}
+		if (this.codeFoot.length !== '') {
+			const footInject = document
+				.createRange()
+				.createContextualFragment(this.codeFoot);
+			document.getElementsByTagName('body')[0].appendChild(footInject);
+		}
+	}
+};
 </script>
+
+<style lang="scss">
+body {
+	margin: 0px;
+}
+.grey-body {
+	background-color: #f2f2f2;
+	height: 100vh;
+}
+</style>

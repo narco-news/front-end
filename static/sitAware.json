@@ -1,0 +1,39 @@
+{
+	"article": [
+		{
+			"id": "01",
+			"favicon": "~/assets/images/favicons/milenio-114x114.png",
+			"title": "Disminuye cifra de homicidios 3.5 por ciento en México; llegan a 2 mil 417 en abril",
+			"url": "https://milenio.com",
+			"date": "05.01.2020"
+		},
+		{
+			"id": "02",
+			"favicon": "",
+			"title": "Title 2",
+			"url": "url",
+			"date": "date"
+		},
+		{
+			"id": "03",
+			"favicon": "",
+			"title": "Title 3",
+			"url": "url",
+			"date": "date"
+		},
+		{
+			"id": "04",
+			"favicon": "",
+			"title": "title",
+			"url": "url",
+			"date": "date"
+		},
+		{
+			"id": "05",
+			"favicon": "",
+			"title": "title",
+			"url": "url",
+			"date": "date"
+		}
+	]
+}

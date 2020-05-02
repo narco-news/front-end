@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px"
+	 height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g id="eye">
+	<path fill="#1D1D1B" d="M61.477,0.062L42.232,5.275L22.986,0.062c-0.121-0.031-0.242-0.004-0.365-0.012
+		c-0.098-0.021-0.193-0.004-0.293-0.012c-0.098,0.008-0.195-0.01-0.293,0.012c-0.121,0.01-0.244-0.02-0.363,0.012L1.904,5.417
+		c-0.871,0.236-1.477,1.027-1.477,1.93V62c0,0.627,0.295,1.219,0.797,1.598C1.574,63.861,1.998,64,2.428,64
+		c0.184,0,0.369-0.025,0.551-0.078l19.35-5.539l19.354,5.539C41.863,63.975,42.049,64,42.232,64s0.369-0.025,0.551-0.078
+		l19.768-5.658C63.408,58.02,64,57.235,64,56.342V1.992c0-0.623-0.291-1.209-0.785-1.588S62.074-0.098,61.477,0.062z M20.195,54.835
+		L4.428,59.348V8.878l15.768-4.273V54.835z M24.463,4.605l15.77,4.273v50.47l-15.77-4.513V4.605z M60,54.835l-15.768,4.513V8.878
+		L60,4.605V54.835z"/>
+</g>
+<g id="comment">
+</g>
+<g id="map-marker">
+</g>
+<g id="earth">
+</g>
+<g id="heart">
+</g>
+<g id="twitter">
+</g>
+<g id="bucket">
+</g>
+<g id="paperclip">
+</g>
+<g id="undo">
+</g>
+<g id="redo">
+</g>
+<g id="chevron-left">
+</g>
+<g id="chevron-right">
+</g>
+<g id="cross">
+</g>
+<g id="search">
+</g>
+<g id="hamburger">
+</g>
+</svg>

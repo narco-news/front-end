@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px"
+	 height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g id="eye">
+	<g>
+		<path fill="#1D1D1B" d="M2.615,24.797h19.158c1.446,0,2.616-1.169,2.616-2.61V2.61c0-1.441-1.17-2.61-2.616-2.61
+			s-2.615,1.169-2.615,2.61v16.966H2.615C1.17,19.576,0,20.745,0,22.187S1.17,24.797,2.615,24.797z"/>
+		<path fill="#1D1D1B" d="M41.767,24.567h19.618c1.445,0,2.615-1.169,2.615-2.61s-1.17-2.61-2.615-2.61H44.382V2.84
+			c0-1.441-1.17-2.61-2.615-2.61S39.15,1.398,39.15,2.84v19.117C39.15,23.398,40.321,24.567,41.767,24.567z"/>
+		<path fill="#1D1D1B" d="M61.385,39.203H42.227c-1.446,0-2.616,1.169-2.616,2.61V61.39c0,1.441,1.17,2.61,2.616,2.61
+			s2.615-1.169,2.615-2.61V44.424h16.543c1.445,0,2.615-1.169,2.615-2.61S62.83,39.203,61.385,39.203z"/>
+		<path fill="#1D1D1B" d="M22.233,39.433H2.615C1.17,39.433,0,40.602,0,42.043s1.17,2.61,2.615,2.61h17.003V61.16
+			c0,1.441,1.17,2.61,2.615,2.61s2.616-1.169,2.616-2.61V42.043C24.85,40.602,23.679,39.433,22.233,39.433z"/>
+	</g>
+</g>
+<g id="comment">
+</g>
+<g id="map-marker">
+</g>
+<g id="earth">
+</g>
+<g id="heart">
+</g>
+<g id="twitter">
+</g>
+<g id="bucket">
+</g>
+<g id="paperclip">
+</g>
+<g id="undo">
+</g>
+<g id="redo">
+</g>
+<g id="chevron-left">
+</g>
+<g id="chevron-right">
+</g>
+<g id="cross">
+</g>
+<g id="search">
+</g>
+<g id="hamburger">
+</g>
+</svg>
