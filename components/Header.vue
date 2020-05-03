@@ -1,11 +1,11 @@
 <template>
 	<fixed-header>
-		<div class="navbar">
-			<div class="grid grid-cols-4 gap-4">
-				<div>
+		<div class="navbar z-10">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+				<div class="hidden md:grid">
 					Today is ..
 				</div>
-				<div></div>
+				<div class="hidden md:grid"></div>
 				<div>
 					<a href="#">
 						hello@narco.news
@@ -71,7 +71,6 @@ export default {
 	background-color: #0d0d0d;
 	height: 40px;
 	box-shadow: 2px 5px 8px #777777;
-	margin-bottom: 1em;
 	text-align: center;
 	padding-top: 6px;
 }

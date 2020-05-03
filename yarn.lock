@@ -9667,6 +9667,13 @@ time-fix-plugin@^2.0.6:
   resolved "https://registry.yarnpkg.com/time-fix-plugin/-/time-fix-plugin-2.0.6.tgz#3210121d269b475a7e7661766e682bd768ba1ced"
   integrity sha512-2cjjg3672ppNm/uKhHAoCFp1ItEAiH+xJOjO9WGIF8hXuxPAJ2adfYgFiyooVbsOb948c+WrRh+edxFUMxYHoQ==
 
+timeline-vuejs@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/timeline-vuejs/-/timeline-vuejs-1.1.1.tgz#1ae665d0f193aee5415477ffe399991055d5c11e"
+  integrity sha512-jsdr0xNCBH/GBiW7qsOTbBxZuyk7WKD5YmtTGP1sm0su0fy+iBsEJLDyhHhQ4nTAxca8MkSbJhKGUgF5eNoEfA==
+  dependencies:
+    vue "^2.5.17"
+
 timers-browserify@^2.0.4:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.11.tgz#800b1f3eee272e5bc53ee465a04d0e804c31211f"

@@ -1,12 +1,14 @@
 <template>
-	<div class="grid grid-cols-1">
+	<div class="grid grid-cols-1 shadow-2xl">
 		<!--  -->
-		<div class="card max-w-lg rounded overflow-hidden shadow-lg">
+		<div class="card max-w-xlg rounded overflow-hidden h-48">
 			<div class="px-6 py-4">
-				<div class="font-bold text-xl mb-4">Essential Resources</div>
+				<div style="color: #f2b2ac;" class="font-bold text-xl mb-4">
+					Essential Resources
+				</div>
 
 				<div
-					class="grid grid-cols-2 lg:grid-cols-3 whitespace-no-wrap text-sm gap-4 md:gap-6"
+					class="grid grid-cols-2 lg:grid-cols-3 whitespace-no-wrap text-sm gap-1"
 				>
 					<!--  -->
 					<div>

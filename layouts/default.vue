@@ -62,9 +62,7 @@ export default {
 <style lang="scss">
 body {
 	margin: 0px;
-}
-.grey-body {
-	background-color: #f2f2f2;
-	height: 100vh;
+	background-color: #aed7d8;
+	// background-color: #b0d2dd;
 }
 </style>

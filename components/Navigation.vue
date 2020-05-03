@@ -104,7 +104,7 @@ export default {
 
 .hello {
 	background-color: #404040 !important;
-	border-radius: 0px !important;
+	border-radius: 5px !important;
 	z-index: 1;
 	position: relative;
 	font-size: inherit;
@@ -128,6 +128,7 @@ export default {
 		transform-origin: center right;
 		transform: scaleX(0);
 		transition: transform 0.25s ease-in-out;
+		border-radius: 5px !important;
 	}
 	&:hover {
 		cursor: pointer;
@@ -138,12 +139,14 @@ export default {
 		transform: scaleX(1);
 	}
 }
-.main-navbar-section {
-	background: transparent !important;
+
+.vnb-button {
+	border-radius: 5px !important;
+	margin-right: 20px !important;
 }
 
 .vnb {
-	background-color: transparent !important;
+	background-color: #fff !important;
 	border-bottom: 1px solid black;
 	font-family: 'Montserrat', sans-serif;
 	.button-red {
