@@ -1,5 +1,5 @@
 <p align="center">
-	<img height="100px" src="assets/images/nn-transparent.svg">
+	<img height="100px" src="assets/images/nn-logo-transparent.png">
 </p>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
