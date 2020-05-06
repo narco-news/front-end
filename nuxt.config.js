@@ -83,9 +83,10 @@ export default async () => {
 
 		plugins: [
 			//
-			{src: '~/plugins/navbar.js', mode: 'client'},
 			{src: '~/plugins/postcss.js'},
-			{src: '~/plugins/timeline.js', mode: 'client'}
+			{src: '~/plugins/navbar.js', ssr: false},
+			{src: '~/plugins/timeline.js', ssr: false},
+			{src: '~/plugins/notifications.js', ssr: false}
 		],
 
 		pwa: {

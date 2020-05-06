@@ -15,6 +15,11 @@
 			<div class="cols-span-1 md:col-span-2"><HomeWire /></div>
 		</div>
 		<!-- BOTTOM -->
+		<notifications
+			position="top center"
+			group="foo"
+			animation-type="velocity"
+		/>
 	</div>
 </template>
 
@@ -31,7 +36,41 @@ export default {
 		RSSWire,
 		Landing,
 		HomeWire
+	},
+	mounted() {
+		this.$notify({
+			group: 'foo',
+			type: 'error',
+			position: 'top center',
+			title: 'Thanks for stopping by!',
+			text:
+				'Just a heads up! Everything around here is still much in the works so please excuse any funkiness for the time being that you happen to stumble upon while perusing around. 🤪',
+			speed: 500,
+			duration: 6000,
+			animation: {
+				enter: {
+					opacity: [1, 0],
+					translateX: [0, -300],
+					scale: [1, 0.2]
+				},
+				leave: {
+					opacity: 0,
+					height: 0
+				}
+			}
+		});
 	}
+	// methods: {
+	// 	show() {
+	// 		this.$notify({
+	// 			group: 'foo',
+	// 			title: 'Important message',
+	// 			text: 'Hello world! This is a notification.',
+	// 			position: 'top center',
+	// 			speed: '5000'
+	// 		});
+	// 	}
+	// }
 };
 </script>
 
