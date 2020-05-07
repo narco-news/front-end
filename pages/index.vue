@@ -8,9 +8,6 @@
 			<div class="px-4">
 				<EssentialResources />
 			</div>
-			<!-- <div>
-				<RSSWire />
-			</div> -->
 		</div>
 		<!-- MIDDLE -->
 		<div class="grid grid-cols-1 md:grid-cols-6 gap-4 mt-4">
@@ -48,7 +45,7 @@ export default {
 			type: 'error',
 			title: 'Thanks for stopping by!',
 			text:
-				'Just a heads up! Everything around here is still much in the works so please excuse any funkiness for the time being that you happen to stumble upon while perusing around. 🤪',
+				'Just a heads up! Everything around here is still much in the works so please excuse any funkiness you come across while perusing.',
 			speed: 500,
 			duration: 6000,
 			animation: {

@@ -1,5 +1,5 @@
 <template>
-	<div class="grid grid-cols-1">
+	<div class="container mx-auto">
 		<!--  -->
 		<div
 			style="border: 2px solid #f23030;"
@@ -168,7 +168,7 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background-color: #fc2f70;
+	background-color: #f23030;
 	transform-origin: center;
 	transform: translate(-50%, 0) scaleX(0);
 	transition: transform 0.3s ease-in-out;
@@ -192,7 +192,7 @@ export default {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #d52548;
+	background-color: #f23030;
 	transform-origin: bottom right;
 	transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
