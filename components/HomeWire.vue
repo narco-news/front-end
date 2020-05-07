@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="card overflow-y-scroll h-screen max-w-lg rounded overflow-hidden shadow-lg"
+		class="card overflow-y-scroll h-screen max-w-lg rounded overflow-hidden shadow-md"
 	>
 		<div class="px-6 py-4">
 			<client-only>

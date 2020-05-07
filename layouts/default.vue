@@ -5,7 +5,7 @@
 			<Navigation />
 		</client-only>
 		<main>
-			<div class="container mx-auto p-2 m-2">
+			<div class="container mx-auto">
 				<!-- ... -->
 				<nuxt />
 			</div>
@@ -62,7 +62,6 @@ export default {
 <style lang="scss">
 body {
 	margin: 0px;
-	background-color: #aed7d8;
-	// background-color: #b0d2dd;
+	background-color: #bfb8aa;
 }
 </style>

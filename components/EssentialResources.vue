@@ -1,14 +1,27 @@
 <template>
-	<div class="grid grid-cols-1 shadow-2xl">
+	<div class="grid grid-cols-1">
 		<!--  -->
-		<div class="card max-w-xlg rounded overflow-hidden h-48">
-			<div class="px-6 py-4">
-				<div style="color: #f2b2ac;" class="font-bold text-xl mb-4">
+		<div
+			style="border: 2px solid #f23030;"
+			class="card shadow-md max-w-lg rounded overflow-hidden"
+		>
+			<div class="px-4 py-2">
+				<div style="color: #f23030;" class="font-bold text-xl mb-2">
 					Essential Resources
+					<button
+						class="toggle-features float-right text-sm text-gray-900"
+						aria-controls="features"
+						:aria-expanded="featuresOpen ? 'true' : 'false'"
+						@click="toggleFeatures"
+					>
+						{{ featuresOpen ? 'Hide' : 'View' }}
+					</button>
 				</div>
 
 				<div
-					class="grid grid-cols-2 lg:grid-cols-3 whitespace-no-wrap text-sm gap-1"
+					id="features"
+					v-show-slide="featuresOpen"
+					class="features grid grid-cols-2 lg:grid-cols-3 whitespace-no-wrap text-sm gap-1 text-center"
 				>
 					<!--  -->
 					<div>
@@ -97,20 +110,28 @@
 				</div>
 			</div>
 		</div>
-		<div>
-			<!--  -->
-			<div class="max-w-sm rounded overflow-hidden shadow-lg"></div>
-		</div>
 	</div>
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			featuresOpen: false
+		};
+	},
+	methods: {
+		toggleFeatures() {
+			this.featuresOpen = !this.featuresOpen;
+		}
+	}
+};
 </script>
 
 <style lang="scss">
 .card {
 	background-color: white;
+	border: 1px solid #0d0000;
 }
 .highlighter span {
 	position: relative;
