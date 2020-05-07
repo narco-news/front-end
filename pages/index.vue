@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<!-- MIDDLE -->
-		<div class="grid grid-cols-1 md:grid-cols-6 gap-4 mt-4">
+		<div class="grid grid-cols-1 md:grid-cols-6 gap-1 mt-4">
 			<div class="cols-span-1 md:col-span-4 px-4"><Landing /></div>
 			<div class="cols-span-1 md:col-span-2 px-4"><HomeWire /></div>
 		</div>

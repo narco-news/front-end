@@ -11,7 +11,7 @@ export default {
 				isUsingVueRouter: true,
 				mobileBreakpoint: 992,
 				brandImagePath: './',
-				brandImage: require('~/assets/images/nn-logo-transparent.png'),
+				brandImage: require('~/assets/images/bw-nn-logo.png'),
 				brandImageAltText: 'brand-image',
 				collapseButtonImageOpen: require('~/assets/images/collapse-menu-dark.png'),
 				collapseButtonImageClose: require('~/assets/images/times.png'),
@@ -139,6 +139,10 @@ export default {
 		transform-origin: center left;
 		transform: scaleX(1);
 	}
+}
+
+.vnb__brand-image-wrapper__link__image {
+	max-height: 38px;
 }
 
 .vnb-button {

@@ -3,7 +3,7 @@
 		<div class="navbar z-10">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
 				<div class="hidden md:grid"></div>
-				<div class="text-sm p-1">
+				<div class="text-sm p-2">
 					<a href="#">
 						hello@narco.news
 					</a>
@@ -76,7 +76,8 @@ export default {
 	color: white;
 	background-color: #0d0d0d;
 	height: 40px;
-	box-shadow: 2px 5px 8px #777777;
+	// box-shadow: 2px 5px 8px #777777;
+	border-bottom: 2px #fff solid;
 	text-align: center;
 	padding-top: 6px;
 }
