@@ -13,7 +13,11 @@
 				</div>
 				<div>
 					<div class="flex flex-wrap justify-center">
-						<a href="#" class="p-2">
+						<a
+							href="https://github.com/narco-news/front-end"
+							target="_blank"
+							class="p-2"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								data-name="Layer 1"
@@ -28,7 +32,11 @@
 								/>
 							</svg>
 						</a>
-						<a href="#" class="p-2">
+						<a
+							href="https://publish.narco.news/rss"
+							target="_blank"
+							class="p-2"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="15"

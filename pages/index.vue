@@ -16,7 +16,7 @@
 		</div>
 		<!-- BOTTOM -->
 		<notifications
-			position="top center"
+			position="bottom center"
 			group="foo"
 			animation-type="velocity"
 		/>
@@ -41,7 +41,6 @@ export default {
 		this.$notify({
 			group: 'foo',
 			type: 'error',
-			position: 'top center',
 			title: 'Thanks for stopping by!',
 			text:
 				'Just a heads up! Everything around here is still much in the works so please excuse any funkiness for the time being that you happen to stumble upon while perusing around. 🤪',
@@ -60,22 +59,16 @@ export default {
 			}
 		});
 	}
-	// methods: {
-	// 	show() {
-	// 		this.$notify({
-	// 			group: 'foo',
-	// 			title: 'Important message',
-	// 			text: 'Hello world! This is a notification.',
-	// 			position: 'top center',
-	// 			speed: '5000'
-	// 		});
-	// 	}
-	// }
 };
 </script>
 
 <style>
 .top {
 	height: 400px;
+}
+
+.error {
+	border-left-color: #e54d42 !important;
+	border: 4px solid #b82e24 !important;
 }
 </style>
