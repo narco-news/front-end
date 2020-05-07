@@ -2,15 +2,13 @@
 	<fixed-header>
 		<div class="navbar z-10">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-				<div class="hidden md:grid">
-					Today is ..
-				</div>
 				<div class="hidden md:grid"></div>
-				<div>
+				<div class="text-sm p-1">
 					<a href="#">
 						hello@narco.news
 					</a>
 				</div>
+				<div class="hidden md:grid"></div>
 				<div>
 					<div class="flex flex-wrap justify-center">
 						<a

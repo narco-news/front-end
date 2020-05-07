@@ -86,7 +86,9 @@ export default async () => {
 			{src: '~/plugins/postcss.js'},
 			{src: '~/plugins/navbar.js', ssr: false},
 			{src: '~/plugins/timeline.js', ssr: false},
-			{src: '~/plugins/notifications.js', ssr: false}
+			{src: '~/plugins/notifications.js', ssr: false},
+			{src: '~/plugins/scrollbar.js', ssr: false},
+			{src: '~/plugins/vshowslide.js', ssr: false}
 		],
 
 		pwa: {

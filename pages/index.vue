@@ -1,18 +1,18 @@
 <template>
 	<div>
+		<div>
+			<Headlines />
+		</div>
 		<!-- TOP -->
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-			<div class="">
+		<div class="grid grid-cols-1">
+			<div class="px-4">
 				<EssentialResources />
-			</div>
-			<div class="">
-				<RSSWire />
 			</div>
 		</div>
 		<!-- MIDDLE -->
 		<div class="grid grid-cols-1 md:grid-cols-6 gap-4 mt-4">
-			<div class="cols-span-1 md:col-span-4"><Landing /></div>
-			<div class="cols-span-1 md:col-span-2"><HomeWire /></div>
+			<div class="cols-span-1 md:col-span-4 px-4"><Landing /></div>
+			<div class="cols-span-1 md:col-span-2 px-4"><HomeWire /></div>
 		</div>
 		<!-- BOTTOM -->
 		<notifications
@@ -25,17 +25,19 @@
 
 <script>
 import EssentialResources from '~/components/EssentialResources.vue';
-import RSSWire from '~/components/RSSWire.vue';
+// import RSSWire from '~/components/RSSWire.vue';
 import Landing from '~/components/Landing.vue';
 import HomeWire from '~/components/HomeWire.vue';
+import Headlines from '~/components/Headlines.vue';
 
 export default {
 	layout: 'default',
 	components: {
 		EssentialResources,
-		RSSWire,
+		// RSSWire,
 		Landing,
-		HomeWire
+		HomeWire,
+		Headlines
 	},
 	mounted() {
 		this.$notify({
@@ -43,7 +45,7 @@ export default {
 			type: 'error',
 			title: 'Thanks for stopping by!',
 			text:
-				'Just a heads up! Everything around here is still much in the works so please excuse any funkiness for the time being that you happen to stumble upon while perusing around. 🤪',
+				'Just a heads up! Everything around here is still much in the works so please excuse any funkiness you come across while perusing.',
 			speed: 500,
 			duration: 6000,
 			animation: {
