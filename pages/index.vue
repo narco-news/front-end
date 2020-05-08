@@ -1,8 +1,6 @@
 <template>
 	<div>
-		<div>
-			<Headlines />
-		</div>
+		<Headlines />
 		<!-- TOP -->
 		<div class="grid grid-cols-1">
 			<div class="px-4">
