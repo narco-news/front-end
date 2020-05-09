@@ -26,6 +26,7 @@
 					src="../assets/icons/times.svg"
 					width="20"
 					height="20"
+					style="min-width: 20px; min-height: 20px;"
 					@click="isHidden = true"
 				/>
 			</div>
