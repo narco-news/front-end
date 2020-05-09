@@ -44,10 +44,15 @@ export default async () => {
 
 		webfontloader: {
 			custom: {
-				families: ['Source Sans Pro:n3,n4,n6', 'Roboto Mono:n4'],
+				families: [
+					'Source Sans Pro:n3,n4,n6',
+					'Roboto Mono:n4',
+					'IBM Plex Sans:n3,n4,n5,n7'
+				],
 				urls: [
 					'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap',
-					'https://fonts.googleapis.com/css?family=Roboto+Mono:400&display=swap'
+					'https://fonts.googleapis.com/css?family=Roboto+Mono:400&display=swap',
+					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap'
 				]
 			}
 		},
@@ -84,6 +89,7 @@ export default async () => {
 		plugins: [
 			//
 			{src: '~/plugins/postcss.js'},
+			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/navbar.js', ssr: false},
 			{src: '~/plugins/timeline.js', ssr: false},
 			{src: '~/plugins/notifications.js', ssr: false},

@@ -86,6 +86,12 @@ export default {
 				],
 				menuOptionsRight: [
 					{
+						type: 'link',
+						text: 'ABOUT',
+						path: './about',
+						class: 'text-xs tracking-wider'
+					},
+					{
 						type: 'button',
 						text: 'The Wire',
 						path: './thewire',

@@ -1,5 +1,8 @@
 <template>
 	<div>
+		<div class="fixed top-0 z-30 animate__animated animate__backInUp">
+			<Popup />
+		</div>
 		<Headlines />
 		<!-- TOP -->
 		<div class="grid grid-cols-1">
@@ -15,7 +18,7 @@
 		<!-- BOTTOM -->
 		<notifications
 			position="bottom center"
-			group="foo"
+			group=""
 			animation-type="velocity"
 		/>
 	</div>
@@ -27,6 +30,7 @@ import EssentialResources from '~/components/EssentialResources.vue';
 import Landing from '~/components/Landing.vue';
 import HomeWire from '~/components/HomeWire.vue';
 import Headlines from '~/components/Headlines.vue';
+import Popup from '~/components/Popup.vue';
 
 export default {
 	layout: 'default',
@@ -35,7 +39,8 @@ export default {
 		// RSSWire,
 		Landing,
 		HomeWire,
-		Headlines
+		Headlines,
+		Popup
 	},
 	mounted() {
 		this.$notify({
