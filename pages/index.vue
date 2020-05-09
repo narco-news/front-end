@@ -1,6 +1,9 @@
 <template>
 	<div>
-		<div class="fixed top-0 z-30 animate__animated animate__backInUp">
+		<div
+			style="animation-delay: 1s;"
+			class="fixed top-0 z-30 animate__animated animate__backInUp"
+		>
 			<Popup />
 		</div>
 		<Headlines />

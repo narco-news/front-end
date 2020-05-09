@@ -1,3 +1,4 @@
 {
-    "prettier": true
+	"prettier": true,
+	"import/extensions": false
 }

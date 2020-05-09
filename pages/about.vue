@@ -1,29 +1,29 @@
 <template>
 	<div>
-		<div class="card rounded overflow-hidden shadow-md m-4">
+		<div class="rounded bg-white overflow-hidden shadow-md m-4">
 			<div
 				style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 700;"
-				class="text-4xl px-8 py-6 uppercase leading-10 flex justify-center"
+				class="px-8 py-6 uppercase leading-10 flex justify-center"
 			>
 				<span
 					style="animation-delay: 0.5;"
-					class="text-gray-300 animate__animated animate__fadeInDown"
+					class="text-gray-300 animate__animated animate__fadeInDown text-3xl mx-1"
 				>
-					Who are you?
+					Who
 				</span>
 				<br />
 				<span
 					style="animation-delay: 0.6s;"
-					class="text-gray-400 animate__animated animate__fadeInDown"
+					class="text-gray-400 animate__animated animate__fadeInDown text-2xl mx-1"
 				>
-					What do you do?
+					What
 				</span>
 				<br />
 				<span
 					style="animation-delay: 0.7s;"
-					class="text-gray-500 animate__animated animate__fadeInDown"
+					class="text-gray-500 animate__animated animate__fadeInDown text-xl mx-1"
 				>
-					Why are you doing it?
+					Why
 				</span>
 			</div>
 			<div
