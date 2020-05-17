@@ -89,7 +89,7 @@ export default {
 						type: 'link',
 						text: 'ABOUT',
 						path: './about',
-						class: 'text-xs tracking-wider'
+						class: 'small-text'
 					},
 					{
 						type: 'button',
@@ -109,15 +109,21 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 @import '~/node_modules/vue-navigation-bar/dist/vue-navigation-bar.css';
 
+.small-text a {
+	font-size: 14 !important;
+	font-family: 'Baloo Thambi 2', cursive !important;
+}
+
 .hello {
-	background-color: #404040 !important;
-	border-radius: 5px !important;
+	background-color: #dff1d5 !important;
+	border-radius: 15px !important;
 	z-index: 1;
 	position: relative;
-	font-size: inherit;
-	font-family: inherit;
-	color: white;
-	padding: 0.5em 1em;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Patua One', cursive;
+	color: #3b274b;
+	padding: 1em 1em;
 	outline: none;
 	border: none;
 	background-color: hsl(236, 32%, 26%);
@@ -130,8 +136,8 @@ export default {
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background-color: #f2e205;
-		color: #000 !important;
+		background-color: white;
+		color: #dff1d5 !important;
 		transform-origin: center right;
 		transform: scaleX(0);
 		transition: transform 0.25s ease-in-out;
@@ -139,7 +145,7 @@ export default {
 	}
 	&:hover {
 		cursor: pointer;
-		color: black !important;
+		color: #3b274b !important;
 	}
 	&:hover::before {
 		transform-origin: center left;
@@ -159,7 +165,8 @@ export default {
 .vnb {
 	background-color: #fff !important;
 	border-bottom: 1px solid black;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Baloo Thambi 2', cursive;
+	font-size: 2.5em;
 	.button-red {
 		background: #ff3b30;
 		&:hover {

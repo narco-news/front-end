@@ -1,60 +1,44 @@
 <template>
-	<div
-		class="card overflow-y-scroll h-screen max-w-lg rounded overflow-hidden shadow-md"
-	>
-		<div class="px-6 py-4">
-			<client-only>
-				<Timeline
-					:timeline-items="timelineItems"
-					:message-when-no-items="messageWhenNoItems"
-				/>
-			</client-only>
-		</div>
+	<div id="homewire" class="rounded p-2 pt-4">
+		<!-- Latest update -->
+		<vue-timeline-update
+			:date="new Date('2020-05-02')"
+			title="I Am A Title"
+			description="Nullam quis semper felis. Aliquam imperdiet fringilla tortor vitae rhoncus. Curabitur semper vehicula pulvinar. Quisque sagittis ex vitae volutpat tempor. Nulla efficitur elit id ante sagittis consectetur. Maecenas quis ipsum maximus, ultricies erat vel, elementum lorem. Ut ac odio semper, luctus neque quis, consequat arcu."
+			category="Drug Trafficking"
+			icon="airplanemode_active"
+			color="blue"
+		/>
+
+		<!-- Another update -->
+		<vue-timeline-update
+			:date="new Date('2020-04-20')"
+			title="I Am A Title"
+			description="Nullam quis semper felis. Aliquam imperdiet fringilla tortor vitae rhoncus. Curabitur semper vehicula pulvinar. Quisque sagittis ex vitae volutpat tempor. Nulla efficitur elit id ante sagittis consectetur. Maecenas quis ipsum maximus, ultricies erat vel, elementum lorem. Ut ac odio semper, luctus neque quis, consequat arcu."
+			category="Press Article"
+			icon="speaker_notes"
+			color="red"
+		/>
 	</div>
 </template>
 
 <script>
-import Timeline from 'timeline-vuejs';
-import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css';
-
-export default {
-	components: {
-		Timeline
-	},
-	data: () => ({
-		messageWhenNoItems: 'There are not items',
-		timelineItems: [
-			{
-				from: new Date(2018, 7),
-				title: 'Name',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum architecto dolor, vitae magnam voluptate accusantium assumenda numquam error mollitia, officia facere consequuntur reprehenderit cum voluptates, ea tempore beatae unde.'
-			},
-			{
-				from: new Date(2016, 1),
-				title: 'Name',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum architecto dolor, vitae magnam voluptate accusantium assumenda numquam error mollitia, officia facere consequuntur reprehenderit cum voluptates, ea tempore beatae unde.'
-			},
-			{
-				from: new Date(2016, 6),
-				title: 'Name',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum architecto dolor, vitae magnam voluptate accusantium assumenda numquam error mollitia, officia facere consequuntur reprehenderit cum voluptates, ea tempore beatae unde.'
-			},
-			{
-				from: new Date(2012, 1),
-				title: 'Name',
-				description:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum architecto dolor, vitae magnam voluptate accusantium assumenda numquam error mollitia, officia facere consequuntur reprehenderit cum voluptates, ea tempore beatae unde.'
-			}
-		]
-	})
-};
+export default {};
 </script>
 
-<style lang="scss">
-.dot {
-	background: #d93b48 !important;
+<style>
+#homewire {
+	background-color: #1b2431;
+}
+.gb-base-badge--red {
+	background-color: #ff5e70 !important;
+}
+.gb-base-number--red {
+	border-color: #ff5e70 !important;
+}
+/* Fonts */
+
+[class^='gb-']:not(.gb-base-icon) {
+	font-family: Arial, Helvetica, sans-serif !important;
 }
 </style>

@@ -1,4 +1,7 @@
 import Vue from 'vue';
-import Timeline from 'timeline-vuejs';
+import Vuetimeline from '@growthbunker/vuetimeline';
 
-Vue.use(Timeline);
+Vue.use(Vuetimeline, {
+	//
+	theme: 'dark'
+});

@@ -1,26 +1,49 @@
 <template>
 	<fixed-header>
-		<div class="navbar z-10">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-				<div class="hidden md:grid"></div>
-				<div class="text-sm p-2">
-					<a href="#">
-						hello@narco.news
-					</a>
+		<div id="header" class="navbar z-20">
+			<div class="grid grid-cols-3 md:grid-cols-4 gap-4 my-1">
+				<div class="text-sm">
+					<select class="appearance-none text-black px-2 rounded">
+						<option>EN</option>
+						<option>ES</option>
+					</select>
 				</div>
 				<div class="hidden md:grid"></div>
+				<div class="my-1">
+					<a
+						class="flex float-right justify-center"
+						href="mailto:hello@narco.news"
+					>
+						<div style="" class="text-white text-xs">
+							Send Tips! &nbsp;
+						</div>
+						<div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="#ff5e70"
+									d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.41,2-5.88,5.88a1,1,0,0,1-1.42,0L5.41,6ZM20,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V7.41l5.88,5.88a3,3,0,0,0,4.24,0L20,7.41Z"
+								/>
+							</svg>
+						</div>
+					</a>
+				</div>
 				<div>
 					<div class="flex flex-wrap justify-center">
 						<a
 							href="https://github.com/narco-news/front-end"
 							target="_blank"
-							class="p-2"
+							class="my-1 px-1"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								data-name="Layer 1"
-								width="15"
-								height="15"
+								width="20"
+								height="20"
 								fill="white"
 								viewBox="0 0 24 24"
 							>
@@ -33,12 +56,12 @@
 						<a
 							href="https://publish.narco.news/rss"
 							target="_blank"
-							class="p-2"
+							class="my-1 px-1"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								width="15"
-								height="15"
+								width="20"
+								height="20"
 								fill="#FF8A4C"
 								viewBox="0 0 24 24"
 							>
@@ -72,12 +95,14 @@ export default {
 </script>
 
 <style lang="scss">
+#header {
+	background-color: #1b2431;
+}
 .navbar {
 	color: white;
-	background-color: #0d0d0d;
-	height: 40px;
+	height: 50px;
 	// box-shadow: 2px 5px 8px #777777;
-	border-bottom: 2px #fff solid;
+	border-bottom: 3px #fff solid;
 	text-align: center;
 	padding-top: 6px;
 }

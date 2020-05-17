@@ -1,70 +1,132 @@
 <template>
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="xs-12 lg-10 mx-auto">
-					<div class="footer-content">
-						<div class="copy">
-							<p>Copyright &copy; {{ settings.title }} {{ year }}</p>
+	<div style="background-color: #1b2431;" class="pt-3">
+		<div class="h-full mb-2 mx-2 px-2">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
+				<div class="sm:inline sm:grid-cols-1">
+					<span class="text-md w-full">
+						mailing list
+					</span>
+					<form class="w-full max-w-sm px-2 pt-1 sm:pt-2">
+						<div class="md:flex md:items-center mb-6">
+							<div class="md:w-1/3">
+								<label
+									class="block text-xs text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+									for="inline-full-name"
+								>
+									Name
+								</label>
+							</div>
+							<div class="md:w-2/3">
+								<input
+									id="inline-full-name"
+									class="text-xs bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-400"
+									type="text"
+									placeholder="El Juan Doe"
+								/>
+							</div>
 						</div>
-						<div class="social">
-							<ul>
-								<li v-if="settings.twitter">
-									<a
-										class="social-link"
-										:href="
-											'https://twitter.com/just_some_d00d' + settings.twitter
-										"
-										title="Twitter"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 16 16"
-											version="1.1"
-										>
-											<path
-												d="M 15 3.296875 C 14.476563 3.523438 13.949219 3.691406 13.367188 3.746094 C 13.949219 3.410156 14.417969 2.84375 14.648438 2.226563 C 14.066406 2.5625 13.484375 2.789063 12.84375 2.902344 C 12.257813 2.339844 11.5 2 10.683594 2 C 9.109375 2 7.824219 3.242188 7.824219 4.765625 C 7.824219 4.988281 7.824219 5.214844 7.882813 5.386719 C 4.875 5.386719 2.8125 3.691406 1.414063 2 C 1.121094 2.394531 1.003906 2.902344 1.003906 3.410156 C 1.003906 4.367188 1.53125 5.214844 2.289063 5.722656 C 1.820313 5.667969 1.355469 5.554688 1.003906 5.386719 C 1.003906 5.386719 1.003906 5.386719 1.003906 5.441406 C 1.003906 6.796875 1.996094 7.921875 3.28125 8.148438 C 3.046875 8.203125 2.8125 8.261719 2.519531 8.261719 C 2.347656 8.261719 2.171875 8.261719 1.996094 8.207031 C 2.347656 9.335938 3.976563 10.632813 5.257813 10.632813 C 4.265625 11.363281 3.34375 12 1.5 12 C 1.265625 12 1.453125 12 1 12 C 2.28125 12.789063 3.800781 13 5.375 13 C 10.683594 13 13.542969 8.769531 13.542969 5.101563 C 13.542969 4.988281 13.542969 4.878906 13.542969 4.765625 C 14.125 4.367188 14.59375 3.863281 15 3.296875 "
-											/>
-										</svg>
-									</a>
-								</li>
-								<li>
-									<a class="social-link" href="/rss.xml" title="RSS">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 0 24 24"
-											version="1.1"
-										>
-											<path
-												d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z"
-											/>
-										</svg>
-									</a>
-								</li>
-							</ul>
+						<div class="md:flex md:items-center mb-6">
+							<div class="md:w-1/3">
+								<label
+									class="block text-xs text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+									for="inline-username"
+								>
+									Email
+								</label>
+							</div>
+							<div class="md:w-2/3">
+								<input
+									id="inline-username"
+									class="text-xs bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-1 px-2 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-red-400"
+									type="password"
+									placeholder="whodoe701@mail.com"
+								/>
+							</div>
+						</div>
+						<div class="md:flex md:items-center">
+							<div class="md:w-1/3"></div>
+							<div class="md:w-2/3">
+								<button
+									class="shadow bg-red-500 hover:bg-red-400 focus:shadow-outline focus:outline-none text-white text-xs font-bold py-1 px-2 rounded"
+									type="button"
+								>
+									Sign Up
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="grid-cols-1 pl-4 lg:pl-12">
+					<div>
+						<span class="text-md w-full">
+							wire
+						</span>
+						<div class="flex flex-auto flex-wrap text-xs ml-4">
+							<a class="p-1" href="#">Press Aggregate</a>
+							<a class="p-1" href="#">Drug Trafficking</a>
+							<a class="p-1" href="#">Mexican DTOs</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid-cols-1">
+					<div>
+						<span class="text-md w-full">
+							narco news
+						</span>
+						<div class="grid grid-cols-2 text-xs ml-4">
+							<a class="p-1" href="#">About</a>
+							<a class="p-1" href="#">Blog</a>
+							<a class="p-1" href="#">Contact Us</a>
+							<a class="p-1" href="#">Github</a>
+							<a class="p-1" href="#">RSS</a>
+						</div>
+					</div>
+				</div>
+				<div class="grid-cols-1">
+					<div>
+						<span class="text-md w-full">
+							favorites
+						</span>
+						<div class="flex flex-auto flex-wrap text-xs ml-4">
+							<a
+								class="p-1"
+								target="_blank"
+								href="https://smallwarsjournal.com/elcentro"
+								>El Centro</a
+							>
+							<a
+								class="p-1"
+								target="_blank"
+								href="http://www.borderlandbeat.com/"
+								>Borderland Beat</a
+							>
+
+							<a
+								class="p-1"
+								target="_blank"
+								href="https://www.insightcrime.org/"
+								>Insight Crime</a
+							>
+							<a
+								class="p-1"
+								target="_blank"
+								href="https://www.crisisgroup.org/latin-america-caribbean/mexico"
+								>Crisis Group MX</a
+							>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
+		<div></div>
+		<div class="bottom-0 pb-2 text-center">
+			<span class="text-gray-600 text-xs">narco news 2020</span>
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-	props: {
-		settings: {
-			type: Object,
-			required: true
-		}
-	},
-
-	computed: {
-		year() {
-			const now = new Date();
-			const yyyy = now.getFullYear();
-			return yyyy;
-		}
-	}
-};
+export default {};
 </script>
+
+<style></style>

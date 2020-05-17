@@ -5,22 +5,26 @@
 			<Navigation />
 		</client-only>
 		<main>
-			<div class="container mx-auto">
+			<div>
 				<!-- ... -->
 				<nuxt />
 			</div>
 		</main>
+		<!-- Footer -->
+		<Footer />
 	</div>
 </template>
 
 <script>
 import Header from '~/components/Header.vue';
 import Navigation from '~/components/Navigation.vue';
+import Footer from '~/components/Footer.vue';
 
 export default {
 	components: {
 		Header,
-		Navigation
+		Navigation,
+		Footer
 	},
 
 	computed: {
@@ -62,6 +66,10 @@ export default {
 <style lang="scss">
 body {
 	margin: 0px;
-	background-color: #bfb8aa;
+	// background-color: #bfb8aa;
+	// background-color: #d0d3c5;
+	// background-color: #d9d0c7;
+	// background-color: #d7ded3;
+	background-color: #b0c0bb;
 }
 </style>

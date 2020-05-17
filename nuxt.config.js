@@ -45,14 +45,14 @@ export default async () => {
 		webfontloader: {
 			custom: {
 				families: [
-					'Source Sans Pro:n3,n4,n6',
-					'Roboto Mono:n4',
-					'IBM Plex Sans:n3,n4,n5,n7'
+					'IBM Plex Sans:n3,n4,n5,n7',
+					'Patua One:n4',
+					'Montserrat',
+					'Baloo Thambi 2'
 				],
 				urls: [
-					'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap',
-					'https://fonts.googleapis.com/css?family=Roboto+Mono:400&display=swap',
-					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap'
+					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap',
+					'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700;800&family=Montserrat&family=Patua+One&display=swap'
 				]
 			}
 		},
@@ -94,7 +94,10 @@ export default async () => {
 			{src: '~/plugins/timeline.js', ssr: false},
 			{src: '~/plugins/notifications.js', ssr: false},
 			{src: '~/plugins/scrollbar.js', ssr: false},
-			{src: '~/plugins/vshowslide.js', ssr: false}
+			{src: '~/plugins/vshowslide.js', ssr: false},
+			{src: '~/plugins/odometer.js', ssr: false},
+			{src: '~/plugins/marquee.js', ssr: false},
+			{src: '~/plugins/modals.js', ssr: false}
 		],
 
 		pwa: {
