@@ -33,7 +33,7 @@
 					</p>
 					<div class="text-md px-4 pt-2">
 						We're currently in an era of information and conversation wealth.
-						That paired with confusion and disarray puts us into a realm we've
+						That paired with confusion and disarray throws us into a realm we've
 						dubbed the
 						<span style="color: #ff5e70; font-weight: 600;"
 							>information clusterfuck</span
@@ -49,9 +49,8 @@
 							>²</a
 						>
 						states it as a "disastrously mishandled situation or undertaking."
-						These definitions provide us valuable reminders in furthering our
-						understanding. The situation is complex and it has disastrous
-						consequences.
+						These definitions provide us a valuable reminders, the situation is
+						complex and it has disastrous consequences.
 
 						<div class="bg-white shadow-md my-4 mx-2 p-4 text-xs rounded">
 							An analysis<a
@@ -60,20 +59,23 @@
 								>³</a
 							>
 							conducted by Luis Ángel Hurtado, Professor and Researcher at
-							UNAM’s School of Political and Social Sciences concluded "the
-							misinformation epidemic reaches important figures in our country
-							and renders us (Mexico) the second-largest generator of fake news
-							after Turkey."
+							UNAM’s School of Political and Social Sciences concluded
+							<span class="italic"
+								>the misinformation epidemic reaches important figures in our
+								country and renders us (Mexico) the second-largest generator of
+								fake news after Turkey."</span
+							>
 						</div>
 						We'd be foolish, as would you, to think that any of it will become
 						clearer as time goes on. We'd also be foolish to proclaim that we
 						knew of a cure or even that one existed. But we have some ideas and
-						have established this digital compendium to share them.
+						have established this digital compendium to share them. In addition
+						gather the ideas of any and all.
 						<div
 							class="bg-white shadow-md my-4 mx-2 p-4 text-xs rounded h-auto overflow-hidden"
 						>
 							<span class="float-left italic">
-								Drug trafficking, for example, is not the behavior of a daring,
+								"Drug trafficking, for example, is not the behavior of a daring,
 								secretive, and clever operator; it is a complex international
 								business system, deeply touching the lives of peasant farmers,
 								political leaders in the nation's capital, or the highly
@@ -81,7 +83,7 @@
 								reap enormous profits from it. Therefore, in order for us to
 								understand them, to perceive their broader meaning, they must be
 								studied as systematic behavior, in the full context of their
-								economic, political, and cultural aspects.
+								economic, political, and cultural aspects.""
 							</span>
 
 							<div
@@ -96,11 +98,11 @@
 							</div>
 						</div>
 
-						Our focused as one might presume is on organized crime and drug
-						trafficking. Taken the current plethora of information and it's
-						convergence with the digital world. Our quest thus becomes
-						aggregating into a central place the chaos. With a hope of
-						untangling and parsing to provide insight into these matters.
+						Our focused is on organized crime and more specifically drug
+						trafficking. Given the plethora of information and it's convergence
+						with the digital world, our quest becomes aggregating into a central
+						place the chaos. With hope of untangling and parsing it all to
+						provide insight.
 					</div>
 				</div>
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
