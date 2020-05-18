@@ -119,7 +119,7 @@ export default {
 	border-radius: 15px !important;
 	z-index: 1;
 	position: relative;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 400;
 	font-family: 'Patua One', cursive;
 	color: #3b274b;
@@ -166,7 +166,7 @@ export default {
 	background-color: #fff !important;
 	border-bottom: 1px solid black;
 	font-family: 'Baloo Thambi 2', cursive;
-	font-size: 2.5em;
+	font-weight: 700;
 	.button-red {
 		background: #ff3b30;
 		&:hover {
