@@ -1,54 +1,35 @@
 <template>
 	<div>
-		<div class="rounded bg-white overflow-hidden shadow-md m-4">
+		<div
+			style="color: #3a656a;"
+			class="rounded bg-white overflow-hidden shadow-md m-4"
+		>
 			<div
-				style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 700;"
-				class="px-8 py-6 uppercase leading-10 flex justify-center"
+				style="font-family: 'Patua One', cursive;"
+				class="flex justify-end lg:justify-start text-xl m-4"
 			>
-				<span
-					style="animation-delay: 0.5;"
-					class="text-gray-300 animate__animated animate__fadeInDown text-3xl mx-1"
-				>
-					Who
-				</span>
-				<br />
-				<span
-					style="animation-delay: 0.6s;"
-					class="text-gray-400 animate__animated animate__fadeInDown text-2xl mx-1"
-				>
-					What
-				</span>
-				<br />
-				<span
-					style="animation-delay: 0.7s;"
-					class="text-gray-500 animate__animated animate__fadeInDown text-xl mx-1"
-				>
-					Why
-				</span>
+				ABOUT
 			</div>
 			<div
 				style="animation-duration: 1s;"
-				class="px-10 mx-5 text-center animate__animated animate__fadeIn"
+				class="px-2 text-center animate__animated animate__fadeIn"
 			>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae
-					lorem porta, suscipit urna ornare, tempus mauris. Proin faucibus
-					semper pulvinar. Quisque a turpis porta ante tempor blandit in tempus
-					ipsum. Phasellus pharetra nibh elit, vitae auctor quam semper nec.
-					Quisque vel urna quis lacus condimentum tincidunt ac sit amet elit.
-					Donec malesuada auctor nisi eu suscipit. Praesent vel enim pulvinar,
-					convallis velit nec, auctor lacus. Quisque sodales aliquet lectus, sit
-					amet fermentum mauris malesuada vitae.
+					<!--  -->
 				</p>
 			</div>
 			<div class="flex flex-wrap justify-center my-5">
 				<div class="m-4">
-					<img class="shadow-lg" src="../assets/images/ani-avatar.png" />
+					<img
+						class="shadow-lg mx-auto"
+						src="../assets/images/ani-avatar.png"
+					/>
+
 					<div class="flex flex-col justify-center m-2">
-						<span class="py-1 text-3xl font-bold text-center">
+						<span class="py-1 text-2xl font-bold text-center">
 							Ani
 						</span>
-						<span class="py-1 text-xl italic text-center">
+						<span class="py-1 text-lg italic text-center">
 							Chief Translation Officer
 						</span>
 					</div>
@@ -81,14 +62,14 @@
 				</div>
 				<div class="m-4">
 					<img
-						class="shadow-lg"
+						class="shadow-lg mx-auto"
 						src="../assets/images/christopher-avatar.png"
 					/>
 					<div class="flex flex-col justify-center m-2">
-						<span class="py-1 text-3xl font-bold text-center">
+						<span class="py-1 text-2xl font-bold text-center">
 							Christopher
 						</span>
-						<span class="py-1 text-xl italic text-center">
+						<span class="py-1 text-lg italic text-center">
 							Chief Technology Officer
 						</span>
 					</div>
@@ -120,12 +101,15 @@
 					</div>
 				</div>
 				<div class="m-4">
-					<img class="shadow-lg" src="../assets/images/parece-avatar.png" />
+					<img
+						class="shadow-lg mx-auto"
+						src="../assets/images/parece-avatar.png"
+					/>
 					<div class="flex flex-col justify-center m-2">
-						<span class="py-1 text-3xl font-bold text-center">
+						<span class="py-1 text-2xl font-bold text-center">
 							Parece
 						</span>
-						<span class="py-1 text-xl italic text-center">
+						<span class="py-1 text-lg italic text-center">
 							Chief Research Officer
 						</span>
 					</div>

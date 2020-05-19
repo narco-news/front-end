@@ -1,6 +1,6 @@
 <template>
 	<div class="h-auto bg-white rounded shadow-md">
-		<div class="mx-4 py-3">
+		<div class="my-2 mx-4 py-3">
 			<span style="color: #ff5e70;" class="text-sm">
 				Essential Resources
 			</span>

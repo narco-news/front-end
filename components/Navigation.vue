@@ -166,7 +166,7 @@ export default {
 	background-color: #fff !important;
 	border-bottom: 1px solid black;
 	font-family: 'Baloo Thambi 2', cursive;
-	font-weight: 700;
+	font-weight: 500;
 	.button-red {
 		background: #ff3b30;
 		&:hover {
