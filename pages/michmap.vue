@@ -8,7 +8,7 @@
 				style="font-family: 'Patua One', cursive;"
 				class="flex justify-end lg:justify-start text-md m-4 uppercase"
 			>
-				Tamaulipas Interactive Map
+				Michoacán Interactive Map
 			</div> -->
 			<div id="map" class="">
 				<no-ssr>
@@ -31,8 +31,8 @@ export default {
 		return {
 			token: process.env.accessToken,
 			mapStyle: 'mapbox://styles/mapbox/streets-v11', // your map style
-			center: [-98.6, 24.2],
-			zoom: 7
+			center: [-101.83333, 19.16667],
+			zoom: 8
 		};
 	},
 
@@ -53,6 +53,6 @@ export default {
 <style lang="css">
 @import 'https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css';
 #map {
-	height: 600px;
+	height: 700px;
 }
 </style>
