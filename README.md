@@ -1,5 +1,5 @@
 <p align="center">
-	<img height="100px" src="assets/images/nn-logo-transparent.png">
+	<img height="100px" src="assets/images/bw-nn-logo.png">
 </p>
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -10,4 +10,3 @@
 [![HitCount](http://hits.dwyl.com/somed00d/narco-news/front-end.svg)](http://hits.dwyl.com/somed00d/narco-news/front-end)
 ![W3C Validation](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fnarco.news)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fnarco-news%2Ffront-end)
