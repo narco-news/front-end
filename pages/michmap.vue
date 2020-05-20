@@ -53,6 +53,6 @@ export default {
 <style lang="css">
 @import 'https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css';
 #map {
-	height: 700px;
+	height: 500px;
 }
 </style>
