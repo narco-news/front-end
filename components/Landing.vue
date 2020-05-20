@@ -32,12 +32,12 @@
 					</div>
 					<div class="grid grid-cols-1">
 						<p class="gram definition text-sm lg:text-lg">
-							Dealer in drugs.
+							Dealer in drugs
 						</p>
 						<p class="exp text-xs">
 							"political bosses who may
 							<br />
-							have links to the narcos..."
+							have links to the narcos"
 						</p>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 							noteworthy information
 						</p>
 						<p class="exp text-xs">
-							"we have good news for you..."
+							"we have good news for you"
 						</p>
 					</div>
 				</div>
