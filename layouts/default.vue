@@ -26,7 +26,11 @@ export default {
 		Navigation,
 		Footer
 	},
-
+	data() {
+		return {
+			title: 'narco.news'
+		};
+	},
 	computed: {
 		pageSettings() {
 			return this.$store.state.pageSettings;
@@ -59,6 +63,26 @@ export default {
 				.createContextualFragment(this.codeFoot);
 			document.getElementsByTagName('body')[0].appendChild(footInject);
 		}
+	},
+	head() {
+		return {
+			title: this.title,
+			meta: [
+				// hid is used as unique identifier. Do not use `vmid` for it as it will not work
+				{
+					hid: 'description',
+					name: 'description',
+					content: 'narco.news | information aggregation'
+				}
+			],
+			link: [
+				{
+					rel: 'icon',
+					type: 'image/x-icon',
+					href: '/favicon.ico?v=2'
+				}
+			]
+		};
 	}
 };
 </script>
