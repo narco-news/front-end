@@ -39,7 +39,8 @@ export default async () => {
 		env: {
 			ghostUri: process.env.GHOST_URI,
 			ghostKey: process.env.GHOST_KEY,
-			blogUrl: process.env.BLOG_URL
+			blogUrl: process.env.BLOG_URL,
+			accessToken: process.env.accessToken
 		},
 
 		webfontloader: {
@@ -97,8 +98,8 @@ export default async () => {
 			{src: '~/plugins/vshowslide.js', ssr: false},
 			{src: '~/plugins/odometer.js', ssr: false},
 			{src: '~/plugins/marquee.js', ssr: false},
-			{src: '~/plugins/modals.js', ssr: false}
-			// {src: '~/plugins/mapboxvue.js', ssr: false}
+			{src: '~/plugins/modals.js', ssr: false},
+			{src: '~/plugins/mapbox.js', ssr: false}
 		],
 
 		pwa: {

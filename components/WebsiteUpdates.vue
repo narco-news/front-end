@@ -58,7 +58,7 @@
 			</button>
 			<vodal
 				className="checklist"
-				height="400"
+				:height="height"
 				measure="px"
 				:show="show"
 				:animation="animation"
@@ -153,7 +153,8 @@ export default {
 	data() {
 		return {
 			show: false,
-			animation: 'flip'
+			animation: 'flip',
+			height: 400
 		};
 	}
 };

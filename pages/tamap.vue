@@ -13,7 +13,7 @@
 			<div id="map" class="">
 				<no-ssr>
 					<MglMap
-						:accessToken="accessToken"
+						:accessToken="token"
 						:mapStyle="mapStyle"
 						:center="center"
 						:zoom="zoom"
@@ -26,15 +26,10 @@
 </template>
 
 <script>
-import {MglMap} from 'vue-mapbox';
-
 export default {
-	components: {
-		MglMap
-	},
 	data() {
 		return {
-			accessToken: process.env.accessToken,
+			token: process.env.accessToken,
 			mapStyle: 'mapbox://styles/mapbox/streets-v11', // your map style
 			center: [-98.6, 24.2],
 			zoom: 7
