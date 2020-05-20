@@ -3,7 +3,10 @@
 		<div id="header" class="navbar z-20">
 			<div class="grid grid-cols-3 md:grid-cols-4 gap-4 my-1">
 				<div class="text-sm">
-					<select class="appearance-none text-black px-2 rounded">
+					<select
+						style="font-family: 'Sura', serif; font-weight: 700;"
+						class="appearance-none text-black bg-white px-2 rounded"
+					>
 						<option>EN</option>
 						<option>ES</option>
 					</select>

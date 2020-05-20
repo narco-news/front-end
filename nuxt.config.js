@@ -49,11 +49,13 @@ export default async () => {
 					'IBM Plex Sans:n3,n4,n5,n7',
 					'Patua One:n4',
 					'Montserrat',
-					'Baloo Thambi 2'
+					'Baloo Thambi 2',
+					'Sura'
 				],
 				urls: [
 					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap',
-					'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700;800&family=Montserrat&family=Patua+One&display=swap'
+					'https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;500;700;800&family=Montserrat&family=Patua+One&display=swap',
+					'https://fonts.googleapis.com/css2?family=Sura:wght@400;700&display=swap'
 				]
 			}
 		},
