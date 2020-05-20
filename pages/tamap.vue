@@ -10,7 +10,7 @@
 			>
 				Tamaulipas Interactive Map
 			</div> -->
-			<div id="map" class="">
+			<div id="map">
 				<no-ssr>
 					<MglMap
 						:accessToken="token"
@@ -52,7 +52,8 @@ export default {
 
 <style lang="css">
 @import 'https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css';
+
 #map {
-	height: 500px;
+	height: 550px;
 }
 </style>
