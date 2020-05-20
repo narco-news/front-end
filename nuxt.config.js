@@ -98,6 +98,7 @@ export default async () => {
 			{src: '~/plugins/odometer.js', ssr: false},
 			{src: '~/plugins/marquee.js', ssr: false},
 			{src: '~/plugins/modals.js', ssr: false}
+			// {src: '~/plugins/mapboxvue.js', ssr: false}
 		],
 
 		pwa: {

@@ -105,7 +105,7 @@
 								class="p-1"
 								target="_blank"
 								href="https://www.insightcrime.org/"
-								>Insight Crime</a
+								>InSight Crime</a
 							>
 							<a
 								class="p-1"

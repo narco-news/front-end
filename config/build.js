@@ -13,7 +13,11 @@ export default {
 	},
 
 	babel: {
-		plugins: [['@babel/plugin-proposal-export-namespace-from']]
+		plugins: [
+			['@babel/plugin-proposal-export-namespace-from']
+
+			//
+		]
 	},
 	postcss: {
 		plugins: {
