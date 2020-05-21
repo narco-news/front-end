@@ -16,6 +16,13 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
+						<span class="text-xs font-bold">20.05.2020</span>
+						<p class="text-xs">
+							Added pages for Tamaulipas and Michoacán maps with basic map for
+							now. Library pages up but empty.
+						</p>
+					</li>
+					<li>
 						<span class="text-xs font-bold">17.05.2020</span>
 						<p class="text-xs">
 							Pushed the latest changes to production... testing over the next
