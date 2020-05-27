@@ -1,0 +1,94 @@
+{
+	"books": [
+		{
+			"id": "1",
+			"imageUrl": "images/books/a-narco-history.jpg",
+			"imageAlt": "A Narco History book cover",
+			"title": "A Narco History: How the United States and Mexico Jointly Created the 'Mexican Drug War'",
+			"datePublished": 2016,
+			"authors": "Carmen Boullosa, Mike Wallace",
+			"desc": "The term Mexican Drug War misleads. It implies that the ongoing bloodbath, which has now killed well over 100,000 people, is an internal Mexican affair. But this diverts attention from the US role in creating and sustaining the carnage. It's not just that Americans buy drugs from and sell weapons to Mexico's murderous cartels. It's that ever since the US prohibited the use and sale of drugs in the early 1900s, it has pressured Mexico into acting as its border enforcer—with increasingly deadly consequences. Mexico was not a helpless victim. Powerful forces within the country profited hugely from supplying Americans with what their government forbade them. But the policies that spawned the drug war have proved disastrous for both countries. Written by two award-winning authors, one American and the other Mexican, A Narco History reviews the interlocking 20th-century histories that produced this 21st-century calamity and proposes how to end it."
+		},
+		{
+			"id": "2",
+			"imageUrl": "images/books/narco-land.jpg",
+			"imageAlt": "Narcoland book cover",
+			"title": "Narcoland: The Mexican Drug Lords And Their Godfathers",
+			"datePublished": 2013,
+			"authors": " Anabel Hernandez",
+			"desc": "The product of five years’ investigative reporting, the subject of intense national controversy, and the source of death threats that forced the National Human Rights Commission to assign two full-time bodyguards to its author, Anabel Hernández, Narcoland has been a publishing and political sensation in Mexico. The definitive history of the drug cartels, Narcoland takes readers to the front lines of the “war on drugs,” which has so far cost more than 60,000 lives in just six years. Hernández explains in riveting detail how Mexico became a base for the mega-cartels of Latin America and one of the most violent places on the planet. At every turn, Hernández names names – not just the narcos, but also the politicians, functionaries, judges and entrepreneurs who have collaborated with them. In doing so, she reveals the mind-boggling depth of corruption in Mexico’s government and business elite. Hernández became a journalist after her father was kidnapped and killed and the police refused to investigate without a bribe. She gained national prominence in 2001 with her exposure of excess and misconduct at the presidential palace, and previous books have focused on criminality at the summit of power, under presidents Vicente Fox and Felipe Calderón. In awarding Hernández the 2012 Golden Pen of Freedom, the World Association of Newspapers and News Publishers noted, “Mexico has become one of the most dangerous countries in the world for journalists, with violence and impunity remaining major challenges in terms of press freedom. In making this award, we recognize the strong stance Ms. Hernández has taken, at great personal risk, against drug cartels.”"
+		},
+		{
+			"id": "3",
+			"imageUrl": "images/books/el-narco.jpg",
+			"imageAlt": "El Narco book cover",
+			"title": "El Narco: Inside Mexico's Criminal Insurgency",
+			"datePublished": 2011,
+			"authors": "Ioan Grillo",
+			"desc": "The world has watched stunned at the bloodshed in Mexico. Thirty thousand murdered since 2006; police chiefs shot within hours of taking office; mass graves comparable to those of civil wars; car bombs shattering storefronts; headless corpses heaped in town squares. And it is all because a few Americans are getting high. Or is it? The United States throws Black Hawk helicopters and drug agents at the problem. But in secret, Washington is confused and divided about what to do. Who are these mysterious figures tearing Mexico apart? they wonder. What is El Narco? El Narco draws the first definitive portrait of Mexico's drug cartels and how they have radically transformed. El Narco is not a gang; it is a movement and an industry drawing in hundreds of thousands from bullet-ridden barrios to marijuana-growing mountains. And it has created paramilitary death squads with tens of thousands of men-at-arms from Guatemala to the Texas border. Journalist Ioan Grillo has spent a decade in Mexico reporting on the drug wars from the front lines. This piercing book joins testimonies from inside the cartels with firsthand dispatches and unsparing analysis. The devastation may be south of the Rio Grande, El Narco shows, but America is knee-deep in this conflict."
+		},
+		{
+			"id": "4",
+			"imageUrl": "images/books/gangster-warlords.jpg",
+			"imageAlt": "Gangster Warlords book cover",
+			"title": "Gangster Warlords: Drug Dollars, Killing Fields, and the New Politics of Latin America",
+			"datePublished": 2016,
+			"authors": "Ioan Grillo",
+			"desc": "In a ranch south of Texas, the man known as The Executioner dumps five hundred body parts in metal barrels. In Brazil's biggest city, a mysterious prisoner orders hit-men to gun down forty-one police officers and prison guards in two days. In southern Mexico, a meth maker is venerated as a saint while enforcing Old Testament justice on his enemies. A new kind of criminal kingpin has arisen: part CEO, part terrorist, and part rock star, unleashing guerrilla attacks, strong-arming governments, and taking over much of the world's trade in narcotics, guns, and humans. What they do affects you now--from the gas in your car, to the gold in your jewelry, to the tens of thousands of Latin Americans calling for refugee status in the U.S. Gangster Warlords is the first definitive account of the crime wars now wracking Central and South America and the Caribbean, regions largely abandoned by the U.S. after the Cold War. Author of the critically acclaimed El Narco, Ioan Grillo has covered Latin America since 2001 and gained access to every level of the cartel chain of command in what he calls the new battlefields of the Americas. Moving between militia-controlled ghettos and the halls of top policy-makers, Grillo provides a disturbing new understanding of a war that has spiraled out of control--one that people across the political spectrum need to confront now."
+		},
+		{
+			"id": "5",
+			"imageUrl": "images/books/mexico-illicit.jpg",
+			"imageAlt": "Mexico's Illicit Drug Networks and the State Reaction book cover",
+			"title": "Mexico's Illicit Drug Networks and the State Reaction",
+			"datePublished": 2016,
+			"authors": "Nathan P. Jones",
+			"desc": "Mexican drug networks are large and violent, engaging in activities like the trafficking of narcotics, money laundering, extortion, kidnapping, and mass murder. Despite the impact of these activities in Mexico and abroad, these illicit networks are remarkably resilient to state intervention. Drawing on extensive fieldwork and interviews with US and Mexican law enforcement, government officials, organized crime victims, and criminals, Nathan P. Jones examines the comparative resilience of two basic types of drug networks—“territorial” and “transactional”—that are differentiated by their business strategies and provoke wildly different responses from the state. Transactional networks focus on trafficking and are more likely to collude with the state through corruption, while territorial networks that seek to control territory for the purpose of taxation, extortion, and their own security often trigger a strong backlash from the state. Timely and authoritative, Mexico's Illicit Drug Networks and the State Reaction provides crucial insight into why Mexico targets some drug networks over others, reassesses the impact of the war on drugs, and proposes new solutions for weak states in their battles with drug networks."
+		},
+		{
+			"id": "6",
+			"imageUrl": "images/books/wolf-boys.jpg",
+			"imageAlt": "Wolf Boys book cover",
+			"title": "Wolf Boys: Two American Teenagers and Mexico's Most Dangerous Drug Cartel",
+			"datePublished": 2016,
+			"authors": "Dan Slater",
+			"desc": "The story of two American teens recruited as killers for a Mexican cartel and their pursuit by a Mexican American detective who realizes the War on Drugs is unwinnable. What's it like to be an employee of a global drug-trafficking organization? And how does a 15-year-old American boy go from star quarterback to trained assassin, surging up the cartel corporate ladder? At first glance Gabriel Cardona is the poster-boy American teenager: great athlete, bright, handsome, and charismatic. But the streets of his border town of Laredo, Texas, are poor and dangerous, and it isn't long before Gabriel abandons his promising future for the allure of the Zetas, a drug cartel with roots in the Mexican military. His younger friend. Bart, as well as others from Gabriel's childhood join him in working for the Zetas, boosting cars and smuggling drugs, eventually catching the eye of the cartel's leadership. Meanwhile, Mexican-born detective Robert Garcia has worked hard all his life and is now struggling to raise his family in America. As violence spills over the border, Detective Garcia's pursuit of the boys and their cartel leaders puts him face to face with the urgent consequences of a war he sees as unwinnable. In Wolf Boys Dan Slater shares their stories, taking us from the Sierra Madre mountaintops to the dusty, dark alleys of Laredo, Texas, on a harrowing, often brutal journey into the heart of the Mexican drug trade. Gabriel's evolution from good-natured teenager into a feared assassin is as inevitable as Garcia's slow realization of the futile nature of his work. A nonfiction thriller, Wolf Boys depicts more than just Gabriel, Bart, and the officers who took them down. It shows, through vivid detail and rich, often moving narrative, the way in which the border itself is changing, disappearing, and posing new terrifying and yet largely unseen threats to American security. Ultimately, though, Wolf Boys is the intimate story of the 'lobos' themselves: boys turned into pawns for cartels. Their stories show how poverty, ideas about identity, and government ignorance have warped the definition of the American dream. "
+		},
+		{
+			"id": "7",
+			"imageUrl": "images/books/devoted-to-death.jpg",
+			"imageAlt": "Devoted to Death book cover",
+			"title": "Devoted to Death: Santa Muerte, the Skeleton Saint",
+			"datePublished": 2017,
+			"authors": "R. Andrew Chesnut",
+			"desc": "R. Andrew Chesnut offers a fascinating portrayal of Santa Muerte, a skeleton saint whose cult has attracted millions of devotees over the past decade. Although condemned by mainstream churches, this folk saint's supernatural powers appeal to millions of Latin Americans and immigrants in the U.S. Devotees believe the Bony Lady (as she is affectionately called) to be the fastest and most effective miracle worker, and as such, her statuettes and paraphernalia now outsell those of the Virgin of Guadalupe and Saint Jude, two other giants of Mexican religiosity. In particular, Chesnut shows Santa Muerte has become the patron saint of drug traffickers, playing an important role as protector of peddlers of crystal meth and marijuana; DEA agents and Mexican police often find her altars in the safe houses of drug smugglers. Yet Saint Death plays other important roles: she is a supernatural healer, love doctor, money-maker, lawyer, and angel of death. She has become without doubt one of the most popular and powerful saints on both the Mexican and American religious landscapes."
+		},
+		{
+			"id": "8",
+			"imageUrl": "images/books/kilo.jpg",
+			"imageAlt": "Kilo book cover",
+			"title": "Kilo: Inside the Deadliest Cocaine Cartels - From the Jungles to the Streets",
+			"datePublished": 2020,
+			"authors": "Toby Muse",
+			"desc": "Cocaine is glamour, sex and murder. From the badlands of Colombia, it stretches across the globe, seducing, corrupting and destroying. A product that must be produced, distributed, and protected, it is both a harbinger of violence and a source of immense wealth. Beginning in the jungles and mountains of Colombia, it filters down to countryside villages and the nightclubs of the cities, attracting money, sex, and death. Each step in the life of a kilo reveals a different criminal underworld with its own players, rules, and dangers, ranging from the bizarre to the diabolical. The killers, the drug-lords, all find themselves seduced by cocaine and trapped in her world. Seasoned war correspondent Toby Muse has witnessed each level of this underworld, fueled by the appetite for cocaine in America and Europe. In this riveting chronicle, he takes the reader inside Colombia’s notorious drug cartels to offer a never before look at the drug trade. Following a kilo of cocaine from its production in a clandestine laboratory to the smugglers who ship it abroad, he reveals the human lives behind the drug’s complicated legacy. Reporting on Colombia for the world’s most prestigious networks and publications, Muse gained unprecedented access to the extraordinary people who survive on the drug trade—farmers, smugglers, assassins—and the drug lords and their lovers controlling these multi-billion dollar enterprises. Uncovering stories of violence, sex, and money, he shows the allure and the madness of cocaine. And how the War on Drugs has been no match for cocaine. Piercing this veiled world, Kilo is a gripping portrait of a country struggling to end this deadly trade even as the riches flow. A human portrait of criminals and the shocking details of their lives, Kilo is a chilling, unforgettable story that takes you deep into the belly of the beast."
+		},
+		{
+			"id": "9",
+			"imageUrl": "images/books/murder-city.jpg",
+			"imageAlt": "Murder City book cover",
+			"title": "Murder City: Ciudad Juarez and the Global Economy's New Killing Fields",
+			"datePublished": 2010,
+			"authors": "Charles Bowden",
+			"desc": "Ciudad Juárez lies just across the Rio Grande from El Paso, Texas. A once-thriving border town, it now resembles a failed state. Infamously known as the place where women disappear, its murder rate exceeds that of Baghdad. Last year 1,607 people were killed—a number that is on pace to increase in 2009. In Murder City, Charles Bowden—one of the few journalists who has spent extended periods of time in Juárez—has written an extraordinary account of what happens when a city disintegrates. Interweaving stories of its inhabitants—a raped beauty queen, a repentant hitman, a journalist fleeing for his life—with a broader meditation on the town's descent into anarchy, Bowden reveals how Juárez's culture of violence will not only worsen, but inevitably spread north. Heartbreaking, disturbing, and unforgettable, Murder City establishes Bowden as one of our leading writers working at the height of his powers."
+		},
+		{
+			"id": "10",
+			"imageUrl": "images/books/narconomics.jpg",
+			"imageAlt": "Narconomics book cover",
+			"title": "Narconomics: How to Run a Drug Cartel",
+			"datePublished": 2016,
+			"authors": "Tom Wainwright",
+			"desc": "How does a budding cartel boss succeed (and survive) in the 300 billion illegal drug business? By learning from the best, of course. From creating brand value to fine-tuning customer service, the folks running cartels have been attentive students of the strategy and tactics used by corporations such as Walmart, McDonald's, and Coca-Cola. And what can government learn to combat this scourge? By analyzing the cartels as companies, law enforcers might better understand how they work—and stop throwing away 100 billion a year in a futile effort to win the “war” against this global, highly organized business.Your intrepid guide to the most exotic and brutal industry on earth is Tom Wainwright. Picking his way through Andean cocaine fields, Central American prisons, Colorado pot shops, and the online drug dens of the Dark Web, Wainwright provides a fresh, innovative look into the drug trade and its 250 million customers. The cast of characters includes “Bin Laden,” the Bolivian coca guide; “Old Lin,” the Salvadoran gang leader; “Starboy,” the millionaire New Zealand pill maker; and a cozy Mexican grandmother who cooks blueberry pancakes while plotting murder. Along with presidents, cops, and teenage hitmen, they explain such matters as the business purpose for head-to-toe tattoos, how gangs decide whether to compete or collude, and why cartels care a surprising amount about corporate social responsibility. More than just an investigation of how drug cartels do business, Narconomics is also a blueprint for how to defeat them."
+		}
+	]
+}
