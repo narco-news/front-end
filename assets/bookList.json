@@ -1,0 +1,22 @@
+{
+	"books": [
+		{
+			"id": "1",
+			"imageUrl": "images/books/a-narco-history.jpg",
+			"imageAlt": "A Narco History book cover",
+			"title": "A Narco History: How the United States and Mexico Jointly Created the 'Mexican Drug War'",
+			"datePublished": 2016,
+			"authors": "Carmen Boullosa, Mike Wallace",
+			"desc": "The term Mexican Drug War misleads. It implies that the ongoing bloodbath, which has now killed well over 100,000 people, is an internal Mexican affair. But this diverts attention from the US role in creating and sustaining the carnage. It's not just that Americans buy drugs from and sell weapons to Mexico's murderous cartels. It's that ever since the US prohibited the use and sale of drugs in the early 1900s, it has pressured Mexico into acting as its border enforcer—with increasingly deadly consequences. Mexico was not a helpless victim. Powerful forces within the country profited hugely from supplying Americans with what their government forbade them. But the policies that spawned the drug war have proved disastrous for both countries. Written by two award-winning authors, one American and the other Mexican, A Narco History reviews the interlocking 20th-century histories that produced this 21st-century calamity and proposes how to end it."
+		},
+		{
+			"id": "2",
+			"imageUrl": "images/books/narco-land.jpg",
+			"imageAlt": "Narcoland book cover",
+			"title": "Narcoland: The Mexican Drug Lords And Their Godfathers",
+			"datePublished": 2013,
+			"authors": " Anabel Hernandez",
+			"desc": "The product of five years’ investigative reporting, the subject of intense national controversy, and the source of death threats that forced the National Human Rights Commission to assign two full-time bodyguards to its author, Anabel Hernández, Narcoland has been a publishing and political sensation in Mexico. The definitive history of the drug cartels, Narcoland takes readers to the front lines of the “war on drugs,” which has so far cost more than 60,000 lives in just six years. Hernández explains in riveting detail how Mexico became a base for the mega-cartels of Latin America and one of the most violent places on the planet. At every turn, Hernández names names – not just the narcos, but also the politicians, functionaries, judges and entrepreneurs who have collaborated with them. In doing so, she reveals the mind-boggling depth of corruption in Mexico’s government and business elite. Hernández became a journalist after her father was kidnapped and killed and the police refused to investigate without a bribe. She gained national prominence in 2001 with her exposure of excess and misconduct at the presidential palace, and previous books have focused on criminality at the summit of power, under presidents Vicente Fox and Felipe Calderón. In awarding Hernández the 2012 Golden Pen of Freedom, the World Association of Newspapers and News Publishers noted, “Mexico has become one of the most dangerous countries in the world for journalists, with violence and impunity remaining major challenges in terms of press freedom. In making this award, we recognize the strong stance Ms. Hernández has taken, at great personal risk, against drug cartels.”"
+		}
+	]
+}

@@ -34,7 +34,7 @@ export default async () => {
 
 		buildModules: ['@nuxtjs/feed'],
 
-		dev: ['@nuxtjs/eslint-module'],
+		dev: ['@nuxtjs/eslint-module', '@nuxtjs/eslint'],
 
 		env: {
 			ghostUri: process.env.GHOST_URI,
@@ -92,6 +92,8 @@ export default async () => {
 		plugins: [
 			//
 			{src: '~/plugins/postcss.js'},
+			{src: '~/plugins/vue-js-modals', ssr: false},
+			{src: '~/plugins/hover.js', ssr: false},
 			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/navbar.js', ssr: false},
 			{src: '~/plugins/timeline.js', ssr: false},
@@ -100,7 +102,7 @@ export default async () => {
 			{src: '~/plugins/vshowslide.js', ssr: false},
 			{src: '~/plugins/odometer.js', ssr: false},
 			{src: '~/plugins/marquee.js', ssr: false},
-			{src: '~/plugins/modals.js', ssr: false},
+			{src: '~/plugins/vodal.js', ssr: false},
 			{src: '~/plugins/mapbox.js', ssr: false}
 		],
 

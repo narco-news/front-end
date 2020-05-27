@@ -65,8 +65,8 @@
 			</button>
 			<vodal
 				className="checklist"
-				:height="height"
 				measure="px"
+				:height="height"
 				:show="show"
 				:animation="animation"
 				@hide="show = false"
