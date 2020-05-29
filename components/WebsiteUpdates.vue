@@ -16,6 +16,13 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
+						<span class="text-xs font-bold">28.05.2020</span>
+						<p class="text-xs">
+							Added books and academia pages. Academia page still needs work but
+							it's serves the purpose for now.
+						</p>
+					</li>
+					<li>
 						<span class="text-xs font-bold">20.05.2020</span>
 						<p class="text-xs">
 							Added pages for Tamaulipas and Michoacán maps with basic map for
@@ -104,7 +111,7 @@
 						<div class="flex">
 							<div class="flex-shrink p-2">
 								<img
-									src="~/assets/icons/square-full.svg"
+									src="~/assets/icons/check-square.svg"
 									width="35"
 									height="35"
 									fill="#fff"
@@ -128,7 +135,7 @@
 						<div class="flex">
 							<div class="flex-shrink p-2">
 								<img
-									src="~/assets/icons/square-full.svg"
+									src="~/assets/icons/check-square.svg"
 									width="35"
 									height="35"
 									fill="#fff"
@@ -140,7 +147,7 @@
 						<div class="flex">
 							<div class="flex-shrink p-2">
 								<img
-									src="~/assets/icons/square-full.svg"
+									src="~/assets/icons/check-square.svg"
 									width="35"
 									height="35"
 									fill="#fff"
