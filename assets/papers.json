@@ -1,0 +1,35 @@
+{
+	"papers": [
+		{
+			"id": "1",
+			"title": "Exploring interrelationships between high-level drug trafficking and other serious and organised crime: an Australian study",
+			"authors": "Caitlin Elizabeth Hughes, Jenny Chalmers, David Anthony Bright",
+			"date": "21 May 2019",
+			"abstract": "Drug trafficking is frequently argued to be the leading driver of other serious and organised crime, but the interrelationships between such activities remain poorly understood. This paper uses open source law enforcement data to explore interrelationships in Australia. A database was compiled of all reported criminal incidents of high-level drug trafficking between 2011 and 2017 and any concurrent charges for other serious and organised crime (SOC), sourced from official reports and press releases of Australian federal law enforcement and criminal intelligence agencies. Over the seven-years period 24.4% drug trafficking cases involved concurrent SOC charges. Logistic regressions showed characteristics associated with any concurrent SOC charge included the type of drug trafficked, network size, network nationality and OMCG ties. But characteristics differed according to which SOC was cited in connection with the drug trafficking offence e.g. firearms offences versus corruption/fraud. We discuss the implications for research, policy and practice.",
+			"keywords": [
+				"drug trafficking",
+				"organised crime",
+				"money laundering",
+				"corruption",
+				"open source"
+			],
+			"infoLink": "https://www.tandfonline.com/doi/abs/10.1080/17440572.2019.1615895",
+			"downloadLink": "https://sci-hub.tw/10.1080/17440572.2019.1615895"
+		},
+		{
+			"id": "2",
+			"title": "A Markov Decision Process approach for balancing intelligence and interdiction operations in city-level drug trafficking enforcement",
+			"authors": "N. Orkun Baycika, Thomas C. Sharkey, Chase E. Rainwater",
+			"date": "1 April 2019",
+			"abstract": "We study a resource allocation problem in which law enforcement aims to balance intelligence and interdiction decisions to fight against illegal city-level drug trafficking. We propose a Markov Decision Process framework, apply a column generation technique, and develop a heuristic to solve this problem. Our approaches provide insights into how law enforcement should prioritize its actions when there are multiple criminals of different types known to them. We prove that when only one action can be implemented, law enforcement will take action (either target or arrest) on the highest known criminal type to them. Our results demonstrate that: (i) it may be valuable to diversify the action taken on the same criminal type when more than one action can be implemented; (ii) the marginal improvement in terms of the value of the criminals interdicted per unit time by increasing available resources decreases as resource level increases; and (iii) there are losses that arise from not holistically planning the actions of all available resources across distinct operations against drug trafficking networks.",
+			"keywords": [
+				"markov decision process",
+				"interdiction operations",
+				"illegal drug supply chains",
+				"column generation"
+			],
+			"infoLink": "https://www.sciencedirect.com/science/article/pii/S0038012117302422",
+			"downloadLink": "https://sci-hub.tw/10.1016/j.seps.2019.03.006"
+		}
+	]
+}

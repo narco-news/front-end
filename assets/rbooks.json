@@ -1,0 +1,104 @@
+{
+	"books": [
+		{
+			"id": "1",
+			"title": "The Rise of the Narcostate",
+			"publisher": "Xlibris US",
+			"imageUrl": "/images/books/rise-of-narco-state.jpg",
+			"imageAlt": "Rise of Narco State book cover",
+			"datePublished": "August 30, 2018",
+			"authors": "John P. Sullivan, Robert J. Bunker",
+			"desc": "This book is our sixth Small Wars Journal--El Centro anthology, covering writings published between 2016 and 2017. The theme of this anthology pertains to the rise of the narcostate (mafia states) as a result of the collusion between criminal organizations and political elites--essentially authoritarian regime members, corrupted plutocrats, and other powerful societal elements. The cover image of the mass demonstration concerning the disappearance of the forty-three Ayotzinapa Teachers' College students held at Mexico City's Zócalo Plaza in November 2014 provides an archetype of this anthology's theme. This anthology includes the following special essays--Preface: 'New Wars' and State Transformation by Robert Muggah, Igarapé Institute; Foreword: Crime and State-Making by Vanda Felbab-Brown, The Brookings Institution; Postscript: Crime, Drugs, Terror, and Money: Time for Hybrids by Alain Bauer, CNAM Paris; and Afterword: The Rise of the Oligarchs by Col. Robert Killebrew, US Army (Ret.). Dave Dilegge (SWJ, Editor-in-Chief)"
+		},
+		{
+			"id": "2",
+			"title": "Narco Submarines: Covert Shoes Recognition Guide to Drug-Subs",
+			"publisher": "Independently published",
+			"imageUrl": "/images/books/narco-submarine.png",
+			"imageAlt": "Narco submarines book cover",
+			"datePublished": "March 26, 2020",
+			"authors": "H I Sutton",
+			"desc": "Narco Submarines is the go-to guide to the low-profile vessels used to smuggle narcotics in Latin America and across the Atlantic. These vessels are one of the least understood corners of modern international crime. This book is the first to cover the topic in detail. Based on research of over 180 reported incidents, this book presents a practical quick reference recognition aid. It includes a detailed taxonomy, type overviews, cutaway drawings, recognition images, photos and profiles. Narco Submarines is an essential guide for law enforcement, Navy, analysts and those interested in this true crime."
+		},
+		{
+			"id": "3",
+			"title": "Homicidal Ecologies: Illicit Economies and Complicit States in Latin America",
+			"publisher": "Cambridge University Press",
+			"imageUrl": "/images/books/homicidal-ecologies.jpg",
+			"imageAlt": "Homicidal Ecologies book cover",
+			"datePublished": "December 5, 2018",
+			"authors": "Deborah J. Yashar",
+			"desc": "Why has violence spiked in Latin America's contemporary democracies? What explains its temporal and spatial variation? Analyzing the region's uneven homicide levels, this book maps out a theoretical agenda focusing on three intersecting factors: the changing geography of transnational illicit political economies; the varied capacity and complicity of state institutions tasked with providing law and order; and organizational competition to control illicit territorial enclaves. These three factors inform the emergence of 'homicidal ecologies' (subnational regions most susceptible to violence) in Latin America. After focusing on the contemporary causes of homicidal violence, the book analyzes the comparative historical origins of weak and complicit public security forces and the rare moments in which successful institutional reform takes place. Regional trends in Latin America are evaluated, followed by original case studies of Central America, which claims among the highest homicide rates in the world."
+		},
+		{
+			"id": "4",
+			"title": "The Politics of Drug Violence: Criminals, Cops and Politicians in Colombia and Mexico",
+			"publisher": "Oxford University Press",
+			"imageUrl": "/images/books/politics-of-drug-violence.jpg",
+			"imageAlt": "Politics of Drug Violence book cover",
+			"datePublished": "January 12, 2018",
+			"authors": "Angelica Duran-Martinez",
+			"desc": "Over the last few decades, drug trafficking organizations in Latin America became infamous for their shocking public crimes, from narcoterrorist assaults on the Colombian political system in the 1980s to the more recent wave of beheadings in Mexico. However, while these highly visible forms of public violence dominate headlines, they are neither the most common form of drug violence nor simply the result of brutality. Rather, they stem from structural conditions that vary from country to country and from era to era. In The Politics of Drug Violence, Angelica Duran-Martinez shows how variation in drug violence results from the complex relationship between state power and criminal competition. Drawing on remarkably extensive fieldwork, this book compares five cities that have been home to major trafficking organizations for the past four decades: Cali and Medellín in Colombia, and Ciudad Juárez, Culiacán, and Tijuana in Mexico. She shows that violence escalates when trafficking organizations compete and the state security apparatus is fragmented. However, when the criminal market is monopolized and the state security apparatus cohesive, violence tends to be more hidden and less frequent. The size of drug profits does not determine violence levels, and neither does the degree of state weakness. Rather, the forms and scale of violent crime derive primarily from the interplay between marketplace competition and state cohesiveness. An unprecedentedly rich empirical account of one of the worst problems of our era, the book will reshape our understanding of the forces driving organized criminal violence in Latin America and elsewhere"
+		},
+		{
+			"id": "5",
+			"title": "Drug Trafficking, Organized Crime, and Violence in the Americas Today",
+			"publisher": "Cambridge University Press",
+			"imageUrl": "/images/books/drug-trafficking-organized-crime.jpg",
+			"imageAlt": "Drug Trafficking, Organized Crime, and Violence in the Americas Today book cover",
+			"datePublished": "July 25, 2017",
+			"authors": "Bruce M Bagley",
+			"desc": "This volume argues that the war on drugs has been ineffective at best and, at worst, has been highly detrimental to many countries. Leading experts in the fields of public health, political science, and national security analyze how U.S. policies have affected the internal dynamics of Mexico, Colombia, Bolivia, Peru, Brazil, Argentina, Central America, and the Caribbean islands. Together, they present a comprehensive overview of the major trends in drug trafficking and organized crime in the early twenty-first century. In addition, the editors and contributors identify emerging issues and propose several policy options to address them. This accessible and expansive volume provides a framework for understanding the limits and liabilities in the U.S.-championed war on drugs throughout the Americas."
+		},
+		{
+			"id": "6",
+			"title": "Making Peace in Drug Wars: Crackdowns and Cartels in Latin America",
+			"publisher": "Cambridge University Press",
+			"imageUrl": "/images/books/crackdowns.jpg",
+			"imageAlt": "Making Peace in Drug Wars: Crackdowns and Cartels in Latin America book cover",
+			"datePublished": "December 7, 2017",
+			"authors": "Benjamin Lessing",
+			"desc": "Over the past thirty years, a new form of conflict has ravaged Latin America's largest countries, with well-armed drug cartels fighting not only one another but the state itself. In Colombia, Mexico, and Brazil, leaders cracked down on cartels in hopes of restoring the rule of law and the state's monopoly on force. Instead, cartels fought back - with bullets and bribes - driving spirals of violence and corruption that make mockeries of leaders' state-building aims. Fortunately, some policy reforms quickly curtailed cartel-state conflict, but they proved tragically difficult to sustain. Why do cartels fight states, if not to topple or secede from them? Why do some state crackdowns trigger and exacerbate cartel-state conflict, while others curb it? This study argues that brute-force repression generates incentives for cartels to fight back, while policies that condition repression on cartel violence can effectively deter cartel-state conflict. The politics of drug war, however, make conditional policies all too fragile."
+		},
+		{
+			"id": "7",
+			"title": "Illegal Drugs, Drug Trafficking and Violence in Latin America",
+			"publisher": "Springer",
+			"imageUrl": "/images/books/illegal-drugs-springer.jpg",
+			"imageAlt": "Illegal Drugs, Drug Trafficking and Violence in Latin America",
+			"datePublished": "March 3, 2018",
+			"authors": "Marcelo Bergman",
+			"desc": "This book describes the main patterns and trends of drug trafficking in Latin America and analyzes its political, economic and social effects on several countries over the last twenty years. Its aim is to provide readers an introductory yet elaborate text on the illegal drug problem in the region. It first seeks to define and measure the problem, and then discusses some of the implications that the growth of production, trafficking, and consumption of illegal drugs had in the economies, in the social fabrics, and in the domestic and international policies of Latin American countries. This book analyzes the illegal drugs problem from a Latin American perspective. Although there is a large literature and research on drug use and trade in the USA, Canada, Europe and the Far East, little is understood on the impact of narcotics in countries that have supplied a large share of the drugs used worldwide. This work explores how routes into Europe and the USA are developed, why the so-called drug cartels exist in the region, what level of profits illegal drugs generate, how such gains are distributed among producers, traffickers, and dealers and how much they make, why violence spread in certain places but not in others, and which alternative policies were taken to address the growing challenges posed by illegal drugs. With a strong empirical foundation based on the best available data, Illegal Drugs, Drug Trafficking and Violence in Latin America explains how rackets in the region built highly profitable enterprises transshipping and smuggling drugs northbound and why the large circulation of drugs also produced the emergence of vibrant domestic markets, which doubled the number of drug users in the region the last 10 years. It presents the best available information for 18 countries, and the final two chapters analyze in depth two rather different case studies: Mexico and Argentina."
+		},
+		{
+			"id": "8",
+			"title": "The Chinese Heroin Trade: Cross-Border Drug Trafficking in Southeast Asia and Beyond",
+			"publisher": "New York University Press",
+			"imageUrl": "/images/books/chinese-heroin-trade.jpg",
+			"imageAlt": "The Chinese Heroin Trade: Cross-Border Drug Trafficking in Southeast Asia and Beyond book cover",
+			"datePublished": "May 22, 2015",
+			"authors": "Ko-lin Chin, Sheldon X. Zhang",
+			"desc": "In a country long associated with the trade in opiates, the Chinese government has for decades applied extreme measures to curtail the spread of illicit drugs, only to find that the problem has worsened. Burma is blamed as the major producer of illicit drugs and conduit for the entry of drugs into China. Which organizations are behind the heroin trade? What problems and prospects of drug control in the so-called “Golden Triangle” drug-trafficking region are faced by Chinese and Southeast Asian authorities? In The Chinese Heroin Trade, noted criminologists Ko-Lin Chin and Sheldon Zhangexamine the social organization of the trafficking of heroin from the Golden Triangle to China and the wholesale and retail distribution of the drug in China. Based on face-to-face interviews with hundreds of incarcerated drug traffickers, street-level drug dealers, users, and authorities, paired with extensive fieldwork in the border areas of Burma and China and several major urban centers in China and Southeast Asia, this volume reveals how the drug trade has evolved in the Golden Triangle since the late 1980s. Chin and Zhang also explore the marked characteristics of heroin traffickers; the relationship between drug use and sales in China; and how China compares to other international drug markets. The Chinese Heroin Trade is a fascinating, nuanced account of the world of high-risk drug trafficking in a tightly-controlled society."
+		},
+		{
+			"id": "9",
+			"title": "Transnational Drug Trafficking Across the Vietnam-Laos Border",
+			"publisher": "Palgrave Macmillan",
+			"imageUrl": "/images/books/drug-trafficking-vietnam.jpg",
+			"imageAlt": "Transnational Drug Trafficking Across the Vietnam-Laos Border book cover",
+			"datePublished": "May 7, 2019",
+			"authors": " Hai Thanh Luong",
+			"desc": "This book presents the first detailed inquiry into the nature of cross-border drug trafficking between Laos People’s Democratic Republic and Vietnam using an exploratory approach, which draws upon qualitative and quantitative methods. It draws from case studies, interviews and survey data from criminal investigation police and drug-related crimes officers (CIPDRC) from six border provinces which are directly and indirectly involved in investigating these cases. The findings indicate that drug markets in Vietnam are not controlled by monopolistic, hierarchical organizations or ‘cartels’ but small structures, based on family ties and fellow-countrymen relations, which are are fluid and loosely organized. They are very adaptable and sophisticated with diverse modus operandi and multiple divisions of labour which present particular challenges to law enforcement agencies. "
+		},
+		{
+			"id": "10",
+			"title": "Mexico's Drug War and Criminal Networks: The Dark Side of Social Media",
+			"publisher": "Routledge",
+			"imageUrl": "/images/books/social-media.jpg",
+			"imageAlt": "Mexico's Drug War and Criminal Networks: The Dark Side of Social Media book cover",
+			"datePublished": "March 31, 2020",
+			"authors": "Nilda M. Garcia",
+			"desc": "Mexico's Drug War and Criminal Networks examines the effects of technology on three criminal organizations: the Sinaloa cartel, the Zetas, and the Caballeros Templarios. Using social network analysis, and analyzing the use of web platforms Facebook, Twitter, and YouTube, Nilda M. Garcia provides fresh insights on the organizational network, the central nodes, and the channels through which information flows in these three criminal organizations. In doing so, she demonstrates that some drug cartels in Mexico have adopted the usage of social media into their strategies, often pursuing different tactics in the search for new ways to dominate. She finds that the strategic adaptation of social media platforms has different effects on criminal organization’s survivability. When used effectively, coupled with the adoption of decentralized structures, these platforms do increase a criminal organization’s survival capacity. Nonetheless, if used haphazardly, it can have the opposite effect. Drawing on the fields of criminology, social network analysis, international relations, and organizational theory and featuring a wealth of information about the drug cartels themselves, Mexico's Drug War and Criminal Networks will be a great source for all those interested in the presence, behavior, purposes, and strategies of drug cartels in their forays into social media platforms in Mexico and beyond."
+		}
+	]
+}

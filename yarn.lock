@@ -10968,6 +10968,13 @@ vue-eslint-parser@^7.0.0:
     esquery "^1.0.1"
     lodash "^4.17.15"
 
+vue-faq-accordion@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/vue-faq-accordion/-/vue-faq-accordion-1.6.1.tgz#c3c7642c323d621d9bac98b4ad88cd9ccbc1bb78"
+  integrity sha512-1pwN3gMnN1WwQXL37jax2jajcLqDRJfWJew1kTOJQJq1Q+V8EHG7Hc7MFDuWAIJR1YwlUKyupxk+euV82EQKGg==
+  dependencies:
+    vue2-transitions "^0.3.0"
+
 vue-fixed-header@^3.2.14:
   version "3.2.14"
   resolved "https://registry.yarnpkg.com/vue-fixed-header/-/vue-fixed-header-3.2.14.tgz#e26ddf747aed431b3ccc54a1f401fce296900375"
