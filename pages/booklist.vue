@@ -37,7 +37,44 @@ export default {
 	},
 	data() {
 		return {
-			bookList: myBookList.books
+			bookList: myBookList.books,
+			title: 'Book list'
+		};
+	},
+	head() {
+		return {
+			title: this.title,
+			meta: [
+				{
+					'twitter:card': {
+						content:
+							"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported in these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities."
+					},
+					'twitter:site': {
+						content: ''
+					},
+					'twitter:creator': {
+						content: ''
+					},
+					'og:url': {
+						content: 'https://narco.news/booklist'
+					},
+					'og:title': {
+						content: 'Book list'
+					},
+					'og:image': {
+						content: 'https://narco.news/images/meta/bw-nn-logo.png'
+					},
+					'og:description': {
+						content:
+							"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported by these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities."
+					},
+					hid:
+						"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported in these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities.",
+					content:
+						"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported in these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities."
+				}
+			]
 		};
 	}
 };
