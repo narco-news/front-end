@@ -88,17 +88,18 @@
 												viewBox="0 0 24 24"
 											>
 												<path
+													fill="#ff5e70"
 													d="M 6 1 L 6 3 L 5 3 C 3.9 3 3 3.9 3 5 L 3 19 C 3 20.1 3.9 21 5 21 L 19 21 C 20.1 21 21 20.1 21 19 L 21 5 C 21 3.9 20.1 3 19 3 L 18 3 L 18 1 L 16 1 L 16 3 L 8 3 L 8 1 L 6 1 z M 5 5 L 19 5 L 19 7 L 5 7 L 5 5 z M 5 9 L 19 9 L 19 19 L 5 19 L 5 9 z M 12.75 10 L 9 11.455078 L 9 13.068359 L 11 12.365234 L 11 18 L 13 18 L 13 10 L 12.75 10 z"
 												/>
 											</svg>
 										</div>
 										<div class="post-meta-date-info">
-											<span class="published_at">{{
+											<span style="color: #ff5e70;" class="published_at">{{
 												post.published_at | dayjs
 											}}</span
 											><span
 												v-if="post.updated_at !== post.published_at"
-												class="updated_at"
+												class="updated_at text-gray-500"
 												>- updated
 												<span>{{ post.updated_at | dayjs }}</span></span
 											>
@@ -108,10 +109,13 @@
 								<li>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 										<path
+											fill="#3a656a"
 											d="M 12 2 C 6.4889971 2 2 6.4889971 2 12 C 2 17.511003 6.4889971 22 12 22 C 17.511003 22 22 17.511003 22 12 C 22 6.4889971 17.511003 2 12 2 z M 12 4 C 16.430123 4 20 7.5698774 20 12 C 20 16.430123 16.430123 20 12 20 C 7.5698774 20 4 16.430123 4 12 C 4 7.5698774 7.5698774 4 12 4 z M 11 6 L 11 12.414062 L 15.292969 16.707031 L 16.707031 15.292969 L 13 11.585938 L 13 6 L 11 6 z"
 										/>
 									</svg>
-									<span><reading-time :content="post.html" /></span>
+									<span
+										><reading-time :content="post.html" style="color: #3a656a;"
+									/></span>
 								</li>
 							</ul>
 							<dropdown>
