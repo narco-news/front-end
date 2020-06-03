@@ -1,9 +1,13 @@
 <template>
 	<div>
 		<article v-for="post in posts" :key="post.id" class="post">
-			<div v-if="post.feature_image" class="post-image">
+			<div v-if="post.feature_image" class="flex justify-center">
 				<nuxt-link :to="{path: '/' + post.slug}">
-					<img :src="post.feature_image" :alt="post.title" />
+					<img
+						class="m-4 w-auto h-48 lg:h-auto"
+						:src="post.feature_image"
+						:alt="post.title"
+					/>
 				</nuxt-link>
 			</div>
 			<div class="row">
@@ -261,3 +265,10 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss">
+.post-image img {
+	max-width: 75% !important;
+	height: auto !important;
+}
+</style>

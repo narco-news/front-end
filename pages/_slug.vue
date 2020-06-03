@@ -14,8 +14,12 @@
 				</h1>
 				<article class="single-post">
 					<scroll-progress-bar />
-					<div v-if="post.feature_image" class="post-image">
-						<img :src="post.feature_image" :alt="post.title" />
+					<div v-if="post.feature_image" class="flex justify-center">
+						<img
+							:src="post.feature_image"
+							:alt="post.title"
+							class="m-4 w-auto h-48 lg:h-64"
+						/>
 					</div>
 					<div class="row">
 						<div class="md-11 lg-10 mx-auto">
