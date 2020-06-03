@@ -25,7 +25,7 @@
 			>
 				<div style="color: #3a656a; font-weight: 500;" class="px-4 my-4">
 					<p class="text-2xl">
-						Hello!<span class="text-gray-400">¡Hola!</span>
+						Hello! <span class="text-gray-400">¡Hola!</span>
 					</p>
 					<p class="text-xl">
 						Why are we here?

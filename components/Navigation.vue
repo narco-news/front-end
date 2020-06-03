@@ -94,7 +94,7 @@ export default {
 					{
 						type: 'button',
 						text: 'The Wire',
-						path: './thewire',
+						path: './wire',
 						class: 'hello'
 					}
 				]
