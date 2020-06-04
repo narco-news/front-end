@@ -4,7 +4,7 @@
 			<div v-if="post.feature_image" class="flex justify-center">
 				<nuxt-link :to="{path: '/' + post.slug}">
 					<img
-						class="m-4 w-auto h-48 lg:h-auto"
+						class="mb-4 w-auto h-48 lg:h-auto"
 						:src="post.feature_image"
 						:alt="post.title"
 					/>

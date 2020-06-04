@@ -6,6 +6,11 @@
 	.post-image {
 		margin-bottom: 2rem;
 
+		img {
+			display: flex;
+			align-content: center;
+		}
+
 		// img {
 		//     width: 100%;
 		//     height: auto;
