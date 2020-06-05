@@ -16,6 +16,13 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
+						<span class="text-xs font-bold">05.06.2020</span>
+						<p class="text-xs">
+							Happy June! Things are starting to feel more lively around here.
+							Check out the wire! I'd say we're about 45% open at the moment.
+						</p>
+					</li>
+					<li>
 						<span class="text-xs font-bold">28.05.2020</span>
 						<p class="text-xs">
 							Added books and academia pages. Academia page still needs work but
