@@ -115,9 +115,9 @@
 					</div>
 				</div>
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
-					<div class="grid-cols-1 md:col-span-2">
+					<!-- <div class="grid-cols-1 md:col-span-2">
 						<HomeWire />
-					</div>
+					</div> -->
 					<div class="grid-cols-1 md:col-span-1">
 						<div>
 							<div class="my-2">
@@ -136,7 +136,7 @@ import Popup from '~/components/Popup.vue';
 import FYNine from '~/components/FYNine.vue';
 import Landing from '~/components/Landing.vue';
 import Information from '~/components/Information.vue';
-import HomeWire from '~/components/HomeWire.vue';
+// import HomeWire from '~/components/HomeWire.vue';
 import Marquee from '~/components/Marquee.vue';
 import Cats from '~/components/Cats.vue';
 
@@ -147,7 +147,7 @@ export default {
 		FYNine,
 		Landing,
 		Information,
-		HomeWire,
+		// HomeWire,
 		Marquee,
 		Cats
 	}

@@ -1,6 +1,6 @@
 <template>
 	<fixed-header>
-		<div id="header" class="navbar z-20">
+		<div id="header" class="navbar z-20 sticky top-0">
 			<div class="grid grid-cols-3 md:grid-cols-4 gap-4 my-1">
 				<div class="text-sm">
 					<select

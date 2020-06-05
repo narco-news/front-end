@@ -2,6 +2,7 @@
 	<div style="background-color: #1b2431;" class="pt-3">
 		<div class="h-full mb-2 mx-2 px-2">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
+				<!-- MAILING LIST LINKS -->
 				<div class="sm:inline sm:grid-cols-1">
 					<span class="text-md w-full">
 						mailing list
@@ -56,15 +57,46 @@
 						</div>
 					</form>
 				</div>
+				<!-- WIRE LINKS -->
 				<div class="grid-cols-1 pl-4 lg:pl-12">
 					<div>
 						<span class="text-md w-full">
 							wire
 						</span>
 						<div class="flex flex-auto flex-wrap text-xs ml-4">
-							<a class="p-1" href="#">Press Aggregate</a>
-							<a class="p-1" href="#">Drug Trafficking</a>
-							<a class="p-1" href="#">Mexican DTOs</a>
+							<n-link class="p-1" to="/tag/mexican-dto">Mexican DTOs</n-link>
+							<n-link class="p-1" to="/tag/central-america"
+								>Central America</n-link
+							>
+							<n-link class="p-1" to="/tag/south-america">South America</n-link>
+							<n-link class="p-1" to="/tag/southeast-asia"
+								>Southeast Asia</n-link
+							>
+							<n-link class="p-1" to="/tag/central-asia">Central Asia</n-link>
+							<n-link class="p-1" to="/tag/middle-east">Middle East</n-link>
+							<n-link class="p-1" to="/tag/uk-scene">UK Scene</n-link>
+							<n-link class="p-1" to="/tag/europe">Europe</n-link>
+							<n-link class="p-1" to="/tag/femme-fatale">Femme Fatale</n-link>
+							<n-link class="p-1" to="/tag/film-and-television"
+								>Film and Television</n-link
+							>
+							<n-link class="p-1" to="/tag/opinion">Opinion</n-link>
+							<n-link class="p-1" to="/tag/development">Development</n-link>
+							<n-link class="p-1" to="/tag/announcement">Announcements</n-link>
+
+							<!-- <a class="p-1" href="#">Mexican DTOs</a>
+							<a class="p-1" href="#">Central America</a>
+							<a class="p-1" href="#">South America</a>
+							<a class="p-1" href="#">Southeast Asia</a>
+							<a class="p-1" href="#">Central Asia</a>
+							<a class="p-1" href="#">Middle East</a>
+							<a class="p-1" href="#">UK Scene</a>
+							<a class="p-1" href="#">Europe</a>
+							<a class="p-1" href="#">Femme Fatale</a>
+							<a class="p-1" href="#">Film and Television</a>
+							<a class="p-1" href="#">Opinion</a>
+							<a class="p-1" href="#">Development</a>
+							<a class="p-1" href="#">Announcements</a> -->
 						</div>
 					</div>
 				</div>

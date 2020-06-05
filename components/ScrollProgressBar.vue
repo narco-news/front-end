@@ -50,7 +50,7 @@ export default {
 	left: 0;
 	width: 100%;
 	background-color: transparent;
-	z-index: 10;
+	z-index: 50;
 
 	.percent {
 		height: 0.5rem;
