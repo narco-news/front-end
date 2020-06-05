@@ -19,7 +19,7 @@
 						<span class="text-xs font-bold">05.06.2020</span>
 						<p class="text-xs">
 							Happy June! Things are starting to feel more lively around here.
-							Check out the wire! I'd say we're about 45% open at the moment.
+							Check out the wire! Still lots to do though.
 						</p>
 					</li>
 					<li>
