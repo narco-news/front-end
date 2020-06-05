@@ -1,9 +1,9 @@
 <template>
-	<div class="grid grid-cols-1 m-2 gap-2">
-		<div class="col-span-1">
+	<div class="flex flex-col items-center mt-10">
+		<div class="mx-4">
 			<WebsiteUpdates />
 		</div>
-		<div class="col-span-1">
+		<div class="mx-4">
 			<EssResources />
 		</div>
 	</div>
