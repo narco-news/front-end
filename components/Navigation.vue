@@ -10,7 +10,7 @@ export default {
 				elementId: 'main-navbar',
 				isUsingVueRouter: true,
 				mobileBreakpoint: 992,
-				brandImagePath: './',
+				brandImagePath: '/',
 				brandImage: require('~/assets/images/bw-nn-logo.png'),
 				brandImageAltText: 'brand-image',
 				collapseButtonImageOpen: require('~/assets/images/collapse-menu-dark.png'),
@@ -35,21 +35,21 @@ export default {
 							{
 								type: 'link',
 								text: 'Tamaulipas, México',
-								path: './tamap',
+								path: '/tamap',
 								iconLeft:
 									'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'
 							},
 							{
 								type: 'link',
 								text: 'Michoacán, México',
-								path: './michmap',
+								path: '/michmap',
 								iconLeft:
 									'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'
 							},
 							{
 								type: 'link',
 								text: 'Guanajuato, México',
-								path: './guanajuato-map',
+								path: '/guanajuato-map',
 								iconLeft:
 									'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'
 							}
@@ -65,7 +65,7 @@ export default {
 								type: 'link',
 								text: 'Book List',
 								subText: 'Easy reading on-topic books that are worth your time',
-								path: './booklist',
+								path: '/booklist',
 								iconLeft:
 									'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#0D0D0D" d="M21.17,2.06A13.1,13.1,0,0,0,19,1.87a12.94,12.94,0,0,0-7,2.05,12.94,12.94,0,0,0-7-2,13.1,13.1,0,0,0-2.17.19,1,1,0,0,0-.83,1v12a1,1,0,0,0,1.17,1,10.9,10.9,0,0,1,8.25,1.91l.12.07.11,0a.91.91,0,0,0,.7,0l.11,0,.12-.07A10.9,10.9,0,0,1,20.83,16a1,1,0,0,0,1.17-1v-12A1,1,0,0,0,21.17,2.06ZM11,15.35a12.87,12.87,0,0,0-6-1.48c-.33,0-.66,0-1,0v-10a8.69,8.69,0,0,1,1,0,10.86,10.86,0,0,1,6,1.8Zm9-1.44c-.34,0-.67,0-1,0a12.87,12.87,0,0,0-6,1.48V5.67a10.86,10.86,0,0,1,6-1.8,8.69,8.69,0,0,1,1,0Zm1.17,4.15A13.1,13.1,0,0,0,19,17.87a12.94,12.94,0,0,0-7,2.05,12.94,12.94,0,0,0-7-2.05,13.1,13.1,0,0,0-2.17.19A1,1,0,0,0,2,19.21,1,1,0,0,0,3.17,20a10.9,10.9,0,0,1,8.25,1.91,1,1,0,0,0,1.16,0A10.9,10.9,0,0,1,20.83,20,1,1,0,0,0,22,19.21,1,1,0,0,0,21.17,18.06Z"/></svg>'
 							},
@@ -74,7 +74,7 @@ export default {
 								text: 'Academia',
 								subText:
 									'Collection of papers, journals and other texts originating from the academic world',
-								path: './academia',
+								path: '/academia',
 								iconLeft:
 									'<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="20" height="20" viewBox="0 0 24 24"><path fill="#0D0D0D" d="M18.93,11.67a.42.42,0,0,0,0-.1A7.4,7.4,0,0,0,15,7.62V4h1a1,1,0,0,0,0-2H8A1,1,0,0,0,8,4H9V7.62a7.4,7.4,0,0,0-3.89,4,.42.42,0,0,0,0,.1,7.5,7.5,0,1,0,13.86,0ZM10.31,9.26A1,1,0,0,0,11,8.31V4h2V8.31a1,1,0,0,0,.69.95A5.43,5.43,0,0,1,16.23,11H7.77A5.43,5.43,0,0,1,10.31,9.26ZM12,20a5.51,5.51,0,0,1-5.5-5.5A5.34,5.34,0,0,1,6.72,13H17.28a5.34,5.34,0,0,1,.22,1.5A5.51,5.51,0,0,1,12,20Zm2-4a1,1,0,1,0,1,1A1,1,0,0,0,14,16Zm-4-1a1,1,0,1,0,1,1A1,1,0,0,0,10,15Z"/></svg>'
 							}
@@ -95,13 +95,13 @@ export default {
 					{
 						type: 'link',
 						text: 'ABOUT',
-						path: './about',
+						path: '/about',
 						class: 'small-text'
 					},
 					{
 						type: 'button',
 						text: 'The Wire',
-						path: './wire',
+						path: '/wire',
 						class: 'hello'
 					}
 				]
