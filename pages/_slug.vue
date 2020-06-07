@@ -5,22 +5,69 @@
 				<h1
 					style="
 						color: #ff5e70;
-						font-family: 'Montserrat', sans-serif;
-						font-weight: 800;
+						font-family: 'Lato', sans-serif;
+						font-weight: 700;
 					"
 					class="post-title text-4xl"
 				>
 					{{ post.title }}
 				</h1>
+				<!-- AUTHORS -->
+				<div class="m-2 text-lg">
+					<div class="post-meta-date flex flex-auto">
+						<div class="post-meta-date-icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								height="30"
+								weight="30"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="#666"
+									d="M 6 1 L 6 3 L 5 3 C 3.9 3 3 3.9 3 5 L 3 19 C 3 20.1 3.9 21 5 21 L 19 21 C 20.1 21 21 20.1 21 19 L 21 5 C 21 3.9 20.1 3 19 3 L 18 3 L 18 1 L 16 1 L 16 3 L 8 3 L 8 1 L 6 1 z M 5 5 L 19 5 L 19 7 L 5 7 L 5 5 z M 5 9 L 19 9 L 19 19 L 5 19 L 5 9 z M 12.75 10 L 9 11.455078 L 9 13.068359 L 11 12.365234 L 11 18 L 13 18 L 13 10 L 12.75 10 z"
+								/>
+							</svg>
+						</div>
+						<div
+							style="font-family: 'Lato', sans-serif; font-weight: 400;"
+							class="post-meta-date-info mx-2"
+						>
+							<span style="color: #666;" class="published_at">{{
+								post.published_at | dayjs
+							}}</span
+							><span
+								v-if="post.updated_at !== post.published_at"
+								class="updated_at text-gray-500"
+							>
+								- updated <span>{{ post.updated_at | dayjs }}</span></span
+							>
+						</div>
+					</div>
+				</div>
+				<div class="mx-auto">
+					<div class="flex flex-auto">
+						<div class="p-2 m-2 italic">
+							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
+							<p v-else-if="post.excerpt && !post.custom_excerpt">
+								{{ post.excerpt }}
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--  -->
 				<article class="single-post">
 					<scroll-progress-bar />
-					<div v-if="post.feature_image" class="flex justify-center">
+					<div v-if="post.feature_image" class="post-image">
 						<img
 							:src="post.feature_image"
 							:alt="post.title"
-							class="m-4 w-auto h-48 lg:h-64"
+							class="mx-auto shadow-lg"
 						/>
 					</div>
+					<!--  -->
+					<hr style="border-width: 2px;" class="mb-4" />
+					<!--  -->
+
 					<div class="row">
 						<div class="md-11 lg-10 mx-auto">
 							<div
@@ -34,7 +81,7 @@
 												:to="{path: '/tag/' + tag.slug}"
 												class="button tag-button"
 												:title="tag.name"
-												>{{ tag.name }}</nuxt-link
+												>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 											>
 										</li>
 									</ul>
@@ -176,7 +223,11 @@
 									</dropdown>
 								</div>
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-wrap" v-html="post.html" />
+								<div
+									style="font-family: 'Crimson Text', serif; font-weight: 400;"
+									class="post-wrap mx-2 md:mx-3 text-lg"
+									v-html="post.html"
+								/>
 							</div>
 						</div>
 					</div>

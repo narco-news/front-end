@@ -1,13 +1,9 @@
 <template>
 	<div>
 		<article v-for="post in posts" :key="post.id" class="post">
-			<div v-if="post.feature_image" class="flex justify-center">
+			<div v-if="post.feature_image" class="post-image">
 				<nuxt-link :to="{path: '/' + post.slug}">
-					<img
-						class="mb-4 w-auto h-48 lg:h-auto"
-						:src="post.feature_image"
-						:alt="post.title"
-					/>
+					<img class="mx-auto" :src="post.feature_image" :alt="post.title" />
 				</nuxt-link>
 			</div>
 			<div class="row">

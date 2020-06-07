@@ -1,20 +1,14 @@
 // Single posts
 .single-post {
+	a {
+		color: #3e82fc;
+		text-decoration: underline;
+	}
 	margin: 0 0 1rem;
 	font-family: $font-family-post;
 
 	.post-image {
-		margin-bottom: 2rem;
-
-		img {
-			display: flex;
-			align-content: center;
-		}
-
-		// img {
-		//     width: 100%;
-		//     height: auto;
-		// }
+		margin-bottom: 1rem;
 	}
 
 	.post-content {

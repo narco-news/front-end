@@ -1,5 +1,6 @@
 // Koenig styles - related to single posts only
 .single-post {
+	line-height: 1.8;
 	.kg-image {
 		max-width: 100%;
 		display: block;
@@ -18,7 +19,7 @@
 		}
 
 		.kg-image {
-			max-width: 90vw;
+			max-width: 85vw;
 		}
 	}
 
@@ -31,12 +32,12 @@
 		}
 
 		.kg-image {
-			max-width: 100vw;
+			max-width: 90vw;
 		}
 	}
 
 	figure {
-		display: flex;
+		display: block;
 		margin: 0.2rem 0 1rem;
 		padding: 0;
 		border: 0;
@@ -254,9 +255,22 @@
 	}
 
 	.kg-embed-card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		overflow: hidden;
+		position: relative;
 		width: 100%;
+
+		.kg-embed-card::after {
+			padding-top: 75%;
+			display: block;
+			content: '';
+		}
+
+		.kg-embed-card iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
 	}
 }
