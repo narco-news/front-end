@@ -83,7 +83,7 @@
 							<ul class="list meta">
 								<li
 									v-if="post.featured"
-									class="bg-gray-700 hover:bg-gray-600 p-3 rounded-md shadow-md animate__animated animate__zoomInUp"
+									class="bg-gray-500 hover:bg-gray-400 py-2 rounded-md shadow-md animate__animated animate__zoomInUp w-48 flex justify-center"
 								>
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 										<path
