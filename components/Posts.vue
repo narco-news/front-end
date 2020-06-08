@@ -135,7 +135,6 @@
 										post.title +
 										' written by ' +
 										post.primary_author.name +
-										' for narco.news' +
 										'&url=' +
 										blogUrl +
 										'/' +

@@ -97,7 +97,7 @@
 							<n-link class="p-1" to="/about">About</n-link>
 							<n-link class="p-1" to="/booklist">Booklist</n-link>
 							<n-link class="p-1" to="/academia">Academia</n-link>
-							<n-link class="p-1" to="/about">Newswire</n-link>
+							<n-link class="p-1" to="/wire">Newswire</n-link>
 							<a class="p-1" href="mailto:hello@narco.news">Contact Us</a>
 							<a class="p-1" href="https://github.com/narco-news/front-end"
 								>Github</a
