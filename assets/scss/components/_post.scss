@@ -102,13 +102,12 @@
 					height: auto;
 					border: 0;
 					border-radius: 50%;
-					filter: grayscale(100%);
-					transition: filter 0.2s ease;
 				}
 
 				@include hover-state {
 					img {
-						filter: grayscale(0%);
+						filter: grayscale(100%);
+						transition: filter 0.2s ease;
 					}
 				}
 			}
