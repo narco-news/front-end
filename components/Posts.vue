@@ -1,9 +1,13 @@
 <template>
 	<div>
 		<article v-for="post in posts" :key="post.id" class="post">
-			<div v-if="post.feature_image" class="post-image">
+			<div v-if="post.feature_image" class="">
 				<nuxt-link :to="{path: '/' + post.slug}">
-					<img class="mx-auto" :src="post.feature_image" :alt="post.title" />
+					<img
+						class="mx-auto object-cover h-64 w-full mb-4"
+						:src="post.feature_image"
+						:alt="post.title"
+					/>
 				</nuxt-link>
 			</div>
 			<div class="row">
@@ -23,11 +27,14 @@
 						</div>
 						<h1
 							v-if="post.title"
-							class="md:p-4 post-title hvr-forward animate__animated animate__fadeIn"
+							class="md:px-4 md:pt-1 post-title hvr-forward animate__animated animate__fadeIn"
 						>
-							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title">{{
-								post.title
-							}}</nuxt-link>
+							<nuxt-link
+								:to="{path: '/' + post.slug}"
+								:title="post.title"
+								style="color: #d3494e;"
+								>{{ post.title }}</nuxt-link
+							>
 						</h1>
 						<div class="post-author">
 							<div
@@ -120,7 +127,7 @@
 							</ul>
 						</div>
 						<!-- SHARE -->
-						<div class="flex justify-end mr-4">
+						<div class="flex justify-end">
 							<div class="hvr-pop mx-2">
 								<a
 									:href="

@@ -4,7 +4,7 @@
 			<div class="xs-12 lg-10 mx-auto">
 				<h1
 					style="
-						color: #ff5e70;
+						color: #d3494e;
 						font-family: 'Lato', sans-serif;
 						font-weight: 700;
 					"
@@ -74,7 +74,7 @@
 							}}</span>
 							<br /><span
 								v-if="post.updated_at !== post.published_at"
-								class="updated_at text-gray-500 italic text-xs md:text-sm"
+								class="updated_at text-gray-500 text-xs md:text-sm"
 							>
 								last edited <span>{{ post.updated_at | dayjs }}</span></span
 							>
@@ -103,7 +103,7 @@
 							<p
 								v-if="post.custom_excerpt"
 								style="background-color: #eef3ed; color: #3a656a;"
-								class="p-2"
+								class="p-4"
 							>
 								{{ post.custom_excerpt }}
 							</p>
@@ -120,14 +120,14 @@
 						<img
 							:src="post.feature_image"
 							:alt="post.title"
-							class="mx-auto object-cover h-48 w-full shadow-lg my-4"
+							class="mx-auto object-cover w-full lg:w-2/3 my-4"
 						/>
 					</div>
 					<div class="row">
 						<div class="mx-auto">
 							<div
 								style="font-family: 'Crimson Text', serif; font-weight: 400;"
-								class="antialiased post-content mx-2 md:mx-3 text-lg"
+								class="antialiased post-content mx-2 md:mx-4 text-lg md:text-2xl"
 							>
 								<!-- <h1 class="post-title">{{ post.title }}</h1> -->
 								<div v-if="!pageSettings.page === 'true'" class="post-author">

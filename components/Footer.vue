@@ -102,7 +102,7 @@
 							<a class="p-1" href="https://github.com/narco-news/front-end"
 								>Github</a
 							>
-							<a class="p-1" href="https://narco.news/rss">RSS</a>
+							<a class="p-1" href="https://publish.narco.news/rss">RSS</a>
 						</div>
 					</div>
 				</div>
