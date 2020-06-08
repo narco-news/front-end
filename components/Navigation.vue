@@ -100,9 +100,9 @@ export default {
 					},
 					{
 						type: 'button',
-						text: 'The Wire',
+						text: 'Newswire',
 						path: '/wire',
-						class: 'hello'
+						class: 'nav-button hvr-shutter-in-vertical'
 					}
 				]
 			}
@@ -121,43 +121,15 @@ export default {
 	font-family: 'Baloo Thambi 2', cursive !important;
 }
 
-.hello {
-	background-color: #dff1d5 !important;
-	border-radius: 15px !important;
-	z-index: 1;
-	position: relative;
-	font-size: 12px;
-	font-weight: 400;
-	font-family: 'Patua One', cursive;
-	color: #3b274b;
-	padding: 1em 1em;
-	outline: none;
-	border: none;
-	background-color: hsl(236, 32%, 26%);
+.nav-button {
+	font-weight: 700;
+	background-color: #017374 !important;
+	color: #444;
+	padding: 1rem;
+}
 
-	&::before {
-		content: '';
-		z-index: -1;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-color: white;
-		color: #dff1d5 !important;
-		transform-origin: center right;
-		transform: scaleX(0);
-		transition: transform 0.25s ease-in-out;
-		border-radius: 5px !important;
-	}
-	&:hover {
-		cursor: pointer;
-		color: #3b274b !important;
-	}
-	&:hover::before {
-		transform-origin: center left;
-		transform: scaleX(1);
-	}
+.vnb__menu-options__option__button {
+	border-radius: 0px;
 }
 
 .vnb__brand-image-wrapper__link__image {
@@ -165,7 +137,6 @@ export default {
 }
 
 .vnb-button {
-	border-radius: 5px !important;
 	margin-right: 20px !important;
 }
 

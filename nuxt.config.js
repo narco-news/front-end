@@ -91,6 +91,7 @@ export default async () => {
 			//
 			{src: '~/plugins/postcss.js'},
 			{src: '~/plugins/animate.js', ssr: false},
+			{src: '~/plugins/hover.js', ssr: false},
 			{src: '~/plugins/navbar.js', ssr: false},
 			{src: '~/plugins/timeline.js', ssr: false},
 			{src: '~/plugins/notifications.js', ssr: false},

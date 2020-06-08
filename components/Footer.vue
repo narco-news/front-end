@@ -1,11 +1,13 @@
 <template>
 	<div style="background-color: #1b2431;" class="pt-3">
-		<div class="h-full mb-2 mx-2 px-2">
+		<div
+			class="h-full mb-2 flex flex-auto justify-center content-center items-center p-2"
+		>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-white">
 				<!-- MAILING LIST LINKS -->
 				<div class="sm:inline sm:grid-cols-1">
-					<span class="text-md w-full">
-						mailing list
+					<span class="text-md w-full font-bold">
+						Email List
 					</span>
 					<form class="w-full max-w-sm px-2 pt-1 sm:pt-2">
 						<div class="md:flex md:items-center mb-6">
@@ -58,12 +60,12 @@
 					</form>
 				</div>
 				<!-- WIRE LINKS -->
-				<div class="grid-cols-1 pl-4 lg:pl-12">
+				<div class="grid-cols-1">
 					<div>
-						<span class="text-md w-full">
-							wire
+						<span class="text-md w-full font-bold">
+							Newswire
 						</span>
-						<div class="flex flex-auto flex-wrap text-xs ml-4">
+						<div class="grid grid-cols-2 lg:grid-cols-3 text-xs ml-4">
 							<n-link class="p-1" to="/tag/mexican-dto">Mexican DTOs</n-link>
 							<n-link class="p-1" to="/tag/central-america"
 								>Central America</n-link
@@ -83,43 +85,33 @@
 							<n-link class="p-1" to="/tag/opinion">Opinion</n-link>
 							<n-link class="p-1" to="/tag/development">Development</n-link>
 							<n-link class="p-1" to="/tag/announcement">Announcements</n-link>
-
-							<!-- <a class="p-1" href="#">Mexican DTOs</a>
-							<a class="p-1" href="#">Central America</a>
-							<a class="p-1" href="#">South America</a>
-							<a class="p-1" href="#">Southeast Asia</a>
-							<a class="p-1" href="#">Central Asia</a>
-							<a class="p-1" href="#">Middle East</a>
-							<a class="p-1" href="#">UK Scene</a>
-							<a class="p-1" href="#">Europe</a>
-							<a class="p-1" href="#">Femme Fatale</a>
-							<a class="p-1" href="#">Film and Television</a>
-							<a class="p-1" href="#">Opinion</a>
-							<a class="p-1" href="#">Development</a>
-							<a class="p-1" href="#">Announcements</a> -->
 						</div>
 					</div>
 				</div>
 				<div class="grid-cols-1">
 					<div>
-						<span class="text-md w-full">
-							narco news
+						<span class="text-md w-full font-bold">
+							narco.news
 						</span>
 						<div class="grid grid-cols-2 text-xs ml-4">
-							<a class="p-1" href="#">About</a>
-							<a class="p-1" href="#">Blog</a>
-							<a class="p-1" href="#">Contact Us</a>
-							<a class="p-1" href="#">Github</a>
-							<a class="p-1" href="#">RSS</a>
+							<n-link class="p-1" to="/about">About</n-link>
+							<n-link class="p-1" to="/booklist">Booklist</n-link>
+							<n-link class="p-1" to="/academia">Academia</n-link>
+							<n-link class="p-1" to="/about">Newswire</n-link>
+							<a class="p-1" href="mailto:hello@narco.news">Contact Us</a>
+							<a class="p-1" href="https://github.com/narco-news/front-end"
+								>Github</a
+							>
+							<a class="p-1" href="https://narco.news/rss">RSS</a>
 						</div>
 					</div>
 				</div>
 				<div class="grid-cols-1">
 					<div>
-						<span class="text-md w-full">
-							favorites
+						<span class="text-md w-full font-bold">
+							Favorites
 						</span>
-						<div class="flex flex-auto flex-wrap text-xs ml-4">
+						<div class="flex flex-auto md:flex-col flex-wrap text-xs ml-4">
 							<a
 								class="p-1"
 								target="_blank"

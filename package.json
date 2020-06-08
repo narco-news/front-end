@@ -28,6 +28,7 @@
 		"eslint-plugin-unicorn": "^19.0.1",
 		"flexgrid.io": "^3.0.4",
 		"highlight.js": "^9.18.1",
+		"hover.css": "^2.3.2",
 		"jshint": "^2.11.0",
 		"mapbox-gl": "^1.10.1",
 		"mapbox-gl-vue": "^2.0.4",

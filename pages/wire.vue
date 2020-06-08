@@ -1,5 +1,5 @@
 <template>
-	<div class="m-4 px-4 py-6 rounded shadow bg-white">
+	<div class="m-4 lg:mx-40 px-4 py-6 rounded shadow bg-white">
 		<posts :posts="postsIndex" :pagination="paginationIndex" />
 	</div>
 </template>
