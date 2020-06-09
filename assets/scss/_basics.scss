@@ -13,6 +13,10 @@ body {
 	color: $text-color;
 }
 
+hr {
+	margin: 2rem 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -33,7 +37,7 @@ a {
 }
 
 p {
-	margin: 0 0 1rem;
+	margin: 2rem 0 1rem;
 }
 
 .list {
@@ -120,20 +124,21 @@ p {
 
 blockquote {
 	position: relative;
-	margin: 2rem 0;
+	margin: 2rem 0 !important;
 	padding: 1.5rem 2rem 1.5rem 3rem;
-	background-color: lighten($gray, 10%);
+	background-color: rgb(238, 243, 237);
+	color: #3a656a;
 	border-left: 6px solid lighten($dark, 75%);
 	border-radius: $border-radius;
 	font-style: italic;
-	color: lighten($text-color, 15%);
+	border-left-color: #3a656a;
 
 	&::before {
 		position: absolute;
 		left: 10px;
 		top: 0px;
 		content: '\201C';
-		color: lighten($text-color, 15%);
+		color: #3a656a;
 		font-size: 3.25rem;
 	}
 
@@ -146,7 +151,7 @@ blockquote {
 		margin: 1rem 0 0;
 		font-style: normal;
 		font-weight: 600;
-		color: $text-color;
+		color: #3a656a;
 	}
 }
 

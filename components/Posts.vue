@@ -4,7 +4,7 @@
 			<div v-if="post.feature_image" class="">
 				<nuxt-link :to="{path: '/' + post.slug}">
 					<img
-						class="mx-auto object-cover h-64 w-full mb-4"
+						class="mx-auto object-cover h-64 w-full mb-4 shadow"
 						:src="post.feature_image"
 						:alt="post.title"
 					/>
@@ -13,16 +13,37 @@
 			<div class="row">
 				<div class="md-11 lg-10 mx-auto">
 					<div class="post-content">
+						<!-- FEATURED -->
+						<div
+							v-if="post.featured"
+							class="featured-badge rounded shadow-md animate__animated animate__tada w-40 flex justify-center my-4 py-2"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="20"
+								height="20"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill="#1494d8"
+									d="M16,2H8A3,3,0,0,0,5,5V21a1,1,0,0,0,.5.87,1,1,0,0,0,1,0L12,18.69l5.5,3.18A1,1,0,0,0,18,22a1,1,0,0,0,.5-.13A1,1,0,0,0,19,21V5A3,3,0,0,0,16,2Zm1,17.27-4.5-2.6a1,1,0,0,0-1,0L7,19.27V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z"
+								/>
+							</svg>
+							<span class="post-featured uppercase text-sm">
+								&nbsp; Featured</span
+							>
+						</div>
+						<!-- END -->
 						<div
 							v-if="post.tags.length > 0"
-							class="post-tags animate__animated animate__slideInDown"
+							class="post-tags animate__animated animate__flipInX my-3"
 						>
 							<ul class="list inline">
 								<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="button tag-button hvr-back-pulse"
+										class="button tag-button hvr-back-pulse shadow-md"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</li>
@@ -30,7 +51,7 @@
 						</div>
 						<h1
 							v-if="post.title"
-							class="md:px-4 md:pt-1 post-title hvr-forward animate__animated animate__fadeIn"
+							class="post-title hvr-forward animate__animated animate__fadeIn py-4"
 						>
 							<nuxt-link
 								:to="{path: '/' + post.slug}"
@@ -81,7 +102,7 @@
 						>
 						<div class="post-meta">
 							<ul class="list meta">
-								<li
+								<!-- <li
 									v-if="post.featured"
 									class="bg-gray-500 hover:bg-gray-400 py-2 rounded-md shadow-md animate__animated animate__zoomInUp w-48 flex justify-center"
 								>
@@ -96,7 +117,7 @@
 										class="post-featured uppercase"
 										>Featured</span
 									>
-								</li>
+								</li> -->
 								<li>
 									<div class="post-meta-date">
 										<div class="post-meta-date-icon">
@@ -435,8 +456,14 @@ export default {
 	max-width: 75% !important;
 	height: auto !important;
 }
-
 .excerpt {
 	font-family: 'Crimson Text', serif;
+}
+
+.featured-badge {
+	background-color: #ecf543;
+	padding-top: 10px;
+	line-height: 1.4;
+	color: #1494d8;
 }
 </style>

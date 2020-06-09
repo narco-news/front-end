@@ -16,6 +16,14 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
+						<span class="text-xs font-bold">09.06.2020</span>
+						<p class="text-xs">
+							The essentials for the design of the blog portion of the site have
+							been finished. I'm sure as we post I'll notice more oddities I
+							need to go in and fix but for now it all seems to look orderly.
+						</p>
+					</li>
+					<li>
 						<span class="text-xs font-bold">05.06.2020</span>
 						<p class="text-xs">
 							Happy June! Things are starting to feel more lively around here.
