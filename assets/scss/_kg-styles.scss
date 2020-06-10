@@ -209,7 +209,7 @@
 			width: 100vw;
 			margin-left: auto;
 			margin-right: auto;
-			padding: 1rem;
+			padding: 0 1rem 0 1rem;
 
 			.kg-gallery-row {
 				display: flex;
@@ -218,13 +218,13 @@
 
 				.kg-gallery-image {
 					&:not(:first-of-type) {
-						margin: 0 0 0 0.75rem;
+						margin: 0 0 0 0rem;
 					}
 					img {
 						display: block;
-						width: 100%;
+						width: 90vw;
 						height: 100%;
-						padding: 0.5rem 0;
+						padding: 0.25em;
 					}
 				}
 			}
@@ -262,6 +262,11 @@
 		overflow: hidden;
 		position: relative;
 		width: 100%;
+
+		twitter-widget {
+			margin-left: auto;
+			margin-right: auto;
+		}
 
 		.kg-embed-card::after {
 			padding-top: 75%;
