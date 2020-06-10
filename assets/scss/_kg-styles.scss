@@ -207,6 +207,9 @@
 			flex-direction: column;
 			max-width: 1040px;
 			width: 100vw;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 1rem;
 
 			.kg-gallery-row {
 				display: flex;
@@ -221,6 +224,7 @@
 						display: block;
 						width: 100%;
 						height: 100%;
+						padding: 0.5rem 0;
 					}
 				}
 			}
