@@ -1,7 +1,7 @@
 <template>
   <div style="background-color: #1b2431;" class="pt-3">
     <div class="h-full flex justify-center my-4">
-      <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 text-white">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-white">
         <div class="col-span-3 p-2">
           <span class="text-md w-full font-bold foot-title">Newswire</span>
           <div class="w-full grid grid-cols-2 lg:grid-cols-3 text-xs">
