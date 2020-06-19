@@ -90,6 +90,7 @@ export default async () => {
 		plugins: [
 			//
 			{src: '~/plugins/postcss.js'},
+			// {src: '~/plugins/rss-parser'},
 			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/hover.js', ssr: false},
 			{src: '~/plugins/navbar.js', ssr: false},
