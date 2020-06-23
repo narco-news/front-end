@@ -1,5 +1,29 @@
 <template>
-	<vue-navigation-bar :options="navbarOptions"></vue-navigation-bar>
+	<vue-navigation-bar :options="navbarOptions">
+		<!-- Custom Slot - Uncomment to use -->
+		<template v-slot:custom-section>
+			<div class="custom-section-content">
+				<a href="https://discuss.narco.news/index.php?p=/">
+					<div class="flex flex-no-wrap">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+						>
+							<path
+								fill="#ff5e70"
+								d="M19,8H18V5a3,3,0,0,0-3-3H5A3,3,0,0,0,2,5V17a1,1,0,0,0,.62.92A.84.84,0,0,0,3,18a1,1,0,0,0,.71-.29l2.81-2.82H8v1.44a3,3,0,0,0,3,3h6.92l2.37,2.38A1,1,0,0,0,21,22a.84.84,0,0,0,.38-.08A1,1,0,0,0,22,21V11A3,3,0,0,0,19,8ZM8,11v1.89H6.11a1,1,0,0,0-.71.29L4,14.59V5A1,1,0,0,1,5,4H15a1,1,0,0,1,1,1V8H11A3,3,0,0,0,8,11Zm12,7.59-1-1a1,1,0,0,0-.71-.3H11a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1Z"
+							/>
+						</svg>
+						<p style="color: #ff5e70;" class="pl-2">
+							Discussion
+						</p>
+					</div>
+				</a>
+			</div>
+		</template>
+	</vue-navigation-bar>
 </template>
 
 <script>
@@ -26,6 +50,18 @@ export default {
 						iconLeft:
 							'<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#0D0D0D" d="M20,8h0L14,2.74a3,3,0,0,0-4,0L4,8a3,3,0,0,0-1,2.26V19a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V10.25A3,3,0,0,0,20,8ZM14,20H10V15a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1Zm5-1a1,1,0,0,1-1,1H16V15a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v5H6a1,1,0,0,1-1-1V10.25a1,1,0,0,1,.34-.75l6-5.25a1,1,0,0,1,1.32,0l6,5.25a1,1,0,0,1,.34.75Z"/></svg>'
 					},
+					// {
+					// 	type: 'link',
+					// 	text: 'Significant Activities',
+					// 	iconLeft: '',
+					// 	subMenuOptions: [
+					// 		{
+					// 			type: 'link',
+					// 			text: 'Celaya, Guanajuato',
+					// 			path: '/celaya'
+					// 		}
+					// 	]
+					// },
 					{
 						type: 'link',
 						text: 'Maps',

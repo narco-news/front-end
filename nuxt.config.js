@@ -30,7 +30,7 @@ export default async () => {
 
 		loading: {color: '#171717'},
 
-		modules: ['@nuxtjs/pwa', 'nuxt-webfontloader'],
+		modules: ['@nuxtjs/pwa', 'nuxt-webfontloader', '@nuxtjs/axios'],
 
 		buildModules: ['@nuxtjs/feed'],
 
@@ -56,6 +56,10 @@ export default async () => {
 					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap&family=Baloo+Thambi+2:wght@400;500;700;800&family=Patua+One&display=swap&family=Crimson+Text&family=Lato&display=swap"'
 				]
 			}
+		},
+
+		axios: {
+			baseURL: process.env.API_URL
 		},
 
 		feed,

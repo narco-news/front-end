@@ -14,6 +14,7 @@
 	"dependencies": {
 		"@growthbunker/vuetimeline": "^0.1.16",
 		"@nuxt/typescript-runtime": "^0.4.6",
+		"@nuxtjs/axios": "^5.11.0",
 		"@nuxtjs/dotenv": "^1.4.1",
 		"@nuxtjs/feed": "^1.1.0",
 		"@nuxtjs/pwa": "latest",
