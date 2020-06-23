@@ -16,6 +16,21 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
+						<span class="text-xs font-bold">23.06.2020</span>
+						<p class="text-xs">
+							Howdy! Took a breather last week and did some work behind the
+							scenes. Trying to figure out best way to catelog a lot of events
+							that isn't blog posts, more later. Check out the
+							<a
+								style="color: #3e82fc;"
+								href="https://discuss.narco.news/index.php?p=/"
+								target="_blank"
+								class="font-semibold"
+								>discussion board</a
+							>!!
+						</p>
+					</li>
+					<li>
 						<span class="text-xs font-bold">09.06.2020</span>
 						<p class="text-xs">
 							The essentials for the design of the blog portion of the site have

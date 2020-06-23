@@ -3,7 +3,7 @@
 		<!-- Custom Slot - Uncomment to use -->
 		<template v-slot:custom-section>
 			<div class="custom-section-content">
-				<a href="https://discuss.narco.news/index.php?p=/">
+				<a href="https://discuss.narco.news/index.php?p=/" target="_blank">
 					<div class="flex flex-no-wrap">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
