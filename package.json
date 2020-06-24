@@ -60,6 +60,7 @@
 		"vue-infinite-loading": "^2.4.5",
 		"vue-infinite-slide-bar": "^1.1.1",
 		"vue-loader": "^15.9.1",
+		"vue-mailchimp-subscribe": "^1.1.0",
 		"vue-mapbox": "^0.4.1",
 		"vue-navigation-bar": "^2.0.0",
 		"vue-notification": "^1.3.20",

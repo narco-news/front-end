@@ -16,7 +16,7 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
-						<span class="text-xs font-bold">23.06.2020</span>
+						<span class="text-xs font-bold">24.06.2020</span>
 						<p class="text-xs">
 							Howdy! Took a breather last week and did some work behind the
 							scenes. Trying to figure out best way to catelog a lot of events

@@ -40,7 +40,9 @@ export default async () => {
 			ghostUri: process.env.GHOST_URI,
 			ghostKey: process.env.GHOST_KEY,
 			blogUrl: process.env.BLOG_URL,
-			accessToken: process.env.accessToken
+			accessToken: process.env.accessToken,
+			userID: process.env.USER_ID,
+			listID: process.env.LIST_ID
 		},
 
 		webfontloader: {
@@ -105,7 +107,8 @@ export default async () => {
 			{src: '~/plugins/odometer.js', ssr: false},
 			{src: '~/plugins/marquee.js', ssr: false},
 			{src: '~/plugins/modals.js', ssr: false},
-			{src: '~/plugins/mapbox.js', ssr: false}
+			{src: '~/plugins/mapbox.js', ssr: false},
+			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false}
 		],
 
 		pwa: {
