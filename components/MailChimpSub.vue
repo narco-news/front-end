@@ -28,7 +28,7 @@
 							style="color: #44af69;"
 							class="text-xs p-2 font-bold"
 						>
-							Sucess!
+							Success!
 						</div>
 						<div v-if="loading" class="text-xs p-2">Loading…</div>
 					</form>
