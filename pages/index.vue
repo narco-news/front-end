@@ -7,9 +7,9 @@
 			<FYNine />
 		</div>
 		<!-- RSS Marquee -->
-		<div class="h-12 mb-2">
+		<!-- <div class="h-12 mb-2">
 			<Marquee />
-		</div>
+		</div> -->
 		<!-- Landing Header -->
 		<Cats />
 
@@ -138,7 +138,7 @@ import FYNine from '~/components/FYNine.vue';
 import Landing from '~/components/Landing.vue';
 import Information from '~/components/Information.vue';
 // import HomeWire from '~/components/HomeWire.vue';
-import Marquee from '~/components/Marquee.vue';
+// import Marquee from '~/components/Marquee.vue';
 import Cats from '~/components/Cats.vue';
 
 export default {
@@ -149,7 +149,7 @@ export default {
 		Landing,
 		Information,
 		// HomeWire,
-		Marquee,
+		// Marquee,
 		Cats
 	}
 };
