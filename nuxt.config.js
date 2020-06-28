@@ -108,6 +108,7 @@ export default async () => {
 			{src: '~/plugins/marquee.js', ssr: false},
 			{src: '~/plugins/modals.js', ssr: false},
 			{src: '~/plugins/mapbox.js', ssr: false},
+			{src: '~/plugins/patterncss.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false}
 		],
 

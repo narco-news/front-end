@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-auto justify-center">
-		<div class="relative h-64 pt-5">
+		<div class="relative h-64 pt-5 md:my-4 mb-6">
 			<div class="bookBox relative bg-white rounded shadow-lg w-56 z-10">
 				<!-- Static parent -->
 
@@ -69,7 +69,7 @@ export default {
 <style lang="scss">
 .bookBox {
 	margin-left: 75px;
-	max-height: 16rem;
+	max-height: 18rem;
 }
 .bookDesc {
 	height: 7rem;

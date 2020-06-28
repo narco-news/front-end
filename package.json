@@ -39,6 +39,7 @@
 		"nuxt": "^2.12.2",
 		"nuxt-webfontloader": "1.1.0",
 		"odometer": "^0.4.8",
+		"pattern.css": "^1.0.0",
 		"plyr": "^3.6.2",
 		"postcss": "^7.0.27",
 		"rss-parser": "^3.8.0",
