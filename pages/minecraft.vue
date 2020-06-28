@@ -10,7 +10,7 @@
 				</h1>
 			</div>
 			<img
-				class="mx-auto"
+				class="mx-auto animate__animated animate__fadeIn"
 				src="~/assets/images/minecraft.jpeg"
 				alt="Remote cabin in the jungle"
 			/>
@@ -20,22 +20,29 @@
 				<span class="text-xs">
 					Everyone needs a break from never ending news cycles and world
 					affairs. We've set up a public Minecraft server available for anyone
-					and everyone. The current installation is a basic
-					<i>primarily</i> vanilla install running
-					<span class="font-bold">1.15.2</span>. What makes Minecraft great is
-					that it doesn't present you with any obvious purpose. Build things
-					with other folks or build things alone. Spend all your time farming
-					and raising livestock or deep down in a mineshaft treasure hunting.
-					That choice in Minecraft is left entirely up to you. Our hope is this
-					virtual world can provide a healthy, friendly and safe digital getaway
-					from pressures and stresses of our own world. The goals are simple, to
-					have fun and relax!
+					and everyone. What makes Minecraft great is that it doesn't present
+					you with any obvious purpose. Build things with other folks or build
+					things alone. Spend all your time farming and raising livestock or
+					deep down in a mineshaft treasure hunting. That choice in Minecraft is
+					left entirely up to you. Our hope is this virtual world can provide a
+					healthy, friendly and safe digital getaway from pressures and stresses
+					of our own world. The goals are simple, to have fun and relax!
+					<br />
+					<br />
+					The current installation is a
+					<i>primarily</i> vanilla install running Minecraft version
+					<span class="font-bold">1.15.2</span>
 				</span>
 			</p>
+			<div class="my-6 uppercase font-bold underline text-blue-600">
+				<a href="http://minecraft.narco.news:8123" target="_blank"
+					>Check out the live map!</a
+				>
+			</div>
 			<div style="color: #ff5e70;" class="my-8">
 				<button
 					style="border: #ff5e70 1px solid;"
-					class="rounded shadow-md p-2 px-6 text-sm"
+					class="rounded shadow-md p-2 px-6 text-sm hvr-grow"
 					@click="show = true"
 				>
 					Reveal Server IP Address
@@ -53,9 +60,9 @@
 						style="font-family: 'Patua One', cursive; font-weight: 400;"
 					>
 						<div class="flex flex-col justify-center">
-							<div style="color: red;" class="p-4 mt-4 pattern-dots-sm">
+							<div style="color: #ff5e70;" class="p-4 mt-4 pattern-dots-sm">
 								<h1 class="text-xl text-black bg-white py-4">
-									The <span style="color: #ff5e70;">Red</span> Rules
+									The <span style="color: #ff5e70;">Rules</span>
 								</h1>
 							</div>
 							<ol
@@ -94,7 +101,10 @@
 				If you've never played Minecraft but are curious, please reach out! All
 				you need is a computer running Windows, macOS or Linux. The game can be
 				purchased on their
-				<a class="text-blue-500 font-bold" href="https://minecraft.net"
+				<a
+					class="text-blue-500 font-bold"
+					href="https://minecraft.net"
+					target="_blank"
 					>website</a
 				>.
 			</div>
