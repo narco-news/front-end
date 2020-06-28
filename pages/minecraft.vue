@@ -29,8 +29,8 @@
 					of our own world. The goals are simple, to have fun and relax!
 					<br />
 					<br />
-					The current installation is a
-					<i>primarily</i> vanilla install running Minecraft version
+					The current installation running is
+					<i>primarily</i> vanilla Minecraft version
 					<span class="font-bold">1.15.2</span>
 				</span>
 			</p>
