@@ -35,7 +35,9 @@
 				</span>
 			</p>
 			<div class="my-6 uppercase font-bold underline text-blue-600">
-				<a href="http://minecraft.narco.news:8123" target="_blank"
+				<a
+					href="http://minecraft.narco.news:8123/?worldname=world&mapname=flat&zoom=3&x=-226&y=64&z=210"
+					target="_blank"
 					>Check out the live map!</a
 				>
 			</div>

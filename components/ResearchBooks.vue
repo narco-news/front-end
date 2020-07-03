@@ -1,9 +1,6 @@
 <template>
-	<div class="m-2 p-4">
-		<p class="font-bold text-md">
-			Books
-		</p>
-		<div id="book-list" class="rounded overflow-y-auto">
+	<div class="mx-2 py-4">
+		<div id="book-list" class="rounded overflow-y-auto h-screen">
 			<div v-for="book in Books" :key="book.id">
 				<!-- Start -->
 				<div class="bg-white rounded shadow-lg m-2 my-4">
@@ -50,10 +47,6 @@ export default {
 </script>
 
 <style lang="scss">
-#book-list {
-	height: 800px;
-}
-
 .red-text {
 	color: #ff5e70;
 }

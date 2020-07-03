@@ -2,7 +2,7 @@
 	<div>
 		<div
 			style="color: #3a656a; background-color: #eef3ed;"
-			class="rounded bg-white overflow-hidden shadow-md m-4 h-full"
+			class="rounded shadow-md p-2 m-4 h-full"
 		>
 			<div
 				style="font-family: 'Patua One', cursive;"
