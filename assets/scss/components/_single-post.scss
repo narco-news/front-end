@@ -1,5 +1,13 @@
 // Single posts
 .single-post {
+	hr {
+		margin: 1em 0;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
 	a {
 		color: #3e82fc;
 		text-decoration: underline;
