@@ -46,33 +46,39 @@ export default {
 			title: this.title,
 			meta: [
 				{
-					'twitter:card': {
-						content:
-							"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported in these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities."
-					},
-					'twitter:site': {
-						content: ''
-					},
-					'twitter:creator': {
-						content: ''
-					},
-					'og:url': {
-						content: 'https://narco.news/booklist'
-					},
-					'og:title': {
-						content: 'Book list'
-					},
-					'og:image': {
-						content: 'https://narco.news/images/meta/bw-nn-logo.png'
-					},
-					'og:description': {
-						content:
-							"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported by these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities."
-					},
-					hid:
-						"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported in these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities.",
-					content:
-						"We've compiled this list of books to help your exploration of this topic. We do not nesscarily endorse what is purported in these books, but feel they're all worth spending time with to better understand drug trafficking and it's complexities."
+					hid: 'description',
+					name: 'description',
+					content: 'Easy reading on-topic books that are worth taking a look at'
+				},
+				{
+					hid: 'og:description',
+					property: 'og:description',
+					content: 'Easy reading on-topic books that are worth taking a look at'
+				},
+				{
+					hid: 'og:site_name',
+					property: 'og:site_name',
+					content: 'narco.news Book List'
+				},
+				{
+					hid: 'og:title',
+					property: 'og:title',
+					content: 'narco.news Book List'
+				},
+				{
+					hid: 'twitter:card',
+					property: 'twitter:card',
+					content: 'summary_large_image'
+				},
+				{
+					hid: 'twitter:title',
+					property: 'twitter:title',
+					content: 'Easy reading on-topic books that are worth taking a look at'
+				},
+				{
+					hid: 'twitter:image',
+					property: 'twitter:image',
+					content: 'https://narco.news/images/booklist.png'
 				}
 			]
 		};

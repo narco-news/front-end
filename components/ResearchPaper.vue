@@ -13,7 +13,7 @@
 						<h2 class="uppercase text-xs font-bold my-2">General:</h2>
 						<!-- START -->
 						<div>
-							<paper
+							<!-- <paper
 								title=""
 								infoLink=""
 								downLink=""
@@ -30,7 +30,7 @@
 								date=""
 								abstract=""
 							>
-							</paper>
+							</paper> -->
 							<paper
 								title="Bacterial Conjugation as a Framework for the Homogenization of Tactics in Mexican Organized Crime"
 								infoLink="https://www.tandfonline.com/doi/abs/10.1080/1057610X.2019.1586356"
@@ -67,11 +67,11 @@
 							</paper>
 						</div>
 					</div>
-					<div class="mx-2">
+					<!-- <div class="mx-2">
 						<h2 class="uppercase text-xs font-bold my-2">
 							Cártel de Santa Rosa de Lima (CSRL):
 						</h2>
-					</div>
+					</div> -->
 					<div class="mx-2">
 						<h2 class="uppercase text-xs font-bold my-2">
 							Cártel de Sinaloa (CDS):
@@ -101,7 +101,7 @@
 								downLink="https://sci-hub.tw/10.14321/jstudradi.7.2.0125"
 								authors="Benjamin T. Smith"
 								date="2013"
-								abstract="None."
+								abstract="N/A"
 							>
 							</paper>
 						</div>
@@ -131,11 +131,11 @@
 							</paper>
 						</div>
 					</div>
-					<div class="mx-2">
+					<!-- <div class="mx-2">
 						<h2 class="uppercase text-xs font-bold my-2">
 							Cártel del Noreste (CDN):
 						</h2>
-					</div>
+					</div> -->
 					<!-- MEXICO END CONTENT -->
 				</div>
 			</div>
