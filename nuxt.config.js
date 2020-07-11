@@ -76,7 +76,7 @@ export default async () => {
 				routes.push({
 					name: 'PostIndex',
 					path: '/page/:pageNumber',
-					component: resolve(__dirname, 'pages/index.vue')
+					component: resolve(__dirname, 'pages/wire.vue')
 				});
 
 				routes.push({
