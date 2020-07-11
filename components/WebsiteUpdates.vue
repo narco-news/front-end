@@ -16,6 +16,16 @@
 			<div class="h-32 overflow-y-scroll">
 				<ul class="list-none">
 					<li>
+						<span class="text-xs font-bold">11.07.2020</span>
+						<p class="text-xs">
+							Even though things are getting more comfy around here there is
+							still lots to do on the development front. Which will be most of
+							my focus next week. Really thankful to all who've checked out the
+							site thus far and appreciate your patience throughout this
+							development process.
+						</p>
+					</li>
+					<li>
 						<span class="text-xs font-bold">24.06.2020</span>
 						<p class="text-xs">
 							Howdy! Took a breather last week and did some work behind the
