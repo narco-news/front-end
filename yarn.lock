@@ -9527,6 +9527,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rough-notation@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/rough-notation/-/rough-notation-0.4.0.tgz#6f97324cb50fc91ec8064219253aa2528a69210f"
+  integrity sha512-hDgn9qMIxWnfY+WWjt30aLMtDHR13H8r/NI3EQNdJiEFAzpklH5nKg4eH/thpxCWTYzyg8ueMsKIfz9MzOBQ4Q==
+
 rss-parser@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/rss-parser/-/rss-parser-3.8.0.tgz#6ab883c5cfb69202e25c76fe2b17e3e9179a39f6"

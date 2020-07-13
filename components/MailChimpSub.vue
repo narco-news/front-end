@@ -1,7 +1,7 @@
 <template>
 	<div id="box" class="grid grid-cols-1 bg-white rounded shadow-md p-4 my-2">
 		<div class="mb-2">
-			<span style="color: #2a413e;" class="text-sm md:text-md">
+			<span style="color: #2a413e;" class="text-sm md:text-md font-bold">
 				Mailing list
 				<hr class="mb-1" style="border-color: #2a413e;" width="45%" />
 			</span>
@@ -18,7 +18,7 @@
 					<form @submit.prevent="subscribe">
 						<input
 							type="email"
-							class="border border-red-300 w-40"
+							class="border border-red-300 w-48"
 							@input="setEmail($event.target.value)"
 						/>
 						<button type="submit" class="text-sm ml-2">Submit</button>

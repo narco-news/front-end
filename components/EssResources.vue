@@ -15,8 +15,8 @@
 		</div>
 		<div id="features" v-show-slide="featuresOpen" class="features text-xs">
 			<p class="pb-1 font-bold text-center">Press Releases</p>
-			<div class="flex flex-wrap h-auto whitespace-no-wrap gap-2 text-center">
-				<div class="w-1/2 p-1">
+			<div class="flex h-auto whitespace-no-wrap gap-2 text-center px-4">
+				<div class="p-1">
 					<a
 						href="https://www.dea.gov/press-releases"
 						target="_blank"
@@ -26,7 +26,7 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a
 						href="https://www.justice.gov/usao/pressreleases"
 						target="_blank"
@@ -36,7 +36,7 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a
 						href="https://www.fbi.gov/news/pressrel"
 						target="_blank"
@@ -47,7 +47,7 @@
 				</div>
 				<!--  -->
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a
 						href="https://www.gob.mx/sedena/prensa/comunicados-de-prensa-2020"
 						target="_blank"
@@ -57,7 +57,7 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a
 						href="https://www.gob.mx/semar/archivo/prensa"
 						target="_blank"
@@ -67,7 +67,7 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a
 						href="https://www.gob.mx/fgr/es/archivo/prensa"
 						target="_blank"
@@ -79,11 +79,9 @@
 			</div>
 			<!--  -->
 			<p class="py-1 font-bold text-center">Data</p>
-			<div
-				class="flex flex-wrap h-auto whitespace-no-wrap gap-2 text-center pb-2 mx-2"
-			>
+			<div class="flex h-auto whitespace-no-wrap gap-2 text-center pb-2 mx-2">
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a
 						href="https://feminicidiosmx.crowdmap.com"
 						target="_blank"
@@ -93,13 +91,13 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a href="https://elcri.men/en" target="_blank" tabindex="8">
 						<span class="borderLeftRight">ELCRI.en</span>
 					</a>
 				</div>
 				<!--  -->
-				<div class="w-1/2 p-1">
+				<div class="p-1">
 					<a href="http://semaforo.com.mx" target="_blank" tabindex="9">
 						<span class="borderLeftRight">Semáforo Delictivo</span>
 					</a>

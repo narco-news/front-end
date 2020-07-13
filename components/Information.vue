@@ -3,7 +3,7 @@
 		<div class="mx-4">
 			<WebsiteUpdates />
 		</div>
-		<div class="mx-4">
+		<div>
 			<MailChimpSub />
 		</div>
 		<div class="mx-4">
