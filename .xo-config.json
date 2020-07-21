@@ -1,4 +1,0 @@
-{
-	"prettier": true,
-	"import/extensions": ["error", "never"]
-}

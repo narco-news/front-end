@@ -1,0 +1,8 @@
+{
+	"ignores": [
+		"plugins/animate.js",
+		"plugins/hover.js",
+		"plugins/patterncss.js",
+		"plugins/vue-plyr.js"
+	]
+}

@@ -30,7 +30,7 @@ export default [
 						'&v=3'
 				)
 			]);
-			posts.forEach((post) => {
+			posts.forEach(post => {
 				feed.options = {
 					title: settings.title,
 					link: process.env.BLOG_URL,

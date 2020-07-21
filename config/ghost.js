@@ -71,7 +71,7 @@ const generateRoutes = async () => {
 		};
 	});
 
-	postsWithLinks.forEach((post) => {
+	postsWithLinks.forEach(post => {
 		routes.push({
 			route: '/' + post.slug,
 			payload: post
@@ -85,7 +85,7 @@ const generateRoutes = async () => {
 		filter: 'visibility:public'
 	});
 
-	pages.forEach((page) => {
+	pages.forEach(page => {
 		routes.push({
 			route: '/' + page.slug,
 			payload: page
