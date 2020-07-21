@@ -43,7 +43,7 @@
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="button tag-button shadow-inner"
+										class="button tag-button hvr-back-pulse shadow-md"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</li>
@@ -387,8 +387,11 @@
 <script>
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
+
+// import Dropdown from '~/components/Dropdown.vue';
+// import DropdownContent from '~/components/DropdownContent.vue';
+// import DropdownItem from '~/components/DropdownItem.vue';
 import ReadingTime from '~/components/ReadingTime.vue';
-// import Feature from '~/components/Wire/Featured.vue'
 
 dayjs.extend(advancedFormat);
 
@@ -396,6 +399,9 @@ export default {
 	name: 'Posts',
 
 	components: {
+		// dropdown: Dropdown,
+		// 'dropdown-content': DropdownContent,
+		// 'dropdown-item': DropdownItem,
 		'reading-time': ReadingTime
 	},
 
@@ -451,6 +457,7 @@ export default {
 	height: auto !important;
 }
 .excerpt {
+	font-family: 'Crimson Text', serif;
 }
 
 .featured-badge {

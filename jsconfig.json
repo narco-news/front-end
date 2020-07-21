@@ -1,12 +1,12 @@
 {
-	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"~/*": ["./*"],
-			"@/*": ["./*"],
-			"~~/*": ["./*"],
-			"@@/*": ["./*"]
-		}
-	},
-	"exclude": ["node_modules", ".nuxt", "dist", "docs"]
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
 }

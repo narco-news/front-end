@@ -1,32 +1,29 @@
 <template>
-	<div id="app">
-		<StickyHeader class="sticky top-0 w-full z-50" />
-		<PushMenu :closeOnNavigation="true" noOverlay>
-			<Menu />
-		</PushMenu>
-		<Nav />
+	<div class="grey-body">
+		<Header />
 		<client-only>
-			<div id="page-wrap">
-				<div>
-					<nuxt class="mt-6" />
-				</div>
-			</div>
+			<Navigation />
 		</client-only>
-		<Footer class="bottom-0 w-full" />
+		<main>
+			<div>
+				<!-- ... -->
+				<nuxt />
+			</div>
+		</main>
+		<!-- Footer -->
+		<Footer />
 	</div>
 </template>
 
 <script>
-import StickyHeader from '~/components/Navigation/StickyHeader';
-import Menu from '~/components/Navigation/Menu';
-import Nav from '~/components/Navigation/Nav';
-import Footer from '~/components/Navigation/Footer';
+import Header from '~/components/Header.vue';
+import Navigation from '~/components/Navigation.vue';
+import Footer from '~/components/Footer.vue';
 
 export default {
 	components: {
-		StickyHeader,
-		Nav,
-		Menu,
+		Header,
+		Navigation,
 		Footer
 	},
 	data() {
@@ -75,7 +72,7 @@ export default {
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'narco.news | open source drug war investigations'
+					content: 'narco.news | information aggregation'
 				}
 			],
 			link: [
@@ -93,24 +90,10 @@ export default {
 <style lang="scss">
 body {
 	margin: 0px;
-	background-color: #f2f2f2;
-}
-.bm-burger-bars {
-	background-color: #038c4c !important;
-}
-.bm-burger-button {
-	left: 10px !important;
-	top: 40px !important;
-	height: 20px !important;
-	.line-style {
-		position: absolute;
-		height: 10%;
-		left: 0;
-		right: 0;
-	}
-}
-
-.bm-menu {
-	background-color: #0d0d0d !important;
+	// background-color: #bfb8aa;
+	// background-color: #d0d3c5;
+	// background-color: #d9d0c7;
+	// background-color: #d7ded3;
+	background-color: #b0c0bb;
 }
 </style>

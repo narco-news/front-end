@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<nuxt />
 		<SigNav />
 		<SigBasic />
 		<SigInfo />

@@ -2,6 +2,8 @@
 .button {
 	display: flex;
 	background-color: $light;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	border-radius: $border-radius;
 	font-weight: 600;
 	text-decoration: none;
 	outline: none;
@@ -43,25 +45,14 @@
 
 	&.tag-button {
 		padding: 0.1875rem 0.9375rem;
-		background-color: #f2f2f2;
-		font-size: 0.75rem;
-		color: #0d0d0d;
+		background-color: #3a656a;
+		border: 1px solid transparent;
+		font-size: 0.675rem;
+		color: $light;
 		text-transform: uppercase;
 
-		&.tag-extras {
-			box-shadow: inset 0 -10px 0 0 #f2cb05;
-			border-radius: 0;
-
-			&:hover {
-				background-color: #f2cb05;
-				color: #0d0d0d;
-				box-shadow: inset 0 -10px 0 0 #f2f2f2;
-			}
-		}
-
 		@include hover-state {
-			background-color: lighten(#a9a9a9, 10%);
-
+			background-color: lighten(#3a656a, 10%);
 			color: $light;
 		}
 	}

@@ -30,29 +30,7 @@ export default async () => {
 
 		loading: {color: '#171717'},
 
-		modules: [
-			'@nuxtjs/pwa',
-			'nuxt-webfontloader',
-			'@nuxtjs/axios',
-			[
-				'nuxt-i18n',
-				{
-					locales: ['en', 'es'],
-					defaultLocale: 'en',
-					vueI18n: {
-						fallbackLocale: 'en',
-						messages: {
-							en: {
-								greeting: 'Hello world!'
-							},
-							es: {
-								greeting: '¡Hola mundo!'
-							}
-						}
-					}
-				}
-			]
-		],
+		modules: ['@nuxtjs/pwa', 'nuxt-webfontloader', '@nuxtjs/axios'],
 
 		buildModules: ['@nuxtjs/feed'],
 
@@ -70,15 +48,14 @@ export default async () => {
 		webfontloader: {
 			custom: {
 				families: [
-					'IBM Plex Sans:n4,n5,n6,n7',
-					'Abril Fatface:n4',
-					'Martel:n4,n6,n7',
-					'Raleway:n4,n5,n6',
-					'Roboto Mono,n4'
+					'IBM Plex Sans:n3,n4,n5,n7',
+					'Patua One:n4',
+					'Baloo Thambi 2',
+					'Crimson Text',
+					'Lato'
 				],
 				urls: [
-					'https://fonts.googleapis.com/css?family=Roboto+Mono:400&display=swap',
-					'https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans:wght@400;500;600;700&family=Martel:wght@400;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap'
+					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap&family=Baloo+Thambi+2:wght@400;500;700;800&family=Patua+One&display=swap&family=Crimson+Text&family=Lato&display=swap"'
 				]
 			}
 		},
@@ -117,32 +94,23 @@ export default async () => {
 		},
 
 		plugins: [
-			// Critical
-			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
-			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
-			{src: '~/plugins/vue-burger-menu.js', ssr: false},
-			{src: '~/plugins/marquee.js', ssr: false},
-			{src: '~/plugins/tippy.js', ssr: false},
-			{src: '~/plugins/lottie.js', ssr: false},
-
-			// CSS
+			//
 			{src: '~/plugins/postcss.js'},
+			// {src: '~/plugins/rss-parser'},
 			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/hover.js', ssr: false},
-			{src: '~/plugins/patterncss.js', ssr: false},
-			// UI Elements
-			{src: '~/plugins/modals.js', ssr: false},
-			{src: '~/plugins/odometer.js', ssr: false},
+			{src: '~/plugins/navbar.js', ssr: false},
+			{src: '~/plugins/timeline.js', ssr: false},
 			{src: '~/plugins/notifications.js', ssr: false},
 			{src: '~/plugins/scrollbar.js', ssr: false},
 			{src: '~/plugins/vshowslide.js', ssr: false},
-			{src: '~/plugins/timeline.js', ssr: false},
-
-			// Maps
-			{src: '~/plugins/mapbox.js', ssr: false}
-
-			// Disabled
-			// {src: '~/plugins/navbar.js', ssr: false},
+			{src: '~/plugins/odometer.js', ssr: false},
+			{src: '~/plugins/marquee.js', ssr: false},
+			{src: '~/plugins/modals.js', ssr: false},
+			{src: '~/plugins/mapbox.js', ssr: false},
+			{src: '~/plugins/patterncss.js', ssr: false},
+			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
+			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false}
 		],
 
 		pwa: {

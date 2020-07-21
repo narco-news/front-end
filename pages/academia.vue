@@ -4,7 +4,10 @@
 			style="color: #3a656a; background-color: #eef3ed;"
 			class="rounded shadow-md p-2 m-4 h-full"
 		>
-			<div class="flex justify-end lg:justify-start text-xl m-4">
+			<div
+				style="font-family: 'Patua One', cursive;"
+				class="flex justify-end lg:justify-start text-xl m-4"
+			>
 				ACADEMIA
 			</div>
 			<div class="grid grid-cols-1 lg:grid-cols-1 mb-6">

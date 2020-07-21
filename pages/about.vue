@@ -1,24 +1,33 @@
 <template>
-	<div class="md:mx-6 lg:mx-16">
-		<div style="color: #f22e2e;" class="overflow-hidden m-4">
-			<div class="flex justify-center text-4xl">
-				about
+	<div>
+		<div
+			style="color: #3a656a;"
+			class="rounded bg-white overflow-hidden shadow-md m-4"
+		>
+			<div
+				style="font-family: 'Patua One', cursive;"
+				class="flex justify-end lg:justify-start text-xl m-4"
+			>
+				ABOUT
 			</div>
-
-			<div style="color: #f2cd5c;" class="pattern-dots-md h-5 mb-4"></div>
-
-			<!-- BLURB BEGIN -->
-			<div style="color: #2d3340; font-weight: 500;" class="px-6">
-				<p class="text-2xl font-bold">
-					Hello! <span class="text-gray-400">¡Hola!</span>
+			<div
+				style="animation-duration: 1s;"
+				class="px-2 text-center animate__animated animate__fadeIn"
+			>
+				<p>
+					<!--  -->
 				</p>
-				<p class="text-xl font-bold">
+			</div>
+			<!-- BLURB BEGIN -->
+			<div style="color: #3a656a; font-weight: 500;" class="px-6">
+				<p class="text-2xl">Hello! <span class="text-gray-400">¡Hola!</span></p>
+				<p class="text-xl">
 					Why are we here?
 					<span class="text-gray-400">¿Por qué estamos aquí?</span>
 				</p>
 				<!--  -->
 				<div
-					style="background-color: white; color: #2d3340;"
+					style="background-color: #4e7479; color: white;"
 					class="shadow-md my-4 mx-2 p-4 text-xs rounded h-auto overflow-hidden"
 				>
 					<span class="float-left italic">
@@ -74,7 +83,7 @@
 					complex and it has disastrous consequences.
 
 					<div
-						style="background-color: white; color: #2d3340;"
+						style="background-color: #4e7479; color: white;"
 						class="shadow-md my-4 mx-2 p-4 text-xs rounded"
 					>
 						An analysis<a
@@ -105,11 +114,12 @@
 					<div style="color: #ff5e70; text-align: center;" class="text-lg my-6">
 						We've established this digital compendium as our starting place.
 					</div>
+
+					<!--  -->
 				</div>
 			</div>
-			<div style="color: #f2cd5c;" class="pattern-dots-md h-2 mb-4"></div>
-
-			<div style="color: #2d3340;" class="flex flex-wrap justify-center my-5">
+			<!-- BLURB END -->
+			<div class="flex flex-wrap justify-center my-5">
 				<div class="m-4">
 					<img
 						class="shadow-lg mx-auto"
