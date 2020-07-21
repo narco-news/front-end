@@ -1,9 +1,8 @@
 // Posts, tag-posts
 .post,
 .tag-post {
-	margin: 0 0 2rem;
+	margin: 0 0 1rem;
 	padding: 0 0 1rem;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	font-family: $font-family-post;
 
 	@media (min-width: 992px) {
@@ -30,8 +29,9 @@
 
 		.post-meta {
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			justify-content: center;
+			align-items: center;
 
 			@media (min-width: 1200px) {
 				flex-direction: row;
@@ -41,7 +41,7 @@
 
 			.post-meta-date {
 				display: flex;
-				align-items: flex-start;
+				align-items: center;
 
 				@media (min-width: 992px) {
 					align-items: center;
@@ -49,15 +49,12 @@
 
 				.post-meta-date-icon {
 					display: flex;
-					align-items: center;
 				}
 			}
 		}
 	}
 
 	.post-tags {
-		margin: 0 0 0.625rem;
-
 		li {
 			margin-right: 1rem;
 		}
@@ -67,11 +64,10 @@
 	}
 
 	.post-title {
-		max-width: 80%;
-		margin: 0 0 1rem;
-		font-size: 2rem;
-		font-weight: 600;
-		line-height: 1.2;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+		padding: 0px 10px;
+		line-height: 1.1;
 
 		a {
 			color: $text-color;
@@ -84,10 +80,6 @@
 	}
 
 	.post-author {
-		display: flex;
-		align-items: center;
-		margin: 0 0 1rem;
-
 		> span {
 			font-weight: 600;
 		}
@@ -116,7 +108,6 @@
 		.post-author-info {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
 
 			.post-author-info-description {
 				font-weight: 300;
@@ -131,8 +122,9 @@
 	}
 
 	.post-read-more {
-		margin-bottom: 2rem;
 		font-weight: 600;
+		box-shadow: inset 0 -6px 0 0 #f2cb05;
+
 		color: $text-color;
 
 		@include hover-state {
@@ -141,6 +133,6 @@
 	}
 
 	.updated_at {
-		margin-left: 0.2rem;
+		color: #f2f2f2;
 	}
 }

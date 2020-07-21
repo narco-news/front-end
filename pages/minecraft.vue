@@ -57,10 +57,7 @@
 					:animation="animation"
 					@hide="show = false"
 				>
-					<div
-						class="m-2"
-						style="font-family: 'Patua One', cursive; font-weight: 400;"
-					>
+					<div class="m-2">
 						<div class="flex flex-col justify-center">
 							<div style="color: #ff5e70;" class="p-4 mt-4 pattern-dots-sm">
 								<h1 class="text-xl text-black bg-white py-4">

@@ -4,12 +4,6 @@
 			style="color: #3a656a;"
 			class="rounded bg-white overflow-hidden shadow-md m-4"
 		>
-			<!-- <div
-				style="font-family: 'Patua One', cursive;"
-				class="flex justify-end lg:justify-start text-md m-4 uppercase"
-			>
-				Michoacán Interactive Map
-			</div> -->
 			<div id="map" class="">
 				<no-ssr>
 					<MglMap

@@ -1,0 +1,81 @@
+{
+	"article": [
+		{
+			"id": 1,
+			"title": "Game over: geolocating 'CJNG Grupo Elite'",
+			"slug": "game-over",
+			"date": "18/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/Screen-Shot-2020-07-18-at-1.10.37-PM-2.png"
+		},
+		{
+			"id": 2,
+			"title": "Los Zetas: criminal paramilitarism and the complicity of the state",
+			"slug": "los-zetas-the-rise-of-criminal-paramilitarism",
+			"date": "14/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/EJbITHEW4AEmg62-91.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Thoughts on 'Los cárteles no existen'",
+			"slug": "thoughts-on-los-carteles-no-existen",
+			"date": "10/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/cartels-dont-exist-small.png"
+		},
+		{
+			"id": 4,
+			"title": "Los Zetas S.A. de C.V. Nueva Generación",
+			"slug": "thoughts-on-los-carteles-no-existen",
+			"date": "09/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/1280px-Ciudad_Victoria-_Tamaulipas_-5657384363-.jpg"
+		},
+		{
+			"id": 5,
+			"title": "The mythology of El Narco part II - Why?",
+			"slug": "why",
+			"date": "19/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/Screen-Shot-2020-07-12-at-9.12.34-AM-3.png"
+		},
+		{
+			"id": 7,
+			"title": "Gross violations of human rights",
+			"slug": "gross-violation-of-human-rights",
+			"date": "16/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/Screen-Shot-2020-07-16-at-5.23.41-PM-1.png"
+		},
+		{
+			"id": 8,
+			"title": "Media effects on public displays of brutality",
+			"slug": "media-effects-on-public-displays-of-brutality",
+			"date": "15/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/Screen-Shot-2020-07-15-at-10.15.34-AM.png"
+		},
+		{
+			"id": 9,
+			"title": "The mythology of El Narco part I",
+			"slug": "the-mythology-of-el-narco",
+			"date": "13/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/Screen-Shot-2020-07-12-at-11.43.55-AM-1.png"
+		},
+		{
+			"id": 10,
+			"title": "How to spot bullsh*t and the problem with unreliable information",
+			"slug": "citizen-journalists-disinformation-and-state-propaganda",
+			"date": "11/07/2020",
+			"img": "https://publish.narco.news/content/images/2020/07/Screen-Shot-2020-07-10-at-10.38.59-AM-1.png"
+		},
+		{
+			"id": 11,
+			"title": "",
+			"slug": "",
+			"date": "",
+			"img": ""
+		},
+		{
+			"id": 12,
+			"title": "",
+			"slug": "",
+			"date": "",
+			"img": ""
+		}
+	]
+}

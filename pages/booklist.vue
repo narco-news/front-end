@@ -1,13 +1,7 @@
 <template>
 	<div>
-		<div
-			style="color: #3a656a; background-color: #eef3ed;"
-			class="rounded shadow-md p-2 m-4 h-full"
-		>
-			<div
-				style="font-family: 'Patua One', cursive;"
-				class="flex justify-end lg:justify-start text-xl m-4"
-			>
+		<div style="color: #3a656a;" class="p-2 m-4 h-full">
+			<div class="flex justify-end text-xl m-4">
 				BOOK LIST
 			</div>
 			<div class="flex flex-auto flex-wrap my-5 content-center justify-center">

@@ -1,15 +1,30 @@
 <template>
-	<div class="m-4 lg:mx-40 px-4 py-6 rounded shadow bg-white">
-		<posts :posts="postsIndex" :pagination="paginationIndex" />
+	<div>
+		<TitleBox />
+		<Marquee />
+		<div id="info" class="animate__animated animate__fadeIn mb-2">
+			<EssResources />
+		</div>
+		<div id="p">
+			<div>
+				<posts :posts="postsIndex" :pagination="paginationIndex" />
+			</div>
+		</div>
 	</div>
 </template>
 
 <script>
-import Posts from '~/components/Posts.vue';
+import Marquee from '~/components/Wire/Marquee';
+import TitleBox from '~/components/Wire/TitleBox';
+import EssResources from '~/components/EssResources';
+import Posts from '~/components/Wire/Featured';
 
 export default {
 	components: {
-		posts: Posts
+		posts: Posts,
+		EssResources,
+		TitleBox,
+		Marquee
 	},
 
 	async fetch({error, params, payload, store}) {
@@ -34,7 +49,6 @@ export default {
 			}
 		}
 	},
-
 	computed: {
 		postsIndex() {
 			return this.$store.state.postsIndex;
@@ -107,3 +121,14 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss" scoped>
+#title {
+	margin-top: -30px;
+	background-color: #f2f2f2;
+	color: #0d0d0d;
+	h1 {
+		box-shadow: inset 0 -20px 0 0 #f2cb05;
+	}
+}
+</style>

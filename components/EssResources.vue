@@ -1,11 +1,14 @@
 <template>
-	<div class="h-auto bg-white rounded shadow-md mx-2">
-		<div class="my-2 mx-4 py-3">
-			<span style="color: #ff5e70;" class="text-sm">
+	<div class="h-auto w-4/5 md:w-3/5 lg:w-2/5 rounded shadow-inner mx-auto">
+		<div class="text-center p-2">
+			<span
+				style="color: #ff5e70;"
+				class="text-sm font-bold font-mono uppercase"
+			>
 				Essential Resources
 			</span>
 			<button
-				class="toggle-features float-right text-xs text-gray-900"
+				class="toggle-features float-right text-xs text-gray-800 font-bold uppercase font-mono"
 				aria-controls="features"
 				:aria-expanded="featuresOpen ? 'true' : 'false'"
 				@click="toggleFeatures"
@@ -13,9 +16,13 @@
 				{{ featuresOpen ? 'Hide' : 'Show' }}
 			</button>
 		</div>
-		<div id="features" v-show-slide="featuresOpen" class="features text-xs">
-			<p class="pb-1 font-bold text-center">Press Releases</p>
-			<div class="flex h-auto whitespace-no-wrap gap-2 text-center px-4">
+		<div
+			id="features"
+			v-show-slide="featuresOpen"
+			class="features text-xs px-6"
+		>
+			<p class="pb-1 font-bold">Governmental Press Releases</p>
+			<div class="flex h-auto whitespace-no-wrap gap-2 text-center">
 				<div class="p-1">
 					<a
 						href="https://www.dea.gov/press-releases"
@@ -78,8 +85,8 @@
 				</div>
 			</div>
 			<!--  -->
-			<p class="py-1 font-bold text-center">Data</p>
-			<div class="flex h-auto whitespace-no-wrap gap-2 text-center pb-2 mx-2">
+			<p class="py-1 font-bold">Data</p>
+			<div class="flex h-auto whitespace-no-wrap gap-2 text-center">
 				<!--  -->
 				<div class="p-1">
 					<a
