@@ -11,8 +11,7 @@
 				style="animation-duration: 1s;"
 				class="px-2 text-center animate__animated animate__fadeIn"
 			>
-				<p>
-				</p>
+				<p></p>
 			</div>
 			<div
 				style="
@@ -20,9 +19,9 @@
 					color: #f2f2f2;
 					border: solid 2px #03a688;
 				"
-				class="p-4 mx-4 mb-4 text-xs h-auto rounded-md shadow-md overflow-hidden"
+				class="p-4 mx-4 text-xs h-auto rounded-md shadow-md overflow-hidden"
 			>
-				<span class="float-left font-bold italic">
+				<span class="float-left italic">
 					"Drug trafficking, for example, is not the behavior of a daring,
 					secretive, and clever operator; it is a complex international business
 					system, deeply touching the lives of peasant farmers, political
@@ -49,7 +48,7 @@
 					>. SAGE Publications, 1992.
 				</div>
 			</div>
-	
+
 			<div class="text-md px-4 pt-2">
 				We're currently in an era of information and conversation wealth. That
 				paired with confusion and disarray throws us into a realm we've dubbed
@@ -63,7 +62,10 @@
 					>¹</a
 				>
 				defines <span class="italic">clusterfuck</span> as a "complex and
-				utterly disordered and mismanagspan
+				utterly disordered and mismanaged situation." While Oxford<a
+					href="https://www.lexico.com/en/definition/clusterfuck"
+					style="color: #ff5e70;"
+					class="text-lg p-1 font-bold"
 					target="_blank"
 					>²</a
 				>
@@ -72,11 +74,7 @@
 				it has disastrous consequences.
 
 				<div
-					style="
-					background-color: #81d3c4;
-					color: #f2f2f2;
-					border: solid 2px #03a688;
-				"
+					style="background-color: #4e7479; color: white;"
 					class="shadow-md my-4 mx-2 p-4 text-xs rounded"
 				>
 					An analysis<a
@@ -121,8 +119,7 @@
 						Chief Translation Officer
 					</span>
 				</div>
-				<div class="py-2 flex justify-center color-soc-icons">
-				</div>
+				<div class="py-2 flex justify-center color-soc-icons"></div>
 			</div>
 			<div class="m-4">
 				<img
@@ -139,11 +136,11 @@
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons">
 					<a href="https://twitter.com/just_some_d00d" target="_blank">
-						<img src="~/assets/icons/twitter.svg" class="mx-4" width="25" height="25" />
+						<img class="mx-4" width="25" height="25" />
 					</a>
-		
+
 					<a href="https://d00d.blog" target="_blank">
-						<img src="~/assets/icons/link.svg" class="mx-4" width="25" height="25" />
+						<img class="mx-4" width="25" height="25" />
 					</a>
 				</div>
 			</div>
@@ -162,11 +159,11 @@
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons">
 					<a href="https://twitter.com/ElParece" target="_blank">
-						<img src="~/assets/icons/twitter.svg" class="mx-4" width="25" height="25" />
+						<img class="mx-4" width="25" height="25" />
 					</a>
 
 					<a href="https://narco.news/author/elparece" target="_blank">
-						<img src="~/assets/icons/link.svg" class="mx-4" width="25" height="25" />
+						<img class="mx-4" width="25" height="25" />
 					</a>
 				</div>
 			</div>
@@ -185,11 +182,11 @@
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons">
 					<a href="https://twitter.com/OptimisticOsi" target="_blank">
-						<img src="~/assets/icons/twitter.svg" class="mx-4" width="25" height="25" />
+						<img class="mx-4" width="25" height="25" />
 					</a>
-	
+
 					<a href="https://narco.news/author/michael" target="_blank">
-						<img src="~/assets/icons/link.svg" class="mx-4" width="25" height="25" />
+						<img class="mx-4" width="25" height="25" />
 					</a>
 				</div>
 			</div>
