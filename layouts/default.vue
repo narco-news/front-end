@@ -1,29 +1,33 @@
 <template>
-	<div class="grey-body">
-		<Header />
+	<div>
+		<StickyHeader />
+		<LogoBanner />
 		<client-only>
-			<Navigation />
-		</client-only>
-		<main>
-			<div>
-				<!-- ... -->
-				<nuxt />
+			<SlideMenu :closeOnNavigation="true" noOverlay>
+				<Burger />
+			</SlideMenu>
+			<div id="page-wrap">
+				<div>
+					<nuxt class="mt-6" />
+				</div>
 			</div>
-		</main>
-		<!-- Footer -->
+		</client-only>
 		<Footer />
 	</div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue';
-import Navigation from '~/components/Navigation.vue';
+import StickyHeader from '~/components/Navigation/StickyHeader.vue';
+import LogoBanner from '~/components/Navigation/LogoBanner.vue';
+import Burger from '~/components/Navigation/Burger.vue';
+
 import Footer from '~/components/Footer.vue';
 
 export default {
 	components: {
-		Header,
-		Navigation,
+		StickyHeader,
+		LogoBanner,
+		Burger,
 		Footer
 	},
 	data() {
@@ -89,11 +93,32 @@ export default {
 
 <style lang="scss">
 body {
-	margin: 0px;
-	// background-color: #bfb8aa;
-	// background-color: #d0d3c5;
-	// background-color: #d9d0c7;
-	// background-color: #d7ded3;
-	background-color: #b0c0bb;
+	background-color: #f2f2f2;
+}
+.bm-burger-bars {
+	background-color: #0d0d0d !important;
+	&:nth-child(2n) {
+		background-color: #0d0d0d !important;
+	}
+	&:nth-child(3n) {
+		background-color: #03a688 !important;
+	}
+}
+.bm-menu {
+	background-color: #0d0d0d !important;
+}
+.bm-burger-button {
+	left: 18px !important;
+	top: 40px !important;
+	height: 20px !important;
+	width: 26px !important;
+}
+.line-style {
+	height: 15% !important;
+	left: 0;
+	right: 0;
+}
+.bm-cross {
+	background: #f2f2f2 !important;
 }
 </style>
