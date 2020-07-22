@@ -74,7 +74,11 @@
 				it has disastrous consequences.
 
 				<div
-					style="background-color: #4e7479; color: white;"
+					style="
+						background-color: #81d3c4;
+						color: #f2f2f2;
+						border: solid 2px #03a688;
+					"
 					class="shadow-md my-4 mx-2 p-4 text-xs rounded"
 				>
 					An analysis<a
