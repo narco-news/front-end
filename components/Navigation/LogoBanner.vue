@@ -11,8 +11,8 @@
 					alt="narco.news Logo"
 					class="w-56 md:w-64"
 				/>
-				<p id="high" class="text-center">
-					Open Source Drug War Investigations
+				<p id="high" class="text-center absolute">
+					{{ $t('message.sub') }}
 				</p>
 			</n-link>
 		</div>
@@ -37,6 +37,21 @@ export default {
 			});
 			annotation.show();
 		}
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					sub: 'Open Source Drug War Investigations'
+				}
+			},
+			es: {
+				message: {
+					sub:
+						'Investigaciones de código abierto sobre la guerra contra las drogas'
+				}
+			}
+		}
 	}
 };
 </script>
@@ -52,5 +67,6 @@ p {
 	font-size: 14px;
 	color: #0d0d0d;
 	margin-top: 4px;
+	width: 250px;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<div class="latest uppercase md:text-2xl">
-			<div class="flex flex-row flex-no-wrap items-center gap-2">
+			<div class="flex flex-row flex-no-wrap items-center ml-2">
 				<div>Latest</div>
-				<div class="blink bg-red-500 rounded-full h-2 w-2 mb-1"></div>
+				<div class="blink bg-red-500 rounded-full h-2 w-2 mb-1 ml-2"></div>
 			</div>
 		</div>
 		<div class="ml-4 px-1">
@@ -12,7 +12,9 @@
 				:key="article.id"
 				class="list-outside"
 			>
-				<li class="text-xs">{{ article.title }}</li>
+				<n-link :to="article.slug">
+					<li class="text-xs underline">{{ article.title }}</li>
+				</n-link>
 			</ul>
 		</div>
 	</div>

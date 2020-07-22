@@ -129,12 +129,12 @@
 				the marks and names of others.
 			</div>
 			<div
-				class="cursor-not-allowed site text-xs flex flew-row items-center justify-center whitespace-no-wrap"
+				class="cursor-not-allowed site text-xs flex items-center justify-center"
 			>
-				<span class="siteName mr-1">
-					narco<span class="italic">&nbsp;dot&nbsp;</span> news ✶</span
+				<span class="siteName mr-1 h-auto">
+					narco<span class="italic">&nbsp;dot&nbsp;</span> news</span
 				>
-				{{ $t('message.os') }}
+				<span></span>
 			</div>
 		</div>
 	</div>
