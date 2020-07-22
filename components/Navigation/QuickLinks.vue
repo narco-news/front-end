@@ -1,12 +1,20 @@
 <template>
 	<div class="flex flex-row flex-no-wrap gap-4 md:gap-8 whitespace-no-wrap">
-		<n-link to="/wire" class="news flex flex-row flex-no-wrap gap-2">
-			<img src="~/assets/icons/activity-16.svg" alt="Newswire icon" />
+		<n-link to="/wire" class="news flex flex-row flex-no-wrap mr-2">
+			<img
+				src="~/assets/icons/activity-16.svg"
+				alt="Newswire icon"
+				class="mr-1"
+			/>
 			<div class="hidden md:inline">{{ $t('message.newswire') }}</div>
 		</n-link>
 
-		<n-link to="#" class="discuss flex flex-row flex-no-wrap gap-2">
-			<img src="~/assets/icons/message-circle-16.svg" alt="Discussion icon" />
+		<n-link to="#" class="discuss flex flex-row flex-no-wrap">
+			<img
+				src="~/assets/icons/message-circle-16.svg"
+				alt="Discussion icon"
+				class="mr-1"
+			/>
 			<div class="hidden md:inline">{{ $t('message.discussionboard') }}</div>
 		</n-link>
 	</div>

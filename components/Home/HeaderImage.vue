@@ -4,7 +4,9 @@
 			<div class="col-span-1">
 				<LatestArticlesBox />
 			</div>
-			<div class="object-cover col-span-2 grid grid-rows-2 pattern-dots-md">
+			<div
+				class="object-cover col-span-2 grid grid-rows-2 pattern-dots-md overflow-hidden"
+			>
 				<img
 					style="transform: translate(20px, 20px);"
 					src="~/assets/images/opium.jpg"
