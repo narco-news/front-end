@@ -61,8 +61,13 @@ export default async () => {
 
 		webfontloader: {
 			custom: {
-				families: ['IBM Plex Sans:n3,n4,n5,n7', 'Lora:n4,n5,n6,n7'],
+				families: [
+					'IBM Plex Sans:n3,n4,n5,n7',
+					'Lora:n4,n5,n6,n7',
+					'Courier Prime:n4,n7'
+				],
 				urls: [
+					'https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap',
 					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap'
 				]
 			}

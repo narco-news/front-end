@@ -1,11 +1,16 @@
 <template>
-	<div></div>
+	<div class="h-screen">
+		<HeaderImage />
+	</div>
 </template>
 
 <script>
+import HeaderImage from '~/components/Home/HeaderImage';
 export default {
 	layout: 'default',
-	components: {}
+	components: {
+		HeaderImage
+	}
 };
 </script>
 

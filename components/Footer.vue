@@ -1,5 +1,5 @@
 <template>
-	<div style="background-color: #0d0d0d;" class="pt-3 bottom-0">
+	<div style="background-color: #0d0d0d;" class="pt-3">
 		<div class="h-full flex justify-center my-4">
 			<div class="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-9 mx-2 gap-2">
 				<!-- Mailing -->
@@ -122,11 +122,11 @@
 		</div>
 		<div class="text-center">
 			<div class="trademark w-4/5 lg:w-1/3 mb-2 mx-auto">
-				All product names, logos, and brands are property of their respective
-				owners. All company, product and service names used in this website are
-				for identification purposes only. Use of these names, logos, and brands
-				does not imply endorsement. We disclaims proprietary interest in the
-				marks and names of others.
+				All company, product and service names used in this website are for
+				identification purposes only. All product names, logos, and brands are
+				property of their respective owners. Use of these names, logos, and
+				brands does not imply endorsement. We disclaims proprietary interest in
+				the marks and names of others.
 			</div>
 			<div
 				class="cursor-not-allowed site text-xs flex flew-row items-center justify-center whitespace-no-wrap"
