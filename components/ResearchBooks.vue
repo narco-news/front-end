@@ -1,31 +1,36 @@
 <template>
 	<div class="mx-2 py-4">
-		<div id="book-list" class="rounded overflow-y-auto h-screen">
+		<div id="book-list" class="flex flex-col mx-auto">
 			<div v-for="book in Books" :key="book.id">
 				<!-- Start -->
-				<div class="bg-white rounded shadow-lg m-2 my-4">
-					<div class="grid grid-cols-2 p-4">
-						<div>
-							<div class="text-lg font-serif font-bold">
+				<div class="bg-white rounded-md shadow-md m-2 my-4">
+					<div class="grid grid-cols-1 md:grid-cols-2">
+						<div class="grid-span-1 text-lg md:text-2xl">
+							<div class="col-span-1 font-bold p-2">
 								{{ book.title }}
 							</div>
-							<div class="text-sm font-mono red-text my-2">
-								{{ book.authors }}
-							</div>
-							<div class="text-sm font-mono">
-								{{ book.datePublished }}
+							<div class="grid grid-cols-2 items-center text-center p-2">
+								<div class="grid-span-1 text-sm md:text-lg font-mono red-text">
+									{{ book.authors }}
+								</div>
+								<div class="grid-span-1 text-xs md:text-lg font-mono">
+									{{ book.datePublished }}
+								</div>
 							</div>
 						</div>
-						<div>
+						<div
+							class="col-span-1 overflow-hidden h-64 flex flex-row justify-end"
+						>
 							<img
 								:src="book.imageUrl"
 								:alt="book.imageAlt"
-								class="h-32 md:h-40 float-right m-2"
+								style="transform: translate(0px, 0px);"
+								class="object-cover rounded-tr-md"
 							/>
 						</div>
 					</div>
 					<div
-						class="p-4 text-xs h-40 lg:h-32 overflow-y-auto mb-2 hideScroll clear-right italic"
+						class="p-2 text-xs h-40 lg:h-32 overflow-y-auto hideScroll clear-right italic"
 					>
 						{{ book.desc }}
 					</div>
@@ -47,6 +52,9 @@ export default {
 </script>
 
 <style lang="scss">
+#book-list {
+	max-width: 500px;
+}
 .red-text {
 	color: #ff5e70;
 }

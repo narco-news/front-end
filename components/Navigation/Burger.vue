@@ -9,7 +9,7 @@
 			<div id="top">
 				<n-link
 					to="/about"
-					class="hl-link flex flex-row flex-no-wrap items-center gap-4 mb-2"
+					class="hl-link flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -28,11 +28,11 @@
 						<line x1="12" y1="17" x2="12.01" y2="17"></line>
 					</svg>
 
-					<div class="hvr-forward">About</div>
+					<div class="hvr-forward ml-4">About</div>
 				</n-link>
 				<n-link
 					to="#"
-					class="hl-link flex flex-row flex-no-wrap items-center gap-4 mb-2"
+					class="hl-link flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@
 						></path>
 						<polyline points="22,6 12,13 2,6"></polyline>
 					</svg>
-					<div class="hvr-forward">Contact</div>
+					<div class="hvr-forward ml-4">Contact</div>
 				</n-link>
 			</div>
 			<div id="mid">
@@ -59,28 +59,29 @@
 					to="/wire"
 					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
 				>
-					<img src="~/assets/icons/activity-32.svg" alt="Booklist icon" />
+					<!-- <img src="~/assets/icons/activity-32.svg" alt="Booklist icon" /> -->
 					<span class="text-3xl">Newswire</span>
 				</n-link>
 				<n-link
 					to="/booklist"
-					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
+					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
-					<img src="~/assets/icons/bookmark.svg" alt="Booklist icon" />
+					<!-- <img src="~/assets/icons/bookmark.svg" alt="Booklist icon" /> -->
 					<span class="text-3xl">Booklist</span>
 				</n-link>
 				<n-link
 					to="/academia"
-					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
+					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
-					<img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" />
+					<!-- <img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" /> -->
 					<span class="text-3xl">Academic</span>
 				</n-link>
-				<n-link
-					to="/wiki"
-					class="flex flex-row flex-no-wrap items-center gap-4"
-				>
-					<img src="~/assets/icons/wiki.svg" alt="Booklist icon" />
+				<n-link to="#" class="flex flex-row flex-no-wrap items-center mb-2">
+					<!-- <img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" /> -->
+					<span class="text-3xl">Discussion</span>
+				</n-link>
+				<n-link to="#" class="flex flex-row flex-no-wrap items-center">
+					<!-- <img src="~/assets/icons/wiki.svg" alt="Booklist icon" /> -->
 					<span class="text-3xl">Wiki</span>
 				</n-link>
 			</div>
@@ -90,26 +91,26 @@
 						<img src="~/assets/icons/map.svg" alt="Map icon" />
 					</div>
 					<div>
-						<h1 class="ml-2">Mexico</h1>
+						<!-- <h1 class="ml-2">Mexico</h1> -->
 						<n-link
 							to="/guanajuato-map"
 							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
 						>
-							<img src="~/assets/icons/map-pin.svg" alt="Map icon" />
+							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
 							<div class="text-xl">Guanajuato</div>
 						</n-link>
 						<n-link
 							to="/tamap"
 							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
 						>
-							<img src="~/assets/icons/map-pin.svg" alt="Map icon" />
+							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
 							<div class="text-xl">Tamaulipas</div>
 						</n-link>
 						<n-link
 							to="/michmap"
 							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
 						>
-							<img src="~/assets/icons/map-pin.svg" alt="Map icon" />
+							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
 							<div class="text-xl">Michoacán</div>
 						</n-link>
 					</div>
@@ -154,7 +155,7 @@ a {
 }
 #mid {
 	position: relative;
-	margin: 2em 0 2em;
+	margin: 1em 0 1em;
 	color: #f2f2f2;
 	font-family: 'Lora', serif;
 	font-weight: 500;
@@ -168,7 +169,7 @@ a {
 #map-links {
 	font-family: 'IBM Plex Sans', sans;
 	font-weight: 500;
-	color: #a9a9a9;
+	color: #494949;
 	text-transform: uppercase;
 	a {
 		&:hover {

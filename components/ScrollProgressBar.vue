@@ -46,15 +46,15 @@ export default {
 
 .progress-bar {
 	position: fixed;
-	top: 25px;
+	top: 24px;
 	left: 0;
 	width: 100%;
 	background-color: transparent;
 	z-index: 50;
 
 	.percent {
-		height: 0.5rem;
-		background-color: #ff5e70;
+		height: 8px;
+		background-color: #f26457;
 	}
 }
 </style>

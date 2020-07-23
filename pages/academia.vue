@@ -1,16 +1,13 @@
 <template>
 	<div>
 		<div class="p-2 m-4 h-full">
-			<div class="flex justify-end lg:justify-start text-xl m-4">
-				ACADEMIA
-			</div>
 			<div class="grid grid-cols-1 lg:grid-cols-1 mb-6">
 				<tabs>
-					<tab title="Research Papers">
-						<ResearchPaper />
-					</tab>
 					<tab title="Books">
 						<ResearchBooks />
+					</tab>
+					<tab title="Academic Papers">
+						<ResearchPaper />
 					</tab>
 				</tabs>
 			</div>
@@ -52,14 +49,14 @@ export default {
 	// border: 1px solid transparent;
 	// border-bottom-color: #e2e2e2;
 	border-radius: 5px 5px 0 0;
-	background-color: #3a656a;
-	color: #eef3ed;
+	background-color: #03a688;
+	color: #f2f2f2;
 	position: relative;
 	bottom: -1px;
 }
 
 .vue-tab[aria-selected='true'] {
-	background-color: lighten(#3a656a, 10%);
+	background-color: lighten(#03a688, 5%);
 	// border-color: #e2e2e2;
 	// border-bottom-color: transparent;
 }

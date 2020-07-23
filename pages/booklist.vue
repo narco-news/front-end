@@ -1,9 +1,6 @@
 <template>
 	<div>
 		<div class="p-2 m-4 h-full">
-			<div class="flex justify-end lg:justify-start text-xl m-4">
-				BOOK LIST
-			</div>
 			<div class="flex flex-auto flex-wrap my-5 content-center justify-center">
 				<div v-for="book in bookList" :key="book.id">
 					<BookCard
