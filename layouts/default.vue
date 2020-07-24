@@ -96,9 +96,9 @@ body {
 	background-color: #f2f2f2;
 }
 .bm-burger-bars {
-	background-color: #0d0d0d !important;
+	background-color: #f2f2f2 !important;
 	&:nth-child(2n) {
-		background-color: #0d0d0d !important;
+		background-color: #03a688 !important;
 	}
 	&:nth-child(3n) {
 		background-color: #03a688 !important;

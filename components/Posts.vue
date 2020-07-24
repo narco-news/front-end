@@ -459,11 +459,4 @@ export default {
 .excerpt {
 	font-family: 'Crimson Text', serif;
 }
-
-.featured-badge {
-	background-color: #ecf543;
-	padding-top: 10px;
-	line-height: 1.4;
-	color: #1494d8;
-}
 </style>

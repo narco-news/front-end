@@ -45,12 +45,11 @@
 
 	&.tag-button {
 		padding: 0.1875rem 0.9375rem;
-		background-color: #3a656a;
+		background-color: #919191;
 		border: 1px solid transparent;
 		font-size: 0.675rem;
 		color: $light;
 		text-transform: uppercase;
-
 		@include hover-state {
 			background-color: lighten(#3a656a, 10%);
 			color: $light;

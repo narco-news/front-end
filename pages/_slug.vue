@@ -1,13 +1,9 @@
 <template>
-	<div class="bg-white p-4 pt-6 pb-10">
+	<div class="p-4 pt-6 pb-10">
 		<div class="row">
 			<div class="xs-12 lg-10 mx-auto">
 				<h1
-					style="
-						color: #d3494e;
-						font-family: 'Lato', sans-serif;
-						font-weight: 700;
-					"
+					style="color: #d3494e; font-weight: 700;"
 					class="post-title text-4xl"
 				>
 					{{ post.title }}
@@ -19,11 +15,7 @@
 							Author
 						</div>
 						<div
-							style="
-								font-family: 'Crimson Text', serif;
-								font-weight: 700;
-								color: #3a656a;
-							"
+							style="font-weight: 700; color: #3a656a;"
 							class="post-author-info-name text-lg"
 						>
 							<nuxt-link
@@ -126,7 +118,6 @@
 					<div class="row">
 						<div class="mx-auto">
 							<div
-								style="font-family: 'Crimson Text', serif; font-weight: 400;"
 								class="antialiased post-content mx-2 md:mx-4 text-lg md:text-2xl"
 							>
 								<!-- <h1 class="post-title">{{ post.title }}</h1> -->
@@ -314,7 +305,7 @@ export default {
 			store.commit('setSinglePost', payload);
 		} else {
 			const postLinks = store.state.postNavigation.find(
-				(post) => post.slug === params.slug
+				post => post.slug === params.slug
 			);
 
 			if (!postLinks) {
@@ -377,7 +368,7 @@ export default {
 
 	mounted() {
 		window.addEventListener('load', () => {
-			document.querySelectorAll('pre > code').forEach((block) => {
+			document.querySelectorAll('pre > code').forEach(block => {
 				hljs.highlightBlock(block);
 			});
 		});
@@ -479,6 +470,9 @@ export default {
 };
 </script>
 <style lang="scss">
+.tag-button:nth-child(2) {
+	background-color: #03a688;
+}
 .post-tags a {
 	text-decoration: none;
 }

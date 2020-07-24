@@ -1,11 +1,15 @@
 <template>
-	<div class="m-4 lg:mx-40 px-4 py-6 rounded shadow bg-white">
-		<posts :posts="postsIndex" :pagination="paginationIndex" />
+	<div>
+		<posts
+			class="clear-left"
+			:posts="postsIndex"
+			:pagination="paginationIndex"
+		/>
 	</div>
 </template>
 
 <script>
-import Posts from '~/components/Posts.vue';
+import Posts from '~/components/PostList.vue';
 
 export default {
 	components: {
@@ -107,3 +111,5 @@ export default {
 	}
 };
 </script>
+
+<style lang="scss" scoped></style>
