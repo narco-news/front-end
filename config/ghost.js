@@ -12,7 +12,7 @@ const ghost = (url, key) => {
 	});
 };
 
-const postsPerPage = 10;
+const postsPerPage = 17;
 
 const generateRoutes = async () => {
 	const host = process.env.GHOST_URI;

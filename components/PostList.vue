@@ -2,7 +2,7 @@
 	<div class="grid grid-cols-1">
 		<div class="archive mx-1">
 			<article
-				v-for="post in posts"
+				v-for="post in posts.slice(0, 18)"
 				:key="post.id"
 				class="article rounded-sm hvr-shrink"
 			>
@@ -193,8 +193,6 @@ export default {
 	}
 	.image {
 		height: 150px;
-	}
-	img {
 	}
 }
 

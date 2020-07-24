@@ -4,15 +4,18 @@
 			<div class="col-span-1">
 				<LatestArticlesBox />
 			</div>
-			<div class="col-span-2 grid grid-rows-2 pattern-dots-md overflow-hidden">
+			<div class="col-span-2 pattern-dots-md overflow-hidden">
 				<img
 					style="transform: translate(20px, 20px);"
 					class="opic object-cover"
 					src="~/assets/images/opium.jpg"
 					alt="Opium"
 				/>
-				<div class="website my-4 md:mt-12 mx-5">
-					<div class="bg-white rounded-md shadow-md p-2 mx-4 h-48">
+				<div class="relative mt-12 grid grid-rows-1">
+					<div class="px-4">
+						<Welcome />
+					</div>
+					<div class="bg-white rounded-md shadow-md my-6 md:mb-4 p-2 mx-4 h-48">
 						<h1 class="uppercase float-right">Website Updates</h1>
 						<WebsiteUpdates class="clear-right" />
 					</div>
@@ -25,10 +28,12 @@
 <script>
 import LatestArticlesBox from '~/components/Home/LatestArticlesBox';
 import WebsiteUpdates from '~/components/Home/WebsiteUpdates';
+import Welcome from '~/components/Home/Welcome';
 export default {
 	components: {
 		LatestArticlesBox,
-		WebsiteUpdates
+		WebsiteUpdates,
+		Welcome
 	}
 };
 </script>

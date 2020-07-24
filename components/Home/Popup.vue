@@ -2,7 +2,7 @@
 	<div
 		v-if="!isHidden"
 		style="animation-delay: 2s;"
-		class="fixed bottom-0 z-20 animate__animated animate__backInUp w-full flex justify-center py-8 px-8 md:px-16 lg:px-32"
+		class="fixed bottom-0 z-20 animate__animated animate__backInUp w-full flex justify-center py-8 px-4 md:px-16 lg:px-32"
 	>
 		<div>
 			<div
@@ -53,13 +53,13 @@ export default {
 			en: {
 				message: {
 					text:
-						'Hello again! Much still in development around here, but getting closer. Feel free to send me a public or private message on Twitter if you see something you think I missed. Thank you!'
+						"Hello again! Please disregard translations for now. They're computer generated and will be done once design is complete."
 				}
 			},
 			es: {
 				message: {
 					text:
-						'¡Hola de nuevo! Mucho aún en desarrollo por aquí, pero cada vez más cerca. No dudes en enviarme un mensaje público o privado en Twitter si ves algo que crees que me perdí. ¡Gracias!'
+						'¡Hola de nuevo! Por favor, descarte las traducciones por ahora. Son generadas por computadora y se harán una vez que el diseño esté completo.'
 				}
 			}
 		}
