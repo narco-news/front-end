@@ -99,7 +99,7 @@ export default {
 						'To see the latest work published by our team, check the {0}',
 					discuss: 'discussion board.',
 					discussGreeting:
-						"If you're interested in getting involved in the conversation, head over to the {0}.",
+						"If you're interested in getting involved in the conversation, head over to the {0}",
 					conclude:
 						"Should you have any questions, please don't hesitate to {0}",
 					email: 'contact us.'
