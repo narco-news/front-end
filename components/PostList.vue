@@ -1,7 +1,11 @@
 <template>
 	<div class="grid grid-cols-1">
 		<div class="archive mx-1">
-			<article v-for="post in posts" :key="post.id" class="article rounded-sm">
+			<article
+				v-for="post in posts"
+				:key="post.id"
+				class="article rounded-sm hvr-shrink"
+			>
 				<div class="grid grid-cols-1">
 					<div>
 						<div
@@ -49,7 +53,13 @@
 									post.published_at | dayjs
 								}}</span>
 								<span class=""
-									><reading-time :content="post.html" style="color: #0d0d0d;"
+									><reading-time
+										:content="post.html"
+										style="
+											color: #0d0d0d;
+											font-size: 12px;
+											font-family: 'Courier Prime';
+										"
 								/></span>
 							</div>
 						</div>
@@ -156,6 +166,7 @@ export default {
 	}
 }
 .article:nth-child(6n) {
+	margin: 0 1em;
 	grid-column: -3 / -1;
 	background-color: #b3e4db;
 	border: 2px solid #03a688;
@@ -163,43 +174,29 @@ export default {
 		color: #e6f6f3;
 		font-size: 26px;
 	}
+	.published_at {
+		color: #02856d;
+	}
 }
 
 .article:nth-child(1) {
 	height: 100%;
-	background-color: #dadada;
-	@apply rounded-md shadow-md mx-2;
+	margin: 0 0.5em;
 	.title {
 		font-size: 18px;
 		color: #03a688;
 		font-family: 'IBM Plex Sans';
 		font-weight: 700;
 	}
+	.published_at {
+		color: #02856d;
+	}
 	.image {
 		height: 150px;
 	}
 	img {
-		@apply rounded-tl-md rounded-tr-md;
 	}
 }
-
-// .article:nth-child(3) {
-// 	@apply shadow-md;
-// 	@apply rounded-md;
-// 	grid-column: span 2;
-// 	margin: 0em 1em;
-// 	padding: 1em;
-// 	background-color: #dadada;
-// 	border: 2px solid #96b1ac;
-// 	.title {
-// 		color: #026452;
-// 		font-weight: 700;
-// 	}
-// 	.published_at {
-// 		color: #03a688;
-// 		font-weight: 700;
-// 	}
-// }
 
 @media (max-width: 680px) {
 	.archive {
@@ -239,10 +236,11 @@ export default {
 }
 
 .published_at {
-	color: #026452;
+	color: #f28177;
 	font-family: 'IBM Plex Sans';
 	font-weight: 600;
 	letter-spacing: -1px;
+	font-size: 13px;
 }
 
 .tags {
