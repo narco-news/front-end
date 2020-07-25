@@ -166,17 +166,7 @@ export default {
 	}
 }
 .article:nth-child(6n) {
-	margin: 0 1em;
 	grid-column: -3 / -1;
-	background-color: #b3e4db;
-	border: 2px solid #03a688;
-	.title {
-		color: #e6f6f3;
-		font-size: 26px;
-	}
-	.published_at {
-		color: #02856d;
-	}
 }
 
 .article:nth-child(1) {
@@ -203,7 +193,7 @@ export default {
 	}
 
 	.article {
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 	}
 }
 // Grid
