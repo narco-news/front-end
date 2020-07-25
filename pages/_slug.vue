@@ -305,7 +305,7 @@ export default {
 			store.commit('setSinglePost', payload);
 		} else {
 			const postLinks = store.state.postNavigation.find(
-				post => post.slug === params.slug
+				(post) => post.slug === params.slug
 			);
 
 			if (!postLinks) {
@@ -368,7 +368,7 @@ export default {
 
 	mounted() {
 		window.addEventListener('load', () => {
-			document.querySelectorAll('pre > code').forEach(block => {
+			document.querySelectorAll('pre > code').forEach((block) => {
 				hljs.highlightBlock(block);
 			});
 		});
