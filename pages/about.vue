@@ -2,89 +2,22 @@
 	<div>
 		<div class="overflow-hidden mx-2">
 			<div
-				style="font-family: 'Courier Prime', monospace;"
-				class="flex justify-end lg:justify-start text-xl m-4"
-			>
-				ABOUT
-			</div>
-			<div
 				style="animation-duration: 1s;"
 				class="px-2 text-center animate__animated animate__fadeIn"
-			>
-				<p></p>
-			</div>
-			<div
-				style="
-					background-color: #81d3c4;
-					color: #f2f2f2;
-					border: solid 2px #03a688;
-				"
-				class="p-4 mx-4 text-xs h-auto rounded-md shadow-md overflow-hidden"
-			>
-				<span class="float-left italic">
-					"Drug trafficking, for example, is not the behavior of a daring,
-					secretive, and clever operator; it is a complex international business
-					system, deeply touching the lives of peasant farmers, political
-					leaders in the nation's capital, or the highly competent business men
-					and women who make the system go, and reap enormous profits from it.
-					Therefore, in order for us to understand them, to perceive their
-					broader meaning, they must be studied as systematic behavior, in the
-					full context of their economic, political, and cultural aspects."
-				</span>
-
+			></div>
+			<div class="pattern-dots-md py-2 m-4">
 				<div
 					style="
-						color: #262626;
-						font-weight: 600;
-						font-size: 9px;
-						font-family: 'Courier Prime';
-					"
-					class="mt-2 float-right text-right"
-				>
-					Martin, J. M., and A. T. Romano.
-					<span class="italic"
-						>Multinational crime: Terrorism, espionage, drug and arms
-						trafficking</span
-					>. SAGE Publications, 1992.
-				</div>
-			</div>
-
-			<div class="text-md px-4 pt-2">
-				We're currently in an era of information and conversation wealth. That
-				paired with confusion and disarray throws us into a realm we've dubbed
-				the
-				<span id="highway">information clusterfuck</span>
-				. Merriam-Websters<a
-					href="https://www.merriam-webster.com/dictionary/clusterfuck"
-					style="color: #ff5e70;"
-					class="text-lg p-1 font-bold"
-					target="_blank"
-					>¹</a
-				>
-				defines <span class="italic">clusterfuck</span> as a "complex and
-				utterly disordered and mismanaged situation." While Oxford<a
-					href="https://www.lexico.com/en/definition/clusterfuck"
-					style="color: #ff5e70;"
-					class="text-lg p-1 font-bold"
-					target="_blank"
-					>²</a
-				>
-				states it as a "disastrously mishandled situation or undertaking." These
-				definitions provide us valuable reminders, the situation is complex and
-				it has disastrous consequences.
-
-				<div
-					style="
-						background-color: #81d3c4;
-						color: #f2f2f2;
+						color: #0d0d0d;
 						border: solid 2px #03a688;
+						background-color: #f2f2f2;
 					"
-					class="shadow-md my-4 mx-2 p-4 text-xs rounded"
+					class="shadow-md m-6 p-4 text-xs rounded"
 				>
 					An analysis<a
 						href="https://mexicobusiness.news/policyandeconomy/news/mexico-ranks-second-fake-news-generation"
-						style="color: #ff5e70;"
-						class="text-lg p-1 font-bold"
+						style="color: #03a688;"
+						class="font-bold"
 						target="_blank"
 						>³</a
 					>
@@ -96,6 +29,71 @@
 						news after Turkey."</span
 					>
 				</div>
+			</div>
+
+			<div class="text-md px-4 pt-2">
+				We're currently in an era of information and conversation wealth. That
+				paired with confusion and disarray throws us into a realm we've dubbed
+				the
+				<span id="highway">information clusterfuck</span>
+				. Merriam-Websters<a
+					href="https://www.merriam-webster.com/dictionary/clusterfuck"
+					style="color: #03a688;"
+					class="font-bold"
+					target="_blank"
+					>¹</a
+				>
+				defines <span class="italic">clusterfuck</span> as a "complex and
+				utterly disordered and mismanaged situation." While Oxford<a
+					href="https://www.lexico.com/en/definition/clusterfuck"
+					style="color: #03a688;"
+					class="font-bold"
+					target="_blank"
+					>²</a
+				>
+				states it as a "disastrously mishandled situation or undertaking." These
+				definitions provide us valuable reminders, the situation is complex and
+				it has disastrous consequences.
+
+				<div class="pattern-dots-md py-2 m-4">
+					<div
+						style="
+							color: #0d0d0d;
+							border: solid 2px #03a688;
+							background-color: #f2f2f2;
+						"
+						class="p-4 m-5 text-xs h-auto rounded-md shadow-md overflow-hidden"
+					>
+						<span class="float-left italic">
+							"Drug trafficking, for example, is not the behavior of a daring,
+							secretive, and clever operator; it is a complex international
+							business system, deeply touching the lives of peasant farmers,
+							political leaders in the nation's capital, or the highly competent
+							business men and women who make the system go, and reap enormous
+							profits from it. Therefore, in order for us to understand them, to
+							perceive their broader meaning, they must be studied as systematic
+							behavior, in the full context of their economic, political, and
+							cultural aspects."
+						</span>
+
+						<div
+							style="
+								color: #262626;
+								font-weight: 600;
+								font-size: 9px;
+								font-family: 'Courier Prime';
+							"
+							class="mt-2 float-right text-right"
+						>
+							Martin, J. M., and A. T. Romano.
+							<span class="italic"
+								>Multinational crime: Terrorism, espionage, drug and arms
+								trafficking</span
+							>. SAGE Publications, 1992.
+						</div>
+					</div>
+				</div>
+
 				Our focused is on <span class="font-bold">drug trafficking</span> and
 				<span class="font-bold">organized crime</span>. But further how it plays
 				out in a digital globally-connected 21st century world. Every day more
