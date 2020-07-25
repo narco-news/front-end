@@ -95,13 +95,13 @@
 </template>
 
 <script>
-import Posts from '~/components/Posts.vue';
+import PostList from '~/components/PostList.vue';
 
 export default {
 	name: 'AuthorIndex',
 
 	components: {
-		posts: Posts
+		posts: PostList
 	},
 
 	async fetch({error, params, payload, store}) {
@@ -139,7 +139,7 @@ export default {
 
 		pageAuthor() {
 			return this.$store.state.pageAuthors.find(
-				(author) => author.slug === this.$route.params.slug
+				author => author.slug === this.$route.params.slug
 			);
 		},
 

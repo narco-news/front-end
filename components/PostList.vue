@@ -99,7 +99,7 @@ import ReadingTime from '~/components/ReadingTime.vue';
 dayjs.extend(advancedFormat);
 
 export default {
-	name: 'Posts',
+	name: 'PostList',
 
 	components: {ReadingTime},
 

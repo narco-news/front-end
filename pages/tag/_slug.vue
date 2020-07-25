@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import Posts from '~/components/Posts.vue';
+import PostList from '~/components/PostList.vue';
 
 export default {
 	name: 'Tag',
 
 	components: {
-		posts: Posts
+		posts: PostList
 	},
 
 	async fetch({error, params, payload, store}) {
@@ -56,7 +56,7 @@ export default {
 
 		currentTag() {
 			return this.$store.state.pageTags.find(
-				(tag) => tag.slug === this.$route.params.slug
+				tag => tag.slug === this.$route.params.slug
 			);
 		},
 
