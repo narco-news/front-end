@@ -420,11 +420,6 @@ export default {
 					content: process.env.blogUrl + this.$route.path
 				},
 				{
-					hid: 'twitter:card',
-					name: 'twitter:card',
-					content: 'summary_large_image'
-				},
-				{
 					hid: 'twitter:creator',
 					name: 'twitter:creator',
 					content:
