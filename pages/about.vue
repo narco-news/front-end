@@ -111,14 +111,11 @@
 		</div>
 		<div class="flex flex-wrap justify-center my-5">
 			<div class="m-4">
-				<img class="shadow-lg mx-auto" src="../assets/images/ani-avatar.png" />
+				<img class="shadow-lg mx-auto" src="~/assets/images/ani-avatar.png" />
 
 				<div class="flex flex-col justify-center m-2">
 					<span class="py-1 text-2xl font-bold text-center">
 						Ani
-					</span>
-					<span class="py-1 text-lg italic text-center">
-						Chief Translation Officer
 					</span>
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons"></div>
@@ -126,46 +123,60 @@
 			<div class="m-4">
 				<img
 					class="shadow-lg mx-auto"
-					src="../assets/images/christopher-avatar.png"
+					src="~/assets/images/christopher-avatar.png"
 				/>
 				<div class="flex flex-col justify-center m-2">
 					<span class="py-1 text-2xl font-bold text-center">
 						Christopher
 					</span>
-					<span class="py-1 text-lg italic text-center">
-						Chief Operations Officer
-					</span>
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons">
 					<a href="https://twitter.com/just_some_d00d" target="_blank">
-						<img class="mx-4" width="25" height="25" />
+						<img
+							src="~/assets/icons/twitter.svg"
+							class="mx-4"
+							width="25"
+							height="25"
+						/>
 					</a>
 
 					<a href="https://d00d.blog" target="_blank">
-						<img class="mx-4" width="25" height="25" />
+						<img
+							src="~/assets/icons/link.svg"
+							class="mx-4"
+							width="25"
+							height="25"
+						/>
 					</a>
 				</div>
 			</div>
 			<div class="m-4">
 				<img
 					class="shadow-lg mx-auto"
-					src="../assets/images/parece-avatar.png"
+					src="~/assets/images/parece-avatar.png"
 				/>
 				<div class="flex flex-col justify-center m-2">
 					<span class="py-1 text-2xl font-bold text-center">
 						Parece
 					</span>
-					<span class="py-1 text-lg italic text-center">
-						Chief Research Officer
-					</span>
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons">
 					<a href="https://twitter.com/ElParece" target="_blank">
-						<img class="mx-4" width="25" height="25" />
+						<img
+							src="~/assets/icons/twitter.svg"
+							class="mx-4"
+							width="25"
+							height="25"
+						/>
 					</a>
 
 					<a href="https://narco.news/author/elparece" target="_blank">
-						<img class="mx-4" width="25" height="25" />
+						<img
+							src="~/assets/icons/link.svg"
+							class="mx-4"
+							width="25"
+							height="25"
+						/>
 					</a>
 				</div>
 			</div>
@@ -178,17 +189,24 @@
 					<span class="py-1 text-2xl font-bold text-center">
 						Michael
 					</span>
-					<span class="py-1 text-lg italic text-center">
-						Small Arms Research Lead
-					</span>
 				</div>
 				<div class="py-2 flex justify-center color-soc-icons">
 					<a href="https://twitter.com/OptimisticOsi" target="_blank">
-						<img class="mx-4" width="25" height="25" />
+						<img
+							src="~/assets/icons/twitter.svg"
+							class="mx-4"
+							width="25"
+							height="25"
+						/>
 					</a>
 
 					<a href="https://narco.news/author/michael" target="_blank">
-						<img class="mx-4" width="25" height="25" />
+						<img
+							src="~/assets/icons/link.svg"
+							class="mx-4"
+							width="25"
+							height="25"
+						/>
 					</a>
 				</div>
 			</div>
