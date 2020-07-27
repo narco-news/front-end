@@ -36,6 +36,10 @@
 		}
 	}
 
+	hr {
+		border-color: #cdede7;
+	}
+
 	figure {
 		display: block;
 		margin: 0.2rem 0 1rem;
@@ -251,6 +255,7 @@
 
 		.kg-image {
 			max-width: 75vw;
+			width: 65%;
 		}
 
 		figcaption {

@@ -2,7 +2,7 @@
 	<div class="author">
 		<header
 			:style="{
-				backgroundColor: '#171717',
+				backgroundColor: '#0d0d0d',
 				backgroundImage: `${pageAuthor.cover_image}`
 			}"
 		>
@@ -18,7 +18,7 @@
 							<h1 v-if="pageAuthor.name" class="author-title">
 								{{ pageAuthor.name }}
 							</h1>
-							<h2 v-if="pageAuthor.bio" class="author-bio">
+							<h2 v-if="pageAuthor.bio" class="author-bio text-center text-sm">
 								{{ pageAuthor.bio }}
 							</h2>
 							<div class="author-meta">
@@ -80,7 +80,7 @@
 			</div>
 		</header>
 
-		<div class="m-4 p-4 bg-white rounded">
+		<div class="m-4 p-4">
 			<div class="row">
 				<div class="xs-12 lg-9 mx-auto">
 					<posts
@@ -139,7 +139,7 @@ export default {
 
 		pageAuthor() {
 			return this.$store.state.pageAuthors.find(
-				author => author.slug === this.$route.params.slug
+				(author) => author.slug === this.$route.params.slug
 			);
 		},
 
@@ -156,13 +156,27 @@ export default {
 
 	head() {
 		return {
-			title: this.pageAuthor.name + ' | ' + this.pageUrl
+			title: this.pageAuthor.name
 		};
 	}
 };
 </script>
 <style lang="scss" scoped>
 @import '~/assets/scss/_variables.scss';
+
+.author-title {
+	font-family: 'Lora', serif;
+}
+
+.author-bio {
+	font-family: 'EB Garamond', serif;
+	padding: 0 1em;
+}
+
+.author-stats {
+	font-size: 14px;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
 
 header {
 	margin: -1rem 0 1rem;

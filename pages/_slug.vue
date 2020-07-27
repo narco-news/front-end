@@ -97,7 +97,7 @@
 						<img
 							:src="post.feature_image"
 							:alt="post.title"
-							class="mx-auto object-cover w-full lg:w-2/3 my-4 animate__animated animate__slideInUp"
+							class="mx-auto object-cover w-full lg:w-2/3 my-4 animate__animated animate__fadeInRight"
 						/>
 					</div>
 					<div class="row">
@@ -216,7 +216,7 @@
 									</dropdown>
 								</div>
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-text mx-4" v-html="post.html" />
+								<div class="post-text mx-2" v-html="post.html" />
 							</div>
 							<div
 								class="post-tags-bottom text-xs md:text-sm uppercase pattern-dots-md py-4 mt-6"
@@ -235,37 +235,8 @@
 										>
 									</li>
 								</ul>
-								<div class="float-right">
-									<div class="post-author flex flex-auto">
-										<div
-											v-if="post.primary_author.profile_image"
-											class="post-author-avatar mx-4"
-										>
-											<nuxt-link
-												:to="{path: '/author/' + post.primary_author.slug}"
-												:title="post.primary_author.name"
-											>
-												<img
-													:src="post.primary_author.profile_image"
-													:alt="post.primary_author.name"
-													class="rounded-full h-6"
-												/>
-											</nuxt-link>
-										</div>
-										<div class="post-author-info mr-4 mb-4">
-											<div class="post-author-info-name text-lg px-2">
-												<nuxt-link
-													:to="{path: '/author/' + post.primary_author.slug}"
-													style="color: #f26457;"
-													:title="post.primary_author.name"
-													>{{ post.primary_author.name }}</nuxt-link
-												>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
-							<div class="text-sm lg:text-lg inline-block w-full px-4">
+							<div class="text-sm lg:text-lg inline-block w-full px-4 my-2">
 								<div class="post-meta-date">
 									<div class="post-meta-date-info">
 										<span class="published_at font-bold uppercase">{{
@@ -324,7 +295,7 @@ export default {
 			return dayjs(date).format('MMMM Do, YYYY');
 		},
 		daysec(date) {
-			return dayjs(date).format('hh:mm A, MM/DD/YYYY');
+			return dayjs(date).format('hh:mm:ss A, MM/DD/YYYY');
 		}
 	},
 
@@ -447,43 +418,18 @@ export default {
 					content: process.env.blogUrl + this.$route.path
 				},
 				{
-					hid: 'twitter:creator',
-					name: 'twitter:creator',
-					content:
-						this.post.primary_author.twitter || this.post.primary_author.name
-				},
-				{
-					hid: 'twitter:data1',
-					name: 'twitter:data1',
-					content: this.post.primary_author.name
-				},
-				{
-					hid: 'twitter:description',
-					name: 'twitter:description',
-					content:
-						this.post.twitter_description ||
-						this.post.meta_description ||
-						this.post.excerpt
+					hid: 'twitter:card',
+					property: 'twitter:card',
+					content: 'summary_large_image'
 				},
 				{
 					hid: 'twitter:image',
-					name: 'twitter:image',
-					content: this.post.twitter_image || this.post.feature_image
+					property: 'twitter:image',
+					content: this.post.feature_image
 				},
-				{hid: 'twitter:label1', name: 'twitter:label1', content: 'Written by'},
 				{
 					hid: 'twitter:title',
-					name: 'twitter:title',
-					content: this.post.twitter_title || this.post.title
-				},
-				{
-					hid: 'twitter:url',
-					name: 'twitter:url',
-					content: process.env.blogUrl + this.$route.path
-				},
-				{
-					hid: 'apple-mobile-web-app-title',
-					name: 'apple-mobile-web-app-title',
+					property: 'twitter:title',
 					content: this.post.title
 				}
 			]

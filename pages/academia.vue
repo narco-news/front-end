@@ -28,6 +28,11 @@ export default {
 		return {
 			myPapers: Papers.papers
 		};
+	},
+	head() {
+		return {
+			title: 'Academic'
+		};
 	}
 };
 </script>

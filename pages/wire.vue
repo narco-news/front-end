@@ -60,12 +60,7 @@ export default {
 	},
 	head() {
 		return {
-			title:
-				this.pageSettings.title +
-				' - ' +
-				this.pageSettings.description +
-				' | ' +
-				this.pageUrl,
+			title: 'Newswire',
 			meta: [
 				{
 					hid: 'author',

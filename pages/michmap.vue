@@ -46,6 +46,11 @@ export default {
 			// or just to store if you want have access from other components
 			this.$store.map = event.map;
 		}
+	},
+	head() {
+		return {
+			title: 'Map of Michoacán'
+		};
 	}
 };
 </script>

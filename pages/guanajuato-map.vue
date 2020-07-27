@@ -66,7 +66,7 @@
 export default {
 	data() {
 		return {
-			title: 'Map of Guanajuato, México',
+			title: 'Map of Guanajuato',
 			pageImage: '/assets/images/guana-map.png',
 			token: process.env.accessToken,
 			mapStyle: 'mapbox://styles/mapbox/streets-v11', // your map style

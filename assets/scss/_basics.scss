@@ -119,27 +119,43 @@ p {
 }
 
 blockquote {
+	@apply shadow-sm;
 	position: relative;
 	margin: 2rem 0 !important;
 	padding: 1.5rem 2rem 1.5rem 3rem;
-	background-color: rgb(238, 243, 237);
-	color: #3a656a;
+	background-color: #e6f6f3;
+	color: #026452;
 	border-left: 6px solid lighten($dark, 75%);
 	border-radius: $border-radius;
 	font-style: italic;
-	border-left-color: #3a656a;
+	border-left-color: #03a688;
+	font-weight: 500;
+	font-family: 'Lora', sans-serif;
+	word-wrap: break-word;
+	line-height: 1.4;
+
+	a {
+		font-size: 11px;
+		font-family: 'Courier Prime', monospace;
+		font-weight: 400;
+	}
 
 	&::before {
 		position: absolute;
 		left: 10px;
 		top: 0px;
 		content: '\201C';
-		color: #3a656a;
+		color: #03a688;
 		font-size: 3.25rem;
 	}
 
 	&::after {
-		content: '';
+		position: absolute;
+		right: 30px;
+		bottom: 0px;
+		content: '\201D';
+		color: #03a688;
+		font-size: 3.25rem;
 	}
 
 	span {

@@ -232,6 +232,11 @@ export default {
 			});
 			annotation.show();
 		}
+	},
+	head() {
+		return {
+			title: 'About narco.news'
+		};
 	}
 };
 </script>

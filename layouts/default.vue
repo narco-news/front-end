@@ -32,7 +32,7 @@ export default {
 	},
 	data() {
 		return {
-			title: 'narco.news'
+			title: 'narco.news | open source drug war investigations'
 		};
 	},
 	computed: {

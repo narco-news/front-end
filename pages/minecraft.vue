@@ -124,6 +124,11 @@ export default {
 			width: 300,
 			height: 550
 		};
+	},
+	head() {
+		return {
+			title: 'Minecraft'
+		};
 	}
 };
 </script>

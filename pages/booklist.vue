@@ -29,7 +29,7 @@ export default {
 	data() {
 		return {
 			bookList: myBookList.books,
-			title: 'Book list'
+			title: 'narco.news booklist'
 		};
 	},
 	head() {

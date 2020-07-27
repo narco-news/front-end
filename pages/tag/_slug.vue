@@ -56,7 +56,7 @@ export default {
 
 		currentTag() {
 			return this.$store.state.pageTags.find(
-				tag => tag.slug === this.$route.params.slug
+				(tag) => tag.slug === this.$route.params.slug
 			);
 		},
 
@@ -73,7 +73,7 @@ export default {
 
 	head() {
 		return {
-			title: this.currentTag.name + ' | ' + this.pageUrl
+			title: this.currentTag.name
 		};
 	}
 };
