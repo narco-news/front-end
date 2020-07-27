@@ -219,6 +219,7 @@ export default {
 .title {
 	color: #0d0d0d;
 	font-family: 'Lora', sans-serif;
+	text-transform: capitalize;
 	font-weight: 600;
 	line-height: 1.2;
 }

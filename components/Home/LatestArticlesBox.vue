@@ -8,40 +8,17 @@
 			/>
 		</div>
 		<n-link to="/wire">
-			<h1 class="text-xs md:text-sm p-2 mx-2 uppercase">View More</h1>
+			<h1 class="text-xs md:text-sm p-2 mx-2 uppercase hvr-sink">View More</h1>
 		</n-link>
 	</div>
 </template>
 
 <script>
-import Posts from '~/components/CompactPostList.vue';
+import CompactPostList from '~/components/CompactPostList.vue';
 
 export default {
 	components: {
-		posts: Posts
-	},
-
-	async fetch({error, params, payload, store}) {
-		if (payload) {
-			store.commit('setPostsIndex', payload);
-		} else {
-			let pageNumber = 1;
-			if (params.pageNumber) {
-				pageNumber = params.pageNumber;
-			}
-
-			try {
-				await store.dispatch('getPostsIndex', {
-					filter: '',
-					pageNumber
-				});
-			} catch (err) {
-				error({
-					statusCode: 404,
-					message: err.message
-				});
-			}
-		}
+		posts: CompactPostList
 	},
 
 	computed: {

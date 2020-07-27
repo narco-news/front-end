@@ -36,28 +36,6 @@ export default {
 				});
 			}
 		}
-	},
-
-	computed: {
-		postsIndex() {
-			return this.$store.state.postsIndex;
-		},
-
-		paginationIndex() {
-			return this.$store.state.paginationIndex;
-		},
-
-		pageSettings() {
-			return this.$store.state.pageSettings;
-		},
-
-		pageUrl() {
-			return this.pageSettings.url
-				.replace(/^(?:https?:\/\/)?(?:www\.)?/i, '')
-				.split('/')[0];
-		}
 	}
 };
 </script>
-
-<style lang="sass"></style>

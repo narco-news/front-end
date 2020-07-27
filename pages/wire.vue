@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import Posts from '~/components/PostList.vue';
+import PostList from '~/components/PostList.vue';
 
 export default {
 	components: {
-		posts: Posts
+		posts: PostList
 	},
 
 	async fetch({error, params, payload, store}) {

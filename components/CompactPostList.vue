@@ -10,8 +10,14 @@
 			<div>
 				<ul class="square ml-4 p-1">
 					<li>
-						<h1 v-if="post.title" class="text-xs underline md:text-lg">
-							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
+						<h1
+							v-if="post.title"
+							class="text-xs underline md:text-lg capitalize"
+						>
+							<nuxt-link
+								:to="{path: '/' + post.slug}"
+								:title="post.title"
+								class="hvr-forward"
 								>{{ post.title }}
 							</nuxt-link>
 						</h1>

@@ -1,118 +1,103 @@
 <template>
-	<div class="p-4 pt-6 pb-10">
+	<div class="mx-4 lg:mx-20">
 		<div class="row">
-			<div class="xs-12 lg-10 mx-auto">
-				<h1
-					style="color: #d3494e; font-weight: 700;"
-					class="post-title text-4xl"
-				>
+			<div class="xs-12 lg-10 mx-auto animate__animated animate__fadeIn">
+				<!-- TAGS -->
+				<div class="post-tags">
+					<ul class="list inline">
+						<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
+							<nuxt-link :to="{path: '/tag/' + tag.slug}" :title="tag.name">{{
+								tag.name.replace(/^(#)/, '')
+							}}</nuxt-link>
+						</li>
+					</ul>
+				</div>
+				<h1 class="post-title text-4xl">
 					{{ post.title }}
 				</h1>
-				<!-- AUTHORS -->
-				<div class="post-author flex flex-auto float-right m-2 p-2">
-					<div class="post-author-info mr-4">
-						<div class="post-author-info-description text-gray-600 text-sm">
-							Author
+				<div>
+					<div class="flex flex-auto my-2">
+						<div class="post-excerpt">
+							<p v-if="post.custom_excerpt">
+								{{ post.custom_excerpt }}
+							</p>
 						</div>
-						<div
-							style="font-weight: 700; color: #3a656a;"
-							class="post-author-info-name text-lg"
-						>
-							<nuxt-link
-								:to="{path: '/author/' + post.primary_author.slug}"
-								:title="post.primary_author.name"
-								>{{ post.primary_author.name }}</nuxt-link
-							>
-						</div>
-					</div>
-					<div
-						v-if="post.primary_author.profile_image"
-						class="post-author-avatar"
-					>
-						<nuxt-link
-							:to="{path: '/author/' + post.primary_author.slug}"
-							:title="post.primary_author.name"
-						>
-							<img
-								:src="post.primary_author.profile_image"
-								:alt="post.primary_author.name"
-								class="rounded-full h-12 md:h-16"
-							/>
-						</nuxt-link>
 					</div>
 				</div>
-				<!-- DATE -->
-				<div class="text-sm lg:text-lg m-2 p-2">
-					<div class="post-meta-date flex flex-auto">
-						<!-- <div class="post-meta-date-icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								height="30"
-								weight="30"
-								viewBox="0 0 24 24"
+				<div
+					class="grid grid-cols-2 md:flex md:justify-start items-center justify-center md:my-2"
+				>
+					<div class="col-span-1">
+						<div class="post-author flex flex-auto items-center my-2">
+							<div
+								v-if="post.primary_author.profile_image"
+								class="post-author-avatar mx-4"
 							>
-								<path
-									fill="#666"
-									d="M 6 1 L 6 3 L 5 3 C 3.9 3 3 3.9 3 5 L 3 19 C 3 20.1 3.9 21 5 21 L 19 21 C 20.1 21 21 20.1 21 19 L 21 5 C 21 3.9 20.1 3 19 3 L 18 3 L 18 1 L 16 1 L 16 3 L 8 3 L 8 1 L 6 1 z M 5 5 L 19 5 L 19 7 L 5 7 L 5 5 z M 5 9 L 19 9 L 19 19 L 5 19 L 5 9 z M 12.75 10 L 9 11.455078 L 9 13.068359 L 11 12.365234 L 11 18 L 13 18 L 13 10 L 12.75 10 z"
-								/>
-							</svg>
-						</div> -->
-						<div
-							style="font-family: 'Lato', sans-serif; font-weight: 400;"
-							class="post-meta-date-info"
-						>
-							<span style="color: #666;" class="published_at font-bold">{{
-								post.published_at | dayjs
-							}}</span>
-							<br /><span
-								v-if="post.updated_at !== post.published_at"
-								class="updated_at text-gray-500 text-xs md:text-sm"
-							>
-								last edited <span>{{ post.updated_at | dayjs }}</span></span
-							>
+								<nuxt-link
+									:to="{path: '/author/' + post.primary_author.slug}"
+									:title="post.primary_author.name"
+								>
+									<img
+										:src="post.primary_author.profile_image"
+										:alt="post.primary_author.name"
+										class="rounded-full h-8"
+									/>
+								</nuxt-link>
+							</div>
+							<div class="post-author-info mr-4">
+								<div class="post-author-info-name text-lg">
+									<nuxt-link
+										:to="{path: '/author/' + post.primary_author.slug}"
+										:title="post.primary_author.name"
+										>{{ post.primary_author.name }}</nuxt-link
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-1 text-right">
+						<!-- DATE -->
+						<div class="text-sm lg:text-lg">
+							<div class="post-meta-date">
+								<div
+									class="post-meta-date-info md:flex md:flex-row md:flex-no-wrap"
+								>
+									<span class="published_at font-bold uppercase">{{
+										post.published_at | dayjs
+									}}</span>
+									<br /><span
+										v-if="post.updated_at !== post.published_at"
+										class="updated_at text-xs text-gray-500 md:ml-4"
+									>
+										last edited <span>{{ post.updated_at | dayjs }}</span></span
+									>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!-- TAGS -->
-				<div class="post-tags">
+				<div
+					class="post-tags-bottom text-xs md:text-sm uppercase pattern-dots-md py-2"
+				>
 					<ul class="list inline">
-						<li v-for="tag in post.tags" :key="tag.id" class="mx-2">
+						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-2">
 							<nuxt-link
 								:to="{path: '/tag/' + tag.slug}"
-								class="button tag-button"
 								:title="tag.name"
-								>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+								class="tags-bottom hvr-float"
+								>#{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 							>
 						</li>
 					</ul>
 				</div>
-				<div class="m-4">
-					<div class="flex flex-auto">
-						<div
-							style="font-family: 'Crimson Text', serif; font-weight: 400;"
-							class="italic"
-						>
-							<p
-								v-if="post.custom_excerpt"
-								style="background-color: #eef3ed; color: #3a656a;"
-								class="p-4"
-							>
-								{{ post.custom_excerpt }}
-							</p>
-							<!-- <p v-else-if="post.excerpt && !post.custom_excerpt">
-								{{ post.excerpt }}
-							</p> -->
-						</div>
-					</div>
-				</div>
-				<!--  -->
 				<article class="single-post">
 					<scroll-progress-bar />
 					<div v-if="post.feature_image">
 						<img
 							:src="post.feature_image"
 							:alt="post.title"
-							class="mx-auto object-cover w-full lg:w-2/3 my-4"
+							class="mx-auto object-cover w-full lg:w-2/3 my-4 animate__animated animate__slideInUp"
 						/>
 					</div>
 					<div class="row">
@@ -120,32 +105,6 @@
 							<div
 								class="antialiased post-content mx-2 md:mx-4 text-lg md:text-2xl"
 							>
-								<!-- <h1 class="post-title">{{ post.title }}</h1> -->
-								<div v-if="!pageSettings.page === 'true'" class="post-author">
-									<div
-										v-if="post.primary_author.profile_image"
-										class="post-author-avatar"
-									>
-										<nuxt-link
-											:to="{path: '/author/' + post.primary_author.slug}"
-										>
-											<img
-												:src="post.primary_author.profile_image"
-												:alt="post.primary_author.name"
-											/>
-										</nuxt-link>
-									</div>
-									<div class="post-author-info">
-										<div class="post-author-info-description">Author</div>
-										<div class="post-author-info-name">
-											<nuxt-link
-												:to="{path: '/author/' + post.primary_author.slug}"
-												:title="post.primary_author.name"
-												>{{ post.primary_author.name }}</nuxt-link
-											>
-										</div>
-									</div>
-								</div>
 								<div v-if="!pageSettings.page === 'true'" class="post-meta">
 									<ul class="list inline meta">
 										<li v-if="post.featured">
@@ -257,7 +216,73 @@
 									</dropdown>
 								</div>
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-text" v-html="post.html" />
+								<div class="post-text mx-4" v-html="post.html" />
+							</div>
+							<div
+								class="post-tags-bottom text-xs md:text-sm uppercase pattern-dots-md py-4 mt-6"
+							>
+								<ul class="list inline">
+									<li
+										v-for="tag in post.tags.slice(1, 4)"
+										:key="tag.id"
+										class="mx-2"
+									>
+										<nuxt-link
+											:to="{path: '/tag/' + tag.slug}"
+											:title="tag.name"
+											class="tags-bottom hvr-float"
+											>#{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+										>
+									</li>
+								</ul>
+								<div class="float-right">
+									<div class="post-author flex flex-auto">
+										<div
+											v-if="post.primary_author.profile_image"
+											class="post-author-avatar mx-4"
+										>
+											<nuxt-link
+												:to="{path: '/author/' + post.primary_author.slug}"
+												:title="post.primary_author.name"
+											>
+												<img
+													:src="post.primary_author.profile_image"
+													:alt="post.primary_author.name"
+													class="rounded-full h-6"
+												/>
+											</nuxt-link>
+										</div>
+										<div class="post-author-info mr-4 mb-4">
+											<div class="post-author-info-name text-lg px-2">
+												<nuxt-link
+													:to="{path: '/author/' + post.primary_author.slug}"
+													style="color: #f26457;"
+													:title="post.primary_author.name"
+													>{{ post.primary_author.name }}</nuxt-link
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-sm lg:text-lg inline-block w-full px-4">
+								<div class="post-meta-date">
+									<div class="post-meta-date-info">
+										<span class="published_at font-bold uppercase">{{
+											post.published_at | dayjs
+										}}</span>
+
+										<div class="float-right">
+											<span
+												v-if="post.updated_at !== post.published_at"
+												class="updated_at text-xs text-gray-500"
+											>
+												last edited
+												<span>{{ post.updated_at | daysec }}</span></span
+											>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -297,6 +322,9 @@ export default {
 	filters: {
 		dayjs(date) {
 			return dayjs(date).format('MMMM Do, YYYY');
+		},
+		daysec(date) {
+			return dayjs(date).format('hh:mm A, MM/DD/YYYY');
 		}
 	},
 
@@ -382,7 +410,6 @@ export default {
 			}
 		}
 	},
-
 	head() {
 		return {
 			title: this.post.title + ' | ' + this.pageUrl,
@@ -464,11 +491,66 @@ export default {
 	}
 };
 </script>
-<style lang="scss">
-.tag-button:nth-child(2) {
-	background-color: #03a688;
+<style lang="scss" scoped>
+.post-tags {
+	font-family: 'EB Garamond', serif;
+	font-weight: 500;
+	color: #03a688;
+	text-transform: uppercase;
 }
-.post-tags a {
-	text-decoration: none;
+.post-tags-bottom {
+	font-family: 'Courier Prime', monoespace;
+	font-weight: 600;
+	letter-spacing: 1px;
+	a {
+		color: #0d0d0d;
+		text-decoration: none;
+	}
+	li {
+		background-color: #f2f2f2;
+		padding: 0.5em;
+	}
+	.tags-bottom {
+		box-shadow: inset 0 -10px 0 0 #f2cb05;
+	}
+}
+.post-title {
+	font-family: 'Lora', serif;
+	font-weight: 600;
+	line-height: 1.4;
+	text-transform: capitalize;
+}
+.post-excerpt {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.post-author-avatar {
+	filter: grayscale(100%);
+	transition: filter 0.2s ease;
+	&:hover {
+		filter: none;
+	}
+}
+.post-author-info-name {
+	color: #03a688;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 600;
+	background-color: #f2f2f2;
+}
+
+.published_at {
+	color: #0d0d0d;
+}
+.post-text {
+	font-size: 18px;
+	font-family: 'EB Garamond', serif;
+	font-weight: 400;
+	color: #272727;
+}
+.updated_at {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
 }
 </style>
