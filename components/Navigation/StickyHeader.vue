@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
 #sticky-header {
-	background-color: #262626;
+	background-color: #0d0d0d;
 	color: #f2f2f2;
 	font-weight: 600;
 	font-size: 11px;

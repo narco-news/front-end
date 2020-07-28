@@ -180,3 +180,23 @@ main {
 	background: lighten($gray, 5%);
 	border-radius: $border-radius;
 }
+
+.warning {
+	width: 85%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0.25em 1em;
+	background-color: #fbd9d6;
+	border: solid;
+	border-color: #f28177;
+	border-width: 2px;
+	text-align: center;
+	color: #914d47;
+	font-family: 'IBM Plex Sans', monospace;
+	font-size: 13px;
+	font-weight: 700;
+
+	&::after {
+		content: 'GRAPHIC CONTENT WARNING';
+	}
+}

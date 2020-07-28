@@ -3,6 +3,9 @@
 		<SigNav />
 		<SigBasic />
 		<SigInfo />
+		<div>
+			<nuxt />
+		</div>
 	</div>
 </template>
 

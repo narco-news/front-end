@@ -97,7 +97,7 @@
 						<img
 							:src="post.feature_image"
 							:alt="post.title"
-							class="mx-auto object-cover w-full lg:w-2/3 my-4 animate__animated animate__fadeInRight"
+							class="mx-auto object-cover w-full lg:w-2/3 my-4"
 						/>
 					</div>
 					<div class="row">
@@ -419,18 +419,23 @@ export default {
 				},
 				{
 					hid: 'twitter:card',
-					property: 'twitter:card',
+					name: 'twitter:card',
 					content: 'summary_large_image'
 				},
 				{
 					hid: 'twitter:image',
-					property: 'twitter:image',
+					name: 'twitter:image',
 					content: this.post.feature_image
 				},
 				{
 					hid: 'twitter:title',
-					property: 'twitter:title',
+					name: 'twitter:title',
 					content: this.post.title
+				},
+				{
+					hid: 'twitter:url',
+					name: 'twitter:url',
+					content: process.env.blogUrl + this.$route.path
 				}
 			]
 		};

@@ -1,11 +1,7 @@
 <template>
 	<div>
 		<div>
-			<posts
-				class="clear-left"
-				:posts="postsIndex"
-				:pagination="paginationIndex"
-			/>
+			<posts class="clear-left" :posts="postsIndex" />
 		</div>
 		<n-link to="/wire">
 			<h1 class="text-xs md:text-sm p-2 mx-2 uppercase hvr-sink">View More</h1>
@@ -24,20 +20,6 @@ export default {
 	computed: {
 		postsIndex() {
 			return this.$store.state.postsIndex;
-		},
-
-		paginationIndex() {
-			return this.$store.state.paginationIndex;
-		},
-
-		pageSettings() {
-			return this.$store.state.pageSettings;
-		},
-
-		pageUrl() {
-			return this.pageSettings.url
-				.replace(/^(?:https?:\/\/)?(?:www\.)?/i, '')
-				.split('/')[0];
 		}
 	}
 };
