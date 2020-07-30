@@ -53,23 +53,23 @@ export default {
 				},
 				{
 					hid: 'og:title',
-					property: 'og:title',
+					name: 'og:title',
 					content: 'narco.news Book List'
 				},
 				{
 					hid: 'twitter:card',
-					property: 'twitter:card',
+					name: 'twitter:card',
 					content: 'summary_large_image'
 				},
 				{
 					hid: 'twitter:title',
-					property: 'twitter:title',
+					name: 'twitter:title',
 					content: 'Easy reading on-topic books that are worth taking a look at'
 				},
 				{
 					hid: 'twitter:image',
 					property: 'twitter:image',
-					content: 'https://narco.news/images/booklist.png'
+					name: 'https://narco.news/images/booklist.png'
 				}
 			]
 		};
