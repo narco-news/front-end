@@ -383,7 +383,7 @@ export default {
 	},
 	head() {
 		return {
-			title: this.post.title + ' | ' + this.pageUrl,
+			title: this.post.title,
 			meta: [
 				{
 					hid: 'description',

@@ -30,11 +30,6 @@ export default {
 		Burger,
 		Footer
 	},
-	data() {
-		return {
-			title: 'narco.news | open source drug war investigations'
-		};
-	},
 	computed: {
 		pageSettings() {
 			return this.$store.state.pageSettings;
@@ -70,15 +65,6 @@ export default {
 	},
 	head() {
 		return {
-			title: this.title,
-			meta: [
-				// hid is used as unique identifier. Do not use `vmid` for it as it will not work
-				{
-					hid: 'description',
-					name: 'description',
-					content: 'narco.news | information aggregation'
-				}
-			],
 			link: [
 				{
 					rel: 'icon',

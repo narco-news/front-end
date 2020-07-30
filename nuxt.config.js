@@ -22,11 +22,7 @@ export default async () => {
 
 		meta,
 
-		css: [
-			// '~/node_modules/flexgrid.io/dist/flexgrid-utils.min.css',
-			'~/assets/scss/main.scss',
-			'~/assets/css/tailwind.css'
-		],
+		css: ['~/assets/scss/main.scss', '~/assets/css/tailwind.css'],
 
 		loading: {color: '#171717'},
 
@@ -110,7 +106,6 @@ export default async () => {
 
 		plugins: [
 			// Crucial
-			{src: '~/plugins/i18n.js', ssr: false},
 			{src: '~/plugins/burger-menu.js', ssr: false},
 			{src: '~/plugins/postcss.js'},
 			{src: '~/plugins/animate.js', ssr: false},
