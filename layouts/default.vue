@@ -6,12 +6,12 @@
 			<SlideMenu :closeOnNavigation="true" noOverlay>
 				<Burger />
 			</SlideMenu>
-			<div id="page-wrap">
-				<div>
-					<nuxt class="mt-6" />
-				</div>
-			</div>
 		</client-only>
+		<div id="page-wrap">
+			<div>
+				<nuxt class="mt-6" />
+			</div>
+		</div>
 		<Footer />
 	</div>
 </template>
