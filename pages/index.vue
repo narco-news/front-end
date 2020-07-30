@@ -36,33 +36,6 @@ export default {
 				});
 			}
 		}
-	},
-	head() {
-		return {
-			title: 'Home',
-			meta: [
-				{
-					hid: 'twitter:card',
-					property: 'twitter:card',
-					content: 'summary_large_image'
-				},
-				{
-					hid: 'twitter:title',
-					property: 'twitter:title',
-					content: 'narco.news'
-				},
-				{
-					hid: 'twitter:description',
-					property: 'twitter:description',
-					content: 'Open Source Drug War Investigations'
-				},
-				{
-					hid: 'twitter:image',
-					property: 'twitter:image',
-					content: 'https://narco.news/images/opium.jpg'
-				}
-			]
-		};
 	}
 };
 </script>
