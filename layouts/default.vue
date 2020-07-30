@@ -62,17 +62,6 @@ export default {
 				.createContextualFragment(this.codeFoot);
 			document.getElementsByTagName('body')[0].appendChild(footInject);
 		}
-	},
-	head() {
-		return {
-			link: [
-				{
-					rel: 'icon',
-					type: 'image/x-icon',
-					href: '/favicon.ico?v=2'
-				}
-			]
-		};
 	}
 };
 </script>
