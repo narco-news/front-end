@@ -8,9 +8,7 @@
 			</SlideMenu>
 		</client-only>
 		<div id="page-wrap">
-			<div>
-				<nuxt class="mt-6" />
-			</div>
+			<nuxt class="mt-6" />
 		</div>
 		<Footer />
 	</div>

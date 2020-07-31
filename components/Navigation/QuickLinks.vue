@@ -1,6 +1,6 @@
 <template>
-	<div class="flex flex-row flex-no-wrap gap-4 md:gap-8 whitespace-no-wrap">
-		<n-link to="/wire" class="news flex flex-row flex-no-wrap mr-2">
+	<div class="flex flex-row flex-no-wrap whitespace-no-wrap">
+		<n-link to="/wire" class="news flex flex-row flex-no-wrap mr-4">
 			<img
 				src="~/assets/icons/activity-16.svg"
 				alt="Newswire icon"

@@ -56,23 +56,26 @@
 				</div>
 				<!-- narco news Links -->
 				<div class="col-span-2 lg:col-span-2 p-2">
-					<span class="text-md w-full font-bold foot-title">narco.news</span>
+					<span class="text-md w-full font-bold foot-title"
+						><n-link to="/">narco.news</n-link></span
+					>
 					<div class="grid grid-cols-2 lg:grid-cols-3 text-xs">
 						<n-link class="p-1" to="/about">About</n-link>
 						<n-link class="p-1" to="/booklist">Book list</n-link>
-						<n-link class="p-1" to="/academia">Academia</n-link>
+						<n-link class="p-1" to="/academia">Academic</n-link>
 						<n-link class="p-1" to="/wire">Newswire</n-link>
-						<a class="p-1" href="mailto:hello@narco.news">Contact Us</a>
 						<a class="p-1" href="https://github.com/narco-news/front-end"
 							>Github</a
 						>
-						<a class="p-1" href="https://publish.narco.news/rss">RSS</a>
-						<n-link class="p-1" to="/minecraft">MC</n-link>
+						<a class="p-1" href="#">RSS</a>
+						<a class="p-1" href="#">Contact Us</a>
 					</div>
 				</div>
 				<!-- Newswire links -->
 				<div class="col-span-3 lg:col-span-3 p-2">
-					<span class="text-md w-full font-bold foot-title">Newswire</span>
+					<span class="text-md w-full font-bold foot-title"
+						><n-link to="/wire">Newswire</n-link></span
+					>
 					<div class="w-full grid grid-cols-2 lg:grid-cols-3 text-xs">
 						<n-link class="p-1" to="/tag/united-states">United States</n-link>
 						<n-link class="p-1" to="/tag/mexican-dto">Mexico</n-link>
