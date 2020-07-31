@@ -1,9 +1,11 @@
 <template>
 	<div style="background-color: #0d0d0d;" class="pt-3">
 		<div class="h-full flex justify-center my-4">
-			<div class="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-9 mx-2 gap-2">
+			<div
+				class="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-9 mx-2 gap-2 whitespace-no-wrap"
+			>
 				<!-- Mailing -->
-				<div class="col-span-2 md:col-span-3 lg:col-span-3 p-2">
+				<div class="col-span-5 md:col-span-3 p-2 text-center">
 					<span class="text-md w-full font-bold foot-title">Mailing list</span>
 					<div class="p-2">
 						<mailchimp-subscribe
@@ -54,23 +56,6 @@
 						</mailchimp-subscribe>
 					</div>
 				</div>
-				<!-- narco news Links -->
-				<div class="col-span-2 lg:col-span-2 p-2">
-					<span class="text-md w-full font-bold foot-title"
-						><n-link to="/">narco.news</n-link></span
-					>
-					<div class="grid grid-cols-2 lg:grid-cols-3 text-xs">
-						<n-link class="p-1" to="/about">About</n-link>
-						<n-link class="p-1" to="/booklist">Book list</n-link>
-						<n-link class="p-1" to="/academia">Academic</n-link>
-						<n-link class="p-1" to="/wire">Newswire</n-link>
-						<a class="p-1" href="https://github.com/narco-news/front-end"
-							>Github</a
-						>
-						<a class="p-1" href="#">RSS</a>
-						<a class="p-1" href="#">Contact Us</a>
-					</div>
-				</div>
 				<!-- Newswire links -->
 				<div class="col-span-3 lg:col-span-3 p-2">
 					<span class="text-md w-full font-bold foot-title"
@@ -97,34 +82,27 @@
 						<n-link class="p-1" to="/tag/announcement">Announcements</n-link>
 					</div>
 				</div>
-				<!-- Favorites -->
-				<div class="col-span-1 p-2">
-					<span class="text-md w-full font-bold foot-title">Favorites</span>
-					<div class="flex flex-col text-xs">
-						<a
-							class="p-1"
-							target="_blank"
-							href="https://smallwarsjournal.com/elcentro"
-							>El Centro</a
+				<!-- narco news Links -->
+				<div class="col-span-2 lg:col-span-2 p-2">
+					<span class="text-md w-full font-bold foot-title"
+						><n-link to="/">narco.news</n-link></span
+					>
+					<div class="grid grid-cols-2 lg:grid-cols-3 text-xs">
+						<n-link class="p-1" to="/about">About</n-link>
+						<n-link class="p-1" to="/booklist">Book list</n-link>
+						<n-link class="p-1" to="/academia">Academic</n-link>
+						<n-link class="p-1" to="/wire">Newswire</n-link>
+						<a class="p-1" href="https://github.com/narco-news/front-end"
+							>Github</a
 						>
-						<a class="p-1" target="_blank" href="http://www.borderlandbeat.com/"
-							>Borderland Beat</a
-						>
-						<a class="p-1" target="_blank" href="https://www.insightcrime.org/"
-							>InSight Crime</a
-						>
-						<a
-							class="p-1"
-							target="_blank"
-							href="https://www.crisisgroup.org/latin-america-caribbean/mexico"
-							>Crisis Group MX</a
-						>
+						<a class="p-1" href="#">RSS</a>
+						<a class="p-1" href="#">Contact Us</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="text-center">
-			<div class="trademark w-4/5 lg:w-1/3 mb-2 mx-auto">
+			<div class="trademark mx-auto">
 				All company, product and service names used in this website are for
 				identification purposes only. All product names, logos, and brands are
 				property of their respective owners. Use of these names, logos, and
@@ -194,7 +172,10 @@ export default {
 <style lang="scss" scoped>
 .trademark {
 	font-size: 9px;
+	font-weight: 600;
 	color: #8590a6;
+	max-width: 900px;
+	margin: 0 3em 1em;
 }
 .site {
 	color: #252525;

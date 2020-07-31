@@ -33,7 +33,7 @@ export default {
 				color: '#FFD54F',
 				strokeWidth: 2,
 				iterations: 3,
-				animationDuration: 2000
+				animationDuration: 1500
 			});
 			annotation.show();
 		}

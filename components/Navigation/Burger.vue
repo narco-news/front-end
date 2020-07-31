@@ -76,18 +76,17 @@
 					<!-- <img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" /> -->
 					<span class="text-3xl">Academic</span>
 				</n-link>
-				<n-link to="#" class="flex flex-row flex-no-wrap items-center mb-2">
-					<!-- <img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" /> -->
-					<span class="text-3xl">Discussion</span>
-				</n-link>
-				<n-link to="#" class="flex flex-row flex-no-wrap items-center">
+				<a
+					href="https://wiki.narco.news"
+					class="flex flex-row flex-no-wrap items-center"
+				>
 					<!-- <img src="~/assets/icons/wiki.svg" alt="Booklist icon" /> -->
 					<span class="text-3xl">Wiki</span>
-				</n-link>
+				</a>
 			</div>
-			<div id="map-links">
-				<div class="flex flex-col flex-no-wrap justify-start gap-2">
-					<div>
+			<div id="map-links" class="mt-12">
+				<div class="flex flex-col flex-no-wrap justify-start">
+					<div class="mb-2">
 						<img src="~/assets/icons/map.svg" alt="Map icon" />
 					</div>
 					<div>
@@ -98,20 +97,6 @@
 						>
 							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
 							<div class="text-xl">Guanajuato</div>
-						</n-link>
-						<n-link
-							to="/tamap"
-							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
-						>
-							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
-							<div class="text-xl">Tamaulipas</div>
-						</n-link>
-						<n-link
-							to="/michmap"
-							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
-						>
-							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
-							<div class="text-xl">Michoacán</div>
 						</n-link>
 					</div>
 				</div>

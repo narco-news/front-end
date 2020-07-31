@@ -22,17 +22,8 @@
 							$t('message.newswire')
 						}}</n-link>
 					</i18n>
-					<i18n
-						path="message.discussGreeting"
-						tag="label"
-						for="message.discuss"
-					>
-						<n-link id="e3" to="#" class="hvr-pop">
-							{{ $t('message.discuss') }}
-						</n-link>
-					</i18n>
 					<i18n path="message.conclude" tag="label" for="message.email">
-						<n-link id="e4" to="#" class="hvr-pop disabled">
+						<n-link id="e3" to="#" class="hvr-pop disabled">
 							{{ $t('message.email') }}
 						</n-link>
 					</i18n>
@@ -72,14 +63,7 @@ export default {
 				iterations: 1,
 				animationDuration: 1000
 			});
-			const a4 = annotate(document.querySelector('#e4'), {
-				type: 'highlight',
-				color: '#FFD54F',
-				strokeWidth: 0.5,
-				iterations: 1,
-				animationDuration: 1000
-			});
-			const ag = annotationGroup([a3, a1, a2, a4]);
+			const ag = annotationGroup([a1, a2, a3]);
 			ag.show();
 		}
 	},
@@ -97,9 +81,6 @@ export default {
 					newswire: 'newswire.',
 					newswireGreeting:
 						'To see the latest work published by our team, check the {0}',
-					discuss: 'discussion board.',
-					discussGreeting:
-						"If you're interested in getting involved in the conversation, head over to the {0}",
 					conclude:
 						"Should you have any questions, please don't hesitate to {0}",
 					email: 'contact us.'
@@ -116,9 +97,6 @@ export default {
 					newswire: 'portal de noticias',
 					newswireGreeting:
 						'Para ver el último trabajo publicado por nuestro equipo, consulte el {0}.',
-					discuss: 'panel de discusión',
-					discussGreeting:
-						'Si está interesado en participar en la conversación, diríjase al {0}.',
 					conclude: 'Si tiene alguna pregunta, por favor no dude en {0}.',
 					email: 'contactarnos'
 				}
