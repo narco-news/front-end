@@ -61,12 +61,7 @@ export default {
 
 	head() {
 		return {
-			title:
-				this.pageSettings.title +
-				' - ' +
-				this.pageSettings.description +
-				' | ' +
-				this.pageUrl,
+			title: this.pageSettings.title,
 			meta: [
 				{
 					hid: 'author',

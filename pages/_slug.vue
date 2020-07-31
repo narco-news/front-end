@@ -81,7 +81,7 @@
 					class="post-tags-bottom text-xs md:text-sm pattern-dots-md p-3 uppercase"
 				>
 					<ul class="list inline">
-						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-1">
+						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-2">
 							<nuxt-link
 								:to="{path: '/tag/' + tag.slug}"
 								:title="tag.name"
@@ -263,7 +263,7 @@ export default {
 	},
 	head() {
 		return {
-			title: this.post.title + ' | ' + this.pageUrl,
+			title: this.post.title,
 			meta: [
 				{
 					hid: 'description',
@@ -319,9 +319,8 @@ export default {
 				{
 					hid: 'twitter:image',
 					name: 'twitter:image',
-					content: this.post.twitter_image || this.post.feature_image
+					content: this.post.feature_image
 				},
-				{hid: 'twitter:label1', name: 'twitter:label1', content: 'Written by'},
 				{
 					hid: 'twitter:title',
 					name: 'twitter:title',

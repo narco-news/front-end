@@ -1,31 +1,26 @@
 <template>
 	<div class="grid grid-cols-1">
-		<div class="archive mx-1">
+		<div class="archive mx-2 lg:mx-8">
 			<article
 				v-for="post in posts.slice(0, 18)"
 				:key="post.id"
 				class="article rounded-sm hvr-shrink"
 			>
 				<div class="grid grid-cols-1">
-					<div>
-						<div
-							v-if="post.feature_image"
-							class="image object-cover overflow-hidden h-32"
-						>
-							<nuxt-link :to="{path: '/' + post.slug}">
-								<img
-									class="rounded-sm"
-									:src="post.feature_image"
-									:alt="post.title"
-								/>
-							</nuxt-link>
-						</div>
+					<div
+						v-if="post.feature_image"
+						class="image object-cover overflow-hidden h-24 md:h-32"
+					>
+						<nuxt-link :to="{path: '/' + post.slug}">
+							<img
+								class="rounded-sm"
+								:src="post.feature_image"
+								:alt="post.title"
+							/>
+						</nuxt-link>
 					</div>
-					<div class="p-2">
-						<div class="mb-1">
-							<div v-if="post.featured" class="featured-badge float-right">
-								<span class="post-featured uppercase text-sm">Featured</span>
-							</div>
+					<div class="p-1">
+						<div class="flex flex-row justify-between">
 							<div v-if="post.tags.length > 0">
 								<div v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
 									<nuxt-link
@@ -36,32 +31,33 @@
 									>
 								</div>
 							</div>
+							<div>
+								<reading-time
+									:content="post.html"
+									style="
+										color: #565656;
+										font-size: 11px;
+										font-family: 'Courier Prime';
+									"
+									class="whitespace-no-wrap"
+								/>
+							</div>
 						</div>
-						<div class="title">
+						<div
+							v-if="post.featured"
+							class="featured-badge post-featured uppercase text-xs block"
+						>
+							Featured
+						</div>
+						<div class="title text-lg mt-1">
 							<h1 v-if="post.title">
 								<nuxt-link :to="{path: '/' + post.slug}" :title="post.title">{{
 									post.title
 								}}</nuxt-link>
 							</h1>
 						</div>
-						<div class="post-meta-date">
-							<div class="post-meta-date-icon">
-								<!-- Date Icon -->
-							</div>
-							<div class="post-meta-date-info grid grid-flow-row">
-								<span class="published_at text-gray-800">{{
-									post.published_at | dayjs
-								}}</span>
-								<span class=""
-									><reading-time
-										:content="post.html"
-										style="
-											color: #0d0d0d;
-											font-size: 12px;
-											font-family: 'Courier Prime';
-										"
-								/></span>
-							</div>
+						<div class="published_at block">
+							{{ post.published_at | dayjs }}
 						</div>
 					</div>
 				</div>
@@ -154,36 +150,13 @@ export default {
 .article:nth-child(31n + 1) {
 	grid-column: 1 / -1;
 }
-.article:nth-child(8n + 3) {
-	background-color: #9b9fe8;
-	border: 2px solid #595fd9;
-	.title {
-		font-size: 22px;
-		color: #dedff7;
-	}
-	.published_at {
-		color: #353982;
-	}
-}
-.article:nth-child(6n) {
+
+.article:nth-child(8) {
 	grid-column: -3 / -1;
 }
 
-.article:nth-child(1) {
-	height: 100%;
-	margin: 0 0.5em;
-	.title {
-		font-size: 18px;
-		color: #03a688;
-		font-family: 'IBM Plex Sans';
-		font-weight: 700;
-	}
-	.published_at {
-		color: #02856d;
-	}
-	.image {
-		height: 150px;
-	}
+.article:nth-child(13) {
+	grid-column: 1 / -2;
 }
 
 @media (max-width: 680px) {
@@ -191,11 +164,16 @@ export default {
 		display: flex;
 		flex-direction: column;
 	}
+}
 
-	.article {
-		margin-bottom: 0.5em;
+@media (min-width: 768px) {
+	.article:nth-child(1) {
+		img {
+			transform: translateY(-150px);
+		}
 	}
 }
+
 // Grid
 
 .archive {
@@ -214,10 +192,11 @@ export default {
 	box-shadow: inset 0 -8px 0 0 #f2cb05;
 	font-weight: 700;
 	display: inline;
+	color: #0d0d0d;
 }
 
 .title {
-	color: #0d0d0d;
+	color: #272727;
 	font-family: 'Lora', sans-serif;
 	text-transform: capitalize;
 	font-weight: 600;
@@ -225,17 +204,18 @@ export default {
 }
 
 .published_at {
-	color: #f28177;
+	color: #f26457;
 	font-family: 'IBM Plex Sans';
-	font-weight: 600;
-	letter-spacing: -1px;
+	font-weight: 500;
 	font-size: 13px;
 }
 
 .tags {
-	background-color: #f2f2f2;
-	padding: 4px 10px;
-	border-radius: 3px;
-	font-size: 11px;
+	font-family: 'EB Garamond', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #565656;
 }
 </style>
