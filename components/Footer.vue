@@ -102,7 +102,7 @@
 			</div>
 		</div>
 		<div class="text-center">
-			<div class="trademark mx-auto">
+			<div class="trademark mx-auto px-8 md:px-14 mb-2">
 				All company, product and service names used in this website are for
 				identification purposes only. All product names, logos, and brands are
 				property of their respective owners. Use of these names, logos, and
@@ -175,7 +175,6 @@ export default {
 	font-weight: 600;
 	color: #8590a6;
 	max-width: 900px;
-	margin: 0 3em 1em;
 }
 .site {
 	color: #252525;

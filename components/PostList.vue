@@ -4,7 +4,7 @@
 			<article
 				v-for="post in posts.slice(0, 18)"
 				:key="post.id"
-				class="article rounded-sm hvr-shrink"
+				class="article rounded-sm hvr-float"
 			>
 				<div class="grid grid-cols-1">
 					<div
