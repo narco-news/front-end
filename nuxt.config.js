@@ -110,8 +110,6 @@ export default async () => {
 			{src: '~/plugins/postcss.js'},
 			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/hover.js', ssr: false},
-			{src: '~/plugins/navbar.js', ssr: false},
-			{src: '~/plugins/timeline.js', ssr: false},
 			{src: '~/plugins/notifications.js', ssr: false},
 			{src: '~/plugins/scrollbar.js', ssr: false},
 			{src: '~/plugins/vshowslide.js', ssr: false},
@@ -121,7 +119,8 @@ export default async () => {
 			{src: '~/plugins/patterncss.js', ssr: false},
 			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
-			{src: '~/plugins/rough-notation.js', ssr: false}
+			{src: '~/plugins/rough-notation.js', ssr: false},
+			{src: '~/plugins/vue-dynamic-marquee.js', ssr: false}
 		],
 
 		pwa: {

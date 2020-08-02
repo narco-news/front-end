@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<AroundTheWeb class="my-4" />
 		<posts
 			class="clear-left"
 			:posts="postsIndex"
@@ -9,10 +10,12 @@
 </template>
 
 <script>
+import AroundTheWeb from '~/components/AroundTheWeb';
 import Posts from '~/components/PostList.vue';
 
 export default {
 	components: {
+		AroundTheWeb,
 		posts: Posts
 	},
 
