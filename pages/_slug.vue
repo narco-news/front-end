@@ -148,6 +148,17 @@
 				</article>
 			</div>
 		</div>
+		<ScrollToTop>
+			<a>
+				<div class="top shadow-md rounded-md hvr-bob">
+					<img
+						src="~/assets/icons/arrow-up.svg"
+						alt="Scroll to top"
+						title="Scroll to top"
+					/>
+				</div>
+			</a>
+		</ScrollToTop>
 	</div>
 </template>
 
@@ -159,6 +170,7 @@ import hljs from 'highlight.js';
 import {ghostAPI} from '~/config/ghost';
 
 import ScrollProgressBar from '~/components/ScrollProgressBar.vue';
+import ScrollToTop from '~/components/ScrollToTop';
 
 dayjs.extend(advancedFormat);
 hljs.configure({tabReplace: ''});
@@ -167,7 +179,8 @@ export default {
 	name: 'PostsPage',
 
 	components: {
-		'scroll-progress-bar': ScrollProgressBar
+		'scroll-progress-bar': ScrollProgressBar,
+		ScrollToTop
 	},
 
 	filters: {
@@ -347,6 +360,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.top {
+	padding: 0.5em;
+	background-color: #f26457;
+}
+
 .post-tags {
 	font-family: 'EB Garamond', serif;
 	font-weight: 500;
