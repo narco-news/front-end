@@ -2,27 +2,27 @@
 	"article": [
 		{
 			"id": 1,
-			"title": "Más denuncias, no menos",
-			"url": "https://www.eluniversal.com.mx/opinion/alejandro-hope/mas-denuncias-no-menos",
-			"favicon": "https://www.eluniversal.com.mx/sites/all/themes/universal/images/icos/manifest/96.png"
+			"title": "Mexico Seizes Crime Boss El Marro, Under Pressure to Cut Violence",
+			"url": "https://www.nytimes.com/2020/08/02/world/americas/mexico-el-marro-capture.html",
+			"favicon": "https://www.nytimes.com/vi-assets/static-assets/ios-default-homescreen-57x57-7cccbfb151c7db793e92ea58c30b9e72.png"
 		},
 		{
 			"id": 2,
-			"title": "Former Mexican Police Officials Indicted in New York",
-			"url": "https://www.wsj.com/articles/former-mexican-police-officials-indicted-in-new-york-11596157418",
-			"favicon": "https://s.wsj.net/img/meta/wsj_favicon-96x96.png"
+			"title": "PNG’s biggest drug bust: the plane crash, the dead man and the half tonne of cocaine",
+			"url": "https://www.theguardian.com/world/2020/aug/02/pngs-biggest-drug-bust-the-plane-crash-the-dead-man-and-the-half-tonne-of-cocaine",
+			"favicon": "https://assets.guim.co.uk/images/favicons/68cbd5cf267598abd6a026f229ef6b45/114x114.png"
 		},
 		{
 			"id": 3,
-			"title": "Top Mexican drug kingpin El Mencho reportedly builds own private hospital",
-			"url": "https://news.yahoo.com/top-mexican-drug-kingpin-el-170825137.html",
-			"favicon": "https://s.yimg.com/cv/apiv2/09062018/manifest/yahoo_install_96.png"
+			"title": "A cartel war has transformed once-tranquil Guanajuato into one of Mexico’s deadliest states",
+			"url": "https://www.latimes.com/world-nation/story/2020-08-02/el-marro-vs-el-mencho-cartel-turf-war-roils-mexicos-guanajuato",
+			"favicon": "https://www.latimes.com/favicon-32x32.png"
 		},
 		{
 			"id": 4,
-			"title": "Mexico Opium Network Shines Light on Marginalized Poppy-Growing Communities",
-			"url": "https://www.insightcrime.org/news/analysis/mexico-opium-network/",
-			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=https%3a%2f%2fwww.insightcrime.org%2fnews%2fanalysis%2fmexico-opium-network%2f"
+			"title": "La célula operativa detrás de 'El Marro'",
+			"url": "https://www.eluniversal.com.mx/estados/padre-y-hermano-controlan-cartel-la-caida-del-marro",
+			"favicon": "https://www.eluniversal.com.mx/sites/all/themes/universal/images/icos/manifest/96.png"
 		},
 		{
 			"id": 5,
@@ -32,21 +32,21 @@
 		},
 		{
 			"id": 6,
-			"title": "What the heroin industry can teach us about solar power",
-			"url": "https://www.bbc.com/news/science-environment-53450688",
-			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=https%3a%2f%2fwww.bbc.com%2fnews%2fscience-environment-53450688"
+			"title": "Justice in Mexico releases 2020 Organized Crime and Violence in Mexico Report",
+			"url": "https://justiceinmexico.org/justice-in-mexico-releases-2020-organized-crime-and-violence-in-mexico-report/",
+			"favicon": "https://justiceinmexico.org/favicon.ico"
 		},
 		{
 			"id": 7,
-			"title": "Family of 9 slain Mexican-Americans sues Juarez drug cartel",
-			"url": "https://apnews.com/a8d3ee865f2f66c2a1f43bfcb8f82f6c",
-			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=https%3a%2f%2fapnews.com%2fa8d3ee865f2f66c2a1f43bfcb8f82f6c"
+			"title": "Mara Salvatrucha (MS-13) Attacks Honduran Prison Guards with Grenades and Assault Rifles",
+			"url": "https://smallwarsjournal.com/jrnl/art/third-generation-gangs-strategic-note-no-29-mara-salvatrucha-ms-13-attacks-honduran-prison",
+			"favicon": "https://smallwarsjournal.com/themes/custom/ccc_theme/favicon.ico"
 		},
 		{
 			"id": 8,
-			"title": "Chinese Networks Dominate Chemical, Cash Sectors of Drug Cartel Business",
-			"url": "https://www.theepochtimes.com/chinese-networks-dominate-chemical-cash-sectors-of-drug-cartel-business_3441317.html",
-			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=https%3a%2f%2fwww.theepochtimes.com%2fchinese-networks-dominate-chemical-cash-sectors-of-drug-cartel-business_3441317.html"
+			"title": "Albanian businessman’s assets seized, drug links suspected",
+			"url": "https://abcnews.go.com/International/wireStory/albanian-businessmans-assets-seized-drug-links-suspected-72145302",
+			"favicon": "https://s.abcnews.com/assets/images/apple-touch-icons/touch-icon-iphone-retina.png"
 		}
 	]
 }
