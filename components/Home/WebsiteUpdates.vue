@@ -3,6 +3,18 @@
 		<div class="h-40 overflow-y-scroll">
 			<ul class="list-none">
 				<li>
+					<span class="text-xs font-bold">{{
+						'2020-08-03 11:42:00' | dayjs
+					}}</span>
+					<p class="text-xs">
+						Finally feel good with design, need to rework and spend time on the
+						<n-link to="/academia" class="underline">Academic</n-link> page and
+						of course the maps. Focus over coming weeks will be content content
+						content and translations! And will probably spend some time spicing
+						up this home page. 😎
+					</p>
+				</li>
+				<li>
 					<span class="text-xs font-bold">{{ '2020-07-22' | dayjs }}</span>
 					<p class="text-xs">
 						Yikes! Time flies when you take your eye off of it. I feel forever
@@ -26,14 +38,6 @@
 						Howdy! Took a breather last week and did some work behind the
 						scenes. Trying to figure out best way to catelog a lot of events
 						that isn't blog posts, more later.
-						<!-- Check out the
-						<a
-							style="color: #3e82fc;"
-							href="https://discuss.narco.news/index.php?p=/"
-							target="_blank"
-							class="font-semibold"
-							>discussion board</a
-						>!! -->
 					</p>
 				</li>
 				<li>
