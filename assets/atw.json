@@ -2,51 +2,51 @@
 	"article": [
 		{
 			"id": 1,
-			"title": "Mexico Seizes Crime Boss El Marro, Under Pressure to Cut Violence",
-			"url": "https://www.nytimes.com/2020/08/02/world/americas/mexico-el-marro-capture.html",
-			"favicon": "https://www.nytimes.com/vi-assets/static-assets/ios-default-homescreen-57x57-7cccbfb151c7db793e92ea58c30b9e72.png"
+			"title": "‘A Thousand Cuts’ Documentary: How a Story About the War on Drugs Became a Tale of Freedom of the Press",
+			"url": "https://variety.com/2020/film/production/journalist-maria-ressa-a-thousand-cuts-1234726742/",
+			"favicon": "https://pmcvariety.files.wordpress.com/2018/06/variety-favicon.png?w=128"
 		},
 		{
 			"id": 2,
-			"title": "PNG’s biggest drug bust: the plane crash, the dead man and the half tonne of cocaine",
-			"url": "https://www.theguardian.com/world/2020/aug/02/pngs-biggest-drug-bust-the-plane-crash-the-dead-man-and-the-half-tonne-of-cocaine",
-			"favicon": "https://assets.guim.co.uk/images/favicons/68cbd5cf267598abd6a026f229ef6b45/114x114.png"
+			"title": "Searching With The Mothers of Mexico's Disappeared",
+			"url": "https://www.newyorker.com/news/dispatch/searching-with-the-mothers-of-mexicos-disappeared",
+			"favicon": "https://www.newyorker.com/apple-touch-icon-precomposed.png"
 		},
 		{
 			"id": 3,
-			"title": "A cartel war has transformed once-tranquil Guanajuato into one of Mexico’s deadliest states",
-			"url": "https://www.latimes.com/world-nation/story/2020-08-02/el-marro-vs-el-mencho-cartel-turf-war-roils-mexicos-guanajuato",
-			"favicon": "https://www.latimes.com/favicon-32x32.png"
+			"title": "US: Border tunnel appears to be ‘most sophisticated’",
+			"url": "https://apnews.com/e759e3542d183822decd8979d341a814",
+			"favicon": "https://apnews.com/favicon.ico"
 		},
 		{
 			"id": 4,
-			"title": "La célula operativa detrás de 'El Marro'",
-			"url": "https://www.eluniversal.com.mx/estados/padre-y-hermano-controlan-cartel-la-caida-del-marro",
-			"favicon": "https://www.eluniversal.com.mx/sites/all/themes/universal/images/icos/manifest/96.png"
+			"title": "Will Convicted Drug Money Launderer Run for President in Honduras?",
+			"url": "https://www.insightcrime.org/news/brief/drug-money-launderer-president-honduras/",
+			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=https%3a%2f%2fwww.insightcrime.org%2fnews%2fbrief%2fdrug-money-launderer-president-honduras%2f"
 		},
 		{
 			"id": 5,
-			"title": "Quintana Roo: the revival of Mexico’s Caribbean cocaine trafficking route",
+			"title": "China sentences two Canadians to death for drug smuggling",
+			"url": "https://nypost.com/2020/08/07/china-sentences-two-canadians-to-death-for-drug-smuggling/",
+			"favicon": "https://nypost.com/wp-content/themes/nypost-2016/static/images/apple-icons/nypost/apple-icon-114x114.png"
+		},
+		{
+			"id": 6,
+			"title": "Marijuana fueled Colombian drug trade before cocaine was king",
+			"url": "https://theconversation.com/marijuana-fueled-colombian-drug-trade-before-cocaine-was-king-142152",
+			"favicon": "https://cdn.theconversation.com/static/tc/@theconversation/ui/dist/logos/web-app-logo-114x114-827839977dc24988cadfa3bd6c814600.png"
+		},
+		{
+			"id": 7,
+			"title": "Quintana Roo: The Revival of Mexico’s Caribbean Cocaine Trafficking Route",
 			"url": "https://medium.com/@elisanorio/quintana-roo-the-revival-of-mexicos-caribbean-cocaine-trafficking-route-906d5e84d74f",
 			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=medium.com"
 		},
 		{
-			"id": 6,
+			"id": 8,
 			"title": "Justice in Mexico releases 2020 Organized Crime and Violence in Mexico Report",
 			"url": "https://justiceinmexico.org/justice-in-mexico-releases-2020-organized-crime-and-violence-in-mexico-report/",
 			"favicon": "https://justiceinmexico.org/favicon.ico"
-		},
-		{
-			"id": 7,
-			"title": "Mara Salvatrucha (MS-13) Attacks Honduran Prison Guards with Grenades and Assault Rifles",
-			"url": "https://smallwarsjournal.com/jrnl/art/third-generation-gangs-strategic-note-no-29-mara-salvatrucha-ms-13-attacks-honduran-prison",
-			"favicon": "https://smallwarsjournal.com/themes/custom/ccc_theme/favicon.ico"
-		},
-		{
-			"id": 8,
-			"title": "Albanian businessman’s assets seized, drug links suspected",
-			"url": "https://abcnews.go.com/International/wireStory/albanian-businessmans-assets-seized-drug-links-suspected-72145302",
-			"favicon": "https://s.abcnews.com/assets/images/apple-touch-icons/touch-icon-iphone-retina.png"
 		}
 	]
 }
