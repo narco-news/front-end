@@ -4,6 +4,20 @@
 			<ul class="list-none">
 				<li>
 					<span class="text-xs font-bold">{{
+						'2020-08-07 14:50:00' | dayjs
+					}}</span>
+					<p class="text-xs">
+						Added some things to
+						<n-link to="/academia" class="underline">Academic</n-link> page and
+						did a little rearranging. My biggest problem now is that there a lot
+						I want to display there but little space for it all. So I'm trying
+						to decide where to compromise. Regardless though that'll be a busy
+						page. Also I'll get the contact page implemented next week so you
+						all can start sending hate mail. 🤪
+					</p>
+				</li>
+				<li>
+					<span class="text-xs font-bold">{{
 						'2020-08-03 11:42:00' | dayjs
 					}}</span>
 					<p class="text-xs">
