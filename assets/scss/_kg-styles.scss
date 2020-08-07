@@ -2,12 +2,9 @@
 .single-post {
 	line-height: 1.8;
 	.kg-image {
+		padding-top: 1em;
 		max-width: 100%;
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+		margin: 0 auto;
 	}
 
 	.kg-width-wide {
@@ -32,7 +29,7 @@
 		}
 
 		.kg-image {
-			max-width: 90vw;
+			max-width: 100vw;
 		}
 	}
 
@@ -187,11 +184,12 @@
 	}
 
 	figcaption {
-		margin: 1rem 0;
+		margin: 0 auto;
 		font-size: 75%;
 		font-weight: 300;
 		line-height: 1.5rem;
 		text-align: center;
+		max-width: 325px;
 	}
 
 	.kg-card {
@@ -254,8 +252,7 @@
 		}
 
 		.kg-image {
-			max-width: 75vw;
-			width: 65%;
+			max-width: 80vw;
 		}
 
 		figcaption {
