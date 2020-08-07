@@ -56,7 +56,7 @@ export default {
 	max-width: 500px;
 }
 .red-text {
-	color: #ff5e70;
+	color: #f26457;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

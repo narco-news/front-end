@@ -1,0 +1,49 @@
+{
+	"papers": [
+		{
+			"id": 1,
+			"title": "Narco‐Fish: Global fisheries and drug trafficking",
+			"datePublished": "26 June 2020",
+			"authors": "Dyhia Belhabib, Philippe Le Billon, David J. Wrathall",
+			"abstract": "This study analyses drug trafficking associated with fisheries around the globe. Records of vessel interdiction carried out between 2010 and 2017 suggest that the global trade of illicit drugs relies increasingly on fishing vessels. Fishery‐based trafficking is growing. A key obstacle to understanding the scope of this problem is the limited data on activities that are intentionally obscured, such as drug trafficking. Using a Fermi estimation technique for determining unknown values from limited data, we analyse 292 known cases of fishing boats engaged in drug shipment between 2010 and 2017. Results suggest that drug shipment sizes per vessel are becoming smaller over time, even as the total flow of drugs is increasing. Counter‐drug enforcement intensifies this effect, suggesting that drug trafficking networks adapt to interdiction efforts making use of smaller vessels to lower the risk of seizure. The use of fishing vessels in drug trans‐shipment has tripled over the past 8 years to about 15% of the global retail value of illicit drugs. Small‐scale fishers are at risk of turning to drug trade as an economic buffer against poverty, especially in contexts of mounting competition over declining fish stocks or strict marine conservation. At the same time, illicit capital flowing from the narcotics trade into fisheries may be driving over‐capitalization of fisheries and unsustainable resource use, ultimately to the detriment of resource‐dependent coastal communities and marine ecosystems. Future research is needed to better understand whether and how small‐scale fishermen turn to drug trade to counter livelihood risks of various kinds.",
+			"link": "https://doi.org/10.1111/faf.12483",
+			"dLink": "https://sci-hub.tw/10.1111/faf.12483"
+		},
+		{
+			"id": 2,
+			"title": "Exploring interrelationships between high-level drug trafficking and other serious and organised crime: an Australian study",
+			"datePublished": "21 May 2019",
+			"authors": "Caitlin Elizabeth Hughes, Jenny Chalmers, David Anthony Bright",
+			"abstract": "Drug trafficking is frequently argued to be the leading driver of other serious and organised crime, but the interrelationships between such activities remain poorly understood. This paper uses open source law enforcement data to explore interrelationships in Australia. A database was compiled of all reported criminal incidents of high-level drug trafficking between 2011 and 2017 and any concurrent charges for other serious and organised crime (SOC), sourced from official reports and press releases of Australian federal law enforcement and criminal intelligence agencies. Over the seven-years period 24.4% drug trafficking cases involved concurrent SOC charges. Logistic regressions showed characteristics associated with any concurrent SOC charge included the type of drug trafficked, network size, network nationality and OMCG ties. But characteristics differed according to which SOC was cited in connection with the drug trafficking offence e.g. firearms offences versus corruption/fraud. We discuss the implications for research, policy and practice.",
+			"link": "https://doi.org/10.1080/17440572.2019.1615895",
+			"dLink": "https://sci-hub.tw/10.1080/17440572.2019.1615895"
+		},
+		{
+			"id": 3,
+			"title": "A Markov Decision Process approach for balancing intelligence and interdiction operations in city-level drug trafficking enforcement",
+			"datePublished": "March 2020",
+			"authors": "N. OrkunBaycik, Thomas C.Sharkey, Chase E.Rainwater",
+			"abstract": "We study a resource allocation problem in which law enforcement aims to balance intelligence and interdiction decisions to fight against illegal city-level drug trafficking. We propose a Markov Decision Process framework, apply a column generation technique, and develop a heuristic to solve this problem. Our approaches provide insights into how law enforcement should prioritize its actions when there are multiple criminals of different types known to them. We prove that when only one action can be implemented, law enforcement will take action (either target or arrest) on the highest known criminal type to them. Our results demonstrate that: (i) it may be valuable to diversify the action taken on the same criminal type when more than one action can be implemented; (ii) the marginal improvement in terms of the value of the criminals interdicted per unit time by increasing available resources decreases as resource level increases; and (iii) there are losses that arise from not holistically planning the actions of all available resources across distinct operations against drug trafficking networks.",
+			"link": "https://doi.org/10.1016/j.seps.2019.03.006",
+			"dLink": "https://sci-hub.tw/10.1016/j.seps.2019.03.006"
+		},
+		{
+			"id": 4,
+			"title": "The impacts of cocaine-trafficking on conservation governance in Central America",
+			"datePublished": "July 2020",
+			"authors": "David J. Wrathall , Jennifer Devine, Bernardo Aguilar-González",
+			"abstract": "This research is motivated by the compelling finding that the illicit cocaine trade is responsible for extensive patterns of deforestation in Central America. This pattern is most pronounced in the region's large protected areas. We wanted to know how cocaine trafficking affects conservation governance in Central America's protected areas, and whether deforestation is a result of impacts on governance. To answer this question, we interviewed conservation stakeholders from key institutions at various levels in three drug-trafficking hotspots: Peten, Guatemala, Northeastern Honduras, and the Osa Peninsula in Costa Rica. We found that, in order to establish and maintain drug transit operations, drug-trafficking organizations compete with and undermine conservation governance actors and institutions. Drug trafficking impacts conservation governance in three ways: 1) it undermines long standing conservation coalitions; 2) it fuels booms in extractive activities inside protected lands; and 3) it erodes the territorial control that conservation institutions exert, exploiting strict “fortress” conservation governance models. Participatory governance models that provide locals with strong expectations of land tenure and/or institutional support for local decision-making may offer resistance to the impacts on governance institutions that we documented.",
+			"link": "https://doi.org/10.1016/j.gloenvcha.2020.102098",
+			"dLink": "https://sci-hub.tw/10.1016/j.gloenvcha.2020.102098"
+		},
+		{
+			"id": 5,
+			"title": "Press Ideology as an Epistemological Connector between Framing Theory and Social Representations Theory: An Analysis of Violence and Drug Trafficking in the Mexican Press",
+			"datePublished": " 19 July 2019",
+			"authors": "Hiram Reyes-Sosa, Maider Larrañaga Egilegor, Tânia Dos Santos, Luisa Perez-Marin, Francisco Alvarez-Montero",
+			"abstract": "The present paper explores the advantages of using framing theory, social representations theory and differences in ideology to analyze polarized issues in the press. Framing uncovers the structure/format of news articles and social representations explores their meanings. These two theoretical positions are connected through the concept of ideology – a set of beliefs that shape position taking regarding social issues. Using this integrated framework, we will analyze the highly polarized topic of violence and drug trafficking in two ideologically different newspapers in Sinaloa, Mexico - Noroeste (journalistic ideology) and El Debate (elite ideology) (total N = 547 articles). This will be accomplished using three steps – a descriptive analysis, application of the framing scale and submitting the articles to ALCESTE software. The results show differences in framing and social representations of violence and drug trafficking according to ideology. Each newspaper presented different news frames (journalistic - attribution of responsibility and conflict frames; elite - human-interest and morality frames). However, at the level of representations (content) there were ideological differences in the representation of violence but not of drug trafficking, suggesting a common element in these representations, beyond ideological differences. These findings contribute to (1) the clarification of the concept used and (2) towards an analytical framework of press analysis - analyzing format and content and considering differences in press ideology.",
+			"link": "https://doi.org/10.1007/s12124-019-09498-z",
+			"dLink": "https://sci-hub.tw/10.1007/s12124-019-09498-z"
+		}
+	]
+}

@@ -1,33 +1,23 @@
 <template>
 	<div>
-		<div class="p-2 m-4 h-full">
-			<div class="grid grid-cols-1 lg:grid-cols-1 mb-6">
-				<tabs>
-					<tab title="Books">
-						<ResearchBooks />
-					</tab>
-					<tab title="Academic Papers">
-						<ResearchPaper />
-					</tab>
-				</tabs>
-			</div>
+		<div class="grid grid-cols-1 md:grid-cols-4">
+			<div class="col-span-1 md:col-span-1"><LatestPapers /></div>
+			<div class="col-span-1 md:col-span-3"><ABooks /></div>
 		</div>
+		<ResearchPaper />
 	</div>
 </template>
 
 <script>
+import ABooks from '~/components/Academic/ABooks';
+import LatestPapers from '~/components/Academic/LatestPapers';
 import ResearchPaper from '~/components/ResearchPaper';
-import ResearchBooks from '~/components/ResearchBooks';
-import Papers from '~/assets/papers.json';
+
 export default {
 	components: {
-		ResearchPaper,
-		ResearchBooks
-	},
-	data() {
-		return {
-			myPapers: Papers.papers
-		};
+		ABooks,
+		LatestPapers,
+		ResearchPaper
 	},
 	head() {
 		return {
@@ -38,6 +28,11 @@ export default {
 </script>
 
 <style lang="scss" scope>
+.updates {
+	background-color: #f9c89e;
+	border: 1px solid #f2913d;
+}
+
 .vue-tablist {
 	list-style: none;
 	display: flex;
