@@ -150,7 +150,7 @@
 		</div>
 		<ScrollToTop>
 			<a>
-				<div class="top shadow-md rounded-md hvr-bob">
+				<div class="top shadow-md rounded-md">
 					<img
 						src="~/assets/icons/arrow-up.svg"
 						alt="Scroll to top"

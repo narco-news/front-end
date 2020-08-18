@@ -120,7 +120,8 @@ export default async () => {
 			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
 			{src: '~/plugins/rough-notation.js', ssr: false},
-			{src: '~/plugins/vue-dynamic-marquee.js', ssr: false}
+			{src: '~/plugins/vue-dynamic-marquee.js', ssr: false},
+			{src: '~/plugins/vue-formulate.js'}
 		],
 
 		pwa: {

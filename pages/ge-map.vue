@@ -15,7 +15,7 @@
 			class="col-span-3 rounded bg-white overflow-hidden shadow-md m-4"
 		>
 			<div id="map" class="">
-				<no-ssr>
+				<client-only>
 					<MglMap
 						:accessToken="token"
 						:mapStyle="mapStyle"
@@ -34,7 +34,7 @@
 							</MglPopup></MglMarker
 						>
 					</MglMap>
-				</no-ssr>
+				</client-only>
 			</div>
 		</div>
 	</div>

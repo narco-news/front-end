@@ -12,7 +12,9 @@
 		"test": "xo"
 	},
 	"dependencies": {
+		"@braid/vue-formulate": "^2.4.3",
 		"@growthbunker/vuetimeline": "^0.1.16",
+		"@mapbox/mapbox-gl-geocoder": "^4.6.0",
 		"@nuxt/typescript-runtime": "^0.4.6",
 		"@nuxtjs/axios": "^5.11.0",
 		"@nuxtjs/dotenv": "^1.4.1",

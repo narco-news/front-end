@@ -31,7 +31,7 @@
 					<div class="hvr-forward ml-4">About</div>
 				</n-link>
 				<n-link
-					to="#"
+					to="/contact"
 					class="hl-link flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<svg
