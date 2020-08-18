@@ -23,7 +23,7 @@
 						}}</n-link>
 					</i18n>
 					<i18n path="message.conclude" tag="label" for="message.email">
-						<n-link id="e3" to="#" class="hvr-pop disabled">
+						<n-link id="e3" to="/contact" class="hvr-pop disabled">
 							{{ $t('message.email') }}
 						</n-link>
 					</i18n>

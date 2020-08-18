@@ -96,7 +96,7 @@
 							>Github</a
 						>
 						<a class="p-1" href="#">RSS</a>
-						<a class="p-1" href="#">Contact Us</a>
+						<n-link class="p-1" to="/contact">Contact Us</n-link>
 					</div>
 				</div>
 			</div>
