@@ -4,6 +4,15 @@
 			<ul class="list-none">
 				<li>
 					<span class="text-xs font-bold">{{
+						'2020-08-18 14:56:00' | dayjs
+					}}</span>
+					<p class="text-xs">
+						<n-link to="/contact" class="underline">Contact</n-link> page is
+						live! :)
+					</p>
+				</li>
+				<li>
+					<span class="text-xs font-bold">{{
 						'2020-08-07 14:50:00' | dayjs
 					}}</span>
 					<p class="text-xs">
