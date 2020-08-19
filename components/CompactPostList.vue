@@ -6,7 +6,7 @@
 				<div class="blink bg-red-500 rounded-full h-2 w-2 mb-1 ml-2"></div>
 			</div>
 		</div>
-		<article v-for="post in posts.slice(1, 16)" :key="post.id">
+		<article v-for="post in posts.slice(1, 12)" :key="post.id">
 			<div>
 				<ul class="square ml-4 p-1">
 					<li>
