@@ -63,8 +63,8 @@
 				<vsa-item>
 					<vsa-heading>Whose funding this place?</vsa-heading>
 					<vsa-content>
-						No one, the costs and maintance the keep the lights on around here
-						is provided solely by us at the moment.
+						No one, the costs and maintance to keep the lights on around here is
+						provided solely by us at the moment.
 					</vsa-content>
 				</vsa-item>
 				<vsa-item>
