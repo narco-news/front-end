@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 h1 {
-	color: #f28177;
+	color: #595fd9;
 	font-family: 'Courier Prime', monospace;
 	font-weight: 600;
 }

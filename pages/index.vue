@@ -1,18 +1,24 @@
 <template>
 	<div class="h-full">
 		<HeaderImage />
+		<Features />
+		<FAQ />
 		<Popup />
 	</div>
 </template>
 
 <script>
 import HeaderImage from '~/components/Home/HeaderImage';
+import Features from '~/components/Home/Features.vue';
+import FAQ from '~/components/Home/FAQ.vue';
 import Popup from '~/components/Home/Popup';
 
 export default {
 	layout: 'default',
 	components: {
 		HeaderImage,
+		Features,
+		FAQ,
 		Popup
 	},
 	async fetch({error, params, payload, store}) {
