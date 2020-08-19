@@ -39,7 +39,7 @@
 			</div>
 			<div class="grid grid-flow-row">
 				<img src="~/assets/icons/integration.svg" class="w-16" />
-				<h1 class="text-xl font-bold mb-1">Needle In Cluster</h1>
+				<h1 class="text-xl font-bold mb-1">Needle In A Cluster</h1>
 				<p class="text-xs md:text-sm">
 					We'd like to think that we are pretty good at finding things on the
 					Internet. If we can't find something, we might be able to find someone

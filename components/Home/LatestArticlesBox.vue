@@ -3,9 +3,9 @@
 		<div>
 			<posts class="clear-left" :posts="postsIndex" />
 		</div>
-		<n-link to="/wire">
+		<!-- <n-link to="/wire">
 			<h1 class="text-xs md:text-sm p-2 mx-2 uppercase hvr-sink">View More</h1>
-		</n-link>
+		</n-link> -->
 	</div>
 </template>
 
