@@ -88,15 +88,15 @@
 						><n-link to="/">narco.news</n-link></span
 					>
 					<div class="grid grid-cols-2 lg:grid-cols-3 text-xs">
+						<n-link class="p-1" to="/wire">Newswire</n-link>
 						<n-link class="p-1" to="/about">About</n-link>
 						<n-link class="p-1" to="/booklist">Book list</n-link>
 						<n-link class="p-1" to="/academia">Academic</n-link>
-						<n-link class="p-1" to="/wire">Newswire</n-link>
 						<a class="p-1" href="https://github.com/narco-news/front-end"
 							>Github</a
 						>
 						<a class="p-1" href="#">RSS</a>
-						<n-link class="p-1" to="/contact">Contact Us</n-link>
+						<n-link class="p-1" to="/contact">Contact</n-link>
 					</div>
 				</div>
 			</div>

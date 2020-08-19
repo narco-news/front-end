@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-4 lg:mx-20">
+	<div class="mx-4 lg:mx-20 overflow-y-hidden">
 		<div class="row">
 			<div class="xs-12 lg-10 mx-auto animate__animated animate__fadeIn">
 				<!-- TAGS -->
@@ -11,8 +11,72 @@
 							}}</nuxt-link>
 						</li>
 					</ul>
+					<social-icon
+						:url="
+							'https://www.linkedin.com/shareArticle/' +
+							'?mini=true' +
+							'&url=' +
+							blogUrl +
+							'/' +
+							post.slug
+						"
+						class="float-right"
+						click="
+							window.open(href, 'facebook-share', 'width=580,height=296');
+							return false;
+						"
+					>
+						<img
+							src="~/assets/icons/linkedin-rounded.svg"
+							alt="Share article on LinkedIn"
+							title="Share article on LinkedIn"
+							class="w-6"
+						/>
+					</social-icon>
+					<social-icon
+						:url="
+							'https://www.facebook.com/sharer.php?u=' +
+							blogUrl +
+							'/' +
+							post.slug
+						"
+						class="float-right"
+						click="
+							window.open(href, 'facebook-share', 'width=580,height=296');
+							return false;
+						"
+					>
+						<img
+							src="~/assets/icons/facebook-rounded.svg"
+							alt="Share article on Facebook"
+							title="Share article on Facebook"
+							class="w-6"
+						/>
+					</social-icon>
+					<social-icon
+						:url="
+							'https://twitter.com/share?text=' +
+							post.title +
+							'&url=' +
+							blogUrl +
+							'/' +
+							post.slug
+						"
+						class="float-right"
+						click="
+							window.open(href, 'twitter-share', 'width=550,height=235');
+							return false;
+						"
+					>
+						<img
+							src="~/assets/icons/twitter-rounded.svg"
+							alt="Share article on Twitter"
+							title="Share article on Twitter"
+							class="w-6"
+						/>
+					</social-icon>
 				</div>
-				<h1 class="post-title text-4xl">
+				<h1 class="post-title text-4xl mt-2">
 					{{ post.title }}
 				</h1>
 				<div>
@@ -78,7 +142,7 @@
 				</div>
 				<!-- TAGS -->
 				<div
-					class="post-tags-bottom text-xs md:text-sm pattern-dots-md p-3 uppercase"
+					class="post-tags-bottom text-xs md:text-sm pattern-cross-dots-md p-3 uppercase"
 				>
 					<ul class="list inline">
 						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-2">
@@ -91,23 +155,91 @@
 						</li>
 					</ul>
 				</div>
+
 				<article class="single-post">
 					<scroll-progress-bar />
 					<div v-if="post.feature_image">
 						<img
 							:src="post.feature_image"
 							:alt="post.title"
-							class="mx-auto object-cover w-full lg:w-2/3 my-4"
+							class="mx-auto object-cover w-full lg:w-2/3 my-4 rounded"
 						/>
 					</div>
+
 					<div class="row">
 						<div class="mx-auto">
 							<div class="antialiased post-content">
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-text text-md md:text-lg" v-html="post.html" />
+								<div class="post-text text-lg" v-html="post.html" />
+							</div>
+							<div class="flex flex-row justify-end">
+								<social-icon
+									:url="
+										'https://twitter.com/share?text=' +
+										post.title +
+										'&url=' +
+										blogUrl +
+										'/' +
+										post.slug
+									"
+									class="float-right"
+									click="
+							window.open(href, 'twitter-share', 'width=550,height=235');
+							return false;
+						"
+								>
+									<img
+										src="~/assets/icons/twitter-rounded.svg"
+										alt="Share article on Twitter"
+										title="Share article on Twitter"
+										class="w-6"
+									/>
+								</social-icon>
+								<social-icon
+									:url="
+										'https://www.facebook.com/sharer.php?u=' +
+										blogUrl +
+										'/' +
+										post.slug
+									"
+									class="float-right"
+									click="
+							window.open(href, 'facebook-share', 'width=580,height=296');
+							return false;
+						"
+								>
+									<img
+										src="~/assets/icons/facebook-rounded.svg"
+										alt="Share article on Facebook"
+										title="Share article on Facebook"
+										class="w-6"
+									/>
+								</social-icon>
+								<social-icon
+									:url="
+										'https://www.linkedin.com/shareArticle/' +
+										'?mini=true' +
+										'&url=' +
+										blogUrl +
+										'/' +
+										post.slug
+									"
+									class="float-right"
+									click="
+							window.open(href, 'facebook-share', 'width=580,height=296');
+							return false;
+						"
+								>
+									<img
+										src="~/assets/icons/linkedin-rounded.svg"
+										alt="Share article on LinkedIn"
+										title="Share article on LinkedIn"
+										class="w-6"
+									/>
+								</social-icon>
 							</div>
 							<div
-								class="post-tags-bottom text-xs md:text-sm uppercase pattern-dots-md py-4 mt-6"
+								class="post-tags-bottom text-xs md:text-sm uppercase pattern-cross-dots-md py-4 mt-6"
 							>
 								<ul class="list inline">
 									<li
@@ -171,6 +303,7 @@ import {ghostAPI} from '~/config/ghost';
 
 import ScrollProgressBar from '~/components/ScrollProgressBar.vue';
 import ScrollToTop from '~/components/ScrollToTop';
+import SocialIcons from '~/components/SocialIcons';
 
 dayjs.extend(advancedFormat);
 hljs.configure({tabReplace: ''});
@@ -180,7 +313,8 @@ export default {
 
 	components: {
 		'scroll-progress-bar': ScrollProgressBar,
-		ScrollToTop
+		ScrollToTop,
+		'social-icon': SocialIcons
 	},
 
 	filters: {
@@ -385,6 +519,7 @@ export default {
 	}
 	.tags-bottom {
 		box-shadow: inset 0 -10px 0 0 #f2cb05;
+		font-weight: 700;
 	}
 }
 .post-title {

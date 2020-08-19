@@ -67,7 +67,7 @@
 					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<!-- <img src="~/assets/icons/bookmark.svg" alt="Booklist icon" /> -->
-					<span class="text-3xl">Booklist</span>
+					<span class="text-3xl">Book list</span>
 				</n-link>
 				<n-link
 					to="/academia"
