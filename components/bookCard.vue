@@ -5,16 +5,16 @@
 				<!-- Static parent -->
 
 				<div
-					style="background-color: #3a656a;"
+					style="background-color: #03a688;"
 					class="bookDate absolute text-white text-xs font-extrabold top-0 right-0 p-1 rounded"
 				>
 					{{ date }}
 				</div>
 				<div class="static flex flex-col">
-					<div class="inline-block text-sm font-serif font-bold px-2 mt-4">
+					<div class="booktitle inline-block text-sm font-bold px-2 mt-4">
 						{{ title }}
 					</div>
-					<div style="color: #ff5e70;" class="inline-block text-center p-1">
+					<div style="color: #f26457;" class="inline-block text-center p-1">
 						{{ authors }}
 					</div>
 					<div
@@ -67,6 +67,9 @@ export default {
 </script>
 
 <style lang="scss">
+.booktitle {
+	font-family: 'Lora', sans-serif;
+}
 .bookBox {
 	margin-left: 75px;
 	max-height: 18rem;

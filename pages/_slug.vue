@@ -142,7 +142,7 @@
 				</div>
 				<!-- TAGS -->
 				<div
-					class="post-tags-bottom text-xs md:text-sm pattern-cross-dots-md p-3 uppercase"
+					class="post-tags-bottom text-xs md:text-sm pattern-cross-dots-md p-2 uppercase"
 				>
 					<ul class="list inline">
 						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-2">
