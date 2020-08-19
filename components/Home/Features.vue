@@ -25,9 +25,7 @@
 				<h1 class="text-xl font-bold mb-1">Geolocation & Imagery Analysis</h1>
 				<p class="text-xs md:text-sm">
 					Little scrutiny has been given to social media content, including
-					judging its authenticity and spending time on geolocation. With an
-					abunance of time post-lockdown and fancy software we hope to change
-					that.
+					judging its authenticity and spending time on geolocation.
 				</p>
 			</div>
 			<div class="grid grid-flow-row">

@@ -47,7 +47,7 @@
 						of information in regards to drug trafficking, drug policy, and it's
 						history. Much of what we understand about these topics is outdated
 						and could use some refreshing! A fair amount also gets lost in
-						translation, something which we could to lessen.
+						translation, something which we hope to lessen.
 					</vsa-content>
 				</vsa-item>
 				<vsa-item>
