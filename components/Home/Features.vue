@@ -1,6 +1,6 @@
 <template>
 	<div class="p-2 md:p-6">
-		<h1 class="focus uppercase font-bold">Our Focus</h1>
+		<h1 class="focus uppercase font-bold text-2xl">Our Focus</h1>
 		<div class="grid grid-cols-2 md:grid-cols-3">
 			<div class="grid grid-flow-row">
 				<img src="~/assets/icons/research.svg" class="w-16" />

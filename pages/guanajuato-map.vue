@@ -1,161 +1,143 @@
 <template>
-	<div>
-		<div
-			style="color: #3a656a;"
-			class="rounded bg-white overflow-hidden shadow-md m-4"
-		>
-			<div id="map" class="">
-				<no-ssr>
-					<MglMap
-						:accessToken="token"
-						:mapStyle="mapStyle"
-						:center="center"
-						:zoom="zoom"
-						@load="onMapLoaded"
-					>
-						<MglMarker :coordinates="coordinates" anchor="bottom">
-							<div
-								slot="marker"
-								style="background-color: #ff5e70;"
-								class="rounded-full dot"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									height="30"
-									width="30"
-									fill="#fff"
-									viewBox="0 0 24 24"
-								>
-									<g data-name="Layer 2">
-										<g data-name="alert-circle">
-											<rect width="24" height="24" opacity="0" />
-											<path
-												d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"
-											/>
-											<circle cx="12" cy="16" r="1" />
-											<path
-												d="M12 7a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1z"
-											/>
-										</g>
-									</g>
-								</svg>
-							</div>
-							<MglPopup>
-								<div class="p-4">
-									Hello I am a popup!
-								</div>
-							</MglPopup></MglMarker
-						>
-					</MglMap>
-				</no-ssr>
-			</div>
-		</div>
-		<!-- <div class="m-4">
-			<div class="bg-white rounded h-64 w-full p-6">
-				<ol class="list-decimal">
-					<li @click="event(marker.togglePopup)">Event 1</li>
-					<li>Event 2</li>
-					<li>Event 3</li>
-				</ol>
-			</div>
-		</div> -->
-	</div>
+	<div id="map" class="mt-4 sm:mt-8 sm:mx-5 sm:mb-5"></div>
 </template>
 
 <script>
 export default {
+	name: 'GuanajuatoMap',
 	data() {
 		return {
-			title: 'Map of Guanajuato',
-			pageImage: '/assets/images/guana-map.png',
-			token: process.env.accessToken,
-			mapStyle: 'mapbox://styles/mapbox/streets-v11', // your map style
-			center: [-101.1617, 20.917],
-			zoom: 8,
-			coordinates: [-101.35628, 20.67675]
+			selectedMarker: null,
+			markers: [],
+			map: null
 		};
 	},
+	computed: {},
+	// https://vuejs.org/v2/api/#activated
+	activated() {
+		if (!this.map || !this.map.loaded()) return;
+		this.toggleMarker();
+		this.scrollToBottom();
+	},
+	deactivated() {
+		this.markers.forEach(marker => {
+			const popup = marker.getPopup();
+			if (popup.isOpen()) {
+				marker.togglePopup();
+			}
+		});
+	},
+	mounted() {
+		const mapboxgl = require('mapbox-gl');
 
-	created() {
-		this.map = null;
+		const bounds = [
+			[-101.918758, 20.191622], // Southwest coordinates
+			[-100.090473, 21.591358] // Northeast coordinates
+		];
+
+		this.map = new mapboxgl.Map({
+			accessToken: process.env.accessToken,
+			container: 'map',
+			style: 'mapbox://styles/mapbox/streets-v10', // your map style
+			center: [-101.266667, 21.016667],
+			zoom: 0,
+			pitch: 0,
+			maxZoom: 17,
+			maxBounds: bounds
+		});
+
+		this.map.addControl(new mapboxgl.NavigationControl());
+		this.map.addControl(new mapboxgl.FullscreenControl());
+
+		this.markers = new mapboxgl.Marker({})
+
+			.setLngLat([-101.194826, 20.585389])
+			.addTo(this.map)
+			.setPopup(
+				new mapboxgl.Popup().setHTML('<h1>Almost done testing ;)</h1>')
+			); // add popup;
+
+		this.toggleMarker();
+		this.scrollToBottom();
 	},
 	methods: {
-		onMapLoaded(event) {
-			// in component
-			this.map = event.map;
-			// or just to store if you want have access from other components
-			this.$store.map = event.map;
+		toggleMarker() {
+			const street = this.$route.query.street;
+			if (!street) return;
+
+			const marker = this.markers.find(marker => marker.street === street);
+			if (!marker) return;
+
+			this.map.jumpTo({
+				center: marker.getLngLat()
+			});
+			marker.togglePopup();
+		},
+		scrollToBottom() {
+			if (!window) return;
+			window.scrollTo({
+				top: 75,
+				left: 0,
+				behavior: 'smooth'
+			});
 		}
-	},
-	head() {
-		return {
-			title: this.title,
-			meta: [
-				{
-					hid: 'description',
-					name: 'description',
-					content: 'Interactive map of Guanajuato, México'
-				},
-				{
-					hid: 'og:description',
-					property: 'og:description',
-					content: 'Interactive map of Guanajuato, México'
-				},
-				{
-					hid: 'og:image',
-					property: 'og:image',
-					content: this.pageImage
-				},
-				{
-					hid: 'og:site_name',
-					property: 'og:site_name',
-					content: this.title
-				},
-				{
-					hid: 'og:title',
-					property: 'og:title',
-					content: this.title
-				},
-				{
-					hid: 'twitter:card',
-					property: 'twitter:card',
-					content: 'summary_large_image'
-				},
-				{
-					hid: 'twitter:title',
-					property: 'twitter:title',
-					content: 'Interactive map of Guanajuato, México'
-				},
-				{
-					hid: 'twitter:image',
-					property: 'twitter:image',
-					content: 'https://narco.news/images/guana-map.png'
-				}
-			]
-		};
 	}
 };
 </script>
 
-<style lang="css">
-@import 'https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css';
+<style lang="postcss">
+@import url('https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css');
+
+.mapboxgl-popup {
+	will-change: auto;
+	min-width: 200px;
+	max-width: 300px;
+}
+
+.mapboxgl-popup-content {
+	font-family: europa, sans-serif;
+	@apply text-white bg-black rounded-none pt-16 px-6 pb-12 leading-snug text-lg;
+}
+
+.mapboxgl-popup-close-button {
+	@apply text-3xl mt-2 mr-4;
+}
+
+.mapboxgl-popup-tip {
+	border: 2rem solid transparent;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+	border-bottom-color: black;
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+	border-top-color: black;
+}
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+	border-right-color: black;
+}
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+	border-left-color: black;
+}
+
 #map {
-	height: 550px;
+	min-height: 75vh;
 }
 
-@keyframes blink {
-	0% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
+@screen md {
+	#map {
+		min-height: 85vh;
 	}
 }
 
-.dot {
-	animation: blink 2s infinite;
+.marker {
+	cursor: pointer;
 }
 </style>

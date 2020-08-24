@@ -4,6 +4,16 @@
 			<ul class="list-none">
 				<li>
 					<span class="text-xs font-bold">{{
+						'2020-08-24 12:52:00' | dayjs
+					}}</span>
+					<p class="text-xs">
+						Last week of design stuff and then off we go! It's been a fun and
+						indecisive last couple months getting this place going. I'll have
+						more info in a development post being published Thursday morning.
+					</p>
+				</li>
+				<li>
+					<span class="text-xs font-bold">{{
 						'2020-08-18 14:56:00' | dayjs
 					}}</span>
 					<p class="text-xs">
