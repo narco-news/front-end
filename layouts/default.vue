@@ -69,22 +69,22 @@ body {
 	background-color: #f2f2f2;
 }
 .bm-burger-bars {
-	background-color: #f2f2f2 !important;
+	background-color: #262626 !important;
 	&:nth-child(2n) {
-		background-color: #03a688 !important;
+		background-color: #262626 !important;
 	}
 	&:nth-child(3n) {
-		background-color: #03a688 !important;
+		background-color: #262626 !important;
 	}
 }
 .bm-menu {
 	background-color: #0d0d0d !important;
 }
 .bm-burger-button {
-	left: 18px !important;
-	top: 40px !important;
+	left: 20px !important;
+	top: 45px !important;
 	height: 20px !important;
-	width: 26px !important;
+	width: 25px !important;
 }
 .line-style {
 	height: 15% !important;

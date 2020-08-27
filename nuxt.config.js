@@ -122,7 +122,7 @@ export default async () => {
 			{src: '~/plugins/rough-notation.js', ssr: false},
 			{src: '~/plugins/vue-dynamic-marquee.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'},
-			{src: '~/plugins/vue-simple-accordion.js'}
+			{src: '~/plugins/vue-badger-accordion.js', ssr: false}
 		],
 
 		pwa: {

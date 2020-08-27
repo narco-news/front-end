@@ -1,10 +1,14 @@
 <template>
-	<div class="relative mb-4">
+	<div class="relative">
 		<div class="grid grid-cols-3">
 			<div class="col-span-1">
 				<LatestArticlesBox />
 			</div>
-			<div class="col-span-2 pattern-dots-md overflow-hidden">
+			<div class="col-span-2 overflow-hidden">
+				<!-- Features Box -->
+				<FeaturesArticlesBox />
+			</div>
+			<!-- <div class="col-span-2 overflow-hidden">
 				<img
 					style="transform: translate(20px, 20px);"
 					class="opic object-cover"
@@ -20,20 +24,22 @@
 						<WebsiteUpdates class="clear-right" />
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>
 
 <script>
 import LatestArticlesBox from '~/components/Home/LatestArticlesBox';
-import WebsiteUpdates from '~/components/Home/WebsiteUpdates';
-import Welcome from '~/components/Home/Welcome';
+import FeaturesArticlesBox from '~/components/Home/FeaturesArticleBox';
+// import WebsiteUpdates from '~/components/Home/WebsiteUpdates';
+// import Welcome from '~/components/Home/Welcome';
 export default {
 	components: {
 		LatestArticlesBox,
-		WebsiteUpdates,
-		Welcome
+		FeaturesArticlesBox
+		// WebsiteUpdates,
+		// Welcome
 	}
 };
 </script>

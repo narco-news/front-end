@@ -42,7 +42,7 @@
 				</div>
 			</div>
 
-			<p class="my-10">
+			<p class="my-6 font-bold">
 				Nevertheless, the form below should be sufficient for the majority of
 				use cases, most people's threat model does not include nation state
 				actors.

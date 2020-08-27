@@ -145,7 +145,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 // Article
 .article:nth-child(31n + 1) {
 	grid-column: 1 / -1;

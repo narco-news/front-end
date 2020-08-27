@@ -54,13 +54,13 @@
 		"velocity-animate": "^1.5.2",
 		"vodal": "^2.4.0",
 		"vue": "^2.6.11",
+		"vue-badger-accordion": "^1.1.6",
 		"vue-burger-menu": "^2.0.5",
 		"vue-clickaway": "^2.2.2",
 		"vue-cookies": "^1.7.0",
 		"vue-countup-v2": "^4.0.0",
 		"vue-digital-transform": "^1.1.1",
 		"vue-dynamic-marquee": "^0.1.6",
-		"vue-faq-accordion": "^1.6.1",
 		"vue-fixed-header": "^3.2.14",
 		"vue-fontawesome": "^0.0.2",
 		"vue-infinite-loading": "^2.4.5",
@@ -72,7 +72,6 @@
 		"vue-notification": "^1.3.20",
 		"vue-odometer": "^1.0.2",
 		"vue-plyr": "^6.0.4",
-		"vue-simple-accordion": "^0.0.5",
 		"vue-slim-tabs": "^0.4.0"
 	},
 	"devDependencies": {

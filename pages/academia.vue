@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="p-2 md:p-4 lg:p-8">
 		<div class="grid grid-cols-1 md:grid-cols-4">
 			<div class="col-span-1 md:col-span-1"><LatestPapers /></div>
 			<div class="col-span-1 md:col-span-3"><ABooks /></div>

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="p-2 md:p-8">
 		<div class="overflow-hidden mx-2">
 			<div
 				style="animation-duration: 1s;"

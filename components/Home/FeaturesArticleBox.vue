@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import CompactPostList from '~/components/CompactPostList.vue';
+import FeaturedArticlesBox from '~/components/FeaturedArticlesBox.vue';
 
 export default {
 	components: {
-		posts: CompactPostList
+		posts: FeaturedArticlesBox
 	},
 
 	computed: {
