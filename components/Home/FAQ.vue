@@ -1,9 +1,11 @@
 <template>
 	<div class="my-6">
-		<h1 class="text-2xl md:text-3xl lg:text-4xl font-bold px-4 my-4 underline">
+		<h1 class="desc text-xl font-bold my-4 ml-12">
 			Frequently Asked Questions
 		</h1>
-		<Accordion :items="items" />
+		<div class="bg-white shadow-inner rounded-md mx-8">
+			<Accordion :items="items" />
+		</div>
 	</div>
 </template>
 

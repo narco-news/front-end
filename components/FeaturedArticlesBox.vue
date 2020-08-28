@@ -114,13 +114,30 @@ export default {
 		line-height: 1.3;
 		position: absolute;
 		width: 400px;
-		height: 150px;
-		margin-top: -200px;
+		height: 100px;
+		margin-top: -150px;
 		margin-left: 3em;
 		z-index: 10;
 		text-align: center;
 		border: 4px solid #ffd54f;
-		background-color: #0d0d0d;
+		backdrop-filter: blur(10px);
+		color: #ffd54f;
+		.title {
+			margin-top: 0px;
+			font-family: 'Lora', sans-serif;
+			font-weight: 700;
+			@apply text-3xl;
+		}
+		.star {
+			position: absolute;
+		}
+		.date {
+			font-size: 1.3em;
+			font-weight: 700;
+		}
+		.author {
+			font-weight: 700;
+		}
 		// Mobile Styles
 		@media (max-width: 680px) {
 			position: static;
@@ -166,18 +183,6 @@ export default {
 				right: 0em;
 			}
 		}
-	}
-	.title {
-		font-family: 'Lora', sans-serif;
-		font-weight: 700;
-		@apply text-3xl;
-		color: #f2f2f2;
-		position: static;
-	}
-	.date {
-		color: #f2f2f2;
-		font-size: 1.5em;
-		position: static;
 	}
 }
 

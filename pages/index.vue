@@ -1,6 +1,7 @@
 <template>
 	<div class="h-full">
 		<HeaderImage />
+		<Cats />
 		<Features />
 		<FAQ />
 		<SitAware />
@@ -10,6 +11,7 @@
 
 <script>
 import HeaderImage from '~/components/Home/HeaderImage';
+import Cats from '~/components/Cats';
 import SitAware from '~/components/Home/SitAware';
 import Features from '~/components/Home/Features.vue';
 import FAQ from '~/components/Home/FAQ.vue';
@@ -19,6 +21,7 @@ export default {
 	layout: 'default',
 	components: {
 		HeaderImage,
+		Cats,
 		SitAware,
 		Features,
 		FAQ

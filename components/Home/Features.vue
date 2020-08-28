@@ -1,11 +1,9 @@
 <template>
 	<div>
-		<h1
-			class="desc text-2xl md:text-3xl lg:text-4xl font-bold my-4 md:mb-6 underline ml-4"
-		>
-			Our Focus
+		<h1 class="desc text-xl font-bold ml-12 my-4">
+			Focus
 		</h1>
-		<div class="feat-box shadow-inner rounded-md p-6">
+		<div class="feat-box shadow-inner rounded-md p-6 mx-8">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 				<div class="grid grid-flow-row">
 					<img src="~/assets/icons/research.svg" class="w-16" />
@@ -57,8 +55,10 @@ export default {
 	color: #0d0d0d;
 }
 .feat-box {
-	margin: 1em 2em;
 	background-color: white;
+	h1 {
+		margin-bottom: 10px;
+	}
 	img {
 		margin-bottom: 10px;
 	}
@@ -70,6 +70,5 @@ h1 {
 	font-family: 'IBM Plex Sans', sans;
 	color: #03a688;
 	line-height: 1.3;
-	margin-bottom: 10px;
 }
 </style>

@@ -1,63 +1,49 @@
 <template>
-	<div class="cats flex flex-row justify-center flex-wrap h-auto py-2 mx-4">
-		<div class="px-2 lg:px-4">
-			<n-link class="borderLeftRight text-md md:text-md" to="/tag/mexican-dto"
-				>Mexico</n-link
-			>
-		</div>
-		<div class="px-2 lg:px-4">
-			<n-link
-				class="borderLeftRight text-md md:text-md"
-				to="/tag/central-america"
-				>Central America</n-link
-			>
-		</div>
-		<div class="px-2 lg:px-4">
-			<n-link class="borderLeftRight text-md md:text-md" to="/tag/south-america"
-				>South America</n-link
-			>
-		</div>
-		<div class="px-2 lg:px-4">
-			<n-link
-				class="borderLeftRight text-md md:text-md"
-				to="/tag/southeast-asia"
-				>Southeast Asia</n-link
-			>
-		</div>
-		<!-- <div class="px-2 lg:px-4">
-      <n-link class="borderLeftRight text-md md:text-lg" to="/tag/central-asia">Central Asia</n-link>
-    </div>
-    <div class="px-2 lg:px-4">
-      <n-link class="borderLeftRight text-md md:text-lg" to="/tag/middle-east">Middle East</n-link>
-    </div>-->
-		<!-- <div class="px-2 lg:px-4">
-      <n-link class="borderLeftRight text-md md:text-lg" to="/tag/uk-scene">UK Scene</n-link>
-    </div> -->
-		<!-- <div class="px-2 lg:px-4">
-      <n-link class="borderLeftRight text-md md:text-lg" to="/tag/europe">Europe</n-link>
-    </div>-->
-		<!-- <div class="px-2 lg:px-4">
-      <n-link class="borderLeftRight text-md md:text-lg" to="/tag/femme-fatale">Femme Fatale</n-link>
-    </div> -->
-		<div class="px-2 lg:px-4">
-			<n-link
-				class="borderLeftRight text-md md:text-md"
-				to="/tag/film-and-television"
-				>Film & Television</n-link
-			>
-		</div>
-		<!-- <div class="px-2 lg:px-4">
-			<n-link class="borderLeftRight text-md md:text-lg" to="/tag/development"
-				>Development</n-link
-			>
-		</div> -->
-		<!-- <div class="px-2 lg:px-4">
-      <n-link class="borderLeftRight text-md md:text-lg" to="/tag/opinion">Opinion</n-link>
-    </div> -->
-		<div class="px-2 lg:px-4">
-			<n-link class="borderLeftRight text-md md:text-md" to="/tag/announcements"
-				>Announcements</n-link
-			>
+	<div>
+		<h1 class="desc text-xl font-bold ml-12 my-4">
+			Categories
+		</h1>
+		<div
+			class="cats grid grid-flow-col grid-cols-2 grid-rows-4 text-lg md:text-xl bg-white shadow-inner rounded-md mx-8"
+		>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/united-states"
+					>United States</n-link
+				>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/mexican-dto">Mexico</n-link>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/central-america"
+					>Central America</n-link
+				>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/south-america"
+					>South America</n-link
+				>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/southeast-asia"
+					>Southeast Asia</n-link
+				>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/film-and-television"
+					>Film & Television</n-link
+				>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/announcements"
+					>Announcements</n-link
+				>
+			</div>
+			<div class="px-2 lg:px-4">
+				<n-link class="text-md md:text-md" to="/tag/development"
+					>Development</n-link
+				>
+			</div>
 		</div>
 	</div>
 </template>
@@ -66,31 +52,13 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .cats {
-	background-color: #eef3ed;
+	padding: 1em;
 	a {
-		color: #017374;
-		font-weight: 600;
+		box-shadow: inset 0 -8px 0 0 #f2cb05;
+		font-weight: 700;
+		white-space: nowrap;
 	}
-}
-.borderMarker a {
-	position: relative !important;
-}
-
-.borderMarker::after a {
-	content: '' !important;
-	position: absolute !important;
-	z-index: -1 !important;
-	top: 70% !important;
-	left: -0.1px !important;
-	right: -0.1px !important;
-	bottom: 0 !important;
-	transition: top 0.1s ease-in-out !important;
-	background-color: rgba(87, 120, 243, 0.5) !important;
-}
-
-.borderMarker:hover::after a {
-	top: 0 !important;
 }
 </style>

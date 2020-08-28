@@ -63,7 +63,7 @@ $blue: #595fd9;
 }
 .accordion {
 	.accordion-item {
-		border-bottom: 1px solid $lightgray;
+		// border-bottom: 1px solid $lightgray;
 		button[aria-expanded='true'] {
 			border-bottom: 1px solid $blue;
 		}
@@ -130,7 +130,7 @@ $blue: #595fd9;
 		}
 		+ .accordion-content {
 			opacity: 1;
-			max-height: 9em;
+			max-height: 10em;
 			transition: all 200ms linear;
 			will-change: opacity, max-height;
 		}
