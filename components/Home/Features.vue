@@ -3,43 +3,42 @@
 		<h1
 			class="desc text-2xl md:text-3xl lg:text-4xl font-bold my-4 md:mb-6 underline ml-4"
 		>
-			Our Objectives
+			Our Focus
 		</h1>
-		<div class="feat-box shadow-inner rounded-md p-4">
+		<div class="feat-box shadow-inner rounded-md p-6">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 				<div class="grid grid-flow-row">
 					<img src="~/assets/icons/research.svg" class="w-16" />
 					<h1 class="text-xl font-bold">Collection & Research</h1>
 					<p class="text-xs md:text-sm">
-						Paying close attention to how information is uploaded and
-						distributed on the Internet by social media, press publications,
-						academic literature, think tanks and court documents.
+						Aggregation of information from social media, press publications,
+						academic literature, think tanks and public court documents.
 					</p>
 				</div>
 				<div class="grid grid-flow-row">
 					<img src="~/assets/icons/flow-chart-design.svg" class="w-16" />
 					<h1 class="text-xl font-bold">Graphics & Diagrams</h1>
 					<p class="text-xs md:text-sm">
-						A picture is worth a thousand words right? We think so, which is why
-						we aim to provide creative visual aids alongside the analysis and
-						data to help better make sense of what is going on.
+						Coming up with creative and effective ways that make it easier for
+						people to understand it all. A picture says a thousand words!
 					</p>
 				</div>
 				<div class="grid grid-flow-row">
 					<img src="~/assets/icons/image-analysis.svg" class="w-16" />
-					<h1 class="text-xl font-bold">Geolocation & Imagery Analysis</h1>
+					<h1 class="text-xl font-bold">Geolocation & Mapping</h1>
 					<p class="text-xs md:text-sm">
-						Little scrutiny has been given to social media content, including
-						judging its authenticity and spending time on geolocation.
+						Paying extra close attention to geography and it's relation to
+						everything. Including using maps to make everything easier to
+						visualize.
 					</p>
 				</div>
 				<div class="grid grid-flow-row">
 					<img src="~/assets/icons/layer.svg" class="w-16" />
 					<h1 class="text-xl font-bold">Social Media Trends</h1>
 					<p class="text-xs md:text-sm">
-						Working to better understand social media trends and communities
-						across platforms. Including how information is distributed among
-						them and by whom.
+						In the past many gave little attention to what was uploaded to
+						social media networks. We're trying to change that and further
+						understand the role they play.
 					</p>
 				</div>
 			</div>
@@ -70,6 +69,7 @@ export default {
 h1 {
 	font-family: 'IBM Plex Sans', sans;
 	color: #03a688;
-	line-height: 1.5;
+	line-height: 1.3;
+	margin-bottom: 10px;
 }
 </style>

@@ -22,35 +22,39 @@
 							<img src="~/assets/flags/mexico-2.svg" class="w-8 float-right" />
 							<h1 class="text-2xl font-bold">Tamaulipas</h1>
 							<p class="text-sm italic mb-4">24°17′14″ N, 98°33′48″ W</p>
-							<button
-								class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
-							>
-								<div class="flex flex-row flex-no-wrap gap-2">
-									Map
-								</div>
-							</button>
-							<button
-								class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-							>
-								<div class="flex flex-row flex-no-wrap gap-2">
-									Read the latest
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="#f2f2f2"
-										width="24"
-										height="24"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M17 8l4 4m0 0l-4 4m4-4H3"
-										/>
-									</svg>
-								</div>
-							</button>
+							<n-link to="/tamap">
+								<button
+									class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
+								>
+									<div class="flex flex-row flex-no-wrap gap-2">
+										Map
+									</div>
+								</button>
+							</n-link>
+							<n-link to="/tag/tamaulipas">
+								<button
+									class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+								>
+									<div class="flex flex-row flex-no-wrap gap-2">
+										Read the latest
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="#f2f2f2"
+											width="24"
+											height="24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M17 8l4 4m0 0l-4 4m4-4H3"
+											/>
+										</svg>
+									</div>
+								</button>
+							</n-link>
 						</div>
 					</div>
 				</div>
@@ -60,35 +64,39 @@
 							<img src="~/assets/flags/mexico-2.svg" class="w-8 float-right" />
 							<h1 class="text-2xl font-bold">Guanajuato</h1>
 							<p class="text-sm italic mb-4">21°1′0″ N, 101°16′0″ W</p>
-							<button
-								class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
-							>
-								<div class="flex flex-row flex-no-wrap gap-2">
-									Map
-								</div>
-							</button>
-							<button
-								class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-							>
-								<div class="flex flex-row flex-no-wrap gap-2">
-									Read the latest
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										stroke="#f2f2f2"
-										width="24"
-										height="24"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M17 8l4 4m0 0l-4 4m4-4H3"
-										/>
-									</svg>
-								</div>
-							</button>
+							<n-link to="/guanajuato-map">
+								<button
+									class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
+								>
+									<div class="flex flex-row flex-no-wrap gap-2">
+										Map
+									</div>
+								</button>
+							</n-link>
+							<n-link to="/tag/guanajuato">
+								<button
+									class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+								>
+									<div class="flex flex-row flex-no-wrap gap-2">
+										Read the latest
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke="#f2f2f2"
+											width="24"
+											height="24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M17 8l4 4m0 0l-4 4m4-4H3"
+											/>
+										</svg>
+									</div>
+								</button>
+							</n-link>
 						</div>
 					</div>
 				</div>

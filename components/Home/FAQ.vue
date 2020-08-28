@@ -19,22 +19,25 @@ export default {
 			items: [
 				{
 					title: 'Who are you people?',
-					content: 'Answer',
+					content:
+						'Just a couple of folks with varying expertise but a shared interest in better understanding these issues and helping others do the same.',
+					isExpanded: false
+				},
+				{
+					title: "Why'd you make this website?",
+					content:
+						'We wanted to join the conversation and have our own place to share ideas without restraint or censorship. We also needed a place to organized and compile any and all information relating to these topics.',
 					isExpanded: false
 				},
 				{
 					title: 'Are you cops?',
-					content: 'Answer 2',
-					isExpanded: false
-				},
-				{
-					title: 'What is the',
-					content: 'Answer 2',
+					content:
+						'No! We have never been employed or had assocation with any law enforcement agencies. ',
 					isExpanded: false
 				},
 				{
 					title: 'Whose paying you?',
-					content: 'Answer 2',
+					content: '<strong>No one!</strong> We are not funded by anyone',
 					isExpanded: false
 				}
 			]

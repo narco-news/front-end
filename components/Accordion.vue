@@ -1,23 +1,25 @@
 <template>
-	<div class="container">
-		<h2 v-if="title">{{ title }}</h2>
-		<div class="accordion">
-			<div
-				v-for="(item, index) in items"
-				:key="item.title"
-				class="accordion-item"
-			>
-				<button
-					:id="'accordion-button-' + index"
-					:aria-expanded="item.isExpanded"
-					@click="toggleItem(item)"
+	<div class="mx-2 md:mx-10">
+		<div class="container">
+			<h2 v-if="title">{{ title }}</h2>
+			<div class="accordion">
+				<div
+					v-for="(item, index) in items"
+					:key="item.title"
+					class="accordion-item"
 				>
-					<span class="accordion-title text-2xl">{{ item.title }}</span>
-					<span class="icon" aria-hidden="true"></span>
-				</button>
-				<div class="accordion-content">
-					<!-- eslint-disable-next-line vue/no-v-html -->
-					<p v-html="item.content"></p>
+					<button
+						:id="'accordion-button-' + index"
+						:aria-expanded="item.isExpanded"
+						@click="toggleItem(item)"
+					>
+						<span class="accordion-title text-2xl">{{ item.title }}</span>
+						<span class="icon" aria-hidden="true"></span>
+					</button>
+					<div class="accordion-content">
+						<!-- eslint-disable-next-line vue/no-v-html -->
+						<p v-html="item.content"></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -140,7 +142,6 @@ $blue: #595fd9;
 		transition: opacity 200ms ease-out, max-height 200ms ease-out;
 		will-change: opacity, max-height;
 		p {
-			font-size: 1.3rem;
 			font-weight: 300;
 			margin: 2em 0;
 		}
