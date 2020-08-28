@@ -16,7 +16,7 @@
 			<div
 				class="tam-box pb-12 flex flex-col md:flex-row justify-center items-center"
 			>
-				<div class="bg-white rounded-lg shadow-lg w-64 mr-8">
+				<div class="bg-white rounded-lg shadow-lg w-64 mb-8 md:mb-0 md:mr-8">
 					<div class="">
 						<div class="p-2">
 							<img src="~/assets/flags/mexico-2.svg" class="w-8 float-right" />

@@ -143,44 +143,27 @@ export default {
 			position: static;
 			z-index: 20;
 			height: 100%;
-			width: 100%;
+			width: 93%;
 			border: 0px;
-			margin-top: 4em;
-			margin-left: 0em;
+			margin-top: -4em;
+			margin-left: 20px;
 			.star {
 				position: absolute;
 				z-index: 30;
-				top: 10px;
-				right: 10px;
-			}
-			.title {
-				position: absolute;
-				margin-top: -2.8em;
-				margin-left: 1em;
-				padding: 0.2em 0;
-				text-align: left;
-				color: #03a688;
-				font-weight: 700;
-				text-decoration: underline;
-				text-transform: capitalize;
+				top: 0px;
+				right: 0px;
 			}
 			.author {
-				position: absolute;
-				top: 5em;
-				right: 0em;
-				padding: 10px;
-				background-color: #f2f2f2;
-				font-weight: 700;
+				font-family: 'Lora', sans-serif;
+				color: #0d0d0d;
+			}
+			.title {
+				color: #0d0d0d;
+				text-decoration: underline;
 			}
 			.date {
-				position: absolute;
-				color: #0d0d0d;
-				background-color: #f2f2f2;
-				padding: 10px;
-				font-size: 16px;
-				font-weight: 700;
-				top: 7.5em;
-				right: 0em;
+				color: #c2c2c2;
+				@apply text-lg;
 			}
 		}
 	}
@@ -204,7 +187,7 @@ export default {
 	}
 	.date {
 		@apply text-lg;
-		color: #797979;
+		color: #c2c2c2;
 		font-family: 'IBM Plex Sans', sans;
 		font-weight: 500;
 	}

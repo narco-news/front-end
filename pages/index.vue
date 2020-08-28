@@ -5,7 +5,7 @@
 		<Features />
 		<FAQ />
 		<SitAware />
-		<!-- <Popup /> -->
+		<Popup />
 	</div>
 </template>
 
@@ -15,7 +15,7 @@ import Cats from '~/components/Cats';
 import SitAware from '~/components/Home/SitAware';
 import Features from '~/components/Home/Features.vue';
 import FAQ from '~/components/Home/FAQ.vue';
-// import Popup from '~/components/Home/Popup';
+import Popup from '~/components/Home/Popup';
 
 export default {
 	layout: 'default',
@@ -24,7 +24,8 @@ export default {
 		Cats,
 		SitAware,
 		Features,
-		FAQ
+		FAQ,
+		Popup
 	},
 	async fetch({error, params, payload, store}) {
 		if (payload) {
