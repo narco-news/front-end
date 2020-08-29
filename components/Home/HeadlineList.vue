@@ -1,6 +1,6 @@
 <template>
-	<div class="list md:mx-2 lg:m-8 lg:p-4 bg-white p-2 shadow-inner rounded-md">
-		<article v-for="post in posts.slice(4, 14)" :key="post.id" class="article">
+	<div class="list mt-4 mx-8 md:mx-12">
+		<article v-for="post in posts.slice(6, 14)" :key="post.id" class="article">
 			<ul>
 				<li class="mb-2">
 					<div class="grid grid-cols-1 lg:flex flex-row flex-no-wrap">
@@ -26,7 +26,7 @@
 							class="hvr-forward"
 							>{{ post.title }}
 						</nuxt-link>
-						<hr style="border-color: #e5e5e5;" class="my-2" width="85%" />
+						<!-- <hr style="border-color: #e5e5e5;" class="my-2" width="85%" /> -->
 					</h1>
 				</li>
 			</ul>

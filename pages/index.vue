@@ -1,6 +1,10 @@
 <template>
 	<div class="h-full">
-		<HeaderImage />
+		<HomeArticles />
+		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
+		<Headlines />
+		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
+
 		<Cats />
 		<Features />
 		<FAQ />
@@ -10,7 +14,8 @@
 </template>
 
 <script>
-import HeaderImage from '~/components/Home/HeaderImage';
+import HomeArticles from '~/components/Home/HomeArticles';
+import Headlines from '~/components/Home/Headlines';
 import Cats from '~/components/Cats';
 import SitAware from '~/components/Home/SitAware';
 import Features from '~/components/Home/Features.vue';
@@ -20,7 +25,8 @@ import Popup from '~/components/Home/Popup';
 export default {
 	layout: 'default',
 	components: {
-		HeaderImage,
+		HomeArticles,
+		Headlines,
 		Cats,
 		SitAware,
 		Features,

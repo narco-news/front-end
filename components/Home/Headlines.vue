@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import CompactPostList from '~/components/CompactPostList.vue';
+import HeadlineList from '~/components/Home/HeadlineList';
 
 export default {
 	components: {
-		posts: CompactPostList
+		posts: HeadlineList
 	},
 
 	computed: {
@@ -24,14 +24,3 @@ export default {
 	}
 };
 </script>
-
-<style lang="scss" scoped>
-.box {
-	// background-color: #d8eee1;
-}
-h1 {
-	color: #595fd9;
-	font-family: 'Courier Prime', monospace;
-	font-weight: 600;
-}
-</style>
