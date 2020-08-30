@@ -1,12 +1,12 @@
 <template>
-	<div class="h-full">
+	<div class="h-full lg:mx-12">
 		<HomeArticles />
+		<FeaturedArticles />
 		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
 		<Headlines />
 		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
-
-		<Cats />
-		<Features />
+		<TagsList />
+		<Focus />
 		<FAQ />
 		<SitAware />
 		<Popup />
@@ -15,21 +15,23 @@
 
 <script>
 import HomeArticles from '~/components/Home/HomeArticles';
+import FeaturedArticles from '~/components/Home/FeaturedArticles';
 import Headlines from '~/components/Home/Headlines';
-import Cats from '~/components/Cats';
+import TagsList from '~/components/TagsList';
 import SitAware from '~/components/Home/SitAware';
-import Features from '~/components/Home/Features.vue';
-import FAQ from '~/components/Home/FAQ.vue';
+import Focus from '~/components/Home/Focus';
+import FAQ from '~/components/Home/FAQ';
 import Popup from '~/components/Home/Popup';
 
 export default {
 	layout: 'default',
 	components: {
 		HomeArticles,
+		FeaturedArticles,
 		Headlines,
-		Cats,
+		TagsList,
 		SitAware,
-		Features,
+		Focus,
 		FAQ,
 		Popup
 	},

@@ -1,19 +1,24 @@
 <template>
 	<div class="mx-2 md:mx-8">
+		<div class="heading mb-4">
+			<h2 class="text-3xl font-bold">Featured Articles</h2>
+		</div>
 		<div class="articles">
-			<article v-for="post in posts.slice(3, 8)" :key="post.id" class="article">
-				<div v-if="post.feature_image" class="overflow-hidden">
+			<article v-for="post in posts.slice(0, 3)" :key="post.id" class="article">
+				<div v-if="post.feature_image" class="">
 					<nuxt-link :to="{path: '/' + post.slug}">
-						<div class="overflow-hidden rounded-lg">
-							<img
-								:src="post.feature_image"
-								:alt="post.title"
-								class="hvr-grow"
-							/>
+						<div class="image">
+							<div class="overflow-hidden">
+								<img
+									:src="post.feature_image"
+									:alt="post.title"
+									class="hvr-grow"
+								/>
+							</div>
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div v-if="post.featured" class="star">
+						<div v-if="post.featured" class="star float-right m-2">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
@@ -26,8 +31,19 @@
 								/>
 							</svg>
 						</div>
-						<div class="date whitespace-no-wrap text-sm mt-2">
-							{{ post.published_at | dayjs }}
+						<div class="flex flex-row flex-no-wrap">
+							<div class="author uppercase text-sm md:text-md mx-2">
+								<span>BY</span>
+								<nuxt-link
+									:to="{path: '/author/' + post.primary_author.slug}"
+									:title="post.primary_author.name"
+									class="font-bold"
+									>{{ post.primary_author.name }}</nuxt-link
+								>
+							</div>
+							<div class="date text-sm mx-2">
+								{{ post.published_at | dayjs }}
+							</div>
 						</div>
 						<h1 v-if="post.title" class="title">
 							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
@@ -39,21 +55,15 @@
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
 							</p>
-							<!-- <nuxt-link
-								class="post-read-more"
-								:to="{path: '/' + post.slug}"
-								title="Read more..."
-								>Read more...</nuxt-link
-							> -->
-						</div>
-						<div class="author uppercase text-sm md:text-md">
-							<span>BY</span>
-							<nuxt-link
-								:to="{path: '/author/' + post.primary_author.slug}"
-								:title="post.primary_author.name"
-								class="font-bold"
-								>{{ post.primary_author.name }}</nuxt-link
-							>
+
+							<button class="text-white font-bold py-2 px-2 rounded">
+								<nuxt-link
+									class="post-read-more"
+									:to="{path: '/' + post.slug}"
+									title="Read more..."
+									>Read More</nuxt-link
+								>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -77,7 +87,7 @@ export default {
 
 	filters: {
 		dayjs(date) {
-			return dayjs().to(date);
+			return dayjs(date).format('MMMM Do, YYYY');
 		}
 	},
 
@@ -97,13 +107,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.heading {
+	h2 {
+		display: grid;
+		grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+		align-items: center;
+		text-align: center;
+		grid-gap: 20px;
+		width: 100%;
+		color: #0d0d0d;
+	}
+
+	h2:before,
+	h2:after {
+		content: '';
+		border-top: 4px solid #ffd54f;
+	}
+}
+button {
+	margin: 1em 0;
+	color: #6e7381;
+	background-color: lighten(#ffd54f, 0%);
+	&:hover {
+		color: lighten(#0d0d0d, 10%);
+		background-color: darken(#ffd54f, 5%);
+	}
+}
 .articles {
 	display: grid;
 	grid-template-columns: repeat (auto-fit, minmax(180px, 1fr));
 	grid-auto-flow: dense;
 	.date {
-		color: #03a688;
+		color: #6e7381;
 		font-weight: 600;
+		text-transform: uppercase;
 	}
 	.author {
 		color: #6e7381;
@@ -116,24 +153,38 @@ export default {
 			font-family: 'Lora', sans-serif;
 			font-weight: 700;
 		}
+		.image {
+			box-shadow: 10px 10px #ffd54f;
+			margin-bottom: 2em;
+			div {
+				border: 3px solid #0d0d0d;
+			}
+		}
+		img {
+			height: 250px;
+			width: 100%;
+			object-fit: cover;
+		}
 	}
 	.article:nth-child(2),
-	.article:nth-child(3),
-	.article:nth-child(4),
-	.article:nth-child(5) {
-		padding: 0.5em;
-		.excerpt {
-			display: none;
+	.article:nth-child(3) {
+		padding: 1em;
+		.image {
+			margin-bottom: 1em;
+			div {
+				border: 3px solid #ffd54f;
+			}
 		}
 		.title {
+			font-size: 24px;
 			line-height: 1.2;
 			font-family: 'Lora', sans-serif;
 			font-weight: 700;
 		}
 		img {
-			object-fit: cover;
-			height: 8em;
+			height: 150px;
 			width: 100%;
+			object-fit: cover;
 		}
 	}
 }
