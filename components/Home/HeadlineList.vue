@@ -79,10 +79,6 @@ export default {
 .tags {
 	font-weight: 500;
 }
-.latest {
-	font-family: 'Lora', sans-serif;
-	font-weight: 700;
-}
 .list {
 	li {
 		color: #0d0d0d;
@@ -92,7 +88,8 @@ export default {
 	.title {
 		line-height: 1.1;
 		font-family: 'Lora', sans-serif;
-		font-weight: 600;
+		font-weight: 500;
+		text-decoration: underline;
 	}
 }
 

@@ -89,13 +89,13 @@
 					</div>
 				</div>
 				<div
-					class="grid grid-cols-2 md:flex md:justify-start items-center justify-center md:my-2"
+					class="grid grid-cols-2 md:flex md:justify-between items-center my-2 md:my-4 mx-1 md:mx-2"
 				>
 					<div class="col-span-1">
-						<div class="post-author flex flex-auto items-center my-2">
+						<div class="post-author flex flex-auto items-center">
 							<div
 								v-if="post.primary_author.profile_image"
-								class="post-author-avatar mx-4"
+								class="post-author-avatar mr-2"
 							>
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
@@ -108,7 +108,7 @@
 									/>
 								</nuxt-link>
 							</div>
-							<div class="post-author-info mr-4">
+							<div class="post-author-info">
 								<div class="post-author-info-name text-lg">
 									<nuxt-link
 										:to="{path: '/author/' + post.primary_author.slug}"
@@ -129,12 +129,12 @@
 									<span class="published_at font-bold uppercase">{{
 										post.published_at | dayjs
 									}}</span>
-									<br /><span
+									<!-- <br /><span
 										v-if="post.updated_at !== post.published_at"
 										class="updated_at text-xs text-gray-500 md:ml-4"
 									>
 										last edited <span>{{ post.updated_at | dayjs }}</span></span
-									>
+									> -->
 								</div>
 							</div>
 						</div>
@@ -142,7 +142,7 @@
 				</div>
 				<!-- TAGS -->
 				<div
-					class="post-tags-bottom text-xs md:text-sm pattern-cross-dots-md p-2 uppercase"
+					class="post-tags-bottom text-xs md:text-sm pattern-cross-dots-sm p-2 uppercase"
 				>
 					<ul class="list inline">
 						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-2">
@@ -155,91 +155,106 @@
 						</li>
 					</ul>
 				</div>
-
 				<article class="single-post">
 					<scroll-progress-bar />
 					<div v-if="post.feature_image">
-						<img
-							:src="post.feature_image"
-							:alt="post.title"
-							class="mx-auto object-cover w-full lg:w-2/3 my-4 rounded"
-						/>
+						<img :src="post.feature_image" :alt="post.title" class="my-4" />
 					</div>
-
 					<div class="row">
 						<div class="mx-auto">
 							<div class="antialiased post-content">
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-text text-lg" v-html="post.html" />
+								<div class="post-text text-xl" v-html="post.html" />
 							</div>
-							<div class="flex flex-row justify-end">
-								<social-icon
-									:url="
-										'https://twitter.com/share?text=' +
-										post.title +
-										'&url=' +
-										blogUrl +
-										'/' +
-										post.slug
-									"
-									class="float-right"
-									click="
+							<div>
+								<div class="">
+									<social-icon
+										:url="
+											'https://twitter.com/share?text=' +
+											post.title +
+											'&url=' +
+											blogUrl +
+											'/' +
+											post.slug
+										"
+										class="float-right"
+										click="
 							window.open(href, 'twitter-share', 'width=550,height=235');
 							return false;
 						"
-								>
-									<img
-										src="~/assets/icons/twitter-rounded.svg"
-										alt="Share article on Twitter"
-										title="Share article on Twitter"
-										class="w-6"
-									/>
-								</social-icon>
-								<social-icon
-									:url="
-										'https://www.facebook.com/sharer.php?u=' +
-										blogUrl +
-										'/' +
-										post.slug
-									"
-									class="float-right"
-									click="
+									>
+										<img
+											src="~/assets/icons/twitter-rounded.svg"
+											alt="Share article on Twitter"
+											title="Share article on Twitter"
+											class="w-6"
+										/>
+									</social-icon>
+									<social-icon
+										:url="
+											'https://www.facebook.com/sharer.php?u=' +
+											blogUrl +
+											'/' +
+											post.slug
+										"
+										class="float-right"
+										click="
 							window.open(href, 'facebook-share', 'width=580,height=296');
 							return false;
 						"
-								>
-									<img
-										src="~/assets/icons/facebook-rounded.svg"
-										alt="Share article on Facebook"
-										title="Share article on Facebook"
-										class="w-6"
-									/>
-								</social-icon>
-								<social-icon
-									:url="
-										'https://www.linkedin.com/shareArticle/' +
-										'?mini=true' +
-										'&url=' +
-										blogUrl +
-										'/' +
-										post.slug
-									"
-									class="float-right"
-									click="
+									>
+										<img
+											src="~/assets/icons/facebook-rounded.svg"
+											alt="Share article on Facebook"
+											title="Share article on Facebook"
+											class="w-6"
+										/>
+									</social-icon>
+									<social-icon
+										:url="
+											'https://www.linkedin.com/shareArticle/' +
+											'?mini=true' +
+											'&url=' +
+											blogUrl +
+											'/' +
+											post.slug
+										"
+										class="float-right"
+										click="
 							window.open(href, 'facebook-share', 'width=580,height=296');
 							return false;
 						"
-								>
-									<img
-										src="~/assets/icons/linkedin-rounded.svg"
-										alt="Share article on LinkedIn"
-										title="Share article on LinkedIn"
-										class="w-6"
-									/>
-								</social-icon>
+									>
+										<img
+											src="~/assets/icons/linkedin-rounded.svg"
+											alt="Share article on LinkedIn"
+											title="Share article on LinkedIn"
+											class="w-6"
+										/>
+									</social-icon>
+								</div>
+								<div class="inline-block text-md">
+									<div class="post-meta-date">
+										<div class="post-meta-date-info">
+											<!-- <span class="published_at font-bold uppercase">{{
+											post.published_at | dayjs
+										}}</span> -->
+											<div class="">
+												<span
+													v-if="post.updated_at !== post.published_at"
+													class="updated_at text-xs text-gray-500"
+												>
+													last edited
+													<span>{{ post.updated_at | daysec }}</span></span
+												>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+
 							<div
-								class="post-tags-bottom text-xs md:text-sm uppercase pattern-cross-dots-md py-4 mt-6"
+								class="post-tags-bottom text-xs md:text-sm uppercase pattern-cross-dots-sm py-4"
 							>
 								<ul class="list inline">
 									<li
@@ -255,25 +270,6 @@
 										>
 									</li>
 								</ul>
-							</div>
-							<div class="text-sm lg:text-lg inline-block w-full px-4 my-2">
-								<div class="post-meta-date">
-									<div class="post-meta-date-info">
-										<span class="published_at font-bold uppercase">{{
-											post.published_at | dayjs
-										}}</span>
-
-										<div class="float-right">
-											<span
-												v-if="post.updated_at !== post.published_at"
-												class="updated_at text-xs text-gray-500"
-											>
-												last edited
-												<span>{{ post.updated_at | daysec }}</span></span
-											>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -494,6 +490,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.post-content {
+	@media (min-width: 768px) {
+		padding: 0 1em;
+	}
+}
+
 .top {
 	padding: 0.5em;
 	background-color: #f26457;
@@ -501,12 +503,12 @@ export default {
 
 .post-tags {
 	font-family: 'EB Garamond', serif;
-	font-weight: 500;
+	font-weight: 600;
 	color: #03a688;
 	text-transform: uppercase;
 }
 .post-tags-bottom {
-	font-family: 'Courier Prime', monoespace;
+	font-family: 'Courier Prime', monospace;
 	font-weight: 600;
 	letter-spacing: 1px;
 	a {
@@ -525,7 +527,7 @@ export default {
 .post-title {
 	font-family: 'Lora', serif;
 	font-weight: 600;
-	line-height: 1.4;
+	line-height: 1.2;
 	text-transform: capitalize;
 }
 .post-excerpt {
@@ -542,14 +544,14 @@ export default {
 	}
 }
 .post-author-info-name {
-	color: #03a688;
+	color: #0d0d0d;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 600;
 	background-color: #f2f2f2;
 }
 
 .published_at {
-	color: #0d0d0d;
+	color: #03a688;
 }
 .post-text {
 	font-family: 'EB Garamond', serif;

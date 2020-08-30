@@ -4,7 +4,7 @@
 			<article v-for="post in posts.slice(3, 8)" :key="post.id" class="article">
 				<div v-if="post.feature_image" class="overflow-hidden">
 					<nuxt-link :to="{path: '/' + post.slug}">
-						<div class="overflow-hidden rounded-lg">
+						<div class="overflow-hidden">
 							<img
 								:src="post.feature_image"
 								:alt="post.title"
@@ -121,7 +121,7 @@ export default {
 	.article:nth-child(3),
 	.article:nth-child(4),
 	.article:nth-child(5) {
-		padding: 0.5em;
+		margin: 1em 0.5em;
 		.excerpt {
 			display: none;
 		}
@@ -132,7 +132,7 @@ export default {
 		}
 		img {
 			object-fit: cover;
-			height: 8em;
+			height: 10em;
 			width: 100%;
 		}
 	}

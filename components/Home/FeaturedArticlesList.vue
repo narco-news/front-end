@@ -18,7 +18,21 @@
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div v-if="post.featured" class="star float-right m-2">
+						<div class="flex flex-col md:flex-row md:justify-between">
+							<div class="author uppercase text-sm md:text-md">
+								<span>BY</span>
+								<nuxt-link
+									:to="{path: '/author/' + post.primary_author.slug}"
+									:title="post.primary_author.name"
+									class="font-bold"
+									>{{ post.primary_author.name }}</nuxt-link
+								>
+							</div>
+							<div class="date text-sm">
+								{{ post.published_at | dayjs }}
+							</div>
+						</div>
+						<div v-if="post.featured" class="star float-right">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 20 20"
@@ -31,26 +45,13 @@
 								/>
 							</svg>
 						</div>
-						<div class="flex flex-row flex-no-wrap">
-							<div class="author uppercase text-sm md:text-md mx-2">
-								<span>BY</span>
-								<nuxt-link
-									:to="{path: '/author/' + post.primary_author.slug}"
-									:title="post.primary_author.name"
-									class="font-bold"
-									>{{ post.primary_author.name }}</nuxt-link
-								>
-							</div>
-							<div class="date text-sm mx-2">
-								{{ post.published_at | dayjs }}
-							</div>
-						</div>
 						<h1 v-if="post.title" class="title">
 							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
 								>{{ post.title }}
 							</nuxt-link>
 						</h1>
-						<div class="excerpt">
+
+						<div class="excerpt p-1">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
@@ -116,18 +117,19 @@ export default {
 		grid-gap: 20px;
 		width: 100%;
 		color: #0d0d0d;
+		font-family: 'EB Garamond', sans-serif;
 	}
 
 	h2:before,
 	h2:after {
 		content: '';
-		border-top: 4px solid #ffd54f;
+		border-top: 2px solid #0d0d0d;
 	}
 }
 button {
 	margin: 1em 0;
-	color: #6e7381;
-	background-color: lighten(#ffd54f, 0%);
+	color: #616161;
+	background-color: lighten(#ffd54f, 5%);
 	&:hover {
 		color: lighten(#0d0d0d, 10%);
 		background-color: darken(#ffd54f, 5%);
@@ -148,20 +150,21 @@ button {
 	.article:nth-child(1) {
 		grid-column: span 2;
 		.title {
-			font-size: 24px;
+			text-transform: capitalize;
+			font-size: 32px;
 			line-height: 1.2;
-			font-family: 'Lora', sans-serif;
 			font-weight: 700;
+			font-family: 'EB Garamond', sans-serif;
 		}
 		.image {
 			box-shadow: 10px 10px #ffd54f;
 			margin-bottom: 2em;
 			div {
-				border: 3px solid #0d0d0d;
+				border: 2px solid #0d0d0d;
 			}
 		}
 		img {
-			height: 250px;
+			height: 300px;
 			width: 100%;
 			object-fit: cover;
 		}
@@ -176,15 +179,21 @@ button {
 			}
 		}
 		.title {
+			text-transform: capitalize;
 			font-size: 24px;
 			line-height: 1.2;
-			font-family: 'Lora', sans-serif;
 			font-weight: 700;
+			font-family: 'EB Garamond', sans-serif;
 		}
 		img {
 			height: 150px;
 			width: 100%;
 			object-fit: cover;
+		}
+		.excerpt {
+			@media (max-width: 415px) {
+				font-size: 14px;
+			}
 		}
 	}
 }

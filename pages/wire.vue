@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<AroundTheWeb class="my-4" />
+		<EssResources class="mx-8 md:mx-16" />
 		<posts
 			class="clear-left"
 			:posts="postsIndex"
@@ -11,11 +12,13 @@
 
 <script>
 import AroundTheWeb from '~/components/AroundTheWeb';
+import EssResources from '~/components/EssResources';
 import Posts from '~/components/PostList';
 
 export default {
 	components: {
 		AroundTheWeb,
+		EssResources,
 		posts: Posts
 	},
 

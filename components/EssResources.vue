@@ -1,7 +1,7 @@
 <template>
-	<div class="h-auto bg-white rounded shadow-md mx-2">
-		<div class="my-2 mx-4 py-3">
-			<span style="color: #ff5e70;" class="text-sm">
+	<div class="h-auto rounded-md shadow-inner m-4">
+		<div class="p-2">
+			<span style="color: #f26457;" class="text-sm font-mono">
 				Essential Resources
 			</span>
 			<button
@@ -13,7 +13,11 @@
 				{{ featuresOpen ? 'Hide' : 'Show' }}
 			</button>
 		</div>
-		<div id="features" v-show-slide="featuresOpen" class="features text-xs">
+		<div
+			id="features"
+			v-show-slide:400-example-easing="featuresOpen"
+			class="features text-xs"
+		>
 			<p class="pb-1 font-bold text-center">Press Releases</p>
 			<div class="flex h-auto whitespace-no-wrap gap-2 text-center px-4">
 				<div class="p-1">
