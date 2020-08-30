@@ -3,7 +3,7 @@
 		<h1 class="desc text-xl font-bold ml-12 my-4">
 			Focus
 		</h1>
-		<div class="feat-box shadow-inner rounded-md p-6 mx-8">
+		<div class="feat-box p-6">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 				<div class="grid grid-flow-row">
 					<img src="~/assets/icons/research.svg" class="w-16" />
@@ -61,9 +61,6 @@ export default {
 	}
 	img {
 		margin-bottom: 10px;
-	}
-	@media (min-width: 780px) {
-		margin: 4em 10em;
 	}
 }
 h1 {

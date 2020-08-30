@@ -14,6 +14,28 @@ export default {
 		posts: FeaturedArticlesList
 	},
 
+	async fetch({error, params, payload, store}) {
+		if (payload) {
+			store.commit('setPostsIndex', payload);
+		} else {
+			let pageNumber = 1;
+			if (params.pageNumber) {
+				pageNumber = params.pageNumber;
+			}
+
+			try {
+				await store.dispatch('getPostsIndex', {
+					filter: '',
+					pageNumber
+				});
+			} catch (err) {
+				error({
+					statusCode: 404,
+					message: err.message
+				});
+			}
+		}
+	},
 	computed: {
 		postsIndex() {
 			return this.$store.state.postsIndex;

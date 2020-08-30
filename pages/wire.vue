@@ -11,7 +11,7 @@
 
 <script>
 import AroundTheWeb from '~/components/AroundTheWeb';
-import Posts from '~/components/PostList.vue';
+import Posts from '~/components/PostList';
 
 export default {
 	components: {

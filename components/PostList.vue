@@ -2,15 +2,12 @@
 	<div class="grid grid-cols-1">
 		<div class="archive mx-2 lg:mx-8">
 			<article
-				v-for="post in posts.slice(0, 18)"
+				v-for="post in posts.slice(3, 15)"
 				:key="post.id"
 				class="article rounded-sm hvr-float"
 			>
 				<div class="grid grid-cols-1">
-					<div
-						v-if="post.feature_image"
-						class="image object-cover overflow-hidden h-24 md:h-32"
-					>
+					<div v-if="post.feature_image" class="">
 						<nuxt-link :to="{path: '/' + post.slug}">
 							<img
 								class="rounded-sm"
@@ -26,7 +23,7 @@
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="tags font-bold"
+										class="tags text-gray-700 font-bold"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</div>
@@ -34,12 +31,8 @@
 							<div>
 								<reading-time
 									:content="post.html"
-									style="
-										color: #565656;
-										font-size: 11px;
-										font-family: 'Courier Prime';
-									"
-									class="whitespace-no-wrap"
+									style="font-size: 11px; font-family: 'Courier Prime';"
+									class="reading text-gray-600 whitespace-no-wrap"
 								/>
 							</div>
 						</div>
@@ -49,16 +42,22 @@
 						>
 							Featured
 						</div>
-						<div class="title text-lg mt-1">
+						<div class="published_at text-sm block">
+							{{ post.published_at | dayjs }}
+						</div>
+						<div class="title text-xl">
 							<h1 v-if="post.title">
 								<nuxt-link :to="{path: '/' + post.slug}" :title="post.title">{{
 									post.title
 								}}</nuxt-link>
 							</h1>
 						</div>
-						<div class="published_at block">
-							{{ post.published_at | dayjs }}
-						</div>
+						<!-- <div class="">
+							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
+							<p v-else-if="post.excerpt && !post.custom_excerpt">
+								{{ post.excerpt }}
+							</p>
+						</div> -->
 					</div>
 				</div>
 			</article>
@@ -91,8 +90,12 @@
 <script>
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
 import ReadingTime from '~/components/ReadingTime.vue';
+
 dayjs.extend(advancedFormat);
+dayjs.extend(relativeTime);
 
 export default {
 	name: 'PostList',
@@ -101,7 +104,7 @@ export default {
 
 	filters: {
 		dayjs(date) {
-			return dayjs(date).format('MMMM Do, YYYY');
+			return dayjs().to(date);
 		}
 	},
 
@@ -149,28 +152,34 @@ export default {
 // Article
 .article:nth-child(31n + 1) {
 	grid-column: 1 / -1;
+	img {
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+	}
 }
 
-.article:nth-child(8) {
-	grid-column: -3 / -1;
+.article:nth-child(4) {
+	grid-column: span 2;
+	img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
 }
 
-.article:nth-child(13) {
-	grid-column: 1 / -2;
+.article {
+	img {
+		height: 100px;
+		width: 100%;
+		object-fit: cover;
+	}
 }
 
 @media (max-width: 680px) {
 	.archive {
 		display: flex;
 		flex-direction: column;
-	}
-}
-
-@media (min-width: 768px) {
-	.article:nth-child(1) {
-		img {
-			transform: translateY(-150px);
-		}
 	}
 }
 
@@ -199,23 +208,18 @@ export default {
 	color: #272727;
 	font-family: 'Lora', sans-serif;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.2;
 }
 
 .published_at {
-	color: #f26457;
-	font-family: 'IBM Plex Sans';
+	color: #03a688;
 	font-weight: 500;
-	font-size: 13px;
 }
 
 .tags {
-	font-family: 'EB Garamond', sans-serif;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
 	font-size: 12px;
-	font-weight: 500;
-	color: #565656;
+	font-weight: 600;
 }
 </style>

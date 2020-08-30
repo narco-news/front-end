@@ -1,7 +1,7 @@
 <template>
-	<div class="h-full lg:mx-12">
-		<HomeArticles />
-		<FeaturedArticles />
+	<div class="h-full">
+		<HomeArticles class="lg:mx-8" />
+		<FeaturedArticles class="lg:mx-12" />
 		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
 		<Headlines />
 		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />

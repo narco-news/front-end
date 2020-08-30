@@ -19,7 +19,7 @@
 							>{{ post.published_at | dayjs }}</span
 						>
 					</div>
-					<h1 v-if="post.title" class="title capitalize md:text-xl lg:text-3xl">
+					<h1 v-if="post.title" class="title capitalize md:text-xl lg:text-2xl">
 						<nuxt-link
 							:to="{path: '/' + post.slug}"
 							:title="post.title"
@@ -31,6 +31,9 @@
 				</li>
 			</ul>
 		</article>
+		<div class="mt-2 text-gray-600">
+			<n-link to="/wire">View Wire</n-link>
+		</div>
 	</div>
 </template>
 
