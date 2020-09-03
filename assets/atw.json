@@ -2,51 +2,51 @@
 	"article": [
 		{
 			"id": 1,
-			"title": "3,100 pounds of meth seized, 33 arrested; largest drug bust in county history",
-			"url": "https://santamariatimes.com/news/local/crime-and-courts/largest-drug-bust-in-santa-barbara-county-history-3-100-pounds-of-meth-seized-33/article_56572a24-0d3f-52a3-aa50-b3fcf239de35.html",
-			"favicon": "https://i.forbesimg.com/48X48-F.png"
+			"title": "'El Azul', heir to the Santa Rosa de Lima cartel after the capture of 'El Marro'",
+			"url": "https://www.milenio.com/policia/cartel-santa-rosa-azul-heredero-organizacion-delictiva",
+			"favicon": "https://www.milenio.com/bundles/camusassets/images/icons/57x57.png"
 		},
 		{
 			"id": 2,
-			"title": "Asia's prisons are filling up with women. Many are victims of the war on drugs",
-			"url": "https://edition.cnn.com/2020/08/16/asia/women-drug-trafficking-mules-hnk-intl-dst-as-equals/index.html",
-			"favicon": "https://cdn.cnn.com/cnn/.e/img/3.0/global/misc/apple-touch-icon.png"
+			"title": "The arrest of a Mexican cartel leader reveals a complicated relationship with the Catholic Church",
+			"url": "https://www.americamagazine.org/politics-society/2020/08/31/arrest-mexican-cartel-leader-reveals-complicated-relationship-catholic",
+			"favicon": "https://www.americamagazine.org/themes/custom/america/logoA.png"
 		},
 		{
 			"id": 3,
-			"title": "How will Mexico’s president handle “El Mencho”, a kingpin on the rise?",
-			"url": "https://www.economist.com/the-americas/2020/08/15/how-will-mexicos-president-handle-el-mencho-a-kingpin-on-the-rise",
-			"favicon": "https://www.economist.com/engassets/ico/favicon.f1ea9088.ico"
+			"title": "Ghost Gliders: Spanish Narco-Submarines",
+			"url": "https://smallwarsjournal.com/jrnl/art/ghost-gliders-spanish-narco-submarines",
+			"favicon": "https://smallwarsjournal.com/themes/custom/ccc_theme/favicon.ico"
 		},
 		{
 			"id": 4,
-			"title": "US Border Officials See Methamphetamine Resurgence",
-			"url": "https://www.insightcrime.org/news/analysis/us-mexico-border-methamphetamine/",
-			"favicon": "https://www.insightcrime.org/wp-content/uploads/2017/11/insightcrime-icono-114x114-1.png"
+			"title": "Powerful Serbian-American Drug Traffickers May Have Ties to Intelligence Agencies",
+			"url": "https://www.occrp.org/en/group-america/powerful-serbian-american-drug-traffickers-may-have-ties-to-intelligence-agencies",
+			"favicon": "https://www.occrp.org/assets/common/favicon.png"
 		},
 		{
 			"id": 5,
-			"title": "Warlord’s release from US prison ups tension with Colombia",
-			"url": "https://apnews.com/23e41f017ee062025b75baffad043eaf",
-			"favicon": "https://apnews.com/favicon.ico"
+			"title": "MS13 East Coast Violence Fails to Consolidate Gang’s US Presence",
+			"url": "https://www.insightcrime.org/news/analysis/ms13-violence-east-coast-presence/",
+			"favicon": "https://www.insightcrime.org/wp-content/uploads/2017/11/insightcrime-icono-76x76-1.png"
 		},
 		{
 			"id": 6,
-			"title": "Drug Ring Exposes Massive Money Laundering in Dominican Republic",
-			"url": "https://www.insightcrime.org/news/brief/dominican-republic-massive-money-laundering/",
+			"title": "Heroin’s Hidden Ingredient Is a Chemical Made by U.S. Companies",
+			"url": "https://www.bloomberg.com/news/features/2020-08-26/u-s-drug-crisis-is-made-in-mexico-with-american-raw-materials",
 			"favicon": "https://www.insightcrime.org/wp-content/uploads/2017/11/insightcrime-icono-114x114-1.png"
 		},
 		{
 			"id": 7,
-			"title": "Quintana Roo: The Revival of Mexico’s Caribbean Cocaine Trafficking Route",
-			"url": "https://medium.com/@elisanorio/quintana-roo-the-revival-of-mexicos-caribbean-cocaine-trafficking-route-906d5e84d74f",
-			"favicon": "https://i.olsh.me/icon?size=80..120..200&url=medium.com"
+			"title": "Online Drug Market Empire Disappears, with $30 Million of Users' Money",
+			"url": "https://www.vice.com/en_us/article/z3e533/online-drug-market-empire-disappears-with-dollar30-million-of-users-money",
+			"favicon": "https://vice-web-statics-cdn.vice.com/favicons/vice/apple-touch-icon-60x60.png"
 		},
 		{
 			"id": 8,
-			"title": "Justice in Mexico releases 2020 Organized Crime and Violence in Mexico Report",
-			"url": "https://justiceinmexico.org/justice-in-mexico-releases-2020-organized-crime-and-violence-in-mexico-report/",
-			"favicon": "https://justiceinmexico.org/favicon.ico"
+			"title": "In Mexico, crime, problems resist president’s solutions",
+			"url": "https://apnews.com/c68197efcf44bf9d9a30e176abd956fe",
+			"favicon": "https://apnews.com/branding/favicon/64.png"
 		}
 	]
 }

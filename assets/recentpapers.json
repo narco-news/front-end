@@ -2,6 +2,14 @@
 	"papers": [
 		{
 			"id": 1,
+			"title": "Cartel-Related Violence in Mexico as Narco-Terrorism or Criminal Insurgency: A Literature Review",
+			"datePublished": "August 2020",
+			"authors": "David Teiner",
+			"link": "https://www.universiteitleiden.nl/binaries/content/assets/customsites/perspectives-on-terrorism/2020/issue-4/teiner.pdf",
+			"dLink": "https://www.universiteitleiden.nl/binaries/content/assets/customsites/perspectives-on-terrorism/2020/issue-4/teiner.pdf"
+		},
+		{
+			"id": 2,
 			"title": "Narco‐Fish: Global fisheries and drug trafficking",
 			"datePublished": "26 June 2020",
 			"authors": "Dyhia Belhabib, Philippe Le Billon, David J. Wrathall",
@@ -10,7 +18,7 @@
 			"dLink": "https://sci-hub.tw/10.1111/faf.12483"
 		},
 		{
-			"id": 2,
+			"id": 3,
 			"title": "Exploring interrelationships between high-level drug trafficking and other serious and organised crime: an Australian study",
 			"datePublished": "21 May 2019",
 			"authors": "Caitlin Elizabeth Hughes, Jenny Chalmers, David Anthony Bright",
@@ -19,7 +27,7 @@
 			"dLink": "https://sci-hub.tw/10.1080/17440572.2019.1615895"
 		},
 		{
-			"id": 3,
+			"id": 4,
 			"title": "A Markov Decision Process approach for balancing intelligence and interdiction operations in city-level drug trafficking enforcement",
 			"datePublished": "March 2020",
 			"authors": "N. OrkunBaycik, Thomas C.Sharkey, Chase E.Rainwater",
@@ -28,7 +36,7 @@
 			"dLink": "https://sci-hub.tw/10.1016/j.seps.2019.03.006"
 		},
 		{
-			"id": 4,
+			"id": 5,
 			"title": "The impacts of cocaine-trafficking on conservation governance in Central America",
 			"datePublished": "July 2020",
 			"authors": "David J. Wrathall , Jennifer Devine, Bernardo Aguilar-González",
@@ -37,7 +45,7 @@
 			"dLink": "https://sci-hub.tw/10.1016/j.gloenvcha.2020.102098"
 		},
 		{
-			"id": 5,
+			"id": 6,
 			"title": "Press Ideology as an Epistemological Connector between Framing Theory and Social Representations Theory: An Analysis of Violence and Drug Trafficking in the Mexican Press",
 			"datePublished": " 19 July 2019",
 			"authors": "Hiram Reyes-Sosa, Maider Larrañaga Egilegor, Tânia Dos Santos, Luisa Perez-Marin, Francisco Alvarez-Montero",
