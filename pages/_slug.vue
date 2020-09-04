@@ -157,7 +157,7 @@
 				</div>
 				<article class="single-post">
 					<scroll-progress-bar />
-					<div v-if="post.feature_image">
+					<div v-if="post.feature_image" class="flex justify-center">
 						<img :src="post.feature_image" :alt="post.title" class="my-4" />
 					</div>
 					<div class="row">
