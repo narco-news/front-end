@@ -1,7 +1,7 @@
 <template>
 	<div id="sticky-header" class="grid grid-cols-4 gap-4 sticky top-0 py-1 z-40">
 		<div class="col-span-1 ml-2"><LanguageToggle /></div>
-		<div class="col-span-1">{{ $t('message.date') }}</div>
+		<div class="col-span-1 whitespace-no-wrap">{{ $t('message.date') }}</div>
 		<div class="col-span-1">
 			<QuickLinks />
 		</div>

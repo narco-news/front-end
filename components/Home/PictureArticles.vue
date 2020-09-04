@@ -126,6 +126,7 @@ export default {
 			display: none;
 		}
 		.title {
+			font-size: 20px;
 			line-height: 1.2;
 			font-family: 'Lora', sans-serif;
 			font-weight: 700;
