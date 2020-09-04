@@ -61,12 +61,14 @@ export default async () => {
 					'IBM Plex Sans:n3,n4,n5,n7',
 					'Lora:n4,n5,n6,n7',
 					'Courier Prime:n4,n7',
-					'EB Garamond:n4,n5,n6'
+					'EB Garamond:n4,n5,n6',
+					'Source Sans Pro:n4,n5,n6'
 				],
 				urls: [
 					'https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap',
 					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap',
-					'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet'
+					'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet',
+					'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap'
 				]
 			}
 		},

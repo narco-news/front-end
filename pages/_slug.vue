@@ -126,7 +126,7 @@
 								<div
 									class="post-meta-date-info md:flex md:flex-row md:flex-no-wrap"
 								>
-									<span class="published_at font-bold uppercase">{{
+									<span class="published_at font-bold">{{
 										post.published_at | dayjs
 									}}</span>
 									<!-- <br /><span
@@ -502,7 +502,7 @@ export default {
 }
 
 .post-tags {
-	font-family: 'EB Garamond', serif;
+	font-family: 'Source Sans Pro', sans;
 	font-weight: 600;
 	color: #03a688;
 	text-transform: uppercase;
@@ -545,12 +545,14 @@ export default {
 }
 .post-author-info-name {
 	color: #0d0d0d;
-	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 600;
 	background-color: #f2f2f2;
+	font-family: 'Source Sans Pro', sans;
 }
 
 .published_at {
+	font-family: 'Source Sans Pro', sans;
+
 	color: #03a688;
 }
 .post-text {
