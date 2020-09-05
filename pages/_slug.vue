@@ -526,11 +526,11 @@ export default {
 		text-decoration: none;
 	}
 	li {
-		background-color: #f2f2f2;
+		background-color: #fbfbfb;
 		padding: 0.5em;
 	}
 	.tags-bottom {
-		box-shadow: inset 0 -10px 0 0 #f2cb05;
+		box-shadow: inset 0 -12px 0 0 #f2cb05;
 		font-weight: 700;
 	}
 }
@@ -556,7 +556,6 @@ export default {
 .post-author-info-name {
 	color: #0d0d0d;
 	font-weight: 600;
-	background-color: #f2f2f2;
 	font-family: 'Source Sans Pro', sans;
 }
 

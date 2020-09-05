@@ -10,7 +10,7 @@
 					style="
 						color: #0d0d0d;
 						border: solid 2px #03a688;
-						background-color: #f2f2f2;
+						background-color: #fbfbfb;
 					"
 					class="shadow-md m-6 p-4 text-xs rounded"
 				>
@@ -60,7 +60,7 @@
 						style="
 							color: #0d0d0d;
 							border: solid 2px #03a688;
-							background-color: #f2f2f2;
+							background-color: #fbfbfb;
 						"
 						class="p-4 m-5 text-xs h-auto rounded-md shadow-md overflow-hidden"
 					>

@@ -1,4 +1,4 @@
-<template>
+#fbfbfb<template>
 	<div>
 		<div class="font-mono float-right text-xs mb-6 mr-2">
 			Last Updated: 18/08/2020
@@ -14,7 +14,7 @@
 			</p>
 			<div class="pattern-dots-md p-4 my-2">
 				<div
-					style="background-color: #f2f2f2;"
+					style="background-color: #fbfbfb;"
 					class="rounded border-red border-2 m-2 p-2"
 				>
 					<p class="text-sm text-red font-bold my-2">
@@ -115,7 +115,7 @@ export default {
 @import '../node_modules/@braid/vue-formulate/themes/snow/snow.scss';
 .form {
 	border: 2px solid #03a688;
-	background-color: #f2f2f2;
+	background-color: #fbfbfb;
 	@apply rounded-md;
 }
 .success {
