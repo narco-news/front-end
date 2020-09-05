@@ -4,7 +4,7 @@
 			<article v-for="post in posts.slice(3, 8)" :key="post.id" class="article">
 				<div v-if="post.feature_image" class="overflow-hidden">
 					<nuxt-link :to="{path: '/' + post.slug}">
-						<div class="flex justify-center overflow-hidden">
+						<div class="overflow-hidden">
 							<img
 								:src="post.feature_image"
 								:alt="post.title"
