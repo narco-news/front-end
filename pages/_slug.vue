@@ -92,7 +92,7 @@
 					class="grid grid-cols-2 md:flex md:justify-between items-center my-2 md:my-4 mx-1 md:mx-2"
 				>
 					<div class="col-span-1">
-						<div class="post-author">
+						<div class="post-author flex flex-auto items-center">
 							<div
 								v-if="post.primary_author.profile_image"
 								class="post-author-avatar mr-2"
@@ -157,7 +157,7 @@
 				</div>
 				<article class="single-post">
 					<scroll-progress-bar />
-					<div v-if="post.feature_image" class="flex justify-center">
+					<div v-if="post.feature_image" class="">
 						<img :src="post.feature_image" :alt="post.title" class="my-4" />
 					</div>
 					<div class="row">
