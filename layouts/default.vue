@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss">
 body {
-	background-color: #f2f2f2;
+	background-color: #fbfbfb;
 }
 .bm-burger-bars {
 	background-color: #262626 !important;

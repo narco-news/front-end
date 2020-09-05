@@ -157,7 +157,7 @@
 				</div>
 				<article class="single-post">
 					<scroll-progress-bar />
-					<div v-if="post.feature_image" class="">
+					<div v-if="post.feature_image" class="picture">
 						<img :src="post.feature_image" :alt="post.title" class="my-4" />
 					</div>
 					<div class="row">
@@ -490,6 +490,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.picture {
+	img {
+		object-fit: cover;
+		height: 70%;
+		max-height: 600px;
+		width: 100%;
+		border-radius: 0.5em;
+		-webkit-border-radius: 0.5em;
+	}
+}
 .post-content {
 	@media (min-width: 768px) {
 		padding: 0 1em;
@@ -558,7 +568,7 @@ export default {
 .post-text {
 	font-family: 'EB Garamond', serif;
 	font-weight: 400;
-	color: #272727;
+	color: #252525;
 }
 .updated_at {
 	font-family: 'IBM Plex Sans', sans-serif;

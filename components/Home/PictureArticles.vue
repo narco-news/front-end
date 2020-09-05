@@ -110,6 +110,14 @@ export default {
 	}
 	.article:nth-child(1) {
 		grid-column: span 2;
+		img {
+			object-fit: cover;
+			height: 70%;
+			max-height: 600px;
+			width: 100%;
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
+		}
 		.title {
 			font-size: 24px;
 			line-height: 1.2;
@@ -135,6 +143,8 @@ export default {
 			object-fit: cover;
 			height: 10em;
 			width: 100%;
+			border-radius: 0.5em;
+			-webkit-border-radius: 0.5em;
 		}
 	}
 }
