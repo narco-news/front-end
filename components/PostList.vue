@@ -4,13 +4,16 @@
 			<article
 				v-for="post in posts.slice(3, 15)"
 				:key="post.id"
-				class="article rounded-sm hvr-float"
+				class="article rounded-sm"
 			>
 				<div class="grid grid-cols-1">
-					<div v-if="post.feature_image" class="">
+					<div
+						v-if="post.feature_image"
+						class="img-box rounded-sm overflow-hidden"
+					>
 						<nuxt-link :to="{path: '/' + post.slug}">
 							<img
-								class="rounded-sm"
+								class="rounded-sm hvr-grow"
 								:src="post.feature_image"
 								:alt="post.title"
 							/>
@@ -158,7 +161,6 @@ export default {
 		object-fit: cover;
 	}
 }
-
 .article:nth-child(4) {
 	grid-column: span 2;
 	img {
@@ -167,8 +169,10 @@ export default {
 		object-fit: cover;
 	}
 }
-
 .article {
+	.img-box {
+		border: 2px solid #0d0d0d;
+	}
 	img {
 		height: 100px;
 		width: 100%;
@@ -207,7 +211,6 @@ export default {
 .title {
 	color: #272727;
 	font-family: 'Lora', sans-serif;
-	text-transform: capitalize;
 	font-weight: 700;
 	line-height: 1.2;
 }
