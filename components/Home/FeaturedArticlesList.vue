@@ -1,8 +1,8 @@
 <template>
 	<div class="mx-2 md:mx-8">
-		<div class="heading mb-4">
+		<!-- <div class="heading mb-4">
 			<h2 class="text-3xl font-bold">Featured Articles</h2>
-		</div>
+		</div> -->
 		<div class="articles">
 			<article v-for="post in posts.slice(0, 3)" :key="post.id" class="article">
 				<div v-if="post.feature_image" class="">
@@ -114,7 +114,7 @@ export default {
 		grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
 		align-items: center;
 		text-align: center;
-		grid-gap: 20px;
+		grid-gap: 10px;
 		width: 100%;
 		color: #0d0d0d;
 		font-family: 'EB Garamond', sans-serif;
@@ -158,9 +158,9 @@ button {
 		}
 		.image {
 			box-shadow: 10px 10px #ffd54f;
-			margin-bottom: 2em;
+			margin-bottom: 1.5em;
 			div {
-				border: 2px solid #0d0d0d;
+				border: 1px solid #0d0d0d;
 			}
 		}
 		img {
@@ -171,7 +171,7 @@ button {
 	}
 	.article:nth-child(2),
 	.article:nth-child(3) {
-		padding: 1em;
+		padding: 0.5em;
 		.image {
 			margin-bottom: 1em;
 			div {

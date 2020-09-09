@@ -23,7 +23,7 @@
 			<p class="font-semibold text-xs uppercase text-gray-700">
 				Press Releases
 			</p>
-			<hr width="95%" class="border-gray-500" />
+			<hr width="95%" class="border-gray-700" />
 			<div class="link flex h-auto whitespace-no-wrap p-2 font-mono text-sm">
 				<div class="p-1">
 					<a
@@ -88,7 +88,7 @@
 			</div>
 			<!--  -->
 			<p class="font-semibold text-xs uppercase text-gray-700">Data</p>
-			<hr width="95%" class="border-gray-500" />
+			<hr width="95%" class="border-gray-700" />
 			<div
 				class="link flex flex-row flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
 			>

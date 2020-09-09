@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="m-2">
 		<div class="box">
 			<posts class="clear-left" :posts="postsIndex" />
 		</div>

@@ -35,7 +35,7 @@
 								<reading-time
 									:content="post.html"
 									style="font-size: 11px; font-family: 'Courier Prime';"
-									class="reading text-gray-600 whitespace-no-wrap"
+									class="reading text-gray-700 whitespace-no-wrap"
 								/>
 							</div>
 						</div>
@@ -155,6 +155,10 @@ export default {
 // Article
 .article:nth-child(31n + 1) {
 	grid-column: 1 / -1;
+	.img-box {
+		@apply shadow-md;
+		border: 1px solid black;
+	}
 	img {
 		height: 250px;
 		width: 100%;
@@ -162,17 +166,13 @@ export default {
 	}
 }
 .article:nth-child(4) {
-	grid-column: span 2;
+	// grid-column: span 2;
 	img {
-		height: 200px;
 		width: 100%;
 		object-fit: cover;
 	}
 }
 .article {
-	.img-box {
-		border: 2px solid #0d0d0d;
-	}
 	img {
 		height: 100px;
 		width: 100%;
