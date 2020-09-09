@@ -1,25 +1,30 @@
 <template>
-	<div class="h-auto rounded-md shadow-inner m-4">
-		<div class="p-2">
-			<span style="color: #f26457;" class="text-sm font-mono">
-				Essential Resources
-			</span>
+	<div class="box shadow-inner my-4">
+		<div class="p-2 mx-2">
 			<button
-				class="toggle-features float-right text-xs text-gray-900"
+				class="float-right text-gray-700 text-xs uppercase"
 				aria-controls="features"
 				:aria-expanded="featuresOpen ? 'true' : 'false'"
 				@click="toggleFeatures"
 			>
 				{{ featuresOpen ? 'Hide' : 'Show' }}
 			</button>
+			<div class="flex flex-row flex-no-wrap">
+				<span class="title text-md">
+					Quick Links
+				</span>
+			</div>
 		</div>
 		<div
 			id="features"
 			v-show-slide:400-example-easing="featuresOpen"
-			class="features text-xs"
+			class="features mx-6"
 		>
-			<p class="pb-1 font-bold text-center">Press Releases</p>
-			<div class="flex h-auto whitespace-no-wrap gap-2 text-center px-4">
+			<p class="font-semibold text-xs uppercase text-gray-700">
+				Press Releases
+			</p>
+			<hr width="95%" class="border-gray-500" />
+			<div class="link flex h-auto whitespace-no-wrap p-2 font-mono text-sm">
 				<div class="p-1">
 					<a
 						href="https://www.dea.gov/press-releases"
@@ -82,10 +87,13 @@
 				</div>
 			</div>
 			<!--  -->
-			<p class="py-1 font-bold text-center">Data</p>
-			<div class="flex h-auto whitespace-no-wrap gap-2 text-center pb-2 mx-2">
+			<p class="font-semibold text-xs uppercase text-gray-700">Data</p>
+			<hr width="95%" class="border-gray-500" />
+			<div
+				class="link flex flex-row flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
+			>
 				<!--  -->
-				<div class="p-1">
+				<div class="p-1 mr-2">
 					<a
 						href="https://feminicidiosmx.crowdmap.com"
 						target="_blank"
@@ -95,7 +103,7 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="p-1">
+				<div class="p-1 mr-2">
 					<a href="https://elcri.men/en" target="_blank" tabindex="8">
 						<span class="borderLeftRight">ELCRI.en</span>
 					</a>
@@ -107,6 +115,7 @@
 					</a>
 				</div>
 			</div>
+			<hr width="100%" class="border-gray-400 border-dashed my-2" />
 		</div>
 	</div>
 </template>
@@ -126,13 +135,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.title {
+	color: #03a688;
+}
 .borderLeftRight {
 	display: inline-block;
 	position: relative;
 	color: #474e51;
 }
-
 .borderLeftRight::after {
 	content: '';
 	position: absolute;
@@ -141,11 +152,10 @@ export default {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: #ff5e70;
+	background-color: #f26457;
 	transform-origin: bottom right;
 	transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
-
 .borderLeftRight:hover::after {
 	transform: scaleX(1);
 	transform-origin: bottom left;

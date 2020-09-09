@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<AroundTheWeb class="my-4" />
-		<EssResources class="mx-8 md:mx-16" />
+		<EssResources />
 		<posts
 			class="clear-left"
 			:posts="postsIndex"

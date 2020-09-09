@@ -16,8 +16,8 @@
 							class="whitespace-no-wrap"
 						>
 							<a :href="article.url" target="_blank">
-								<span class="text-sm underline">
-									<img :src="article.favicon" class="inline h-5 mr-2 ml-4" />
+								<span class="text-md underline capitalize">
+									<img :src="article.favicon" class="inline h-5 mr-4 ml-6" />
 									{{ article.title }}
 								</span>
 							</a>
@@ -48,6 +48,7 @@ export default {
 <style lang="scss" scoped>
 ul#articles li {
 	display: inline;
+	font-family: 'EB Garamond', sans-serif;
 }
 li:nth-child(8) {
 	margin-right: 5em;
