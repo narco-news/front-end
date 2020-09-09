@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1 class="float-left">
-			El Blog del Narco
+			El Diaro del Narco
 		</h1>
 		<div class="list text-sm clear-left">
 			<br />
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-	name: 'EBDNFeed',
+	name: 'EDDN',
 	data() {
 		return {
 			loading: true,
@@ -40,7 +40,7 @@ export default {
 			const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 			try {
 				const feed = await parser.parseURL(
-					CORS_PROXY + 'https://www.blog-del-narco.com.mx/feeds/posts/default'
+					CORS_PROXY + 'http://www.narcoenmexico.com/feeds/posts/default'
 				);
 				this.fullFeed = feed.items;
 			} catch (e) {

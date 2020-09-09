@@ -1,13 +1,12 @@
 <template>
-	<div>
+	<div class="mb-2">
 		<h1 class="float-left">
-			Valor por Tamaulipas
+			{{ feedTitle }}
 		</h1>
-		<div class="list text-sm clear-left">
-			<br />
+		<div class="list text-sm">
 			<ol class="list-inside">
 				<li v-for="(item, index) in fullFeed" :key="index">
-					<a :href="item.link" target="_blank">
+					<a :href="item.link" target="_blank" rel="noreferrer">
 						{{ item.title }}
 						<hr class="my-1" />
 					</a>
@@ -19,7 +18,17 @@
 
 <script>
 export default {
-	name: 'ValorTFeed',
+	name: 'Feed',
+	props: {
+		feedUrl: {
+			type: String,
+			default: '#'
+		},
+		feedTitle: {
+			type: String,
+			default: 'Feed Title'
+		}
+	},
 	data() {
 		return {
 			loading: true,
@@ -39,10 +48,8 @@ export default {
 			const parser = new Parser();
 			const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 			try {
-				const feed = await parser.parseURL(
-					CORS_PROXY + 'http://feeds.feedburner.com/valorportamaulipas/QLyW'
-				);
-				this.fullFeed = feed.items;
+				const feed = await parser.parseURL(CORS_PROXY + this.feedUrl);
+				this.fullFeed = feed.items.splice(0, 15);
 			} catch (e) {
 				this.error = e.toString();
 				this.loading = false;
@@ -56,13 +63,13 @@ export default {
 ol {
 	list-style-type: decimal;
 	font-size: 16px;
-	font-family: 'Source Sans Pro', sans;
+	font-family: 'EB Garamond', sans-serif;
 	font-weight: 700;
 
 	li {
 		a {
+			font-family: 'Source Sans Pro', sans;
 			font-size: 14px;
-			font-family: 'EB Garamond', sans-serif;
 			font-weight: 600;
 			letter-spacing: 0.5px;
 			color: #595fd9;
@@ -75,6 +82,9 @@ ol {
 	border: 1px solid black;
 	padding: 0 10px;
 	background-color: #fbfbfb;
+}
+.list-inside {
+	margin-top: 15px;
 }
 h1 {
 	position: absolute;
