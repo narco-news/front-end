@@ -46,7 +46,7 @@
 		"plyr": "^3.6.2",
 		"postcss": "^7.0.27",
 		"rough-notation": "^0.4.0",
-		"rss-parser": "^3.8.0",
+		"rss-parser": "^3.9.0",
 		"sass": "^1.26.5",
 		"simple-vue-timeline": "^2.0.4",
 		"tailwindcss": "^1.4.1",

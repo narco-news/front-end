@@ -3,7 +3,7 @@
 		<AroundTheWeb class="my-4" />
 		<EssResources />
 		<posts
-			class="clear-left"
+			class="clear-left m-2"
 			:posts="postsIndex"
 			:pagination="paginationIndex"
 		/>
@@ -13,6 +13,7 @@
 <script>
 import AroundTheWeb from '~/components/AroundTheWeb';
 import EssResources from '~/components/EssResources';
+
 import Posts from '~/components/PostList';
 
 export default {
