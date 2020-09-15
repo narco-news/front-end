@@ -1,4 +1,5 @@
 // Extending `build`
+const webpack = require('webpack');
 
 export default {
 	extend(config, {isDev, isClient}) {
@@ -11,6 +12,12 @@ export default {
 			});
 		}
 	},
+
+	plugins: [
+		new webpack.ProvidePlugin({
+			mapboxgl: 'mapbox-gl'
+		})
+	],
 
 	babel: {
 		plugins: [

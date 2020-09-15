@@ -1,14 +1,14 @@
 <template>
 	<div>
-		<GtoTest class="m-2" />
+		<GtoMap2 class="m-2" />
 	</div>
 </template>
 
 <script>
-import GtoTest from '~/components/gto-test';
+import GtoMap2 from '~/components/GtoMap2';
 export default {
 	components: {
-		GtoTest
+		GtoMap2
 	}
 };
 </script>

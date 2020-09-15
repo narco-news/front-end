@@ -496,8 +496,8 @@ export default {
 		height: 70%;
 		max-height: 600px;
 		width: 100%;
-		border-radius: 0.5em;
-		-webkit-border-radius: 0.5em;
+		// border-radius: 0.5em;
+		// -webkit-border-radius: 0.5em;
 	}
 }
 .post-content {

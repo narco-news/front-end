@@ -1031,6 +1031,11 @@
   resolved "https://registry.yarnpkg.com/@mapbox/jsonlint-lines-primitives/-/jsonlint-lines-primitives-2.0.2.tgz#ce56e539f83552b58d10d672ea4d6fc9adc7b234"
   integrity sha1-zlblOfg1UrWNENZy6k1vya3HsjQ=
 
+"@mapbox/maki@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@mapbox/maki/-/maki-6.2.0.tgz#b61b3e8e7fc7637493e511ac40de0eea62cd1f8b"
+  integrity sha512-iFIRNT3ZpTOw69p2BFFOmQppujpav2PQTLPyL4+bZ5ZIUfdyB5Qtw45CTfPqzzHpP2AZGjEDbSNhGDRcG9/2fw==
+
 "@mapbox/mapbox-gl-geocoder@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@mapbox/mapbox-gl-geocoder/-/mapbox-gl-geocoder-4.6.0.tgz#ce9c6647d10ff3a9fb5dcfd6526eedaafe7b4843"

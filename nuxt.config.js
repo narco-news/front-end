@@ -117,7 +117,6 @@ export default async () => {
 			{src: '~/plugins/vshowslide.js', ssr: false},
 			{src: '~/plugins/odometer.js', ssr: false},
 			{src: '~/plugins/modals.js', ssr: false},
-			{src: '~/plugins/mapbox.js', ssr: false},
 			{src: '~/plugins/patterncss.js', ssr: false},
 			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
