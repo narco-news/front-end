@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<h1 class="flex flex-row justify-end mr-2 text-xs">Around The Web</h1>
+		<h1 class="flex flex-row justify-end mr-2 text-xs">
+			{{ $t('message.aroundtheweb') }}
+		</h1>
 		<div class="box h-8 py-1 shadow-inner">
 			<client-only>
 				<dynamic-marquee
@@ -41,6 +43,20 @@ export default {
 				number: 70
 			}
 		};
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					aroundtheweb: 'Around the web'
+				}
+			},
+			es: {
+				message: {
+					aroundtheweb: 'En la red'
+				}
+			}
+		}
 	}
 };
 </script>

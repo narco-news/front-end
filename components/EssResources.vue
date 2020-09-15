@@ -11,7 +11,7 @@
 			</button>
 			<div class="flex flex-row flex-no-wrap">
 				<span class="title text-md">
-					Quick Links
+					{{ $t('message.quicklinks') }}
 				</span>
 			</div>
 		</div>
@@ -21,7 +21,7 @@
 			class="features mx-6"
 		>
 			<p class="font-semibold text-xs uppercase text-gray-700">
-				Press Releases
+				{{ $t('message.pressreleases') }}
 			</p>
 			<hr width="95%" class="border-gray-700" />
 			<div class="link flex h-auto whitespace-no-wrap p-2 font-mono text-sm">
@@ -87,7 +87,9 @@
 				</div>
 			</div>
 			<!--  -->
-			<p class="font-semibold text-xs uppercase text-gray-700">Data</p>
+			<p class="font-semibold text-xs uppercase text-gray-700">
+				{{ $t('message.data') }}
+			</p>
 			<hr width="95%" class="border-gray-700" />
 			<div
 				class="link flex flex-row flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
@@ -130,6 +132,24 @@ export default {
 	methods: {
 		toggleFeatures() {
 			this.featuresOpen = !this.featuresOpen;
+		}
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					quicklinks: 'Quick Links',
+					pressreleases: 'Press Releases',
+					data: 'Data'
+				}
+			},
+			es: {
+				message: {
+					quicklinks: 'Enlaces Rápidos',
+					pressreleases: 'Comunicado de Prensa',
+					data: 'Datos'
+				}
+			}
 		}
 	}
 };

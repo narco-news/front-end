@@ -2,13 +2,13 @@
 	<div class="flex flex-col">
 		<div id="main">
 			<div id="home-icon">
-				<n-link to="/">
+				<n-link :to="localePath('/')">
 					<img src="~/assets/icons/home-40.svg" alt="Home icon" />
 				</n-link>
 			</div>
 			<div id="top">
 				<n-link
-					to="/about"
+					:to="localePath('/about')"
 					class="hl-link flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<svg
@@ -28,10 +28,10 @@
 						<line x1="12" y1="17" x2="12.01" y2="17"></line>
 					</svg>
 
-					<div class="hvr-forward ml-4">About</div>
+					<div class="hvr-forward ml-4">{{ $t('message.about') }}</div>
 				</n-link>
 				<n-link
-					to="/contact"
+					:to="localePath('/contact')"
 					class="hl-link flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<svg
@@ -51,37 +51,36 @@
 						></path>
 						<polyline points="22,6 12,13 2,6"></polyline>
 					</svg>
-					<div class="hvr-forward ml-4">Contact</div>
+					<div class="hvr-forward ml-4">{{ $t('message.contact') }}</div>
 				</n-link>
 			</div>
 			<div id="mid">
 				<n-link
-					to="/wire"
+					:to="localePath('/wire')"
 					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
 				>
 					<!-- <img src="~/assets/icons/activity-32.svg" alt="Booklist icon" /> -->
-					<span class="text-3xl">Newswire</span>
+					<span class="text-2xl whitespace-no-wrap">{{
+						$t('message.newswire')
+					}}</span>
 				</n-link>
 				<n-link
-					to="/booklist"
+					:to="localePath('/booklist')"
 					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<!-- <img src="~/assets/icons/bookmark.svg" alt="Booklist icon" /> -->
-					<span class="text-3xl">Book list</span>
+					<span class="text-2xl">{{ $t('message.booklist') }}</span>
 				</n-link>
 				<n-link
-					to="/academia"
+					:to="localePath('/academia')"
 					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
 					<!-- <img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" /> -->
-					<span class="text-3xl">Academic</span>
+					<span class="text-2xl">{{ $t('message.academia') }}</span>
 				</n-link>
-				<a
-					href="https://wiki.narco.news"
-					class="flex flex-row flex-no-wrap items-center"
-				>
+				<a class="flex flex-row flex-no-wrap items-center">
 					<!-- <img src="~/assets/icons/wiki.svg" alt="Booklist icon" /> -->
-					<span class="text-3xl">Wiki</span>
+					<span class="text-2xl">{{ $t('message.wiki') }}</span>
 				</a>
 			</div>
 			<div id="map-links" class="mt-12">
@@ -92,11 +91,11 @@
 					<div>
 						<!-- <h1 class="ml-2">Mexico</h1> -->
 						<n-link
-							to="/guanajuato-map"
+							:to="localePath('/guanajuato-map')"
 							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
 						>
 							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
-							<div class="text-xl">Guanajuato</div>
+							<div class="text-xl">{{ $t('message.guanajuato') }}</div>
 						</n-link>
 					</div>
 				</div>
@@ -109,7 +108,33 @@
 
 <script>
 export default {
-	name: 'Burger'
+	name: 'Burger',
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					about: 'About',
+					contact: 'Contact',
+					newswire: 'Newswire',
+					booklist: 'Book list',
+					academia: 'Academia',
+					guanajuato: 'Guanajuato',
+					wiki: 'Wiki'
+				}
+			},
+			es: {
+				message: {
+					about: 'Sobre',
+					contact: 'Contáctanos',
+					newswire: 'Portal de noticias',
+					booklist: 'Lista de libros',
+					academia: 'Académico',
+					guanajuato: 'Guanajuato',
+					wiki: 'Wiki'
+				}
+			}
+		}
+	}
 };
 </script>
 

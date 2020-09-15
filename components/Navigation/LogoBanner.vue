@@ -5,7 +5,7 @@
 		class="h-20 flex flex-row flex-no-wrap justify-center"
 	>
 		<div>
-			<n-link to="/">
+			<n-link :to="localePath('/')">
 				<img
 					src="~/assets/images/bw-nn-logo.png"
 					alt="narco.news Logo"

@@ -1,5 +1,5 @@
 <template>
-	<div class="m-4 p-4 bg-white rounded">
+	<div class="m-4 p-4">
 		<div class="row">
 			<div class="xs-12 lg-9 mx-auto">
 				<posts
@@ -13,13 +13,13 @@
 </template>
 
 <script>
-import PostList from '~/components/PostList.vue';
+import Posts from '~/components/Posts.vue';
 
 export default {
 	name: 'Tag',
 
 	components: {
-		posts: PostList
+		posts: Posts
 	},
 
 	async fetch({error, params, payload, store}) {
@@ -56,7 +56,7 @@ export default {
 
 		currentTag() {
 			return this.$store.state.pageTags.find(
-				(tag) => tag.slug === this.$route.params.slug
+				tag => tag.slug === this.$route.params.slug
 			);
 		},
 

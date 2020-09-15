@@ -2,7 +2,10 @@
 	<div
 		class="flex flex-row flex-no-wrap whitespace-no-wrap justify-end md:justify-center"
 	>
-		<n-link to="/wire" class="news flex flex-row flex-no-wrap mr-2">
+		<n-link
+			:to="localePath('/wire')"
+			class="news flex flex-row flex-no-wrap mr-2"
+		>
 			<img
 				src="~/assets/icons/activity-16.svg"
 				alt="Newswire icon"

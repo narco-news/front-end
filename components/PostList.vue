@@ -73,7 +73,7 @@
 							:to="prevLink"
 							class="pagination-link"
 							title="Newer posts"
-							>Newer posts</nuxt-link
+							>{{ $t('message.newposts') }}</nuxt-link
 						>
 					</div>
 					<div class="next" :class="{disabled: !pagination.next}">
@@ -81,7 +81,7 @@
 							:to="nextLink"
 							class="pagination-link"
 							title="Older posts"
-							>Older posts</nuxt-link
+							>{{ $t('message.oldposts') }}</nuxt-link
 						>
 					</div>
 				</div>
@@ -146,6 +146,22 @@ export default {
 
 		nextLink() {
 			return this.baseUrl + 'page/' + this.pagination.next;
+		}
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					newposts: 'Newer Articles',
+					oldposts: 'Older Articles'
+				}
+			},
+			es: {
+				message: {
+					newposts: 'Artículos Siguientes',
+					oldposts: 'Artículos Anteriores'
+				}
+			}
 		}
 	}
 };

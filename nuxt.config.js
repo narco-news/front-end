@@ -33,7 +33,20 @@ export default async () => {
 			[
 				'nuxt-i18n',
 				{
-					locales: ['en', 'es'],
+					detectBrowserLanguage: {
+						useCookie: true,
+						cookieKey: 'i18n_redirected'
+					},
+					locales: [
+						{
+							code: 'en',
+							name: 'English'
+						},
+						{
+							code: 'es',
+							name: 'Español'
+						}
+					],
 					defaultLocale: 'en',
 					vueI18n: {
 						fallbackLocale: 'en'
