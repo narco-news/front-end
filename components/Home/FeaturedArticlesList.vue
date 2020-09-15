@@ -45,26 +45,26 @@
 								/>
 							</svg>
 						</div>
-						<h1 v-if="post.title" class="title">
+						<h2 v-if="post.title" class="title">
 							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
 								>{{ post.title }}
 							</nuxt-link>
-						</h1>
+						</h2>
 
 						<div class="excerpt p-1">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
 							</p>
-
-							<button class="text-white font-bold py-2 px-2 rounded">
-								<nuxt-link
-									class="post-read-more"
-									:to="{path: '/' + post.slug}"
-									title="Read more..."
-									>Read More</nuxt-link
-								>
-							</button>
+							<nuxt-link
+								class="post-read-more"
+								:to="{path: '/' + post.slug}"
+								title="Read more"
+							>
+								<button class="text-white font-bold py-2 px-2 rounded">
+									Read more
+								</button>
+							</nuxt-link>
 						</div>
 					</div>
 				</div>

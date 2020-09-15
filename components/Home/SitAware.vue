@@ -19,7 +19,11 @@
 				<div class="bg-white rounded-lg shadow-lg w-64 mb-8 md:mb-0 md:mr-8">
 					<div class="">
 						<div class="p-2">
-							<img src="~/assets/flags/mexico-2.svg" class="w-8 float-right" />
+							<img
+								src="~/assets/flags/mexico-2.svg"
+								class="w-8 float-right"
+								alt="Mexico flag"
+							/>
 							<h1 class="text-2xl font-bold">Tamaulipas</h1>
 							<p class="text-sm italic mb-4">24°17′14″ N, 98°33′48″ W</p>
 							<n-link to="/tamap">
@@ -61,7 +65,11 @@
 				<div class="bg-white rounded-lg shadow-lg w-64">
 					<div>
 						<div class="p-2">
-							<img src="~/assets/flags/mexico-2.svg" class="w-8 float-right" />
+							<img
+								src="~/assets/flags/mexico-2.svg"
+								class="w-8 float-right"
+								alt="Mexico flag"
+							/>
 							<h1 class="text-2xl font-bold">Guanajuato</h1>
 							<p class="text-sm italic mb-4">21°1′0″ N, 101°16′0″ W</p>
 							<n-link to="/guanajuato-map">

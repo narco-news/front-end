@@ -29,11 +29,11 @@
 						<div class="date whitespace-no-wrap text-sm mt-2">
 							{{ post.published_at | dayjs }}
 						</div>
-						<h1 v-if="post.title" class="title">
+						<h2 v-if="post.title" class="title">
 							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
 								>{{ post.title }}
 							</nuxt-link>
-						</h1>
+						</h2>
 						<div class="excerpt">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
@@ -99,7 +99,7 @@ export default {
 <style lang="scss" scoped>
 .articles {
 	display: grid;
-	grid-template-columns: repeat (auto-fit, minmax(180px, 1fr));
+	grid-template-columns: (auto-fit, minmax(180px, 1fr));
 	grid-auto-flow: dense;
 	.date {
 		color: #03a688;
