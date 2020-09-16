@@ -34,12 +34,12 @@ export default {
 				{
 					title: 'Are you cops?',
 					content:
-						'No! We have never been employed or had assocation with any law enforcement agencies. ',
+						'<strong>No.</strong> We have never been employed or had assocation with any law enforcement agencies. ',
 					isExpanded: false
 				},
 				{
 					title: 'Whose paying you?',
-					content: '<strong>No one!</strong> We are not funded by anyone',
+					content: '<strong>No one.</strong> We are not funded by anyone.',
 					isExpanded: false
 				}
 			]

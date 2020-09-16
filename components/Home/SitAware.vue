@@ -11,7 +11,7 @@
 		</div>
 		<div class="negative-margin">
 			<div class="situation-aware text-3xl lg:text-5xl p-6 lg:ml-12">
-				Situational Awareness
+				{{ $t('message.sitaware') }}
 			</div>
 			<div
 				class="tam-box pb-12 flex flex-col md:flex-row justify-center items-center"
@@ -31,7 +31,7 @@
 									class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
 								>
 									<div class="flex flex-row flex-no-wrap gap-2">
-										Map
+										{{ $t('message.map') }}
 									</div>
 								</button>
 							</n-link>
@@ -40,7 +40,7 @@
 									class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
 								>
 									<div class="flex flex-row flex-no-wrap gap-2">
-										Read the latest
+										{{ $t('message.latest') }}
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
@@ -77,7 +77,7 @@
 									class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
 								>
 									<div class="flex flex-row flex-no-wrap gap-2">
-										Map
+										{{ $t('message.map') }}
 									</div>
 								</button>
 							</n-link>
@@ -86,7 +86,7 @@
 									class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
 								>
 									<div class="flex flex-row flex-no-wrap gap-2">
-										Read the latest
+										{{ $t('message.latest') }}
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											fill="none"
@@ -114,7 +114,27 @@
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'SitAware',
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					sitaware: 'Situational Awareness',
+					map: 'Map',
+					latest: 'Latest'
+				}
+			},
+			es: {
+				message: {
+					sitaware: 'Conciencia situacional',
+					map: 'Mapa',
+					latest: 'Último'
+				}
+			}
+		}
+	}
+};
 </script>
 
 <style lang="scss" scoped>
