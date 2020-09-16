@@ -111,13 +111,22 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="p-1">
+				<div class="p-1 mr-2">
 					<a href="http://semaforo.com.mx" target="_blank" tabindex="9">
 						<span class="borderLeftRight">Semáforo Delictivo</span>
 					</a>
 				</div>
+				<div class="p-1">
+					<a
+						href="https://acleddata.com/#/dashboard"
+						target="_blank"
+						tabindex="10"
+					>
+						<span class="borderLeftRight">ACLED</span>
+					</a>
+				</div>
 			</div>
-			<hr width="100%" class="border-gray-400 border-dashed my-2" />
+			<hr class="border-gray-400 border-dashed my-2" />
 		</div>
 	</div>
 </template>
