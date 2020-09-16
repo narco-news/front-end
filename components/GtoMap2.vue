@@ -36,17 +36,18 @@ export default {
 						coordinates: [-101.29394531249999, 20.675190117067377]
 					},
 					properties: {
-						color: '03a688',
+						color: '#F26457',
 						title: 'Cartulina found with two bodies',
 						muni: 'Irapuato',
-						desc:
-							'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget ante in nulla imperdiet pulvinar. In lacinia condimentum lectus, vel tristique magna rhoncus a.',
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 						link: 'https://docs.mapbox.com/mapbox-gl-js/example/add-image/'
 					}
 				},
 				{
 					type: 'Feature',
-					properties: {},
+					properties: {
+						color: '#595FD9'
+					},
 					geometry: {
 						type: 'Point',
 						coordinates: [-100.81878662109375, 20.56593890346526]
@@ -98,7 +99,7 @@ export default {
 				}
 			});
 
-			new mapboxgl.Marker()
+			new mapboxgl.Marker({color: marker.properties.color})
 				.setLngLat(LngLat)
 				.setPopup(popupElement)
 				.addTo(this.map);
@@ -187,13 +188,11 @@ export default {
 
 #map {
 	min-height: 75vh;
-}
-
-@screen md {
-	#map {
+	@media (max-width: 768px) {
 		min-height: 85vh;
 	}
 }
+
 .marker {
 	background-image: url('/images/thin-marker.svg');
 	background-repeat: no-repeat;
