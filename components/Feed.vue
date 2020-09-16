@@ -1,10 +1,11 @@
 <template>
 	<div class="mb-2">
-		<h1 class="float-left">
+		<h2 class="float-left text-sm">
 			{{ feedTitle }}
-		</h1>
-		<div class="list text-sm">
+		</h2>
+		<div class="list">
 			<ol class="list-inside">
+				<Loading :loaded="loaded"></Loading>
 				<li v-for="(item, index) in fullFeed" :key="index">
 					<a :href="item.link" target="_blank" rel="noreferrer">
 						{{ item.title }}
@@ -17,8 +18,12 @@
 </template>
 
 <script>
+import Loading from '~/components/Loading';
 export default {
 	name: 'Feed',
+	components: {
+		Loading
+	},
 	props: {
 		feedUrl: {
 			type: String,
@@ -31,7 +36,7 @@ export default {
 	},
 	data() {
 		return {
-			loading: true,
+			loaded: false,
 			error: '',
 			fullFeed: {}
 		};
@@ -49,10 +54,11 @@ export default {
 			const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
 			try {
 				const feed = await parser.parseURL(CORS_PROXY + this.feedUrl);
-				this.fullFeed = feed.items.splice(0, 15);
+				this.fullFeed = feed.items.splice(0, 10);
+				this.loaded = true;
 			} catch (e) {
 				this.error = e.toString();
-				this.loading = false;
+				// this.loading = false;
 			}
 		}
 	}
@@ -65,11 +71,12 @@ ol {
 	font-size: 16px;
 	font-family: 'EB Garamond', sans-serif;
 	font-weight: 700;
+	line-height: 1.2;
 
 	li {
 		a {
 			font-family: 'Source Sans Pro', sans;
-			font-size: 14px;
+			font-size: 12px;
 			font-weight: 600;
 			letter-spacing: 0.5px;
 			color: #595fd9;
@@ -77,7 +84,7 @@ ol {
 	}
 }
 .list {
-	max-height: 400px;
+	max-height: 300px;
 	overflow: scroll;
 	border: 1px solid black;
 	padding: 0 10px;
@@ -86,11 +93,13 @@ ol {
 .list-inside {
 	margin-top: 15px;
 }
-h1 {
+h2 {
 	position: absolute;
 	background-color: #fbfbfb;
 	margin-left: 20px;
 	margin-top: -12px;
 	padding: 0 1em;
+	border: 1px solid black;
+	@apply shadow-sm;
 }
 </style>

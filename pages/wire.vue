@@ -7,12 +7,16 @@
 			:posts="postsIndex"
 			:pagination="paginationIndex"
 		/>
+		<div>
+			<FourFeed />
+		</div>
 	</div>
 </template>
 
 <script>
 import AroundTheWeb from '~/components/AroundTheWeb';
-import EssResources from '~/components/EssResources';
+import EssResources from '~/components/Wire/EssResources';
+import FourFeed from '~/components/Wire/FourFeed';
 
 import Posts from '~/components/PostList';
 
@@ -20,6 +24,7 @@ export default {
 	components: {
 		AroundTheWeb,
 		EssResources,
+		FourFeed,
 		posts: Posts
 	},
 

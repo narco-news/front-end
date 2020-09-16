@@ -2,7 +2,7 @@
 	<div class="grid grid-cols-1">
 		<div class="archive mx-2 lg:mx-8">
 			<article
-				v-for="post in posts.slice(3, 15)"
+				v-for="post in posts.slice(3, 12)"
 				:key="post.id"
 				class="article rounded-sm"
 			>
@@ -169,18 +169,18 @@ export default {
 
 <style lang="scss" scoped>
 // Article
-.article:nth-child(31n + 1) {
-	grid-column: 1 / -1;
-	.img-box {
-		@apply shadow-md;
-		border: 1px solid black;
-	}
-	img {
-		height: 250px;
-		width: 100%;
-		object-fit: cover;
-	}
-}
+// .article:nth-child(31n + 1) {
+// 	grid-column: 1 / -1;
+// 	.img-box {
+// 		@apply shadow-md;
+// 		border: 1px solid black;
+// 	}
+// 	img {
+// 		height: 250px;
+// 		width: 100%;
+// 		object-fit: cover;
+// 	}
+// }
 .article:nth-child(4) {
 	// grid-column: span 2;
 	img {

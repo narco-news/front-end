@@ -132,13 +132,21 @@ export default {
 		// 	});
 		// 	this.marker.togglePopup();
 		// }
+	},
+	head() {
+		return {
+			link: [
+				{
+					rel: 'stylesheet',
+					href: 'https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css'
+				}
+			]
+		};
 	}
 };
 </script>
 
 <style lang="scss">
-@import url('https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css');
-
 .mapboxgl-popup {
 	will-change: auto;
 	min-width: 200px;
