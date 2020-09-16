@@ -14,46 +14,15 @@
 					"
 					class="shadow-md m-6 p-4 text-xs rounded"
 				>
-					An analysis<a
-						href="https://mexicobusiness.news/policyandeconomy/news/mexico-ranks-second-fake-news-generation"
-						style="color: #03a688;"
-						class="font-bold"
-						target="_blank"
-						>³</a
-					>
-					conducted by Luis Ángel Hurtado, Professor and Researcher at UNAM’s
-					School of Political and Social Sciences concluded
-					<span class="italic font-bold"
-						>"the misinformation epidemic reaches important figures in our
-						country and renders us (Mexico) the second-largest generator of fake
-						news after Turkey."</span
-					>
+					{{ $t('message.quoteone') }}
+					<span class="italic font-bold">{{ $t('message.quotetwo') }}</span>
 				</div>
 			</div>
 
 			<div class="text-md px-4 pt-2">
-				We're currently in an era of information and conversation wealth. That
-				paired with confusion and disarray throws us into a realm we've dubbed
-				the
-				<span id="highway">information clusterfuck</span>
-				. Merriam-Websters<a
-					href="https://www.merriam-webster.com/dictionary/clusterfuck"
-					style="color: #03a688;"
-					class="font-bold"
-					target="_blank"
-					>¹</a
-				>
-				defines <span class="italic">clusterfuck</span> as a "complex and
-				utterly disordered and mismanaged situation." While Oxford<a
-					href="https://www.lexico.com/en/definition/clusterfuck"
-					style="color: #03a688;"
-					class="font-bold"
-					target="_blank"
-					>²</a
-				>
-				states it as a "disastrously mishandled situation or undertaking." These
-				definitions provide us valuable reminders, the situation is complex and
-				it has disastrous consequences.
+				{{ $t('message.textone') }}
+				<span id="highway">{{ $t('message.ic') }}</span>
+				{{ $t('message.texttwo') }}
 
 				<div class="pattern-dots-md py-2 m-4">
 					<div
@@ -65,15 +34,7 @@
 						class="p-4 m-5 text-xs h-auto rounded-md shadow-md overflow-hidden"
 					>
 						<span class="float-left italic">
-							"Drug trafficking, for example, is not the behavior of a daring,
-							secretive, and clever operator; it is a complex international
-							business system, deeply touching the lives of peasant farmers,
-							political leaders in the nation's capital, or the highly competent
-							business men and women who make the system go, and reap enormous
-							profits from it. Therefore, in order for us to understand them, to
-							perceive their broader meaning, they must be studied as systematic
-							behavior, in the full context of their economic, political, and
-							cultural aspects."
+							{{ $t('message.dt') }}
 						</span>
 
 						<div
@@ -94,18 +55,10 @@
 					</div>
 				</div>
 
-				Our focused is on <span class="font-bold">drug trafficking</span> and
-				<span class="font-bold">organized crime</span>. But further how it plays
-				out in a digital globally-connected 21st century world. Every day more
-				people around the world link up to the Internet for the first time. It
-				would be foolish to think that any of it will become clearer as time
-				goes on. But we're lucky though with the plethora of information the
-				digital world naturally offers. Therefore our quest becomes aggregating
-				into a central place the chaos. With a hope of untangling and parsing it
-				to provide beneficial insight.
+				{{ $t('message.focus') }}
 
 				<div style="color: #ff5e70; text-align: center;" class="text-lg my-6">
-					We've established this digital compendium as our starting place.
+					{{ $t('message.lastline') }}
 				</div>
 			</div>
 		</div>
@@ -237,6 +190,48 @@ export default {
 		return {
 			title: 'About narco.news'
 		};
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					quoteone:
+						'An analysis conducted by Luis Ángel Hurtado, Professor and Researcher at UNAM’s School of Political and Social Sciences concluded',
+					quotetwo:
+						'"the misinformation epidemic reaches important figures in our country and renders us (Mexico) the second-largest generator of fake news after Turkey."',
+					textone:
+						"We're currently in an era of information and conversation wealth. That paired with confusion and disarray throws us into a realm we've dubbed the",
+					ic: 'information clusterfuck',
+					texttwo:
+						'. Merriam-Websters defines clusterfuck as a "complex and utterly disordered and mismanaged situation." While Oxford states it as a "disastrously mishandled situation or undertaking." These definitions provide us valuable reminders, the situation is complex and it has disastrous consequences.',
+					dt:
+						"Drug trafficking, for example, is not the behavior of a daring, secretive, and clever operator; it is a complex international business system, deeply touching the lives of peasant farmers, political leaders in the nation's capital, or the highly competent business men and women who make the system go, and reap enormous profits from it. Therefore, in order for us to understand them, to perceive their broader meaning, they must be studied as systematic behavior, in the full context of their economic, political, and cultural aspects.",
+					focus:
+						"Our focused is on drug trafficking and organized crime. But further how it plays out in a digital globally-connected 21st century world. Every day more people around the world link up to the Internet for the first time. It would be foolish to think that any of it will become clearer as time goes on. But we're lucky though with the plethora of information the digital world naturally offers. Therefore our quest becomes aggregating into a central place the chaos. With a hope of untangling and parsing it to provide beneficial insight.",
+					lastline:
+						"We've established this digital compendium as our starting place."
+				}
+			},
+			es: {
+				message: {
+					quoteone:
+						'Un análisis realizado por Luis Ángel Hurtado, profesor e investigador de la Facultad de Ciencias Políticas y Sociales de la UNAM concluyó',
+					quotetwo:
+						'"la epidemia de desinformación llega a importantes figuras de nuestro país y nos convierte (México) en el segundo mayor generador de noticias falsas después de Turquía".',
+					textone:
+						'Actualmente estamos en una era de riqueza de información y conversación. Eso, junto con la confusión y el desorden, nos lleva a un reino que hemos llamado el',
+					ic: 'información clusterfuck',
+					texttwo:
+						'. Merriam-Websters define clusterfuck como una "compleja y completamente desordenada y mal manejada situación". Mientras que Oxford lo declara como una "situación o empresa desastrosamente mal manejada". Estas definiciones nos proporcionan valiosos recordatorios, la situación es compleja y tiene consecuencias desastrosas.',
+					dt:
+						'"El tráfico de drogas, por ejemplo, no es el comportamiento de un operador audaz, reservado e inteligente; es un complejo sistema internacional de negocios, que toca profundamente la vida de los campesinos, los líderes políticos de la capital de la nación, o los hombres y mujeres de negocios altamente competentes que hacen funcionar el sistema y cosechan enormes beneficios de él. Por lo tanto, para que los entendamos, para percibir su significado más amplio, deben ser estudiados como un comportamiento sistemático, en el contexto completo de sus aspectos económicos, políticos y culturales".',
+					focus:
+						'Nos centramos en el tráfico de drogas y la delincuencia organizada. Pero más allá de cómo se desarrolla en un mundo digital del siglo XXI conectado globalmente. Cada día más personas de todo el mundo se conectan a Internet por primera vez. Sería tonto pensar que algo de esto se aclarará con el paso del tiempo. Pero tenemos suerte con la plétora de información que el mundo digital ofrece naturalmente. Por lo tanto, nuestra búsqueda se convierte en agregar en un lugar central el caos. Con la esperanza de desenredarlo y analizarlo para proporcionar una visión beneficiosa.',
+					lastline:
+						'Hemos establecido este compendio digital como nuestro punto de partida.'
+				}
+			}
+		}
 	}
 };
 </script>
