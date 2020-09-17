@@ -65,6 +65,15 @@
 					}}</span>
 				</n-link>
 				<n-link
+					:to="localePath('/pa')"
+					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
+				>
+					<!-- <img src="~/assets/icons/activity-32.svg" alt="Booklist icon" /> -->
+					<span class="text-2xl whitespace-no-wrap">{{
+						$t('message.feeds')
+					}}</span>
+				</n-link>
+				<n-link
 					:to="localePath('/booklist')"
 					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
@@ -119,7 +128,8 @@ export default {
 					booklist: 'Book list',
 					academia: 'Academia',
 					guanajuato: 'Guanajuato',
-					wiki: 'Wiki'
+					wiki: 'Wiki',
+					feeds: 'Press Aggregate'
 				}
 			},
 			es: {
@@ -130,7 +140,8 @@ export default {
 					booklist: 'Lista de libros',
 					academia: 'Académico',
 					guanajuato: 'Guanajuato',
-					wiki: 'Wiki'
+					wiki: 'Wiki',
+					feeds: 'Agregada de prensa'
 				}
 			}
 		}
