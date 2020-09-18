@@ -1,5 +1,5 @@
 <template>
-	<div class="m-4">
+	<div class="m-2">
 		<div
 			id="map"
 			class="mt-4 sm:mt-8 sm:mx-5 sm:mb-5 rounded-md shadow-md"
@@ -56,18 +56,23 @@ export default {
 				marker.geometry.coordinates[0],
 				marker.geometry.coordinates[1]
 			];
-			let popup = `<h2 class="text-xl mb-2 mt-2">${marker.properties.title}</h2>`;
-			popup += `<p class="text-md font-bold">${marker.properties.muni}</p>`;
-			popup += `<p class="my-1 text-sm">Date: <span class="font-bold">${marker.properties.date}</span></p>`;
-			popup += `<p class="text-sm p-1">${marker.properties.desc}</p>`;
-			popup += `<p class="font-mono text-xs text-green-500 px-1 mt-1">${LngLat[0]}</p>`;
-			popup += `<p class="font-mono text-xs text-green-500 px-1">${LngLat[1]}</p>`;
+			let popup = `<h2 class="text-lg my-1 font-bold mb-2">${marker.properties.title}</h2>`;
+			popup += `<p class="text-sm my-1 font-semibold"><span class=" text-red">Municipality: </span>${marker.properties.muni}</p>`;
+			popup += `<p class="text-sm my-1 font-semibold"><span class=" text-red">Date: </span>${marker.properties.date}</p>`;
+			if (marker.properties.desc) {
+				popup += `<p class="text-sm my-1 font-semibold"><span class="text-red">Desc: </span>${marker.properties.desc}</p>`;
+			}
+			popup += `<p class="font-mono text-xs px-1 mt-1">${LngLat[0]}</p>`;
+			popup += `<p class="font-mono text-xs px-1">${LngLat[1]}</p>`;
 			popup += `<p class="text-sm p-2 font-bold">Sources:</p>`;
-			popup += `<div class="px-2">
-			<a href="${marker.properties.links}" class="underline text-blue-500 text-sm" target="_blank">
+			marker.properties.links.forEach(link => {
+				popup += `<div class="px-2 inline-block">
+			<a href="${link}" class="underline text-blue-500 text-sm" target="_blank">
 			<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
 			</a>
 			</div>`;
+			});
+
 			const popupElement = new mapboxgl.Popup({
 				offset: -10,
 				anchor: 'bottom'
@@ -111,63 +116,48 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 .mapboxgl-popup {
 	will-change: auto;
 	min-width: 200px;
 	max-width: 300px;
 }
-
 .mapboxgl-popup-content {
-	@apply text-lg;
-	font-family: 'Source Sans Pro', sans;
-	background-color: #262626;
-	color: #f2f2f2;
-	padding: 1em 1em;
-	h2 {
-		font-family: 'EB Garamond', sans-serif;
-		font-weight: 700;
-	}
+	font-family: europa, sans-serif;
+	@apply text-white bg-black rounded-none px-6 pt-10 leading-snug text-lg;
 }
-
 .mapboxgl-popup-close-button {
-	@apply text-3xl;
-	@apply mt-2;
-	@apply mr-4;
+	@apply text-3xl mt-2 mr-4;
 }
-
 .mapboxgl-popup-tip {
-	margin-top: -2px;
+	margin-top: -0.5em;
 	border: 2rem solid transparent;
 }
-
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-	border-bottom-color: #262626;
+	border-bottom-color: black;
 }
-
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-	border-top-color: #262626;
+	border-top-color: black;
 }
-
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-	border-right-color: #262626;
+	border-right-color: black;
 }
-
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-	border-left-color: #262626;
+	border-left-color: black;
 }
-
 #map {
 	min-height: 75vh;
-	@media (max-width: 768px) {
+	border: 1px solid black;
+}
+@screen md {
+	#map {
 		min-height: 85vh;
 	}
 }
-
 .marker {
 	cursor: pointer;
 }

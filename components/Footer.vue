@@ -58,9 +58,29 @@
 				</div>
 				<!-- Newswire links -->
 				<div class="col-span-3 lg:col-span-3 p-2">
-					<span class="text-md w-full font-bold foot-title"
-						><n-link to="/wire">Newswire</n-link></span
-					>
+					<span
+						class="text-md w-full font-bold foot-title flex flex-row flex-no-wrap"
+						><n-link to="/wire">Newswire</n-link>
+						<a
+							href="https://publish.narco.news/rss"
+							class="m-1 ml-3"
+							target="_blank"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="#F2913D"
+								class="w-4 h-4"
+							>
+								<path
+									d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"
+								/>
+								<path
+									d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"
+								/>
+							</svg>
+						</a>
+					</span>
 					<div class="w-full grid grid-cols-2 lg:grid-cols-3 text-xs">
 						<n-link class="p-1" to="/tag/united-states">United States</n-link>
 						<n-link class="p-1" to="/tag/mexican-dto">Mexico</n-link>
@@ -69,15 +89,10 @@
 						>
 						<n-link class="p-1" to="/tag/south-america">South America</n-link>
 						<n-link class="p-1" to="#">Southeast Asia</n-link>
-						<!-- <n-link class="p-1" to="/tag/central-asia">Central Asia</n-link> -->
-						<!-- <n-link class="p-1" to="/tag/middle-east">Middle East</n-link> -->
-						<n-link class="p-1" to="/tag/uk-scene">UK Scene</n-link>
-						<n-link class="p-1" to="#">Europe</n-link>
-						<!-- <n-link class="p-1" to="#">Femme Fatale</n-link> -->
+
 						<n-link class="p-1" to="/tag/film-and-television"
 							>Film & Television</n-link
 						>
-						<!-- <n-link class="p-1" to="/tag/opinion">Opinion</n-link> -->
 						<n-link class="p-1" to="/tag/development">Development</n-link>
 						<n-link class="p-1" to="/tag/announcement">Announcements</n-link>
 					</div>
@@ -88,15 +103,13 @@
 						><n-link to="/">narco.news</n-link></span
 					>
 					<div class="grid grid-cols-2 lg:grid-cols-3 text-xs">
-						<n-link class="p-1" to="/wire">Newswire</n-link>
 						<n-link class="p-1" to="/about">About</n-link>
+						<n-link class="p-1" to="/contact">Contact</n-link>
+						<n-link class="p-1" to="/wire">Newswire</n-link>
 						<n-link class="p-1" to="/booklist">Book list</n-link>
 						<n-link class="p-1" to="/academia">Academic</n-link>
-						<a class="p-1" href="https://github.com/narco-news/front-end"
-							>Github</a
-						>
-						<a class="p-1" href="#">RSS</a>
-						<n-link class="p-1" to="/contact">Contact</n-link>
+						<a class="p-1" href="https://wiki.narco.news">Wiki</a>
+						<n-link class="p-1" to="/pa">Press Aggregate</n-link>
 					</div>
 				</div>
 			</div>

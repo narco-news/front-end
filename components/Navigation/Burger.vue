@@ -98,13 +98,17 @@
 						<img src="~/assets/icons/map.svg" alt="Map icon" />
 					</div>
 					<div>
-						<!-- <h1 class="ml-2">Mexico</h1> -->
 						<n-link
 							:to="localePath('/guanajuato-map')"
 							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
 						>
-							<!-- <img src="~/assets/icons/map-pin.svg" alt="Map icon" /> -->
 							<div class="text-xl">{{ $t('message.guanajuato') }}</div>
+						</n-link>
+						<n-link
+							:to="localePath('/tamap')"
+							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
+						>
+							<div class="text-xl">Tamaulipas</div>
 						</n-link>
 					</div>
 				</div>

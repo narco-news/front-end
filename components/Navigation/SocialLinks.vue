@@ -5,11 +5,6 @@
 				<img src="~/assets/icons/github.svg" alt="Github icon" />
 			</a>
 		</div>
-		<div class="flex flex-row flex-no-wrap mr-2">
-			<a href="#">
-				<img src="~/assets/icons/rss.svg" alt="Github icon" />
-			</a>
-		</div>
 	</div>
 </template>
 

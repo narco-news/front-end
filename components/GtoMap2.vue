@@ -146,7 +146,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .mapboxgl-popup {
 	will-change: auto;
 	min-width: 200px;
@@ -154,20 +154,20 @@ export default {
 }
 
 .mapboxgl-popup-content {
-	@apply text-lg;
 	font-family: 'Source Sans Pro', sans;
-	background-color: #262626;
+	background: #262626;
 	color: #f2f2f2;
 	padding: 1em 1em;
+	@apply text-lg;
 	h2 {
 		font-family: 'EB Garamond', sans-serif;
 		font-weight: 700;
 	}
 }
 
-.mapboxgl-popup-close-button {
-	@apply text-3xl mt-2 mr-4;
-}
+// .mapboxgl-popup-close-button {
+// 	@apply text-3xl mt-2 mr-4;
+// }
 
 .mapboxgl-popup-tip {
 	margin-top: -2px;
