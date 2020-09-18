@@ -80,7 +80,7 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 @import url('https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css');
 
 .mapboxgl-popup {

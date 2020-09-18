@@ -116,48 +116,51 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style lang="scss">
 .mapboxgl-popup {
 	will-change: auto;
 	min-width: 200px;
 	max-width: 300px;
 }
 .mapboxgl-popup-content {
-	font-family: europa, sans-serif;
-	@apply text-white bg-black rounded-none px-6 pt-10 leading-snug text-lg;
+	background-color: #262626 !important;
+	color: white;
+	padding-top: 3em !important;
 }
 .mapboxgl-popup-close-button {
-	@apply text-3xl mt-2 mr-4;
+	font-size: 2em !important;
+	margin-top: 0.3em !important;
+	margin-right: 0.5em !important;
 }
 .mapboxgl-popup-tip {
-	margin-top: -0.5em;
-	border: 2rem solid transparent;
+	margin-top: -0.5em !important;
+	margin-bottom: -2em !important;
+	border: 2rem solid transparent !important;
 }
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
-	border-bottom-color: black;
+	border-bottom-color: #262626 !important;
 }
 .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
 .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
-	border-top-color: black;
+	border-top-color: #262626 !important;
 }
 .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
-	border-right-color: black;
+	border-right-color: #262626 !important;
 }
 .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
-	border-left-color: black;
+	border-left-color: #262626 !important;
 }
 #map {
 	min-height: 75vh;
 	border: 1px solid black;
-}
-@screen md {
-	#map {
+	@media (max-height: 768px) {
 		min-height: 85vh;
 	}
 }
+
 .marker {
 	cursor: pointer;
 }
