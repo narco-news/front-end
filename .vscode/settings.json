@@ -2,5 +2,10 @@
   "cSpell.words": [
     "vodal"
   ],
-  "i18n-ally.localesPaths": "locales"
+  "i18n-ally.localesPaths": "locales",
+  "spellright.language": [],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex"
+  ]
 }

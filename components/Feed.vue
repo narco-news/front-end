@@ -85,7 +85,8 @@ ol {
 }
 .list {
 	max-height: 300px;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	border: 1px solid black;
 	padding: 0 10px;
 	background-color: #fbfbfb;
@@ -101,5 +102,17 @@ h2 {
 	padding: 0 1em;
 	border: 1px solid black;
 	@apply shadow-sm;
+}
+
+// HIDE SCROLLBARS
+/* Hide scrollbar for Chrome, Safari and Opera */
+.list::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.list {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
 }
 </style>
