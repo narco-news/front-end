@@ -51,7 +51,7 @@ export default {
 		async fetchData() {
 			const Parser = require('rss-parser');
 			const parser = new Parser();
-			const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+			const CORS_PROXY = process.env.proxy;
 			try {
 				const feed = await parser.parseURL(CORS_PROXY + this.feedUrl);
 				this.fullFeed = feed.items.splice(0, 10);

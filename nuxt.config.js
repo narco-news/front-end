@@ -63,9 +63,10 @@ export default async () => {
 			ghostUri: process.env.GHOST_URI,
 			ghostKey: process.env.GHOST_KEY,
 			blogUrl: process.env.BLOG_URL,
-			accessToken: process.env.accessToken,
 			userID: process.env.USER_ID,
-			listID: process.env.LIST_ID
+			listID: process.env.LIST_ID,
+			accessToken: process.env.accessToken,
+			proxy: process.env.RSS_PROXY
 		},
 
 		webfontloader: {
