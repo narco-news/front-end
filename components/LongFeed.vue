@@ -86,7 +86,8 @@ ol {
 }
 .list {
 	max-height: 450px;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	border: 1px solid black;
 	padding: 0 10px;
 	background-color: #fbfbfb;

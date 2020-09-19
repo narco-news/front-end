@@ -74,9 +74,14 @@
 		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
 			<LongFeed feedTitle="El Sol de Bajío" :feedUrl="esdb" class="mb-4" />
 			<LongFeed feedTitle="Noticieros En Línea" :feedUrl="nel" class="mb-4" />
-			<LongFeed feedTitle="El Heraldo de León" :feedUrl="ehdl" class="mb-4" />
+			<LongFeed
+				feedTitle="El Heraldo de León"
+				:feedUrl="ehdl"
+				class="mb-4 capitalize"
+			/>
 			<LongFeed feedTitle="Guanajuato Informa" :feedUrl="gi" class="mb-4" />
 			<LongFeed feedTitle="Periódico Correo" :feedUrl="pc" class="mb-4" />
+			<LongFeed feedTitle="Zona Franca" :feedUrl="zf" class="mb-4" />
 		</div>
 	</div>
 </template>
@@ -115,7 +120,8 @@ export default {
 			nel: process.env.nel,
 			ehdl: process.env.ehdl,
 			gi: process.env.gi,
-			pc: process.env.pc
+			pc: process.env.pc,
+			zf: process.env.zf
 		};
 	},
 	i18n: {

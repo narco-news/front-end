@@ -91,7 +91,8 @@ export default async () => {
 			nel: process.env.NEL,
 			ehdl: process.env.EHDL,
 			gi: process.env.GI,
-			pc: process.env.PC
+			pc: process.env.PC,
+			zf: process.env.ZF
 		},
 
 		webfontloader: {
