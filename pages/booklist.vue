@@ -29,47 +29,67 @@ export default {
 	data() {
 		return {
 			bookList: myBookList.books,
-			title: 'narco.news booklist'
+			twitter_description:
+				'Books related to drug trafficking and everything it involves.',
+			twitter_title: 'narco.news',
+			feature_image: 'https://narco.news/images/booklist.png',
+			title: 'Easy reading book list'
 		};
 	},
 	head() {
 		return {
-			title: this.title,
+			title:
+				this.twitter_title +
+				' - ' +
+				this.twitter_description +
+				' | ' +
+				this.pageUrl,
 			meta: [
 				{
 					hid: 'description',
 					name: 'description',
-					content: 'Easy reading on-topic books that are worth taking a look at'
+					content: this.twitter_description
 				},
 				{
 					hid: 'og:description',
 					property: 'og:description',
-					content: 'Easy reading on-topic books that are worth taking a look at'
+					content: this.twitter_description
+				},
+				{
+					hid: 'og:image',
+					property: 'og:image',
+					content: this.feature_image
 				},
 				{
 					hid: 'og:site_name',
 					property: 'og:site_name',
-					content: 'narco.news Book List'
+					content: this.twitter_title
 				},
 				{
 					hid: 'og:title',
-					name: 'og:title',
-					content: 'narco.news Book List'
+					property: 'og:title',
+					content: this.twitter_title
+				},
+				{hid: 'og:url', property: 'og:url', content: process.env.blogUrl},
+				{
+					hid: 'apple-mobile-web-app-title',
+					name: 'apple-mobile-web-app-title',
+					content: this.twitter_title
 				},
 				{
-					hid: 'twitter:card',
-					name: 'twitter:card',
-					content: 'summary_large_image'
+					hid: 'twitter:description',
+					name: 'twitter:description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: this.feature_image
 				},
 				{
 					hid: 'twitter:title',
 					name: 'twitter:title',
-					content: 'Easy reading on-topic books that are worth taking a look at'
-				},
-				{
-					hid: 'twitter:image',
-					property: 'twitter:image',
-					name: 'https://narco.news/images/booklist.png'
+					content: this.twitter_title
 				}
 			]
 		};

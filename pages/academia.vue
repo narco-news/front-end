@@ -19,9 +19,71 @@ export default {
 		LatestPapers,
 		ResearchPaper
 	},
+	data() {
+		return {
+			twitter_description:
+				'Collection of journals and books from the academic world.',
+			twitter_title: 'narco.news',
+			feature_image: 'https://narco.news/images/booklist.png',
+			title: 'Academic resources'
+		};
+	},
 	head() {
 		return {
-			title: 'Academic'
+			title:
+				this.twitter_title +
+				' - ' +
+				this.twitter_description +
+				' | ' +
+				this.pageUrl,
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'og:description',
+					property: 'og:description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'og:image',
+					property: 'og:image',
+					content: this.feature_image
+				},
+				{
+					hid: 'og:site_name',
+					property: 'og:site_name',
+					content: this.twitter_title
+				},
+				{
+					hid: 'og:title',
+					property: 'og:title',
+					content: this.twitter_title
+				},
+				{hid: 'og:url', property: 'og:url', content: process.env.blogUrl},
+				{
+					hid: 'apple-mobile-web-app-title',
+					name: 'apple-mobile-web-app-title',
+					content: this.twitter_title
+				},
+				{
+					hid: 'twitter:description',
+					name: 'twitter:description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: this.feature_image
+				},
+				{
+					hid: 'twitter:title',
+					name: 'twitter:title',
+					content: this.twitter_title
+				}
+			]
 		};
 	}
 };
