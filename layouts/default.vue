@@ -15,11 +15,10 @@
 </template>
 
 <script>
-import StickyHeader from '~/components/Navigation/StickyHeader.vue';
-import LogoBanner from '~/components/Navigation/LogoBanner.vue';
-import Burger from '~/components/Navigation/Burger.vue';
-
-import Footer from '~/components/Footer.vue';
+import StickyHeader from '~/components/Navigation/StickyHeader';
+import LogoBanner from '~/components/Navigation/LogoBanner';
+import Burger from '~/components/Navigation/Burger';
+import Footer from '~/components/Footer';
 
 export default {
 	components: {

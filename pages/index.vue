@@ -2,9 +2,9 @@
 	<div class="h-full">
 		<HomeArticles class="lg:mx-8" />
 		<FeaturedArticles class="lg:mx-12" />
-		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
+		<hr class="my-6 mx-auto" />
 		<Headlines />
-		<hr style="border-color: #e5e5e5;" class="my-6 mx-auto" width="90%" />
+		<hr class="my-6 mx-auto" />
 		<TagsList />
 		<Focus />
 		<FAQ />
@@ -56,8 +56,80 @@ export default {
 				});
 			}
 		}
+	},
+	data() {
+		return {
+			twitter_description:
+				'Open source research and tooling focused on the global war on the drugs',
+			twitter_title: 'narco.news',
+			feature_image: 'https://narco.news/images/twt-banner.png',
+			title: 'narco.news'
+		};
+	},
+	head() {
+		return {
+			title:
+				this.twitter_title +
+				' - ' +
+				this.twitter_description +
+				' | ' +
+				this.pageUrl,
+			meta: [
+				{
+					hid: 'description',
+					name: 'description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'og:description',
+					property: 'og:description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'og:image',
+					property: 'og:image',
+					content: this.feature_image
+				},
+				{
+					hid: 'og:site_name',
+					property: 'og:site_name',
+					content: this.twitter_title
+				},
+				{
+					hid: 'og:title',
+					property: 'og:title',
+					content: this.twitter_title
+				},
+				{hid: 'og:url', property: 'og:url', content: process.env.blogUrl},
+				{
+					hid: 'apple-mobile-web-app-title',
+					name: 'apple-mobile-web-app-title',
+					content: this.twitter_title
+				},
+				{
+					hid: 'twitter:description',
+					name: 'twitter:description',
+					content: this.twitter_description
+				},
+				{
+					hid: 'twitter:image',
+					name: 'twitter:image',
+					content: this.feature_image
+				},
+				{
+					hid: 'twitter:title',
+					name: 'twitter:title',
+					content: this.twitter_title
+				}
+			]
+		};
 	}
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+hr {
+	width: 80%;
+	color: #e5e5e5;
+}
+</style>

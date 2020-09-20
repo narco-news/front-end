@@ -57,7 +57,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Faustina:wght@700&display=swap');
 #logobanner {
 	margin-top: 4px;
 }
