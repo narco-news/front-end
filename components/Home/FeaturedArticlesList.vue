@@ -52,18 +52,18 @@
 						</h2>
 
 						<div class="excerpt p-1">
-							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
-							<p v-else-if="post.excerpt && !post.custom_excerpt">
+							<p v-if="post.custom_excerpt" class="mb-4">
+								{{ post.custom_excerpt }}
+							</p>
+							<p v-else-if="post.excerpt && !post.custom_excerpt" class="mb-4">
 								{{ post.excerpt }}
 							</p>
 							<nuxt-link
-								class="post-read-more"
+								class="post-read-more bt text-white font-bold py-2 px-2 rounded"
 								:to="{path: '/' + post.slug}"
 								title="Read more"
 							>
-								<button class="text-white font-bold py-2 px-2 rounded">
-									Read more
-								</button>
+								Read More
 							</nuxt-link>
 						</div>
 					</div>
@@ -126,7 +126,8 @@ export default {
 		border-top: 2px solid #0d0d0d;
 	}
 }
-button {
+
+.bt {
 	margin: 1em 0;
 	color: #616161;
 	background-color: lighten(#ffd54f, 5%);
@@ -135,9 +136,10 @@ button {
 		background-color: darken(#ffd54f, 5%);
 	}
 }
+
 .articles {
 	display: grid;
-	grid-template-columns: repeat (auto-fit, minmax(180px, 1fr));
+	grid-template-columns: (auto-fit, minmax(180px, 1fr));
 	grid-auto-flow: dense;
 	.date {
 		color: #6e7381;
@@ -171,6 +173,7 @@ button {
 	}
 	.article:nth-child(2),
 	.article:nth-child(3) {
+		margin-top: 2em;
 		padding: 0.5em;
 		.image {
 			margin-bottom: 1em;
