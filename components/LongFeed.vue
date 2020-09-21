@@ -90,14 +90,15 @@ ol {
 	overflow-x: hidden;
 	border: 1px solid black;
 	padding: 0 10px;
-	background-color: #fbfbfb;
+	background-color: white;
 }
 .list-inside {
 	margin-top: 15px;
 }
 h2 {
+	font-family: 'EB Garamond', sans-serif;
 	position: absolute;
-	background-color: #fbfbfb;
+	background-color: white;
 	margin-left: 20px;
 	margin-top: -12px;
 	padding: 0 1em;

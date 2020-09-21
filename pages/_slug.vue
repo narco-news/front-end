@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="xs-12 lg-10 mx-auto animate__animated animate__fadeIn">
 				<!-- TAGS -->
-				<div class="post-tags">
+				<div class="post-tags md:mx-8">
 					<ul class="list inline">
 						<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
 							<nuxt-link :to="{path: '/tag/' + tag.slug}" :title="tag.name">{{
@@ -76,11 +76,11 @@
 						/>
 					</social-icon>
 				</div>
-				<h1 class="post-title text-4xl mt-2">
+				<h1 class="post-title text-4xl mt-8 md:mx-8">
 					{{ post.title }}
 				</h1>
 				<div>
-					<div class="flex flex-auto my-2">
+					<div class="flex flex-auto my-2 md:mx-8">
 						<div class="post-excerpt">
 							<p v-if="post.custom_excerpt">
 								{{ post.custom_excerpt }}
@@ -89,7 +89,7 @@
 					</div>
 				</div>
 				<div
-					class="grid grid-cols-2 md:flex md:justify-between items-center my-2 md:my-4 mx-1 md:mx-2"
+					class="grid grid-cols-2 md:flex md:justify-between items-center my-2 md:my-4 mx-1 md:mx-8"
 				>
 					<div class="col-span-1">
 						<div class="post-author flex flex-auto items-center">
@@ -526,7 +526,7 @@ export default {
 		text-decoration: none;
 	}
 	li {
-		background-color: #fbfbfb;
+		background-color: #f9f9f9;
 		padding: 0.5em;
 	}
 	.tags-bottom {

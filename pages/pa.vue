@@ -4,23 +4,27 @@
 		<h1 class="text-xl font-bold underline mb-2">
 			{{ $t('message.spanishblogs') }}
 		</h1>
-		<p class="text-xs px-4 mb-4">
-			<i18n path="message.sbtext" tag="p">
-				<a
-					href="https://en.wikipedia.org/wiki/Blog_del_Narco"
-					class="text-red underline font-bold"
-					target="_blank"
-					>{{ $t('message.ebdn') }}</a
-				>
-				<a
-					href="https://en.wikipedia.org/wiki/Valor_por_Tamaulipas"
-					class="text-red underline font-bold"
-					target="_blank"
-				>
-					{{ $t('message.vpt') }}
-				</a>
-			</i18n>
-		</p>
+		<details class="mb-6">
+			<summary class="text-sm">More info</summary>
+			<p class="text-xs px-4 py-2 mb-4 rounded-md bg-white">
+				<i18n path="message.sbtext" tag="p">
+					<a
+						href="https://en.wikipedia.org/wiki/Blog_del_Narco"
+						class="text-red underline font-bold"
+						target="_blank"
+						>{{ $t('message.ebdn') }}</a
+					>
+					<a
+						href="https://en.wikipedia.org/wiki/Valor_por_Tamaulipas"
+						class="text-red underline font-bold"
+						target="_blank"
+					>
+						{{ $t('message.vpt') }}
+					</a>
+				</i18n>
+			</p>
+		</details>
+
 		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
 			<LongFeed feedTitle="El Blog del Narco" :feedUrl="ebdn" class="mb-4" />
 			<LongFeed feedTitle="El Blog del Narco 2" :feedUrl="ebdn2" class="mb-4" />
