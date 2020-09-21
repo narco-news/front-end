@@ -2,9 +2,9 @@
 	<div class="mx-2 md:mx-8">
 		<div class="articles">
 			<article v-for="post in posts.slice(3, 8)" :key="post.id" class="article">
-				<div v-if="post.feature_image" class="overflow-hidden">
+				<div v-if="post.feature_image">
 					<nuxt-link :to="{path: '/' + post.slug}">
-						<div class="overflow-hidden">
+						<div class="overflow-hidden img-wrap">
 							<img
 								:src="post.feature_image"
 								:alt="post.title"
@@ -97,6 +97,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.img-wrap {
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+}
 .articles {
 	display: grid;
 	grid-template-columns: (auto-fit, minmax(180px, 1fr));
@@ -112,11 +116,11 @@ export default {
 		grid-column: span 2;
 		img {
 			object-fit: cover;
-			height: 70%;
-			max-height: 600px;
+			height: 100%;
 			width: 100%;
-			border-radius: 0.5em;
-			-webkit-border-radius: 0.5em;
+			max-height: 300px;
+			border-radius: 0.3em;
+			-webkit-border-radius: 0.3em;
 		}
 		.title {
 			font-size: 24px;
@@ -143,8 +147,8 @@ export default {
 			object-fit: cover;
 			height: 10em;
 			width: 100%;
-			border-radius: 0.5em;
-			-webkit-border-radius: 0.5em;
+			border-radius: 0.3em;
+			-webkit-border-radius: 0.3em;
 		}
 	}
 }

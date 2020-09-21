@@ -19,15 +19,14 @@
 							>{{ post.published_at | dayjs }}</span
 						>
 					</div>
-					<h1 v-if="post.title" class="title capitalize md:text-xl lg:text-2xl">
+					<h2 v-if="post.title" class="title capitalize md:text-xl lg:text-2xl">
 						<nuxt-link
 							:to="{path: '/' + post.slug}"
 							:title="post.title"
 							class="hvr-forward"
 							>{{ post.title }}
 						</nuxt-link>
-						<!-- <hr style="border-color: #e5e5e5;" class="my-2" width="85%" /> -->
-					</h1>
+					</h2>
 				</li>
 			</ul>
 		</article>

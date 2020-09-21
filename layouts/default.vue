@@ -65,7 +65,7 @@ export default {
 
 <style lang="scss">
 body {
-	background-color: #fbfbfb;
+	background-color: #f9f9f9;
 }
 .bm-burger-bars {
 	background-color: #262626 !important;
@@ -82,11 +82,11 @@ body {
 .bm-burger-button {
 	left: 20px !important;
 	top: 45px !important;
-	height: 20px !important;
-	width: 25px !important;
+	height: 15px !important;
+	width: 20px !important;
 }
 .line-style {
-	height: 15% !important;
+	height: 2px !important;
 	left: 0;
 	right: 0;
 }
