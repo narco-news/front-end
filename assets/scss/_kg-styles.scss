@@ -34,7 +34,7 @@
 	}
 
 	hr {
-		border-color: #cdede7;
+		border-color: #e5e5e5;
 	}
 
 	video {
@@ -187,6 +187,7 @@
 	}
 
 	figcaption {
+		background-color: #f9f9f9;
 		margin: 0.5em auto;
 		font-size: 75%;
 		font-weight: 300;
@@ -263,6 +264,7 @@
 	}
 
 	.kg-embed-card {
+		background-color: transparent;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
