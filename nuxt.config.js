@@ -2,6 +2,8 @@ import axios from 'axios';
 import {generateRoutes} from './config/ghost';
 import {build, feed, meta} from './config';
 import {isDev} from './config/dev';
+import en from './locales/en.json';
+import es from './locales/es.json';
 
 require('dotenv').config();
 
@@ -30,31 +32,21 @@ export default async () => {
 			'@nuxtjs/pwa',
 			'nuxt-webfontloader',
 			'@nuxtjs/axios',
-			[
-				'nuxt-i18n',
-				{
-					detectBrowserLanguage: {
-						useCookie: true,
-						cookieKey: 'i18n_redirected'
-					},
-					locales: [
-						{
-							code: 'en',
-							name: 'English'
-						},
-						{
-							code: 'es',
-							name: 'Español'
-						}
-					],
-					defaultLocale: 'en',
-					vueI18n: {
-						fallbackLocale: 'en'
-					}
-				}
-			]
+			'nuxt-i18n'
 		],
 
+		i18n: {
+			locales: [
+				{code: 'en', iso: 'en', name: 'English'},
+				{code: 'es', iso: 'es', name: 'Español'}
+			],
+			messages: {en, es},
+			defaultLocale: 'en',
+			seo: true,
+			vueI18n: {
+				fallbackLocale: 'en'
+			}
+		},
 		buildModules: ['@nuxtjs/feed'],
 
 		dev: ['@nuxtjs/eslint-module'],
