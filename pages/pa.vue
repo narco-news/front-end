@@ -31,6 +31,7 @@
 			<LongFeed feedTitle="Valor por Tamaulipas" :feedUrl="vpt" class="mb-4" />
 			<LongFeed feedTitle="Historias del Narco" :feedUrl="hdn" class="mb-4" />
 			<LongFeed feedTitle="Narco En Mexico" :feedUrl="nem" class="mb-4" />
+			<LongFeed feedTitle="Mexico Codigo Rojo" :feedUrl="mcr" class="mb-4" />
 			<LongFeed feedTitle="Infobae" :feedUrl="ib" class="mb-4" />
 		</div>
 		<h1 class="text-xl font-bold underline mb-2">
@@ -132,7 +133,8 @@ export default {
 			ehdl: process.env.ehdl,
 			gi: process.env.gi,
 			pc: process.env.pc,
-			zf: process.env.zf
+			zf: process.env.zf,
+			mcr: process.env.mcr
 		};
 	},
 	i18n: {
