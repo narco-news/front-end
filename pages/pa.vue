@@ -62,7 +62,7 @@
 			{{ $t('message.tamtext') }}
 		</p>
 		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
-			<LongFeed feedTitle="Valor Tamaulipeco" :feedUrl="vpto" class="mb-4" />
+			<LongFeed feedTitle="Hoy Tamaulipas" :feedUrl="ht" class="mb-4" />
 			<LongFeed feedTitle="El Mañana Reynosa" :feedUrl="em" class="mb-4" />
 			<LongFeed feedTitle="El Mañana NL" :feedUrl="emnl" class="mb-4" />
 			<LongFeed
@@ -71,6 +71,8 @@
 				class="mb-4"
 			/>
 			<LongFeed feedTitle="El Sol de Tampico" :feedUrl="esdt" class="mb-4" />
+			<LongFeed feedTitle="Optimus Informativo" :feedUrl="oi" class="mb-4" />
+			<LongFeed feedTitle="Valor Tamaulipeco" :feedUrl="vpto" class="mb-4" />
 		</div>
 		<h1 class="text-xl font-bold underline mb-2">
 			Gtosec
@@ -89,6 +91,8 @@
 			<LongFeed feedTitle="Guanajuato Informa" :feedUrl="gi" class="mb-4" />
 			<LongFeed feedTitle="Periódico Correo" :feedUrl="pc" class="mb-4" />
 			<LongFeed feedTitle="Zona Franca" :feedUrl="zf" class="mb-4" />
+			<LongFeed feedTitle="El Celayense" :feedUrl="ec" class="mb-4" />
+			<LongFeed feedTitle="Informativo Agora GTO" :feedUrl="ia" />
 		</div>
 	</div>
 </template>
@@ -134,7 +138,11 @@ export default {
 			gi: process.env.gi,
 			pc: process.env.pc,
 			zf: process.env.zf,
-			mcr: process.env.mcr
+			mcr: process.env.mcr,
+			ec: process.env.ec,
+			ia: process.env.ia,
+			ht: process.env.ht,
+			oi: process.env.oi
 		};
 	},
 	i18n: {
