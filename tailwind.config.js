@@ -1,12 +1,12 @@
 module.exports = {
 	purge: [
-    'components/**/*.vue',
-    'layouts/**/*.vue',
-    'pages/**/*.vue',
-    'plugins/**/*.js'
+		'components/**/*.vue',
+		'layouts/**/*.vue',
+		'pages/**/*.vue',
+		'plugins/**/*.js'
 	],
 	styleExtensions: ['.css', '.scss'],
-  whitelist: ['body', 'html', 'nuxt-progress'],
+	whitelist: ['body', 'html', 'nuxt-progress'],
 	theme: {
 		container: {
 			center: true
