@@ -13,8 +13,6 @@ export default {
 		}
 	},
 	
-	analyze: true,
-
 	plugins: [
 		new webpack.ProvidePlugin({
 			mapboxgl: 'mapbox-gl'
