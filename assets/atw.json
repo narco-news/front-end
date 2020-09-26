@@ -2,51 +2,51 @@
 	"article": [
 		{
 			"id": 1,
-			"title": "'El Azul', heir to the Santa Rosa de Lima cartel after the capture of 'El Marro'",
-			"url": "https://www.milenio.com/policia/cartel-santa-rosa-azul-heredero-organizacion-delictiva",
-			"favicon": "https://www.milenio.com/bundles/camusassets/images/icons/57x57.png"
+			"title": "Mexico to pursue soldiers, federal police in abduction probe",
+			"url": "https://apnews.com/article/arrests-mexico-archive-crime-59c6a1b56d67f8cf2ae3c1878d83b586",
+			"favicon": "https://apnews.com/branding/favicon/64.png"
 		},
 		{
 			"id": 2,
-			"title": "The arrest of a Mexican cartel leader reveals a complicated relationship with the Catholic Church",
-			"url": "https://www.americamagazine.org/politics-society/2020/08/31/arrest-mexican-cartel-leader-reveals-complicated-relationship-catholic",
-			"favicon": "https://www.americamagazine.org/themes/custom/america/logoA.png"
+			"title": "European Drug Report 2020",
+			"url": "https://www.emcdda.europa.eu/edr2020",
+			"favicon": "https://www.emcdda.europa.eu/apple-touch-icon.png"
 		},
 		{
 			"id": 3,
-			"title": "Ghost Gliders: Spanish Narco-Submarines",
-			"url": "https://smallwarsjournal.com/jrnl/art/ghost-gliders-spanish-narco-submarines",
-			"favicon": "https://smallwarsjournal.com/themes/custom/ccc_theme/favicon.ico"
+			"title": "Drug cartels in Mexico; the map of where they are",
+			"url": "https://www.eluniversal.com.mx/estados/el-cjng-el-de-mayor-penetracion-en-el-pais",
+			"favicon": "https://www.eluniversal.com.mx/sites/all/themes/eluniversal/favicon.ico"
 		},
 		{
 			"id": 4,
-			"title": "Powerful Serbian-American Drug Traffickers May Have Ties to Intelligence Agencies",
-			"url": "https://www.occrp.org/en/group-america/powerful-serbian-american-drug-traffickers-may-have-ties-to-intelligence-agencies",
-			"favicon": "https://www.occrp.org/assets/common/favicon.png"
+			"title": "Massive dark web bust seizes $6.5 million from 179 alleged drug dealers",
+			"url": "https://www.cnet.com/news/us-largest-dark-web-market-bust-seizes-6-5-million-from-179-drug-dealers/",
+			"favicon": "https://cnet3.cbsistatic.com/fly/bundles/cnetcss/images/core/icon/favicon-48.png"
 		},
 		{
 			"id": 5,
-			"title": "MS13 East Coast Violence Fails to Consolidate Gang’s US Presence",
-			"url": "https://www.insightcrime.org/news/analysis/ms13-violence-east-coast-presence/",
-			"favicon": "https://www.insightcrime.org/wp-content/uploads/2017/11/insightcrime-icono-76x76-1.png"
+			"title": "Labeled “Research” Chemicals, Doping Drugs Sold Openly on Amazon.com",
+			"url": "https://themarkup.org/banned-bounty/2020/09/17/amazon-sales-peptides-doping-drugs",
+			"favicon": "https://mrkp-static-production.themarkup.org/static/img/social-icons/favicon.png"
 		},
 		{
 			"id": 6,
-			"title": "Heroin’s Hidden Ingredient Is a Chemical Made by U.S. Companies",
-			"url": "https://www.bloomberg.com/news/features/2020-08-26/u-s-drug-crisis-is-made-in-mexico-with-american-raw-materials",
-			"favicon": "https://assets.bwbx.io/s3/javelin/public/javelin/images/favicon-black-63fe5249d3.png"
+			"title": "Gangs still drive Mombasa’s narco-city image",
+			"url": "https://issafrica.org/iss-today/gangs-still-drive-mombasas-narco-city-image",
+			"favicon": "https://issafrica.org/favicon.ico"
 		},
 		{
 			"id": 7,
-			"title": "Online Drug Market Empire Disappears, with $30 Million of Users' Money",
-			"url": "https://www.vice.com/en_us/article/z3e533/online-drug-market-empire-disappears-with-dollar30-million-of-users-money",
-			"favicon": "https://vice-web-statics-cdn.vice.com/favicons/vice/apple-touch-icon-60x60.png"
+			"title": "26 people charged with drug trafficking crimes as part of Operation Legend in Milwaukee",
+			"url": "https://www.tmj4.com/news/local-news/26-people-charged-with-drug-trafficking-crimes-as-part-of-operation-legend-in-milwaukee",
+			"favicon": "https://www.tmj4.com/favicon-32x32.png"
 		},
 		{
 			"id": 8,
-			"title": "In Mexico, crime, problems resist president’s solutions",
-			"url": "https://apnews.com/c68197efcf44bf9d9a30e176abd956fe",
-			"favicon": "https://apnews.com/branding/favicon/64.png"
+			"title": "46 indicted for involvement in Marion drug trafficking organization",
+			"url": "https://www.justice.gov/usao-ndoh/pr/46-indicted-involvement-marion-drug-trafficking-organization-43-arrested-during-early",
+			"favicon": "https://www.justice.gov/sites/all/themes/justice/apple-touch-icon-precomposed.png"
 		}
 	]
 }
