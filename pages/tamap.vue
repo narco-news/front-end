@@ -33,7 +33,7 @@ export default {
 		this.map = new mapboxgl.Map({
 			accessToken: process.env.accessToken,
 			container: 'map',
-			style: 'mapbox://styles/mapbox/streets-v10', // your map style
+			style: 'mapbox://styles/mapbox/streets-v11?optimize=true', // your map style
 			center: [-98.566667, 24.283333],
 			zoom: 7,
 			pitch: 0,

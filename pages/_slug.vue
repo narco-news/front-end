@@ -293,7 +293,7 @@
 <script>
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
-import hljs from 'highlight.js';
+// import hljs from 'highlight.js';
 
 import {ghostAPI} from '~/config/ghost';
 
@@ -302,7 +302,7 @@ import ScrollToTop from '~/components/ScrollToTop';
 import SocialIcons from '~/components/SocialIcons';
 
 dayjs.extend(advancedFormat);
-hljs.configure({tabReplace: ''});
+// hljs.configure({tabReplace: ''});
 
 export default {
 	name: 'PostsPage',
@@ -389,11 +389,11 @@ export default {
 	},
 
 	beforemounted() {
-		window.addEventListener('load', () => {
-			document.querySelectorAll('pre > code').forEach(block => {
-				hljs.highlightBlock(block);
-			});
-		});
+		// window.addEventListener('load', () => {
+		// 	document.querySelectorAll('pre > code').forEach(block => {
+		// 		hljs.highlightBlock(block);
+		// 	});
+		// });
 
 		const cards = document.getElementsByClassName('kg-embed-card');
 		for (const card of cards) {

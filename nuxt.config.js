@@ -32,9 +32,18 @@ export default async () => {
 			'@nuxtjs/pwa',
 			'nuxt-webfontloader',
 			'@nuxtjs/axios',
-			'nuxt-i18n'
+			'nuxt-i18n',
+			'nuxt-compress'
 		],
 
+		"nuxt-compress": {
+			gzip: {
+				cache: true
+			},
+			brotli: {
+				threshold: 10240
+			}
+		},
 		i18n: {
 			locales: [
 				{code: 'en', iso: 'en', name: 'English'},
@@ -145,8 +154,6 @@ export default async () => {
 			{src: '~/plugins/postcss.js'},
 			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/hover.js', ssr: false},
-			{src: '~/plugins/notifications.js', ssr: false},
-			{src: '~/plugins/scrollbar.js', ssr: false},
 			{src: '~/plugins/vshowslide.js', ssr: false},
 			{src: '~/plugins/odometer.js', ssr: false},
 			{src: '~/plugins/modals.js', ssr: false},
@@ -156,7 +163,6 @@ export default async () => {
 			{src: '~/plugins/rough-notation.js', ssr: false},
 			{src: '~/plugins/vue-dynamic-marquee.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'},
-			{src: '~/plugins/vue-badger-accordion.js', ssr: false}
 		],
 
 		pwa: {
