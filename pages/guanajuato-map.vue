@@ -45,7 +45,7 @@ export default {
 			container: 'map',
 			style: 'mapbox://styles/mapbox/streets-v11?optimize=true',
 			center: [-100.99, 20.51],
-			zoom: 8,
+			zoom: 9,
 			pitch: 0,
 			minZoom: 8,
 			maxZoom: 17
