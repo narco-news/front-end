@@ -1,21 +1,15 @@
 <template>
-	<div
-		id="logobanner"
-		style="animation-delay: 2s;"
-		class="h-20 flex flex-row flex-no-wrap justify-center"
-	>
-		<div>
-			<n-link :to="localePath('/')">
-				<img
-					src="~/assets/images/bw-nn-logo.png"
-					alt="narco.news Logo"
-					class="w-56 md:w-64"
-				/>
-				<p id="high" class="text-center absolute">
-					{{ $t('message.sub') }}
-				</p>
-			</n-link>
-		</div>
+	<div class="title-box">
+		<n-link :to="localePath('/')">
+			<img
+				src="~/assets/images/bw-nn-logo.png"
+				alt="narco.news Logo"
+				class="w-56 md:w-64"
+			/>
+			<p id="high" class="subtitle">
+				{{ $t('message.sub') }}
+			</p>
+		</n-link>
 	</div>
 </template>
 
@@ -57,15 +51,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#logobanner {
-	margin-top: 4px;
+.title-box {
+	margin-top: 1em;
+	margin-bottom: 3em;
+	text-align: center;
+	img {
+		margin: 0 auto;
+	}
 }
-p {
-	font-family: 'IBM Plex Sans', sans;
-	font-weight: 700;
-	font-size: 14px;
-	color: #0d0d0d;
-	margin-top: 4px;
-	width: 250px;
+.subtitle {
+	display: inline;
+	font-weight: 600;
+	letter-spacing: 1;
 }
 </style>
