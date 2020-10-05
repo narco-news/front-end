@@ -25,9 +25,21 @@
 					<line x1="12" y1="16" x2="12.01" y2="16"></line>
 				</svg>
 				<span class="grid grid-rows-1 px-1">
-					<span class="words text-sm md:text-md text-center p-1">{{
+					<!-- <span class="words text-sm md:text-md text-center p-1">{{
 						$t('message.text')
-					}}</span>
+					}}</span> -->
+					<i18n
+						path="message.text"
+						for="link"
+						class="words p-1 text-sm md:text-md"
+					>
+						<a
+							href="https://narco.news/october-update"
+							target="_blank"
+							class="font-bold underline"
+							>{{ $t('message.link') }}</a
+						>
+					</i18n>
 				</span>
 				<img
 					src="~/assets/icons/times.svg"
@@ -53,13 +65,15 @@ export default {
 			en: {
 				message: {
 					text:
-						"Hello again! Please disregard translations for now. They're computer generated and will be done once design is complete."
+						'Apologies for the continued issue with article translations. You can read more about it {0} in the latest website update.',
+					link: 'here'
 				}
 			},
 			es: {
 				message: {
 					text:
-						'¡Hola de nuevo! Por favor, descarte las traducciones por ahora. Son generadas por computadora y se harán una vez que el diseño esté completo.'
+						'Disculpas por la continuación del número con las traducciones de los artículos. Puede leer más sobre ello {0} en la última actualización del sitio web.',
+					link: 'aquí'
 				}
 			}
 		}
