@@ -92,7 +92,7 @@
 					<span class="text-2xl">{{ $t('message.wiki') }}</span>
 				</a>
 			</div>
-			<div id="map-links" class="mt-12">
+			<!-- <div id="map-links" class="mt-12">
 				<div class="flex flex-col flex-no-wrap justify-start">
 					<div class="mb-2">
 						<img src="~/assets/icons/map.svg" alt="Map icon" />
@@ -112,7 +112,7 @@
 						</n-link>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<!-- Logo -->
 		<img id="logo" src="/logo/nn-colorful-300.png" alt="narco.news logo" />

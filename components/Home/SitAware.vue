@@ -26,7 +26,7 @@
 							/>
 							<h1 class="text-2xl font-bold">Tamaulipas</h1>
 							<p class="text-sm italic mb-4">24°17′14″ N, 98°33′48″ W</p>
-							<div
+							<!-- <div
 								class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded w-16"
 							>
 								<n-link to="/tamap">
@@ -34,7 +34,7 @@
 										{{ $t('message.map') }}
 									</div>
 								</n-link>
-							</div>
+							</div> -->
 							<div
 								class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-32"
 							>
@@ -72,7 +72,7 @@
 							/>
 							<h1 class="text-2xl font-bold">Guanajuato</h1>
 							<p class="text-sm italic mb-4">21°1′0″ N, 101°16′0″ W</p>
-							<div
+							<!-- <div
 								class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded w-16"
 							>
 								<n-link to="/guanajuato-map">
@@ -80,7 +80,7 @@
 										{{ $t('message.map') }}
 									</div>
 								</n-link>
-							</div>
+							</div> -->
 
 							<div
 								class="my-2 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-32"
