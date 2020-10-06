@@ -1,7 +1,7 @@
 <template>
 	<div class="my-6">
-		<h1 class="desc text-xl font-bold my-4 ml-12">
-			Frequently Asked Questions
+		<h1 class="desc text-3xl font-bold my-4 ml-8 md:ml-12">
+			{{ $t('message.faq') }}
 		</h1>
 		<div class="bg-white shadow-inner rounded-md mx-8">
 			<Accordion :items="items" />
@@ -44,6 +44,20 @@ export default {
 				}
 			]
 		};
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					faq: 'Frequently Asked Questions'
+				}
+			},
+			es: {
+				message: {
+					faq: 'Preguntas frecuentes'
+				}
+			}
+		}
 	}
 };
 </script>

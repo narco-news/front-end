@@ -60,8 +60,9 @@ export default {
 	}
 }
 .subtitle {
-	display: inline;
+	display: inline-block;
 	font-weight: 600;
 	letter-spacing: 1;
+	max-width: 230px;
 }
 </style>

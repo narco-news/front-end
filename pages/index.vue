@@ -1,23 +1,33 @@
 <template>
 	<div class="h-full">
-		<HomeArticles class="lg:mx-8" />
-		<FeaturedArticles class="lg:mx-12" />
-		<hr class="my-6 mx-auto" />
-		<Headlines />
-		<hr class="my-6 mx-auto" />
-		<TagsList />
-		<Focus />
-		<FAQ />
+		<div
+			class="large-barrier grid grid-cols-3 md:grid-cols-4 bg-white md:mx-12 p-6 lg:rounded-tl-md lg:rounded-tr-md shadow-inner"
+		>
+			<div class="col-span-3 barrier">
+				<PictureArticleList class="md:p-2 md:mr-2" />
+				<hr class="py-2 mt-2" />
+				<FeaturedArticles />
+			</div>
+			<div class="list col-span-3 md:col-span-1">
+				<Headlines class="mx-4" />
+				<TagsBox class="my-4" />
+				<!-- <hr class="my-6 mx-auto" /> -->
+				<!-- <ButtonsBox /> -->
+			</div>
+		</div>
+		<Focus class="barrier" />
+		<FAQ class="barrier" />
 		<SitAware />
 		<Popup />
 	</div>
 </template>
 
 <script>
-import HomeArticles from '~/components/Home/HomeArticles';
+import PictureArticleList from '~/components/Home/PictureArticleList';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
 import Headlines from '~/components/Home/Headlines';
-import TagsList from '~/components/TagsList';
+import TagsBox from '~/components/TagsBox';
+// import ButtonsBox from '~/components/ButtonsBox';
 import SitAware from '~/components/Home/SitAware';
 import Focus from '~/components/Home/Focus';
 import FAQ from '~/components/Home/FAQ';
@@ -26,10 +36,11 @@ import Popup from '~/components/Home/Popup';
 export default {
 	layout: 'default',
 	components: {
-		HomeArticles,
+		PictureArticleList,
 		FeaturedArticles,
 		Headlines,
-		TagsList,
+		TagsBox,
+		// ButtonsBox,
 		SitAware,
 		Focus,
 		FAQ,
@@ -128,8 +139,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.list {
+	border-left: 0px solid #e5e5e5;
+	@media (min-width: 768px) {
+		border-left: 1px solid #e5e5e5;
+	}
+}
+.large-barrier {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.barrier {
+	max-width: 800px;
+	margin: 0 auto;
+}
 hr {
-	width: 80%;
+	width: 96%;
 	color: #e5e5e5;
 }
 </style>

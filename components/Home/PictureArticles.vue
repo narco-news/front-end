@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-2 md:mx-8">
+	<div>
 		<div class="articles">
 			<article v-for="post in posts.slice(3, 8)" :key="post.id" class="article">
 				<div v-if="post.feature_image">
@@ -13,23 +13,17 @@
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div v-if="post.featured" class="star">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-								fill="#FFD54F"
-								width="32"
-								height="32"
-							>
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-								/>
-							</svg>
+						<div v-if="post.tags.length > 0" class="flex flex-row gap-2">
+							<div v-for="tag in post.tags.slice(0, 2)" :key="tag.id">
+								<nuxt-link
+									:to="{path: '/tag/' + tag.slug}"
+									:title="tag.name"
+									class="tags text-sm uppercase"
+									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+								>
+							</div>
 						</div>
-						<div class="date whitespace-no-wrap text-sm mt-2">
-							{{ post.published_at | dayjs }}
-						</div>
-						<h2 v-if="post.title" class="title">
+						<h2 v-if="post.title" class="title capitalize text-xl">
 							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
 								>{{ post.title }}
 							</nuxt-link>
@@ -39,21 +33,20 @@
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
 							</p>
-							<!-- <nuxt-link
-								class="post-read-more"
-								:to="{path: '/' + post.slug}"
-								title="Read more..."
-								>Read more...</nuxt-link
-							> -->
 						</div>
-						<div class="author uppercase text-sm md:text-md">
-							<span>BY</span>
-							<nuxt-link
-								:to="{path: '/author/' + post.primary_author.slug}"
-								:title="post.primary_author.name"
-								class="font-bold"
-								>{{ post.primary_author.name }}</nuxt-link
-							>
+						<div class="flex flex-row items-center gap-1">
+							<div class="date whitespace-no-wrap text-sm text-gray-600">
+								{{ post.published_at | dayjs }}
+							</div>
+							<div class="author text-sm md:text-md text-gray-600">
+								by
+								<nuxt-link
+									:to="{path: '/author/' + post.primary_author.slug}"
+									:title="post.primary_author.name"
+									class="font-bold uppercase"
+									>{{ post.primary_author.name }}</nuxt-link
+								>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -98,58 +91,97 @@ export default {
 
 <style lang="scss" scoped>
 .img-wrap {
+	border: 1px solid black;
 	border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
 }
+.tags {
+	color: #03a688;
+}
 .articles {
 	display: grid;
-	grid-template-columns: (auto-fit, minmax(180px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	grid-auto-flow: dense;
-	.date {
-		color: #03a688;
-		font-weight: 600;
-	}
-	.author {
-		color: #6e7381;
+	grid-gap: 1em;
+	article {
+		.date {
+			font-weight: 600;
+		}
+		.title-box {
+			margin: 0.5em 0;
+		}
+		.title {
+			font-weight: 700;
+			font-family: 'Lora', sans-serif;
+			line-height: 1.2;
+		}
 	}
 	.article:nth-child(1) {
 		grid-column: span 2;
-		img {
-			object-fit: cover;
-			height: 100%;
-			width: 100%;
-			max-height: 300px;
-			border-radius: 0.3em;
-			-webkit-border-radius: 0.3em;
-		}
-		.title {
-			font-size: 24px;
-			line-height: 1.2;
-			font-family: 'Lora', sans-serif;
-			font-weight: 700;
-		}
 	}
+
 	.article:nth-child(2),
 	.article:nth-child(3),
 	.article:nth-child(4),
 	.article:nth-child(5) {
-		margin: 1em 0.5em;
+		grid-column: span 1;
+		img {
+			max-height: 130px;
+			object-fit: cover;
+			width: 100%;
+			@media (max-width: 414px) {
+				max-height: 110px;
+				object-fit: cover;
+				width: 100%;
+			}
+		}
 		.excerpt {
 			display: none;
 		}
-		.title {
-			font-size: 20px;
-			line-height: 1.2;
-			font-family: 'Lora', sans-serif;
-			font-weight: 700;
-		}
-		img {
-			object-fit: cover;
-			height: 10em;
-			width: 100%;
-			border-radius: 0.3em;
-			-webkit-border-radius: 0.3em;
-		}
 	}
 }
+// .articles {
+// 	display: grid;
+// 	grid-template-columns: (auto-fit, minmax(180px, 1fr));
+// 	grid-auto-flow: dense;
+// 	.date {
+// 		color: #03a688;
+// 	}
+// 	.author {
+// 		color: #6e7381;
+// 	}
+// 	.title {
+// 		color: #262626;
+// 		font-weight: 700;
+// 		font-family: 'Lora', sans-serif;
+// 	}
+// 	.article:nth-child(1) {
+// 		grid-column: span 2;
+// 		img {
+// 			object-fit: cover;
+// 			height: 100%;
+// 			width: 100%;
+// 			max-height: 300px;
+// 			border-radius: 0.3em;
+// 			-webkit-border-radius: 0.3em;
+// 		}
+// 	}
+// 	.article:nth-child(2),
+// 	.article:nth-child(3),
+// 	.article:nth-child(4),
+// 	.article:nth-child(5) {
+// 		grid-column: -3 / -1;
+// 		margin: 1em 0.5em;
+// 		.excerpt {
+// 			display: none;
+// 		}
+// 		img {
+// 			object-fit: cover;
+// 			height: 10em;
+// 			width: 100%;
+// 			border-radius: 0.3em;
+// 			-webkit-border-radius: 0.3em;
+// 		}
+// 	}
+// }
 </style>

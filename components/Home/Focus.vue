@@ -1,51 +1,51 @@
 <template>
-	<div>
-		<h1 class="desc text-xl font-bold ml-12 my-4">
+	<div class="p-2">
+		<h1 class="desc text-3xl font-bold my-4 ml-8 md:ml-12">
 			{{ $t('message.focus') }}
 		</h1>
-		<div class="feat-box p-6">
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-				<div class="grid grid-flow-row">
+		<div class="feat-box">
+			<div class="grid md:grid-cols-2 gap-6 px-6">
+				<div class="box grid grid-flow-row">
 					<img
 						src="~/assets/icons/research.svg"
 						class="w-16"
 						alt="Research icon"
 					/>
 					<h2 class="text-xl font-bold">{{ $t('message.title1') }}</h2>
-					<p class="text-xs md:text-sm">
+					<p class="text-md md:text-sm">
 						{{ $t('message.text1') }}
 					</p>
 				</div>
-				<div class="grid grid-flow-row">
+				<div class="box grid grid-flow-row">
 					<img
 						src="~/assets/icons/flow-chart-design.svg"
 						class="w-16"
 						alt="Flow chart icon"
 					/>
 					<h2 class="text-xl font-bold">{{ $t('message.title2') }}</h2>
-					<p class="text-xs md:text-sm">
+					<p class="text-md md:text-sm">
 						{{ $t('message.text2') }}
 					</p>
 				</div>
-				<div class="grid grid-flow-row">
+				<div class="box grid grid-flow-row">
 					<img
 						src="~/assets/icons/image-analysis.svg"
 						class="w-16"
 						alt="Image analysis icon"
 					/>
 					<h2 class="text-xl font-bold">{{ $t('message.title3') }}</h2>
-					<p class="text-xs md:text-sm">
+					<p class="text-md md:text-sm">
 						{{ $t('message.text3') }}
 					</p>
 				</div>
-				<div class="grid grid-flow-row">
+				<div class="box grid grid-flow-row">
 					<img
 						src="~/assets/icons/layer.svg"
 						class="w-16"
 						alt="Social trends icon"
 					/>
 					<h2 class="text-xl font-bold">{{ $t('message.title4') }}</h2>
-					<p class="text-xs md:text-sm">
+					<p class="text-md md:text-sm">
 						{{ $t('message.text4') }}
 					</p>
 				</div>
@@ -61,7 +61,7 @@ export default {
 		messages: {
 			en: {
 				message: {
-					focus: 'Focus',
+					focus: 'Our Focus',
 					title1: 'Collection & Research',
 					text1:
 						'Aggregation of information from social media, press publications, academic literature, think tanks and public court documents. ',
@@ -78,7 +78,7 @@ export default {
 			},
 			es: {
 				message: {
-					focus: 'Enfoque',
+					focus: 'Nuestro enfoque',
 					title1: 'Colección e investigación',
 					text1:
 						'Agregación de información de los medios de comunicación social, publicaciones de prensa, literatura académica, grupos de reflexión y documentos judiciales públicos. ',
@@ -99,11 +99,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.box {
+	background-color: white;
+	@apply rounded-md;
+	@apply shadow-md;
+	padding: 1em;
+}
 .desc {
 	color: #0d0d0d;
 }
 .feat-box {
-	background-color: white;
 	h1 {
 		margin-bottom: 10px;
 	}
