@@ -1,15 +1,17 @@
 <template>
 	<div class="title-box">
-		<n-link :to="localePath('/')">
-			<img
-				src="~/assets/images/bw-nn-logo.png"
-				alt="narco.news Logo"
-				class="w-56 md:w-64"
-			/>
-			<p id="high" class="subtitle">
-				{{ $t('message.sub') }}
-			</p>
-		</n-link>
+		<div class="inline-block">
+			<n-link :to="localePath('/')">
+				<img
+					src="~/assets/images/bw-nn-logo.png"
+					alt="narco.news Logo"
+					class="w-56 md:w-64"
+				/>
+				<p id="high" class="subtitle text-md font-semibold">
+					{{ $t('message.sub') }}
+				</p>
+			</n-link>
+		</div>
 	</div>
 </template>
 
@@ -61,7 +63,6 @@ export default {
 }
 .subtitle {
 	display: inline-block;
-	font-weight: 600;
 	letter-spacing: 1;
 	max-width: 230px;
 }

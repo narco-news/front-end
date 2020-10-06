@@ -1,17 +1,16 @@
 <template>
-	<div>
+	<div
+		class="large-barrier md:grid-cols-4 bg-white md:mx-12 p-6 lg:rounded-tl-md lg:rounded-tr-md shadow-inner"
+	>
 		<div class="font-mono float-right text-xs mb-6 mr-2">
 			{{ $t('message.updated') }}: 18/08/2020
 		</div>
 		<div class="mx-12 mb-6 clear-right">
-			<p class="text-md my-6">
+			<p class="text-lg my-6">
 				{{ $t('message.text1') }}
 			</p>
 			<div class="pattern-dots-md p-4 my-2">
-				<div
-					style="background-color: #fbfbfb;"
-					class="rounded border-red border-2 m-2 p-2"
-				>
+				<div class="bg-white rounded border-red border-2 m-2 p-2">
 					<p class="text-sm text-red font-bold my-2">
 						{{ $t('message.question') }}
 					</p>
@@ -191,9 +190,13 @@ export default {
 
 <style lang="scss">
 @import '../node_modules/@braid/vue-formulate/themes/snow/snow.scss';
+.large-barrier {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .form {
-	border: 2px solid #03a688;
 	background-color: #fbfbfb;
+	@apply shadow-lg;
 	@apply rounded-md;
 }
 .success {
