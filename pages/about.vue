@@ -1,37 +1,23 @@
 <template>
-	<div class="p-2 md:p-8">
+	<div
+		class="large-barrier bg-white p-6 lg:p-12 lg:rounded-tl-md lg:rounded-tr-md shadow-inner"
+	>
 		<div class="overflow-hidden mx-2">
-			<div
-				style="animation-duration: 1s;"
-				class="px-2 text-center animate__animated animate__fadeIn"
-			></div>
-			<div class="pattern-dots-md py-2 m-4">
-				<div
-					style="
-						color: #0d0d0d;
-						border: solid 2px #03a688;
-						background-color: #fbfbfb;
-					"
-					class="shadow-md m-6 p-4 text-xs rounded"
-				>
+			<div class="pattern-dots-md p-6 my-6">
+				<div class="quote shadow-md rounded-md text-sm md:text-lg">
 					{{ $t('message.quoteone') }}
 					<span class="italic font-bold">{{ $t('message.quotetwo') }}</span>
 				</div>
 			</div>
 
-			<div class="text-md px-4 pt-2">
+			<div class="text-xl px-4 pt-2">
 				{{ $t('message.textone') }}
 				<span id="highway">{{ $t('message.ic') }}</span>
 				{{ $t('message.texttwo') }}
 
-				<div class="pattern-dots-md py-2 m-4">
+				<div class="pattern-dots-md p-6 my-6">
 					<div
-						style="
-							color: #0d0d0d;
-							border: solid 2px #03a688;
-							background-color: #fbfbfb;
-						"
-						class="p-4 m-5 text-xs h-auto rounded-md shadow-md overflow-hidden"
+						class="quote text-sm md:text-lg h-auto rounded-md shadow-md overflow-hidden"
 					>
 						<span class="float-left italic">
 							{{ $t('message.dt') }}
@@ -299,6 +285,16 @@ export default {
 </script>
 
 <style lang="scss">
+.quote {
+	background-color: white;
+	font-family: 'EB Garamond', sans-serif;
+	padding: 1em 1em;
+	border: 1px solid #03a688;
+}
+.large-barrier {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .color-soc-icons {
 	img {
 		-webkit-transition: -webkit-transform 0.8s ease-in-out;
