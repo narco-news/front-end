@@ -64,6 +64,6 @@ export default {
 .subtitle {
 	display: inline-block;
 	letter-spacing: 1;
-	max-width: 230px;
+	max-width: 240px;
 }
 </style>

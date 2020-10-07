@@ -20,9 +20,12 @@
 						</nuxt-link>
 					</div>
 					<div class="pt-2">
-						<div class="flex flex-row flex-wrap justify-between">
-							<div v-if="post.tags.length > 0" class="flex flex-row gap-2">
-								<div v-for="tag in post.tags.slice(0, 2)" :key="tag.id">
+						<div class="flex flex-col">
+							<div
+								v-if="post.tags.length > 0"
+								class="flex flex-row flex-wrap whitespace-no-wrap gap-2"
+							>
+								<div v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
