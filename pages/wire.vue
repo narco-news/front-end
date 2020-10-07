@@ -102,7 +102,7 @@ export default {
 
 	head() {
 		return {
-			title: this.pageSettings.title,
+			title: 'narco.news - Wire',
 			meta: [
 				{
 					hid: 'author',

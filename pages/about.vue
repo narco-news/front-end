@@ -225,12 +225,7 @@ export default {
 	},
 	head() {
 		return {
-			title:
-				this.twitter_title +
-				' - ' +
-				this.twitter_description +
-				' | ' +
-				this.pageUrl,
+			title: 'narco.news - About',
 			meta: [
 				{
 					hid: 'description',
