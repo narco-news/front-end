@@ -13,13 +13,29 @@
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div v-if="post.tags.length > 0" class="flex flex-row gap-2">
-							<div v-for="tag in post.tags.slice(0, 2)" :key="tag.id">
+						<div v-if="post.tags.length > 0" class="flex flex-row">
+							<div
+								v-for="tag in post.tags.slice(0, 1)"
+								:key="tag.id"
+								class="tags"
+							>
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="tags text-sm uppercase"
-									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+									class="text-sm uppercase mr-1 font-semibold"
+									>{{ tag.name }}</nuxt-link
+								>
+							</div>
+							<div
+								v-for="tag in post.tags.slice(1, 2)"
+								:key="tag.id"
+								class="tags"
+							>
+								<nuxt-link
+									:to="{path: '/tag/' + tag.slug}"
+									:title="tag.name"
+									class="text-sm uppercase"
+									>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
 								>
 							</div>
 						</div>
@@ -34,8 +50,8 @@
 								{{ post.excerpt }}
 							</p>
 						</div>
-						<div class="flex flex-row items-center gap-1">
-							<div class="date whitespace-no-wrap text-sm text-gray-600">
+						<div class="flex flex-row items-center">
+							<div class="date whitespace-no-wrap text-sm text-gray-600 mr-1">
 								{{ post.published_at | dayjs }}
 							</div>
 							<div class="author text-sm md:text-md text-gray-600">

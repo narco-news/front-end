@@ -1,86 +1,108 @@
 <template>
-	<div class="mx-4 lg:mx-20 overflow-y-hidden">
+	<div class="large-barrier mx-4 lg:mx-20 overflow-y-hidden">
 		<div class="row">
-			<div class="xs-12 lg-10 mx-auto animate__animated animate__fadeIn">
+			<div class="mx-auto p-4 md:p-8">
 				<!-- TAGS -->
 				<div class="post-tags md:mx-8">
-					<ul class="list inline">
-						<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
-							<nuxt-link :to="{path: '/tag/' + tag.slug}" :title="tag.name">{{
-								tag.name.replace(/^(#)/, '')
-							}}</nuxt-link>
-						</li>
-					</ul>
-					<social-icon
-						:url="
-							'https://www.linkedin.com/shareArticle/' +
-							'?mini=true' +
-							'&url=' +
-							blogUrl +
-							'/' +
-							post.slug
-						"
-						class="float-right"
-						click="
+					<div class="float-right">
+						<social-icon
+							:url="
+								'https://www.linkedin.com/shareArticle/' +
+								'?mini=true' +
+								'&url=' +
+								blogUrl +
+								'/' +
+								post.slug
+							"
+							class="float-right"
+							click="
 							window.open(href, 'facebook-share', 'width=580,height=296');
 							return false;
 						"
-					>
-						<img
-							src="~/assets/icons/linkedin-rounded.svg"
-							alt="Share article on LinkedIn"
-							title="Share article on LinkedIn"
-							class="w-6"
-						/>
-					</social-icon>
-					<social-icon
-						:url="
-							'https://www.facebook.com/sharer.php?u=' +
-							blogUrl +
-							'/' +
-							post.slug
-						"
-						class="float-right"
-						click="
+						>
+							<img
+								src="~/assets/icons/linkedin-rounded.svg"
+								alt="Share article on LinkedIn"
+								title="Share article on LinkedIn"
+								class="w-6"
+							/>
+						</social-icon>
+						<social-icon
+							:url="
+								'https://www.facebook.com/sharer.php?u=' +
+								blogUrl +
+								'/' +
+								post.slug
+							"
+							class="float-right"
+							click="
 							window.open(href, 'facebook-share', 'width=580,height=296');
 							return false;
 						"
-					>
-						<img
-							src="~/assets/icons/facebook-rounded.svg"
-							alt="Share article on Facebook"
-							title="Share article on Facebook"
-							class="w-6"
-						/>
-					</social-icon>
-					<social-icon
-						:url="
-							'https://twitter.com/share?text=' +
-							post.title +
-							'&url=' +
-							blogUrl +
-							'/' +
-							post.slug
-						"
-						class="float-right"
-						click="
+						>
+							<img
+								src="~/assets/icons/facebook-rounded.svg"
+								alt="Share article on Facebook"
+								title="Share article on Facebook"
+								class="w-6"
+							/>
+						</social-icon>
+						<social-icon
+							:url="
+								'https://twitter.com/share?text=' +
+								post.title +
+								'&url=' +
+								blogUrl +
+								'/' +
+								post.slug
+							"
+							class="float-right"
+							click="
 							window.open(href, 'twitter-share', 'width=550,height=235');
 							return false;
 						"
-					>
-						<img
-							src="~/assets/icons/twitter-rounded.svg"
-							alt="Share article on Twitter"
-							title="Share article on Twitter"
-							class="w-6"
-						/>
-					</social-icon>
+						>
+							<img
+								src="~/assets/icons/twitter-rounded.svg"
+								alt="Share article on Twitter"
+								title="Share article on Twitter"
+								class="w-6"
+							/>
+						</social-icon>
+					</div>
+					<div class="flex flex-col-reverse md:flex-col">
+						<ul class="list inline">
+							<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
+								<nuxt-link
+									:to="{path: '/tag/' + tag.slug}"
+									:title="tag.name"
+									class="text-xl"
+									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<h1 class="post-title text-4xl mt-8 md:mx-8">
+				<ul class="list inline md:mx-8">
+					<li
+						v-for="tag in post.tags.slice(1, 4)"
+						:key="tag.id"
+						class="text-gray-600 text-sm"
+					>
+						<nuxt-link
+							:to="{path: '/tag/' + tag.slug}"
+							:title="tag.name"
+							class="hvr-sink mr-1 md:mr-2"
+							>{{ tag.name.replace(/^(#)/, '') }}
+						</nuxt-link>
+					</li>
+				</ul>
+				<h1 class="post-title text-4xl mt-4 md:mx-8">
 					{{ post.title }}
 				</h1>
+
 				<div>
-					<div class="flex flex-auto my-2 md:mx-8">
+					<div class="flex flex-auto my-2 mb-4 md:mx-8">
 						<div class="post-excerpt">
 							<p v-if="post.custom_excerpt">
 								{{ post.custom_excerpt }}
@@ -139,21 +161,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- TAGS -->
-				<div
-					class="post-tags-bottom text-xs md:text-sm pattern-cross-dots-sm p-2 uppercase"
-				>
-					<ul class="list inline">
-						<li v-for="tag in post.tags.slice(1, 4)" :key="tag.id" class="mx-2">
-							<nuxt-link
-								:to="{path: '/tag/' + tag.slug}"
-								:title="tag.name"
-								class="tags-bottom hvr-float"
-								>#{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
-							>
-						</li>
-					</ul>
 				</div>
 				<article class="single-post">
 					<scroll-progress-bar />
@@ -266,7 +273,7 @@
 											:to="{path: '/tag/' + tag.slug}"
 											:title="tag.name"
 											class="tags-bottom hvr-float"
-											>#{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+											>#{{ tag.name }}</nuxt-link
 										>
 									</li>
 								</ul>
@@ -490,6 +497,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.large-barrier {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .picture {
 	img {
 		object-fit: cover;
