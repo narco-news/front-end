@@ -10,9 +10,7 @@
 			</div>
 			<div class="list col-span-3 md:col-span-1">
 				<Headlines class="mx-4" />
-				<TagsBox class="my-4" />
-				<!-- <hr class="my-6 mx-auto" /> -->
-				<!-- <ButtonsBox /> -->
+				<TagsBox :filter="3" class="my-4" />
 			</div>
 		</div>
 		<Focus class="barrier" />
@@ -27,7 +25,6 @@ import PictureArticleList from '~/components/Home/PictureArticleList';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
 import Headlines from '~/components/Home/Headlines';
 import TagsBox from '~/components/TagsBox';
-// import ButtonsBox from '~/components/ButtonsBox';
 import SitAware from '~/components/Home/SitAware';
 import Focus from '~/components/Home/Focus';
 import FAQ from '~/components/Home/FAQ';
@@ -40,7 +37,6 @@ export default {
 		FeaturedArticles,
 		Headlines,
 		TagsBox,
-		// ButtonsBox,
 		SitAware,
 		Focus,
 		FAQ,

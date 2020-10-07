@@ -3,7 +3,7 @@
 		class="flex flex-row flex-wrap justify-center content-center text-md font-semibold text-blue-500 mb-4"
 	>
 		<div v-for="tag in pageTags" :key="tag.id">
-			<div v-if="tag.count.posts >= 3">
+			<div v-if="tag.count.posts >= filter">
 				<nuxt-link
 					:to="{path: '/tag/' + tag.slug}"
 					class="tag hover:text-blue-300 hover:underline"
@@ -18,6 +18,12 @@
 <script>
 export default {
 	name: 'TagsBox',
+	props: {
+		filter: {
+			type: Number,
+			default: 3
+		}
+	},
 	computed: {
 		pageTags() {
 			return this.$store.state.pageTags;

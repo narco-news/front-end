@@ -10,7 +10,7 @@
 				</div>
 			</div>
 
-			<div class="text-xl px-4 pt-2">
+			<div class="text-lg px-4 pt-2">
 				{{ $t('message.textone') }}
 				<span id="highway">{{ $t('message.ic') }}</span>
 				{{ $t('message.texttwo') }}

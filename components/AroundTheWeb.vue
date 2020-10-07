@@ -3,7 +3,7 @@
 		<h1 class="flex flex-row justify-end mr-2 text-xs">
 			{{ $t('message.aroundtheweb') }}
 		</h1>
-		<div class="box h-8 py-1 shadow-inner">
+		<div class="box h-8 py-1">
 			<client-only>
 				<dynamic-marquee
 					direction="row"

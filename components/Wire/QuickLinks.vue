@@ -1,5 +1,5 @@
 <template>
-	<div class="box shadow-inner my-4">
+	<div class="box">
 		<div class="p-2 mx-2">
 			<button
 				class="float-right text-gray-700 text-xs uppercase"
@@ -23,8 +23,10 @@
 			<p class="font-semibold text-xs uppercase text-gray-700">
 				{{ $t('message.pressreleases') }}
 			</p>
-			<hr width="95%" class="border-gray-700" />
-			<div class="link flex h-auto whitespace-no-wrap p-2 font-mono text-sm">
+			<hr class="border-gray-700" />
+			<div
+				class="link flex flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
+			>
 				<div class="p-1">
 					<a
 						href="https://www.dea.gov/press-releases"
@@ -90,7 +92,7 @@
 			<p class="font-semibold text-xs uppercase text-gray-700">
 				{{ $t('message.data') }}
 			</p>
-			<hr width="95%" class="border-gray-700" />
+			<hr class="border-gray-700" />
 			<div
 				class="link flex flex-row flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
 			>
@@ -106,8 +108,8 @@
 				</div>
 				<!--  -->
 				<div class="p-1 mr-2">
-					<a href="https://elcri.men/en" target="_blank" tabindex="8">
-						<span class="borderLeftRight">ELCRI.en</span>
+					<a href="https://elcri.men" target="_blank" tabindex="8">
+						<span class="borderLeftRight">ELCRI.men</span>
 					</a>
 				</div>
 				<!--  -->

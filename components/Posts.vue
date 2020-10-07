@@ -16,23 +16,19 @@
 						</nuxt-link>
 					</div>
 					<div class="p-1">
-						<div class="flex flex-row justify-between">
-							<div v-if="post.tags.length > 0">
-								<div v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
+						<div class="flex flex-row justify-between flex-wrap-reverse">
+							<div
+								v-if="post.tags.length > 0"
+								class="flex flex-row flex-wrap justify-between whitespace-no-wrap"
+							>
+								<div v-for="tag in post.tags" :key="tag.id">
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="tags text-gray-700 font-bold"
+										class="tags text-gray-700 font-bold mr-1"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</div>
-							</div>
-							<div>
-								<reading-time
-									:content="post.html"
-									style="font-size: 11px; font-family: 'Courier Prime';"
-									class="reading text-gray-700 whitespace-no-wrap"
-								/>
 							</div>
 						</div>
 						<div
@@ -41,7 +37,7 @@
 						>
 							Featured
 						</div>
-						<div class="published_at text-sm block">
+						<div class="published_at text-sm block text-gray-600">
 							{{ post.published_at | dayjs }}
 						</div>
 						<div class="title text-xl">
@@ -51,12 +47,12 @@
 								}}</nuxt-link>
 							</h1>
 						</div>
-						<!-- <div class="">
+						<div class="">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
 							</p>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</article>
@@ -91,7 +87,7 @@ import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
-import ReadingTime from '~/components/ReadingTime.vue';
+// import ReadingTime from '~/components/ReadingTime.vue';
 
 dayjs.extend(advancedFormat);
 dayjs.extend(relativeTime);
@@ -99,11 +95,11 @@ dayjs.extend(relativeTime);
 export default {
 	name: 'PostList',
 
-	components: {ReadingTime},
+	components: {},
 
 	filters: {
 		dayjs(date) {
-			return dayjs().to(date);
+			return dayjs(date).format('DD/MM/YYYY');
 		}
 	},
 
@@ -228,11 +224,11 @@ export default {
 }
 
 .published_at {
-	color: #03a688;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .tags {
+	color: #03a688;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 600;
