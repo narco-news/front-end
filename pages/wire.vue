@@ -150,12 +150,13 @@ export default {
 			en: {
 				message: {
 					welcome:
-						'Everything published on this website can be found in these pages. In addition, below you will find topic relevant off-site quick links, important areas of the website and the most popular tags.'
+						'Everything published on this website can be found in these pages. Also, below you will find topic relevant off-site quick links, important areas of the website and the most popular tags.'
 				}
 			},
 			es: {
 				message: {
-					welcome: ''
+					welcome:
+						'Todo lo que se publica en este sitio web se puede encontrar en estas páginas. Además, a continuación encontrará enlaces rápidos de temas relevantes fuera del sitio, áreas importantes del sitio web y las etiquetas más populares.'
 				}
 			}
 		}
