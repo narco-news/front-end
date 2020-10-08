@@ -22,7 +22,7 @@
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="text-sm uppercase mr-1 font-semibold"
+									class="text-xs md:text-sm uppercase mr-1 font-semibold"
 									>{{ tag.name }}</nuxt-link
 								>
 							</div>
@@ -34,7 +34,7 @@
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="text-sm uppercase"
+									class="text-xs md:text-sm uppercase"
 									>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
 								>
 							</div>
@@ -50,7 +50,7 @@
 								{{ post.excerpt }}
 							</p>
 						</div>
-						<div class="flex flex-row items-center">
+						<div class="flex flex-row flex-wrap items-center">
 							<div class="date whitespace-no-wrap text-sm text-gray-600 mr-1">
 								{{ post.published_at | dayjs }}
 							</div>
@@ -116,7 +116,7 @@ export default {
 }
 .articles {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 	grid-auto-flow: dense;
 	grid-gap: 1em;
 	article {

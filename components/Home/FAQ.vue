@@ -1,6 +1,6 @@
 <template>
 	<div class="my-6">
-		<h1 class="desc text-3xl font-bold my-4 ml-8 md:ml-12">
+		<h1 class="desc text-2xl md:text-3xl font-bold my-4 ml-8 md:ml-12">
 			{{ $t('message.faq') }}
 		</h1>
 		<div class="bg-white shadow-inner rounded-md mx-8">

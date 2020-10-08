@@ -25,11 +25,14 @@
 							</div>
 						</div>
 						<span
-							class="published_at text-xs md:text-sm whitespace-no-wrap text-gray-700"
+							class="published_at text-xs md:text-sm whitespace-no-wrap text-gray-600"
 							>{{ post.published_at | dayjs }}</span
 						>
 					</div>
-					<h2 v-if="post.title" class="title capitalize md:text-xl lg:text-2xl">
+					<h2
+						v-if="post.title"
+						class="title capitalize md:text-lg lg:text-xl my-1"
+					>
 						<nuxt-link
 							:to="{path: '/' + post.slug}"
 							:title="post.title"
@@ -114,7 +117,6 @@ export default {
 		letter-spacing: 0.5px;
 		font-family: 'Lora', sans-serif;
 		font-weight: 500;
-		text-decoration: underline;
 	}
 }
 

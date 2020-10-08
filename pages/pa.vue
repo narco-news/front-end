@@ -1,12 +1,14 @@
 <template>
-	<div class="feeds m-4">
+	<div
+		class="large-barrier feeds p-4 md:p-8 bg-white shadow-inner lg:rounded-tr-md lg:rounded-tl-md"
+	>
 		<p class="intro my-2 text-sm">{{ $t('message.intro') }}</p>
 		<h1 class="text-xl font-bold underline mb-2">
 			{{ $t('message.spanishblogs') }}
 		</h1>
 		<details class="mb-6">
-			<summary class="text-sm">More info</summary>
-			<p class="text-xs px-4 py-2 mb-4 rounded-md bg-white">
+			<summary class="text-sm select-none cursor-pointer">More info</summary>
+			<p class="text-xs px-4 py-2 mb-4">
 				<i18n path="message.sbtext" tag="p">
 					<a
 						href="https://en.wikipedia.org/wiki/Blog_del_Narco"
@@ -25,7 +27,7 @@
 			</p>
 		</details>
 
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
+		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			<LongFeed feedTitle="El Blog del Narco" :feedUrl="ebdn" class="mb-4" />
 			<LongFeed feedTitle="El Blog del Narco 2" :feedUrl="ebdn2" class="mb-4" />
 			<LongFeed feedTitle="Valor por Tamaulipas" :feedUrl="vpt" class="mb-4" />
@@ -40,7 +42,7 @@
 		<p class="text-xs px-4 mb-4">
 			{{ $t('message.entext') }}
 		</p>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
+		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			<LongFeed feedTitle="Borderland Beat" :feedUrl="bb" class="mb-4" />
 			<LongFeed feedTitle="Breitbart" :feedUrl="bbtx" class="mb-4" />
 			<LongFeed feedTitle="Border Report" :feedUrl="br" class="mb-4" />
@@ -51,7 +53,7 @@
 		<h1 class="text-xl font-bold underline mb-2">
 			Research & Investigative
 		</h1>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
+		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			<LongFeed feedTitle="InSight Crime" :feedUrl="ic" class="mb-4" />
 			<LongFeed feedTitle="El Centro" :feedUrl="swec" class="mb-4" />
 		</div>
@@ -61,7 +63,7 @@
 		<p class="text-xs px-4 mb-4">
 			{{ $t('message.tamtext') }}
 		</p>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
+		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			<LongFeed feedTitle="Hoy Tamaulipas" :feedUrl="ht" class="mb-4" />
 			<LongFeed feedTitle="El Mañana Reynosa" :feedUrl="em" class="mb-4" />
 			<LongFeed feedTitle="El Mañana NL" :feedUrl="emnl" class="mb-4" />
@@ -80,14 +82,10 @@
 		<p class="text-xs px-4 mb-4">
 			{{ $t('message.gtext') }}
 		</p>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3">
+		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			<LongFeed feedTitle="El Sol de Bajío" :feedUrl="esdb" class="mb-4" />
 			<LongFeed feedTitle="Noticieros En Línea" :feedUrl="nel" class="mb-4" />
-			<LongFeed
-				feedTitle="El Heraldo de León"
-				:feedUrl="ehdl"
-				class="mb-4 capitalize"
-			/>
+			<LongFeed feedTitle="El Heraldo de León" :feedUrl="ehdl" class="mb-4" />
 			<LongFeed feedTitle="Guanajuato Informa" :feedUrl="gi" class="mb-4" />
 			<LongFeed feedTitle="Periódico Correo" :feedUrl="pc" class="mb-4" />
 			<LongFeed feedTitle="Zona Franca" :feedUrl="zf" class="mb-4" />
@@ -242,8 +240,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+summary {
+	outline: none;
+}
+
+.large-barrier {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .intro {
+	background-color: #fce0dd;
+	border-left: 4px solid #f26457;
 	color: #f26457;
+	max-width: 500px;
+	padding: 1em 1em;
+	margin-bottom: 2em;
+	font-weight: 500;
 }
 .feeds {
 	.feeds-wrapper {

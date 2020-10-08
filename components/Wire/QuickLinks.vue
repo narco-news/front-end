@@ -25,7 +25,7 @@
 			</p>
 			<hr class="border-gray-700" />
 			<div
-				class="link flex flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
+				class="link flex flex-wrap h-auto whitespace-no-wrap font-mono text-sm"
 			>
 				<div class="p-1">
 					<a
@@ -115,7 +115,9 @@
 				<!--  -->
 				<div class="p-1 mr-2">
 					<a href="http://semaforo.com.mx" target="_blank" tabindex="9">
-						<span class="borderLeftRight">Semáforo Delictivo</span>
+						<span class="borderLeftRight whitespace-normal"
+							>Semáforo Delictivo</span
+						>
 					</a>
 				</div>
 				<div class="p-1">

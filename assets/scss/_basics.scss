@@ -41,7 +41,6 @@ p {
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
-	list-style: none;
 
 	&.inline {
 		display: inline-flex;
@@ -119,10 +118,10 @@ p {
 }
 
 blockquote {
-	font-size: 16px;
+	font-size: 14px;
 	background-color: #e6f6f3;
 	color: #3c403d;
-	@apply shadow-sm;
+	@apply shadow-md;
 	position: relative;
 	margin: 2rem 0 !important;
 	padding: 1.5rem 2rem 1.5rem 3rem;

@@ -1,5 +1,7 @@
 <template>
-	<div class="large-barrier mx-4 lg:mx-20 overflow-y-hidden">
+	<div
+		class="large-barrier mx-4 lg:mx-20 overflow-y-hidden bg-white shadow-inner lg:rounded-tl-md lg:rounded-tr-md"
+	>
 		<div class="row">
 			<div class="mx-auto p-4 md:p-8">
 				<!-- TAGS -->
@@ -261,7 +263,7 @@
 							</div>
 
 							<div
-								class="post-tags-bottom text-xs md:text-sm uppercase pattern-cross-dots-sm py-4"
+								class="post-tags-bottom text-xs md:text-sm uppercase pattern-cross-dots-sm py-4 mt-4"
 							>
 								<ul class="list inline">
 									<li
@@ -272,8 +274,8 @@
 										<nuxt-link
 											:to="{path: '/tag/' + tag.slug}"
 											:title="tag.name"
-											class="tags-bottom hvr-float"
-											>#{{ tag.name }}</nuxt-link
+											class="text-xs tags-bottom hvr-float"
+											>{{ tag.name }}</nuxt-link
 										>
 									</li>
 								</ul>
@@ -537,11 +539,10 @@ export default {
 		text-decoration: none;
 	}
 	li {
-		background-color: #f9f9f9;
 		padding: 0.5em;
 	}
 	.tags-bottom {
-		box-shadow: inset 0 -12px 0 0 #f2cb05;
+		box-shadow: inset 0 -10px 0 0 #f2cb05;
 		font-weight: 700;
 	}
 }

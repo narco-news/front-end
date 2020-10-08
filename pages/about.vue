@@ -4,20 +4,20 @@
 	>
 		<div class="overflow-hidden mx-2">
 			<div class="pattern-dots-md p-6 my-6">
-				<div class="quote shadow-md rounded-md text-sm md:text-lg">
+				<div class="quote shadow-md rounded-md text-sm md:text-md">
 					{{ $t('message.quoteone') }}
 					<span class="italic font-bold">{{ $t('message.quotetwo') }}</span>
 				</div>
 			</div>
 
-			<div class="text-lg px-4 pt-2">
+			<div class="text-md md:text-lg px-4 pt-2">
 				{{ $t('message.textone') }}
 				<span id="highway">{{ $t('message.ic') }}</span>
 				{{ $t('message.texttwo') }}
 
 				<div class="pattern-dots-md p-6 my-6">
 					<div
-						class="quote text-sm md:text-lg h-auto rounded-md shadow-md overflow-hidden"
+						class="quote text-sm md:text-md h-auto rounded-md shadow-md overflow-hidden"
 					>
 						<span class="float-left italic">
 							{{ $t('message.dt') }}

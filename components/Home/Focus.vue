@@ -1,6 +1,6 @@
 <template>
 	<div class="p-2">
-		<h1 class="desc text-3xl font-bold my-4 ml-8 md:ml-12">
+		<h1 class="desc text-2xl md:text-3xl font-bold my-4 ml-8 md:ml-12">
 			{{ $t('message.focus') }}
 		</h1>
 		<div class="feat-box">
