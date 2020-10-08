@@ -12,7 +12,7 @@
 
 			<div class="text-md md:text-lg px-4 pt-2">
 				{{ $t('message.textone') }}
-				<span id="highway">{{ $t('message.ic') }}</span>
+				<span>{{ $t('message.ic') }}</span>
 				{{ $t('message.texttwo') }}
 
 				<div class="pattern-dots-md p-6 my-6">
@@ -154,7 +154,6 @@
 </template>
 
 <script>
-import {annotate} from 'rough-notation';
 export default {
 	data() {
 		return {
@@ -164,22 +163,6 @@ export default {
 			feature_image: 'https://narco.news/images/twt-banner.png',
 			title: 'About Us'
 		};
-	},
-	mounted() {
-		this.highlight();
-	},
-	methods: {
-		highlight() {
-			const e = document.querySelector('#highway');
-			const annotation = annotate(e, {
-				type: 'highlight',
-				color: '#FFD54F',
-				strokeWidth: 1,
-				iterations: 2,
-				animationDuration: 2000
-			});
-			annotation.show();
-		}
 	},
 	i18n: {
 		messages: {

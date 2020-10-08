@@ -7,7 +7,7 @@
 					alt="narco.news Logo"
 					class="w-56 md:w-64"
 				/>
-				<p id="high" class="subtitle text-md font-semibold">
+				<p class="subtitle">
 					{{ $t('message.sub') }}
 				</p>
 			</n-link>
@@ -16,24 +16,7 @@
 </template>
 
 <script>
-import {annotate} from 'rough-notation';
 export default {
-	mounted() {
-		this.highlight();
-	},
-	methods: {
-		highlight() {
-			const e = document.querySelector('#high');
-			const annotation = annotate(e, {
-				type: 'highlight',
-				color: '#FFD54F',
-				strokeWidth: 2,
-				iterations: 3,
-				animationDuration: 1500
-			});
-			annotation.show();
-		}
-	},
 	i18n: {
 		messages: {
 			en: {
@@ -65,5 +48,6 @@ export default {
 	display: inline-block;
 	letter-spacing: 1;
 	max-width: 260px;
+	font-size: 14px;
 }
 </style>

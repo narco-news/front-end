@@ -22,7 +22,7 @@
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="text-xs md:text-sm uppercase mr-1 font-semibold"
+									class="text-xs md:text-xs uppercase mr-1 font-semibold"
 									>{{ tag.name }}</nuxt-link
 								>
 							</div>
@@ -34,7 +34,7 @@
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="text-xs md:text-sm uppercase"
+									class="text-xs md:text-xs uppercase"
 									>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
 								>
 							</div>
