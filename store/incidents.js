@@ -15,7 +15,7 @@ export const state = () => ({
 					muni: 'Rincón de Tamayo, Celaya',
 					desc: 'plastic bags with human remains were found at the entrance of the Rincón de Tamayo community, next to the Nezahualcoyotl elementary school',
 					links: [
-'https://www.am.com.mx/guanajuato/noticias/Encapuchados-abandonan-restos-humanos-frente-a-primaria-20200820-0001.html', 'https://www.elsoldesalamanca.com.mx/policiaca/localizan-restos-humanos-en-bolsas-de-plastico-en-la-comunidad-rincon-de-tamayo-5648839.html?fbclid=IwAR0aDe97IQDJocLpukNBggB0BpJYbJxyolXvXehdJW36VF1ZKm0gRC2gyQI'
+						'https://www.am.com.mx/guanajuato/noticias/Encapuchados-abandonan-restos-humanos-frente-a-primaria-20200820-0001.html', 'https://www.elsoldesalamanca.com.mx/policiaca/localizan-restos-humanos-en-bolsas-de-plastico-en-la-comunidad-rincon-de-tamayo-5648839.html?fbclid=IwAR0aDe97IQDJocLpukNBggB0BpJYbJxyolXvXehdJW36VF1ZKm0gRC2gyQI'
 					]
 				}
 			},
@@ -69,7 +69,7 @@ export const state = () => ({
 						'https://www.heraldoleon.mx/dejan-cadaver-en-comunidad-rural-de-celaya/', 'https://www.valorportamaulipas.info/2020/08/el-azul-busca-al-yeyo-en-sanlorenzo.html'
 					]
 				}
-			},                                                
+			},
 			{
 				type: 'Feature',
 				geometry: {

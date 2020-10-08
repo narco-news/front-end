@@ -182,10 +182,6 @@ export default {
 
 article.article:nth-child(1) {
 	grid-column: 1 / -2;
-	.img-box {
-		@apply shadow-md;
-		border: 1px solid black;
-	}
 	img {
 		width: 100%;
 		object-fit: cover;
@@ -205,6 +201,7 @@ article.article:nth-child(1) {
 }
 .article {
 	img {
+		@apply shadow-sm;
 		height: 100px;
 		width: 100%;
 		object-fit: cover;
