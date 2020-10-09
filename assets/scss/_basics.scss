@@ -8,8 +8,8 @@ body {
 	width: 100%;
 	min-height: calc(100vh - #{$navbar-height + 1rem});
 	margin: 0;
-	background-color: $light;
 	font-family: $font-body;
+	background-color: $light;
 	color: $text-color;
 }
 

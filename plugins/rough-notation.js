@@ -1,6 +1,4 @@
 import Vue from 'vue';
-import {annotate} from 'rough-notation';
-// Or using unpkg
-// import { annotate } from 'https://unpkg.com/rough-notation?module';
+import VueRoughNotation from 'vue-rough-notation';
 
-Vue.use('ann', {annotate});
+Vue.use(VueRoughNotation);

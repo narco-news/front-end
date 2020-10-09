@@ -3,32 +3,39 @@
 		class="large-barrier bg-white p-6 lg:p-12 lg:rounded-tl-md lg:rounded-tr-md shadow-inner"
 	>
 		<div class="overflow-hidden mx-2">
-			<div class="pattern-dots-md p-6 my-6">
+			<div class="pattern pattern-dots-md p-6 my-6">
 				<div class="quote shadow-md rounded-md text-sm md:text-md">
 					{{ $t('message.quoteone') }}
-					<span class="italic font-bold">{{ $t('message.quotetwo') }}</span>
+					<span class="font-bold">{{ $t('message.quotetwo') }}</span>
 				</div>
 			</div>
 
 			<div class="text-md md:text-lg px-4 pt-2">
 				{{ $t('message.textone') }}
-				<span>{{ $t('message.ic') }}</span>
+				<RoughNotation
+					:is-show="isShow"
+					:iterations="3"
+					:animationDuration="1500"
+					type="highlight"
+					color="#FFD54F"
+				>
+					<span>{{ $t('message.ic') }}</span>
+				</RoughNotation>
 				{{ $t('message.texttwo') }}
 
-				<div class="pattern-dots-md p-6 my-6">
+				<div class="pattern pattern-dots-md p-6 my-6">
 					<div
 						class="quote text-sm md:text-md h-auto rounded-md shadow-md overflow-hidden"
 					>
-						<span class="float-left italic">
-							{{ $t('message.dt') }}
-						</span>
+						<span class="float-left"> "{{ $t('message.dt') }}" </span>
 
 						<div
 							style="
-								color: #262626;
+								color: #03a688;
 								font-weight: 600;
 								font-size: 9px;
 								font-family: 'Courier Prime';
+								max-width: 300px;
 							"
 							class="mt-2 float-right text-right"
 						>
@@ -157,6 +164,7 @@
 export default {
 	data() {
 		return {
+			isShow: 'true',
 			twitter_description:
 				'Open source research and tooling focused on the global war on the drugs',
 			twitter_title: 'narco.news',
@@ -263,6 +271,10 @@ export default {
 </script>
 
 <style lang="scss">
+.pattern {
+	max-width: 600px;
+	margin: 1em auto;
+}
 .quote {
 	background-color: white;
 	font-family: 'EB Garamond', sans-serif;

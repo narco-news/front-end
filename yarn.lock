@@ -1138,11 +1138,6 @@
     js-yaml "^3.13.1"
     json5 "^2.1.1"
 
-"@juggle/resize-observer@^3.1.2":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.1.3.tgz#d7373eb9a1afc371342b8cf1a07e34368f3d65d7"
-  integrity sha512-y7qc6SzZBlSpx8hEDfV0S9Cx6goROX/vBhS2Ru1Q78Jp1FlCMbxp7UcAN90rLgB3X8DSMBgDFxcmoG/VfdAhFA==
-
 "@mapbox/fusspot@^0.4.0":
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/@mapbox/fusspot/-/fusspot-0.4.0.tgz#5ac625b5ed31695fda465fb0413ee0379bdf553c"
@@ -1953,11 +1948,6 @@
   version "0.2.28"
   resolved "https://registry.yarnpkg.com/@types/relateurl/-/relateurl-0.2.28.tgz#6bda7db8653fa62643f5ee69e9f69c11a392e3a6"
   integrity sha1-a9p9uGU/piZD9e5p6facEaOS46Y=
-
-"@types/resize-observer-browser@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@types/resize-observer-browser/-/resize-observer-browser-0.1.3.tgz#5cca2445e6fc34a380760bd6ef8c492863469c47"
-  integrity sha512-3tGjLIDH8L57fWOfC7NVn/BbGQD7pXwbkk2+8Z4hK/S7kOIv1MUN4nkKjfx0qg4ctkukjzp3Bgr/Z+Hq5ZQZTQ==
 
 "@types/serve-static@*", "@types/serve-static@^1.13.3":
   version "1.13.3"
@@ -3915,11 +3905,6 @@ core-js@^2.6.5:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
-
-core-js@^3.4.4:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
-  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -12251,16 +12236,6 @@ vue-digital-transform@^1.1.1:
   dependencies:
     vue "^2.6.11"
 
-vue-dynamic-marquee@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/vue-dynamic-marquee/-/vue-dynamic-marquee-0.1.6.tgz#477f626ea57cd7326d53e01d6e0033456112a137"
-  integrity sha512-1Q0E9HisGqC0BwRWYEeMQ1hwmbwWjq7mSrfxVO0B+9Da/R2qMuTd32Hn7S4s58ylqwADHvjDpGcEcAiBmIoNsw==
-  dependencies:
-    "@juggle/resize-observer" "^3.1.2"
-    "@types/resize-observer-browser" "^0.1.3"
-    core-js "^3.4.4"
-    vue "^2.6.10"
-
 vue-eslint-parser@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.0.0.tgz#a4ed2669f87179dedd06afdd8736acbb3a3864d6"
@@ -12349,6 +12324,13 @@ vue-odometer@^1.0.2:
   dependencies:
     lodash latest
 
+vue-rough-notation@^0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/vue-rough-notation/-/vue-rough-notation-0.1.11.tgz#6099a4ed2fece38607657708c61cb6ac88a596c4"
+  integrity sha512-lkLGn4naTyra9P8L8TLCED1sUuS1FK314Hize+vHY3jdhV3XWbm1cDWTePRm1B5Buz317yeXu1FPXK8E6E88ug==
+  dependencies:
+    rough-notation "^0.4.0"
+
 vue-router@^3.3.4:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.4.tgz#ad0c27f6353107ed527afa3afc5da69ce3ea3841"
@@ -12394,7 +12376,7 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
 
-vue@^2.5.11, vue@^2.5.17, vue@^2.6.10, vue@^2.6.11:
+vue@^2.5.11, vue@^2.5.17, vue@^2.6.11:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==

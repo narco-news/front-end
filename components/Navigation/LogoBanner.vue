@@ -7,9 +7,19 @@
 					alt="narco.news Logo"
 					class="w-56 md:w-64"
 				/>
-				<p class="subtitle">
-					{{ $t('message.sub') }}
-				</p>
+				<div class="subtitle">
+					<RoughNotation
+						:is-show="isShow"
+						:iterations="3"
+						:animationDuration="1500"
+						type="highlight"
+						color="#FFD54F"
+					>
+						<span class="text-md">
+							{{ $t('message.sub') }}
+						</span>
+					</RoughNotation>
+				</div>
 			</n-link>
 		</div>
 	</div>
@@ -17,6 +27,11 @@
 
 <script>
 export default {
+	data() {
+		return {
+			isShow: true
+		};
+	},
 	i18n: {
 		messages: {
 			en: {
@@ -45,9 +60,8 @@ export default {
 	}
 }
 .subtitle {
-	display: inline-block;
-	letter-spacing: 1;
-	max-width: 260px;
-	font-size: 14px;
+	max-width: 280px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
 }
 </style>

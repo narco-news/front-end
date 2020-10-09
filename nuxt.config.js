@@ -113,7 +113,7 @@ export default async () => {
 				urls: [
 					'https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap',
 					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap',
-					'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet',
+					'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap',
 					'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap'
 				]
 			}
@@ -165,7 +165,6 @@ export default async () => {
 			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
 			{src: '~/plugins/rough-notation.js', ssr: false},
-			{src: '~/plugins/vue-dynamic-marquee.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'}
 		],
 
