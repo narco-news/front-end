@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-2 md:mx-8">
+	<div class="md:mx-4">
 		<!-- <div class="heading mb-4">
 			<h2 class="text-3xl font-bold">Featured Articles</h2>
 		</div> -->
@@ -18,17 +18,17 @@
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div class="flex flex-col md:flex-row md:justify-between">
+						<div class="flex flex-col flex-wrap md:flex-row md:justify-between">
 							<div class="author uppercase text-sm md:text-md">
 								<span>BY</span>
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
 									:title="post.primary_author.name"
-									class="font-bold"
+									class="font-bold whitespace-no-wrap text-gray-600"
 									>{{ post.primary_author.name }}</nuxt-link
 								>
 							</div>
-							<div class="date text-sm">
+							<div class="date text-sm text-gray-600">
 								{{ post.published_at | dayjs }}
 							</div>
 						</div>
@@ -51,20 +51,20 @@
 							</nuxt-link>
 						</h2>
 
-						<div class="excerpt p-1">
+						<div class="excerpt p-1 text-gray-700">
 							<p v-if="post.custom_excerpt" class="mb-4">
 								{{ post.custom_excerpt }}
 							</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt" class="mb-4">
 								{{ post.excerpt }}
 							</p>
-							<nuxt-link
+							<!-- <nuxt-link
 								class="post-read-more bt text-white font-bold py-2 px-2 rounded"
 								:to="{path: '/' + post.slug}"
 								title="Read more"
 							>
 								Read More
-							</nuxt-link>
+							</nuxt-link> -->
 						</div>
 					</div>
 				</div>
@@ -108,25 +108,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.heading {
-	h2 {
-		display: grid;
-		grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
-		align-items: center;
-		text-align: center;
-		grid-gap: 10px;
-		width: 100%;
-		color: #0d0d0d;
-		font-family: 'EB Garamond', sans-serif;
-	}
-
-	h2:before,
-	h2:after {
-		content: '';
-		border-top: 2px solid #0d0d0d;
-	}
-}
-
 .bt {
 	margin: 1em 0;
 	color: #616161;
@@ -139,18 +120,16 @@ export default {
 
 .articles {
 	display: grid;
-	grid-template-columns: (auto-fit, minmax(180px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	grid-auto-flow: dense;
 	.date {
-		color: #6e7381;
-		font-weight: 600;
 		text-transform: uppercase;
 	}
 	.author {
 		color: #6e7381;
 	}
 	.article:nth-child(1) {
-		grid-column: span 2;
+		grid-column: 1 / -1;
 		.title {
 			text-transform: capitalize;
 			font-size: 32px;
@@ -166,13 +145,14 @@ export default {
 			}
 		}
 		img {
-			height: 300px;
+			height: 200px;
 			width: 100%;
 			object-fit: cover;
 		}
 	}
 	.article:nth-child(2),
 	.article:nth-child(3) {
+		grid-column: span 3;
 		margin-top: 2em;
 		padding: 0.5em;
 		.image {
@@ -189,7 +169,7 @@ export default {
 			font-family: 'EB Garamond', sans-serif;
 		}
 		img {
-			height: 150px;
+			height: 120px;
 			width: 100%;
 			object-fit: cover;
 		}

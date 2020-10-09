@@ -1,17 +1,17 @@
 <template>
 	<div class="list my-4 md:my-0">
-		<article v-for="post in posts.slice(8, 18)" :key="post.id" class="article">
+		<article v-for="post in posts.slice(8, 14)" :key="post.id" class="article">
 			<ul>
 				<li class="mb-1">
 					<div
-						class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+						class="flex flex-col flex-wrap lg:flex-row lg:justify-between lg:items-center"
 					>
 						<div v-if="post.tags.length > 0" class="flex flex-row">
 							<div v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="tags text-xs uppercase mr-2 font-semibold"
+									class="tags text-xs uppercase mr-2 font-semibold whitespace-no-wrap"
 									>{{ tag.name.replace(/^(#)/, '') }}&nbsp;&nbsp;•</nuxt-link
 								>
 							</div>
@@ -19,7 +19,7 @@
 								<nuxt-link
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
-									class="tags text-xs uppercase"
+									class="tags text-xs uppercase whitespace-no-wrap"
 									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 								>
 							</div>

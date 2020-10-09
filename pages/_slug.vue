@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="large-barrier mx-4 lg:mx-20 overflow-y-hidden bg-white shadow-inner lg:rounded-tl-md lg:rounded-tr-md"
+		class="large-barrier mx-4 lg:mx-20 bg-white shadow-inner lg:rounded-tl-md lg:rounded-tr-md"
 	>
 		<div class="row">
 			<div class="mx-auto p-4 md:p-8">
@@ -285,17 +285,7 @@
 				</article>
 			</div>
 		</div>
-		<ScrollToTop>
-			<a>
-				<div class="top shadow-md rounded-md">
-					<img
-						src="~/assets/icons/arrow-up.svg"
-						alt="Scroll to top"
-						title="Scroll to top"
-					/>
-				</div>
-			</a>
-		</ScrollToTop>
+		<ScrollToTop />
 	</div>
 </template>
 

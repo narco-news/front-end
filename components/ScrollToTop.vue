@@ -1,10 +1,12 @@
 <template>
-	<a
-		v-show="visible"
-		class="bottom-right animate__animated animate__slideInRight"
-		@click="scrollTop"
-	>
-		<slot></slot>
+	<a v-show="visible" class="bottom-right" @click="scrollTop">
+		<p class="bg-red rounded-md p-1 animate__animated animate__slideInRight">
+			<img
+				src="~/assets/icons/arrow-up.svg"
+				alt="Scroll to top"
+				title="Scroll to top"
+			/>
+		</p>
 	</a>
 </template>
 

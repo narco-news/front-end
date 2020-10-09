@@ -15,7 +15,7 @@
 						type="highlight"
 						color="#FFD54F"
 					>
-						<span class="text-md">
+						<span class="text-sm md:text-md">
 							{{ $t('message.sub') }}
 						</span>
 					</RoughNotation>
@@ -60,7 +60,7 @@ export default {
 	}
 }
 .subtitle {
-	max-width: 280px;
+	max-width: 300px;
 	font-weight: 600;
 	letter-spacing: 0.4px;
 }
