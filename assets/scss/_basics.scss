@@ -181,7 +181,7 @@ main {
 .warning {
 	width: 85%;
 	height: 100%;
-	margin: 1em auto;
+	margin: 1em 0;
 	padding: 0.25em 1em;
 	background-color: #fce0dd;
 	border-left: 4px solid #f26457;
@@ -189,6 +189,7 @@ main {
 	color: #f26457;
 	font-size: 13px;
 	font-weight: 700;
+	font-family: 
 
 	&::after {
 		content: 'This article contains graphic and disturbing content. Reader discretion is advised.';
