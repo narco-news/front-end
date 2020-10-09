@@ -12,7 +12,7 @@
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
 									class="tags text-xs uppercase mr-2 font-semibold whitespace-no-wrap"
-									>{{ tag.name.replace(/^(#)/, '') }}&nbsp;&nbsp;•</nuxt-link
+									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 								>
 							</div>
 							<div v-for="tag in post.tags.slice(1, 2)" :key="tag.id">
@@ -20,7 +20,7 @@
 									:to="{path: '/tag/' + tag.slug}"
 									:title="tag.name"
 									class="tags text-xs uppercase whitespace-no-wrap"
-									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+									>•&nbsp;&nbsp;{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 								>
 							</div>
 						</div>

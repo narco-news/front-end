@@ -35,7 +35,7 @@
 								</div>
 							</div>
 							<div
-								class="published_at block text-xs md:text-sm whitespace-no-wrap text-gray-700"
+								class="published_at block text-xs whitespace-no-wrap text-gray-700"
 							>
 								{{ post.published_at | dayjs }}
 							</div>
