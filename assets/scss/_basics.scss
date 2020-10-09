@@ -181,16 +181,15 @@ main {
 .warning {
 	width: 85%;
 	height: 100%;
-	margin: 1em 0;
+	margin: 1em 0em;
 	padding: 0.25em 1em;
 	background-color: #fce0dd;
 	border-left: 4px solid #f26457;
 	text-align: center;
 	color: #f26457;
-	font-size: 13px;
-	font-weight: 700;
-	font-family: 
-
+	font-size: 12px;
+	font-weight: 600;
+	font-family: 'Source Sans Pro', sans-serif;
 	&::after {
 		content: 'This article contains graphic and disturbing content. Reader discretion is advised.';
 	}
