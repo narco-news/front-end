@@ -57,16 +57,6 @@
 		</div>
 		<div class="flex flex-wrap justify-center my-5">
 			<div class="m-4">
-				<img class="shadow-lg mx-auto" src="~/assets/images/ani-avatar.png" />
-
-				<div class="flex flex-col justify-center m-2">
-					<span class="py-1 text-2xl font-bold text-center">
-						Ani
-					</span>
-				</div>
-				<div class="py-2 flex justify-center color-soc-icons"></div>
-			</div>
-			<div class="m-4">
 				<img
 					class="shadow-lg mx-auto"
 					src="~/assets/images/christopher-avatar.png"
