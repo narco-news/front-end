@@ -10,7 +10,7 @@
 				</div>
 			</div>
 
-			<div class="text-md md:text-lg px-4 pt-2">
+			<div class="text-md px-4 pt-2">
 				{{ $t('message.textone') }}
 				<RoughNotation
 					:is-show="isShow"

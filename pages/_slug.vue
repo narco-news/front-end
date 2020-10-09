@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="large-barrier mx-4 lg:mx-20 bg-white shadow-inner lg:rounded-tl-md lg:rounded-tr-md"
+		class="overflow-y-hidden large-barrier mx-4 lg:mx-20 bg-white shadow-inner lg:rounded-tl-md lg:rounded-tr-md"
 	>
 		<div class="row">
 			<div class="mx-auto p-4 md:p-8">
