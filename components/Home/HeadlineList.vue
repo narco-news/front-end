@@ -1,6 +1,6 @@
 <template>
 	<div class="list my-4 md:my-0">
-		<article v-for="post in posts.slice(8, 14)" :key="post.id" class="article">
+		<article v-for="post in posts.slice(10, 18)" :key="post.id" class="article">
 			<ul>
 				<li class="mb-1">
 					<div

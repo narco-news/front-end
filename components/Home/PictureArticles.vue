@@ -1,19 +1,18 @@
 <template>
-	<div>
-		<div class="articles">
-			<article v-for="post in posts.slice(3, 8)" :key="post.id" class="article">
-				<div v-if="post.feature_image">
-					<nuxt-link :to="{path: '/' + post.slug}">
-						<div class="overflow-hidden img-wrap">
-							<img
-								:src="post.feature_image"
-								:alt="post.title"
-								class="hvr-grow"
-							/>
-						</div>
-					</nuxt-link>
-					<div class="title-box">
-						<div v-if="post.tags.length > 0" class="flex flex-row">
+	<div class="articles">
+		<article v-for="post in posts.slice(3, 10)" :key="post.id" class="article">
+			<div v-if="post.feature_image">
+				<nuxt-link :to="{path: '/' + post.slug}">
+					<div class="overflow-hidden img-wrap">
+						<img :src="post.feature_image" :alt="post.title" class="hvr-grow" />
+					</div>
+				</nuxt-link>
+				<div class="title-box">
+					<div
+						v-if="post.tags.length > 0"
+						class="flex flex-row flex-wrap justify-between"
+					>
+						<div class="flex flex-row">
 							<div
 								v-for="tag in post.tags.slice(0, 1)"
 								:key="tag.id"
@@ -39,17 +38,6 @@
 								>
 							</div>
 						</div>
-						<h2 v-if="post.title" class="title capitalize text-xl">
-							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
-								>{{ post.title }}
-							</nuxt-link>
-						</h2>
-						<div class="excerpt">
-							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
-							<p v-else-if="post.excerpt && !post.custom_excerpt">
-								{{ post.excerpt }}
-							</p>
-						</div>
 						<div class="flex flex-row flex-wrap items-center">
 							<div class="date whitespace-no-wrap text-sm text-gray-600 mr-1">
 								{{ post.published_at | dayjs }}
@@ -65,9 +53,20 @@
 							</div>
 						</div>
 					</div>
+					<h2 v-if="post.title" class="title capitalize text-xl">
+						<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
+							>{{ post.title }}
+						</nuxt-link>
+					</h2>
+					<div class="excerpt">
+						<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
+						<p v-else-if="post.excerpt && !post.custom_excerpt">
+							{{ post.excerpt }}
+						</p>
+					</div>
 				</div>
-			</article>
-		</div>
+			</div>
+		</article>
 	</div>
 </template>
 
@@ -106,98 +105,83 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.img-wrap {
-	border: 1px solid black;
-	border-radius: 0.3em;
-	-webkit-border-radius: 0.3em;
-}
-.tags {
-	color: #03a688;
-}
 .articles {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	grid-auto-flow: dense;
-	grid-gap: 1em;
+	grid-gap: 10px;
+
+	.img-wrap {
+		margin-bottom: 5px;
+	}
+
 	article {
+		.title {
+			font-family: 'Lora', serif;
+			font-weight: 700;
+			line-height: 1.2;
+			padding: 5px 0;
+		}
 		.date {
 			font-weight: 600;
 		}
-		.title-box {
-			margin: 0.5em 0;
+		.tags {
+			color: #03a688;
 		}
-		.title {
-			font-weight: 700;
-			font-family: 'Lora', sans-serif;
-			line-height: 1.2;
+
+		@media (min-width: 769px) {
+			.title {
+				font-size: 20px;
+			}
 		}
 	}
+
 	.article:nth-child(1) {
-		grid-column: span 2;
+		grid-column: 1 / -1;
+		@media (min-width: 769px) {
+			grid-column: 1 / -2;
+		}
+	}
+
+	.article:nth-child(4) {
+		@media (min-width: 769px) {
+			grid-column: -3 / -1;
+		}
 	}
 
 	.article:nth-child(2),
 	.article:nth-child(3),
 	.article:nth-child(4),
-	.article:nth-child(5) {
-		grid-column: span 1;
+	.article:nth-child(5),
+	.article:nth-child(6),
+	.article:nth-child(7) {
 		img {
-			max-height: 130px;
-			object-fit: cover;
+			max-height: 115px;
 			width: 100%;
-			@media (max-width: 414px) {
-				max-height: 110px;
-				object-fit: cover;
-				width: 100%;
+			object-fit: cover;
+			@media (max-width: 375px) {
+				max-height: 160px;
 			}
 		}
 		.excerpt {
 			display: none;
 		}
 	}
+
+	.img-wrap {
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+
+	@media (max-width: 680px) {
+		.articles {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.article {
+			margin-bottom: 2em;
+		}
+	}
 }
-// .articles {
-// 	display: grid;
-// 	grid-template-columns: (auto-fit, minmax(180px, 1fr));
-// 	grid-auto-flow: dense;
-// 	.date {
-// 		color: #03a688;
-// 	}
-// 	.author {
-// 		color: #6e7381;
-// 	}
-// 	.title {
-// 		color: #262626;
-// 		font-weight: 700;
-// 		font-family: 'Lora', sans-serif;
-// 	}
-// 	.article:nth-child(1) {
-// 		grid-column: span 2;
-// 		img {
-// 			object-fit: cover;
-// 			height: 100%;
-// 			width: 100%;
-// 			max-height: 300px;
-// 			border-radius: 0.3em;
-// 			-webkit-border-radius: 0.3em;
-// 		}
-// 	}
-// 	.article:nth-child(2),
-// 	.article:nth-child(3),
-// 	.article:nth-child(4),
-// 	.article:nth-child(5) {
-// 		grid-column: -3 / -1;
-// 		margin: 1em 0.5em;
-// 		.excerpt {
-// 			display: none;
-// 		}
-// 		img {
-// 			object-fit: cover;
-// 			height: 10em;
-// 			width: 100%;
-// 			border-radius: 0.3em;
-// 			-webkit-border-radius: 0.3em;
-// 		}
-// 	}
-// }
 </style>

@@ -53,7 +53,7 @@
 		max-width: 600px;
 	}
 	img {
-		border-radius: 10px;
+		border-radius: 5px;
 	}
 	figure {
 		display: block;
@@ -268,7 +268,8 @@
 		}
 
 		.kg-image {
-			max-width: 80vw;
+			max-width: 800px;
+			margin: 0 auto;
 		}
 
 		figcaption {
