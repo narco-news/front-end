@@ -1,8 +1,5 @@
 <template>
 	<div class="md:mx-4">
-		<!-- <div class="heading mb-4">
-			<h2 class="text-3xl font-bold">Featured Articles</h2>
-		</div> -->
 		<div class="articles">
 			<article v-for="post in posts.slice(0, 3)" :key="post.id" class="article">
 				<div v-if="post.feature_image" class="">
@@ -52,19 +49,12 @@
 						</h2>
 
 						<div class="excerpt p-1 text-gray-700">
-							<p v-if="post.custom_excerpt" class="mb-4">
+							<p v-if="post.custom_excerpt">
 								{{ post.custom_excerpt }}
 							</p>
-							<p v-else-if="post.excerpt && !post.custom_excerpt" class="mb-4">
+							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
 							</p>
-							<!-- <nuxt-link
-								class="post-read-more bt text-white font-bold py-2 px-2 rounded"
-								:to="{path: '/' + post.slug}"
-								title="Read more"
-							>
-								Read More
-							</nuxt-link> -->
 						</div>
 					</div>
 				</div>
@@ -169,7 +159,6 @@ export default {
 	.article:nth-child(2),
 	.article:nth-child(3) {
 		grid-column: span 3;
-		margin-top: 2em;
 		padding: 0.5em;
 		.image {
 			margin-bottom: 1em;

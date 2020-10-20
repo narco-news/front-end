@@ -7,6 +7,7 @@
 				<PictureArticleList class="md:p-2 md:mr-2" />
 				<hr class="py-2 mt-2" />
 				<FeaturedArticles />
+				<hr class="py-2 mt-2" />
 			</div>
 			<div class="list col-span-3 md:col-span-1">
 				<Headlines class="mx-4" />

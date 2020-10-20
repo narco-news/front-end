@@ -109,10 +109,13 @@ export default {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
 	grid-auto-flow: dense;
-	grid-gap: 10px;
-
+	grid-gap: 0 10px;
 	.img-wrap {
 		margin-bottom: 5px;
+	}
+
+	.article {
+		margin-bottom: 1em;
 	}
 
 	article {
@@ -178,8 +181,10 @@ export default {
 				max-height: 160px;
 			}
 		}
-		.excerpt {
-			display: none;
+		@media (min-width: 415px) {
+			.excerpt {
+				display: none;
+			}
 		}
 	}
 
@@ -192,10 +197,6 @@ export default {
 		.articles {
 			display: flex;
 			flex-direction: column;
-		}
-
-		.article {
-			margin-bottom: 2em;
 		}
 	}
 }
