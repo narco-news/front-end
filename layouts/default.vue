@@ -59,6 +59,16 @@ export default {
 				.createContextualFragment(this.codeFoot);
 			document.getElementsByTagName('body')[0].appendChild(footInject);
 		}
+	},
+	head() {
+		return {
+			meta: [
+				{
+					name: 'viewport',
+					content: 'width=device-width, initial-scale=1'
+				}
+			]
+		};
 	}
 };
 </script>

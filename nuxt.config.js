@@ -8,9 +8,7 @@ import es from './locales/es.json';
 require('dotenv').config();
 
 export default async () => {
-	const {
-		data: {settings}
-	} = await axios.get(
+	await axios.get(
 		process.env.GHOST_URI +
 			'/ghost/api/v3/content/settings/?key=' +
 			process.env.GHOST_KEY +
@@ -26,10 +24,7 @@ export default async () => {
 
 		css: ['~/assets/scss/main.scss', '~/assets/css/tailwind.css'],
 
-		loading: {color: '#171717'},
-
 		modules: [
-			'@nuxtjs/pwa',
 			'nuxt-webfontloader',
 			'@nuxtjs/axios',
 			'nuxt-i18n',
@@ -105,16 +100,17 @@ export default async () => {
 			custom: {
 				families: [
 					'IBM Plex Sans:n3,n4,n5,n7',
-					'Lora:n4,n5,n6,n7',
 					'Courier Prime:n4,n7',
 					'EB Garamond:n4,n5,n6',
-					'Source Sans Pro:n4,n5,n6'
+					'Source Sans Pro:n4,n5,n6',
+					'Source Serif Pro:n4,n6,n7'
 				],
 				urls: [
 					'https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap',
-					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&display=swap',
+					'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap',
 					'https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap',
-					'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap'
+					'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap',
+					'https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap'
 				]
 			}
 		},
@@ -159,25 +155,12 @@ export default async () => {
 			{src: '~/plugins/animate.js', ssr: false},
 			{src: '~/plugins/hover.js', ssr: false},
 			{src: '~/plugins/vshowslide.js', ssr: false},
-			{src: '~/plugins/odometer.js', ssr: false},
-			{src: '~/plugins/modals.js', ssr: false},
 			{src: '~/plugins/patterncss.js', ssr: false},
 			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
 			{src: '~/plugins/rough-notation.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'}
 		],
-
-		pwa: {
-			manifest: {
-				name: settings.title + ' - ' + settings.description,
-				shortName: settings.title,
-				description: settings.description,
-				lang: settings.lang,
-				startUrl: '/',
-				display: 'standalone'
-			}
-		},
 
 		build
 	};

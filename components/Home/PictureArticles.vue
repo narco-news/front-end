@@ -117,10 +117,25 @@ export default {
 
 	article {
 		.title {
-			font-family: 'Lora', serif;
+			@apply text-2xl;
+			font-family: 'Source Serif Pro', serif;
 			font-weight: 700;
-			line-height: 1.2;
+			letter-spacing: 0.6px;
+			line-height: 1.1;
 			padding: 5px 0;
+			color: #262626;
+			&:hover {
+				text-decoration: underline;
+				text-decoration-thickness: 2px;
+			}
+			&:active {
+				text-decoration: underline;
+				text-decoration-thickness: 2px;
+			}
+			&:focus {
+				text-decoration: underline;
+				text-decoration-thickness: 2px;
+			}
 		}
 		.date {
 			font-weight: 600;

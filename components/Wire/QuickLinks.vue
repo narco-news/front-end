@@ -94,10 +94,10 @@
 			</p>
 			<hr class="border-gray-700" />
 			<div
-				class="link flex flex-row flex-wrap h-auto whitespace-no-wrap p-2 font-mono text-sm"
+				class="link flex flex-row flex-wrap h-auto whitespace-no-wrap font-mono text-sm"
 			>
 				<!--  -->
-				<div class="p-1 mr-2">
+				<div class="p-1">
 					<a
 						href="https://feminicidiosmx.crowdmap.com"
 						target="_blank"
@@ -107,13 +107,13 @@
 					</a>
 				</div>
 				<!--  -->
-				<div class="p-1 mr-2">
+				<div class="p-1">
 					<a href="https://elcri.men" target="_blank" tabindex="8">
 						<span class="borderLeftRight">ELCRI.men</span>
 					</a>
 				</div>
 				<!--  -->
-				<div class="p-1 mr-2">
+				<div class="p-1">
 					<a href="http://semaforo.com.mx" target="_blank" tabindex="9">
 						<span class="borderLeftRight whitespace-normal"
 							>Semáforo Delictivo</span

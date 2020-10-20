@@ -113,10 +113,10 @@ export default {
 }
 .article {
 	.title {
-		line-height: 1.1;
-		letter-spacing: 0.5px;
-		font-family: 'Lora', sans-serif;
+		font-family: 'Source Serif Pro', serif;
 		font-weight: 500;
+		letter-spacing: 0.6px;
+		line-height: 1.1;
 	}
 }
 

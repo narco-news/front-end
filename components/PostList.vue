@@ -224,7 +224,6 @@ article.article:nth-child(1) {
 
 .title {
 	color: #272727;
-	font-family: 'Lora', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 }

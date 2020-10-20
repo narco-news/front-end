@@ -67,9 +67,6 @@ export default {
 </script>
 
 <style lang="scss">
-.booktitle {
-	font-family: 'Lora', sans-serif;
-}
 .bookBox {
 	margin-left: 75px;
 	max-height: 18rem;

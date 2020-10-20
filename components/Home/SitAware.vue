@@ -152,7 +152,6 @@ export default {
 .situation-aware {
 	background-color: #03a688;
 	color: white;
-	font-family: 'Lora', sans-serif;
 	font-weight: 700;
 }
 .tam-box {

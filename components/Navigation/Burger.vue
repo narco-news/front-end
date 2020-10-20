@@ -182,7 +182,6 @@ a {
 	position: relative;
 	margin: 1em 0 1em;
 	color: #f2f2f2;
-	font-family: 'Lora', serif;
 	font-weight: 500;
 	span {
 		&:hover {
@@ -192,7 +191,6 @@ a {
 }
 
 #map-links {
-	font-family: 'IBM Plex Sans', sans;
 	font-weight: 500;
 	color: #494949;
 	text-transform: uppercase;
@@ -202,7 +200,6 @@ a {
 		}
 	}
 	h1 {
-		font-family: 'Lora', sans-serif;
 		text-transform: none;
 	}
 }

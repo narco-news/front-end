@@ -139,7 +139,7 @@ export default {
 
 		pageAuthor() {
 			return this.$store.state.pageAuthors.find(
-				(author) => author.slug === this.$route.params.slug
+				author => author.slug === this.$route.params.slug
 			);
 		},
 
@@ -165,7 +165,6 @@ export default {
 @import '~/assets/scss/_variables.scss';
 
 .author-title {
-	font-family: 'Lora', serif;
 }
 
 .author-bio {

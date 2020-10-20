@@ -546,7 +546,7 @@ export default {
 	}
 }
 .post-title {
-	font-family: 'Lora', serif;
+	font-family: 'Source Serif Pro', serif;
 	font-weight: 600;
 	line-height: 1.2;
 	text-transform: capitalize;

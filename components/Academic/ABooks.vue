@@ -40,7 +40,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .book-title {
-	font-family: 'Lora', sans-serif;
 }
 .book-author {
 	color: #f26457;

@@ -122,6 +122,25 @@ export default {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	grid-auto-flow: dense;
+	.title {
+		font-family: 'Source Serif Pro', serif;
+		font-weight: 700;
+		letter-spacing: 0.6px;
+		line-height: 1.1;
+		padding: 5px 0;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-thickness: 2px;
+		}
+		&:active {
+			text-decoration: underline;
+			text-decoration-thickness: 2px;
+		}
+		&:focus {
+			text-decoration: underline;
+			text-decoration-thickness: 2px;
+		}
+	}
 	.date {
 		text-transform: uppercase;
 	}
@@ -132,10 +151,7 @@ export default {
 		grid-column: 1 / -1;
 		.title {
 			text-transform: capitalize;
-			font-size: 32px;
-			line-height: 1.2;
-			font-weight: 700;
-			font-family: 'EB Garamond', sans-serif;
+			font-size: 28px;
 		}
 		.image {
 			box-shadow: 10px 10px #ffd54f;
@@ -163,10 +179,7 @@ export default {
 		}
 		.title {
 			text-transform: capitalize;
-			font-size: 24px;
-			line-height: 1.2;
-			font-weight: 700;
-			font-family: 'EB Garamond', sans-serif;
+			font-size: 20px;
 		}
 		img {
 			height: 120px;
