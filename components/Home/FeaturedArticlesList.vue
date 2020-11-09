@@ -21,11 +21,11 @@
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
 									:title="post.primary_author.name"
-									class="font-bold whitespace-no-wrap text-gray-600"
+									class="font-bold whitespace-no-wrap sub-gray"
 									>{{ post.primary_author.name }}</nuxt-link
 								>
 							</div>
-							<div class="date text-sm text-gray-600">
+							<div class="date text-sm sub-gray">
 								{{ post.published_at | dayjs }}
 							</div>
 						</div>
@@ -48,7 +48,7 @@
 							</nuxt-link>
 						</h2>
 
-						<div class="excerpt p-1 text-gray-700">
+						<div class="excerpt p-1 ex-gray">
 							<p v-if="post.custom_excerpt">
 								{{ post.custom_excerpt }}
 							</p>

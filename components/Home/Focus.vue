@@ -1,6 +1,6 @@
 <template>
 	<div class="p-2">
-		<h1 class="desc text-2xl md:text-3xl font-bold my-4 ml-8 md:ml-12">
+		<h1 class="desc text-xl md:text-2xl font-bold my-4 ml-8 md:ml-12">
 			{{ $t('message.focus') }}
 		</h1>
 		<div class="feat-box">
@@ -61,7 +61,7 @@ export default {
 		messages: {
 			en: {
 				message: {
-					focus: 'Our Focus',
+					focus: 'Focus',
 					title1: 'Collection & Research',
 					text1:
 						'Aggregation of information from social media, press publications, academic literature, think tanks and public court documents. ',
@@ -78,7 +78,7 @@ export default {
 			},
 			es: {
 				message: {
-					focus: 'Nuestro enfoque',
+					focus: 'Enfoque',
 					title1: 'Colección e investigación',
 					text1:
 						'Agregación de información de los medios de comunicación social, publicaciones de prensa, literatura académica, grupos de reflexión y documentos judiciales públicos. ',
@@ -100,7 +100,7 @@ export default {
 
 <style lang="scss" scoped>
 .box {
-	background-color: white;
+	background-color: #fafafa;
 	@apply rounded-md;
 	@apply shadow-md;
 	padding: 1em;

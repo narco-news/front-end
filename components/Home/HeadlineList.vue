@@ -1,6 +1,6 @@
 <template>
-	<div class="list my-4 md:my-0">
-		<article v-for="post in posts.slice(10, 18)" :key="post.id" class="article">
+	<div class="list my-2 md:my-0">
+		<article v-for="post in posts.slice(10, 20)" :key="post.id" class="article">
 			<ul>
 				<li class="mb-1">
 					<div
@@ -25,7 +25,7 @@
 							</div>
 						</div>
 						<span
-							class="published_at text-xs md:text-sm whitespace-no-wrap text-gray-600"
+							class="published_at text-xs md:text-sm whitespace-no-wrap sub-gray"
 							>{{ post.published_at | dayjs }}</span
 						>
 					</div>
@@ -40,13 +40,13 @@
 							>{{ post.title }}
 						</nuxt-link>
 					</h2>
-					<div class="excerpt text-sm mt-2 mb-1 text-gray-700">
+					<div class="excerpt text-sm mt-2 mb-1 ex-gray">
 						<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 						<p v-else-if="post.excerpt && !post.custom_excerpt">
 							{{ post.excerpt }}
 						</p>
 					</div>
-					<div class="author text-sm md:text-md text-gray-600">
+					<div class="author text-sm md:text-md sub-gray">
 						by
 						<nuxt-link
 							:to="{path: '/author/' + post.primary_author.slug}"

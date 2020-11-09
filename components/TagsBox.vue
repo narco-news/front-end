@@ -1,12 +1,10 @@
 <template>
-	<div
-		class="flex flex-row flex-wrap justify-center content-center text-md font-semibold text-blue-500 mb-4"
-	>
+	<div class="flex flex-row flex-wrap md:grid tags-box p-1 m-2 text-right">
 		<div v-for="tag in pageTags" :key="tag.id">
 			<div v-if="tag.count.posts >= filter">
 				<nuxt-link
 					:to="{path: '/tag/' + tag.slug}"
-					class="tag hover:text-blue-300 hover:underline"
+					class="text-blue-500 hover:text-blue-300 hover:underline text-sm font-semibold whitespace-no-wrap px-1"
 					:title="tag.name"
 					>{{ tag.name }} ({{ tag.count.posts }})
 				</nuxt-link>
@@ -27,24 +25,12 @@ export default {
 	computed: {
 		pageTags() {
 			return this.$store.state.pageTags;
-		},
-
-		pageSettings() {
-			return this.$store.state.pageSettings;
-		},
-
-		pageUrl() {
-			return this.pageSettings.url
-				.replace(/^(?:https?:\/\/)?(?:www\.)?/i, '')
-				.split('/')[0];
 		}
 	}
 };
 </script>
 
 <style lang="scss" scoped>
-.tag {
-	margin: 0 0.5em;
-	padding: 10px 0;
+.tags-box {
 }
 </style>

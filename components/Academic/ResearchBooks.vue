@@ -1,5 +1,5 @@
 <template>
-	<div class="mx-2 py-4">
+	<div class="m-4">
 		<div id="book-list" class="flex flex-col mx-auto">
 			<div v-for="book in Books" :key="book.id">
 				<!-- Start -->

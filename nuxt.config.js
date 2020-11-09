@@ -2,8 +2,6 @@ import axios from 'axios';
 import {generateRoutes} from './config/ghost';
 import {build, feed, meta} from './config';
 import {isDev} from './config/dev';
-import en from './locales/en.json';
-import es from './locales/es.json';
 
 require('dotenv').config();
 
@@ -15,7 +13,6 @@ export default async () => {
 			'&v=3'
 	);
 	return {
-		mode: 'universal',
 		modern: !isDev && 'client',
 
 		watch: ['~/config/*'],
@@ -40,16 +37,24 @@ export default async () => {
 			}
 		},
 		i18n: {
+			baseUrl: 'https://narco.news',
 			locales: [
-				{code: 'en', iso: 'en', name: 'English'},
-				{code: 'es', iso: 'es', name: 'Español'}
+				{
+					code: 'en',
+					iso: 'en-US',
+					name: 'English'
+				},
+				{
+					code: 'es',
+					iso: 'es-MX',
+					name: 'Español'
+				}
 			],
-			messages: {en, es},
-			defaultLocale: 'en',
-			seo: true,
 			vueI18n: {
 				fallbackLocale: 'en'
-			}
+			},
+			defaultLocale: 'en',
+			seo: false
 		},
 		buildModules: ['@nuxtjs/feed'],
 
@@ -156,7 +161,6 @@ export default async () => {
 			{src: '~/plugins/hover.js', ssr: false},
 			{src: '~/plugins/vshowslide.js', ssr: false},
 			{src: '~/plugins/patterncss.js', ssr: false},
-			{src: '~/plugins/vue-slim-tabs.js', ssr: false},
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
 			{src: '~/plugins/rough-notation.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'}

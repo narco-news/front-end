@@ -1,12 +1,11 @@
 <template>
 	<div>
 		<StickyHeader />
-		<LogoBanner />
-		<client-only>
-			<SlideMenu :closeOnNavigation="true" noOverlay>
-				<Burger />
-			</SlideMenu>
-		</client-only>
+		<div class="nav">
+			<LogoBanner />
+			<Navbar />
+		</div>
+		<!-- <div class="bb"></div> -->
 		<div id="page-wrap">
 			<nuxt class="mt-6" />
 		</div>
@@ -17,15 +16,15 @@
 <script>
 import StickyHeader from '~/components/Navigation/StickyHeader';
 import LogoBanner from '~/components/Navigation/LogoBanner';
-import Burger from '~/components/Navigation/Burger';
+import Navbar from '~/components/Navigation/Navbar';
 import Footer from '~/components/Footer';
 
 export default {
 	components: {
 		StickyHeader,
 		LogoBanner,
-		Burger,
-		Footer
+		Footer,
+		Navbar
 	},
 	computed: {
 		pageSettings() {
@@ -61,46 +60,31 @@ export default {
 		}
 	},
 	head() {
+		const i18nSeo = this.$nuxtI18nSeo();
 		return {
+			htmlAttrs: {
+				...i18nSeo.htmlAttrs
+			},
 			meta: [
 				{
 					name: 'viewport',
 					content: 'width=device-width, initial-scale=1'
-				}
-			]
+				},
+				...i18nSeo.meta
+			],
+			link: [...i18nSeo.link]
 		};
 	}
 };
 </script>
 
 <style lang="scss">
-body {
-	background-color: #f9f9f9;
+.nav {
+	// background-color: #dadada;
+	background-color: #f2f2f2;
 }
-.bm-burger-bars {
-	background-color: #262626 !important;
-	&:nth-child(2n) {
-		background-color: #262626 !important;
-	}
-	&:nth-child(3n) {
-		background-color: #262626 !important;
-	}
-}
-.bm-menu {
-	background-color: #0d0d0d !important;
-}
-.bm-burger-button {
-	left: 20px !important;
-	top: 45px !important;
-	height: 15px !important;
-	width: 20px !important;
-}
-.line-style {
-	height: 2px !important;
-	left: 0;
-	right: 0;
-}
-.bm-cross {
-	background: #f2f2f2 !important;
+.bb {
+	height: 1px;
+	background-color: #262626;
 }
 </style>

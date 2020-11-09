@@ -1,15 +1,13 @@
 <template>
-	<div
-		class="large-barrier md:grid-cols-4 bg-white md:mx-12 p-6 lg:rounded-tl-md lg:rounded-tr-md shadow-inner"
-	>
+	<div class="large-barrier md:grid-cols-4">
 		<div class="font-mono float-right text-xs mb-6 mr-2">
 			{{ $t('message.updated') }}: 18/08/2020
 		</div>
 		<div class="mx-12 mb-6 clear-right">
-			<p class="text-lg my-6">
+			<p class="text-sm">
 				{{ $t('message.text1') }}
 			</p>
-			<div class="pattern-dots-md p-4 my-2">
+			<div class="p-4">
 				<div class="bg-white rounded border-red border-2 m-2 p-2">
 					<p class="text-sm text-red font-bold my-2">
 						{{ $t('message.question') }}
@@ -22,11 +20,10 @@
 					</p>
 				</div>
 			</div>
-
 			<p class="my-6 font-bold"></p>
 		</div>
 		<!-- Form Start -->
-		<div class="flex justify-center my-8">
+		<div class="flex justify-center mb-6 md:mb-24">
 			<div v-if="isSuccess === false" class="pattern-dots-md p-10 my-2">
 				<div class="form p-6">
 					<FormulateForm name="contact" @submit="sendData">

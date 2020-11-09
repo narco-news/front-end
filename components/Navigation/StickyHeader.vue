@@ -7,9 +7,7 @@
 		<div class="col-span-1 whitespace-no-wrap">
 			{{ $t('message.date') }}
 		</div>
-		<div class="col-span-1">
-			<QuickLinks />
-		</div>
+		<div class="col-span-1"></div>
 		<div class="hidden md:inline"></div>
 		<div class="col-span-1">
 			<SocialLinks />
@@ -21,14 +19,12 @@
 import dayjs from 'dayjs';
 import 'dayjs/locale/es';
 import LanguageToggle from '~/components/Navigation/LanguageToggle';
-import QuickLinks from '~/components/Navigation/QuickLinks';
 import SocialLinks from '~/components/Navigation/SocialLinks';
 
 export default {
 	name: 'StickyHeader',
 	components: {
 		LanguageToggle,
-		QuickLinks,
 		SocialLinks
 	},
 	i18n: {
@@ -51,8 +47,8 @@ export default {
 
 <style lang="scss" scoped>
 #sticky-header {
-	background-color: #0d0d0d;
-	color: #f2f2f2;
+	background-color: #262626;
+	color: #fefefe;
 	font-weight: 600;
 	font-size: 11px;
 }

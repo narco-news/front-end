@@ -57,64 +57,38 @@
 			<div id="mid">
 				<n-link
 					:to="localePath('/wire')"
+					alt="Newswire"
 					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
 				>
-					<!-- <img src="~/assets/icons/activity-32.svg" alt="Booklist icon" /> -->
 					<span class="text-2xl whitespace-no-wrap">{{
 						$t('message.newswire')
 					}}</span>
 				</n-link>
 				<n-link
 					:to="localePath('/pa')"
+					alt="Press Aggregate"
 					class="flex flex-row flex-no-wrap items-center gap-4 mb-2"
 				>
-					<!-- <img src="~/assets/icons/activity-32.svg" alt="Booklist icon" /> -->
 					<span class="text-2xl whitespace-no-wrap">{{
 						$t('message.feeds')
 					}}</span>
 				</n-link>
 				<n-link
 					:to="localePath('/booklist')"
+					alt="Book list"
 					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
-					<!-- <img src="~/assets/icons/bookmark.svg" alt="Booklist icon" /> -->
 					<span class="text-2xl">{{ $t('message.booklist') }}</span>
 				</n-link>
 				<n-link
 					:to="localePath('/academia')"
+					alt="Academia"
 					class="flex flex-row flex-no-wrap items-center mb-2"
 				>
-					<!-- <img src="~/assets/icons/book-open-40.svg" alt="Booklist icon" /> -->
 					<span class="text-2xl">{{ $t('message.academia') }}</span>
 				</n-link>
-				<a class="flex flex-row flex-no-wrap items-center">
-					<!-- <img src="~/assets/icons/wiki.svg" alt="Booklist icon" /> -->
-					<span class="text-2xl">{{ $t('message.wiki') }}</span>
-				</a>
 			</div>
-			<!-- <div id="map-links" class="mt-12">
-				<div class="flex flex-col flex-no-wrap justify-start">
-					<div class="mb-2">
-						<img src="~/assets/icons/map.svg" alt="Map icon" />
-					</div>
-					<div>
-						<n-link
-							:to="localePath('/guanajuato-map')"
-							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
-						>
-							<div class="text-xl">{{ $t('message.guanajuato') }}</div>
-						</n-link>
-						<n-link
-							:to="localePath('/tamap')"
-							class="flex flex-row flex-no-wrap items-center gap-2 ml-4"
-						>
-							<div class="text-xl">Tamaulipas</div>
-						</n-link>
-					</div>
-				</div>
-			</div> -->
 		</div>
-		<!-- Logo -->
 		<img id="logo" src="/logo/nn-colorful-300.png" alt="narco.news logo" />
 	</div>
 </template>

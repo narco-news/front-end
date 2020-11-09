@@ -1,24 +1,21 @@
 <template>
 	<div class="flex flex-auto justify-center">
 		<div class="relative h-64 pt-5 md:my-4 mb-6">
-			<div class="bookBox relative bg-white rounded shadow-lg w-56 z-10">
-				<!-- Static parent -->
-
+			<div class="book-box relative bg-white rounded shadow-lg w-56 z-10">
 				<div
-					style="background-color: #03a688;"
-					class="bookDate absolute text-white text-xs font-extrabold top-0 right-0 p-1 rounded"
+					class="book-date absolute bg-green-500 text-white text-xs font-extrabold top-0 right-0 p-1 rounded"
 				>
 					{{ date }}
 				</div>
 				<div class="static flex flex-col">
-					<div class="booktitle inline-block text-sm font-bold px-2 mt-4">
+					<div class="book-title inline-block text-md px-2 mt-4">
 						{{ title }}
 					</div>
 					<div style="color: #f26457;" class="inline-block text-center p-1">
 						{{ authors }}
 					</div>
 					<div
-						class="bookDesc hideScroll inline-block text-xs overflow-auto rounded px-2 italic"
+						class="book-desc hideScroll inline-block text-xs overflow-auto rounded px-2 italic text-gray-700"
 					>
 						{{ desc }}
 					</div>
@@ -67,16 +64,22 @@ export default {
 </script>
 
 <style lang="scss">
-.bookBox {
+.book-box {
+	background-color: white;
 	margin-left: 75px;
 	max-height: 18rem;
 }
-.bookDesc {
+.book-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	color: #262626;
+}
+.book-desc {
 	height: 7rem;
 	max-height: 8rem;
 	margin-bottom: 0.5rem;
 }
-.bookDate {
+.book-date {
 	margin-top: -15px;
 	margin-right: 15px;
 }

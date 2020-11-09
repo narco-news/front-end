@@ -1,11 +1,9 @@
 <template>
-	<div style="background-color: #0d0d0d;" class="pt-3">
-		<div class="h-full flex justify-center my-4">
-			<div
-				class="grid grid-cols-5 md:grid-cols-8 lg:grid-cols-9 mx-2 gap-2 whitespace-no-wrap"
-			>
+	<div style="background-color: #262626;" class="">
+		<div class="flex justify-center">
+			<div class="">
 				<!-- Mailing -->
-				<div class="col-span-5 md:col-span-3 p-2 text-center">
+				<!-- <div class="col-span-5 md:col-span-3 p-2 text-center">
 					<span class="text-md w-full font-bold foot-title">Mailing list</span>
 					<div class="p-2">
 						<mailchimp-subscribe
@@ -55,77 +53,32 @@
 							</template>
 						</mailchimp-subscribe>
 					</div>
-				</div>
-				<!-- Newswire links -->
-				<div class="col-span-3 lg:col-span-3 p-2">
-					<span
-						class="text-md w-full font-bold foot-title flex flex-row flex-no-wrap"
-						><n-link to="/wire">Newswire</n-link>
-						<a
-							href="https://publish.narco.news/rss"
-							class="m-1 ml-3"
-							target="_blank"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-								fill="#F2913D"
-								class="w-4 h-4"
-							>
-								<path
-									d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"
-								/>
-								<path
-									d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"
-								/>
-							</svg>
-						</a>
-					</span>
-					<div class="w-full grid grid-cols-2 lg:grid-cols-3 text-xs">
-						<n-link class="p-1" to="/tag/united-states">United States</n-link>
-						<n-link class="p-1" to="/tag/mexican-dto">Mexico</n-link>
-						<n-link class="p-1" to="/tag/central-america"
-							>Central America</n-link
-						>
-						<n-link class="p-1" to="/tag/south-america">South America</n-link>
-						<n-link class="p-1" to="#">Southeast Asia</n-link>
-
-						<n-link class="p-1" to="/tag/film-and-television"
-							>Film & Television</n-link
-						>
-						<n-link class="p-1" to="/tag/development">Development</n-link>
-						<n-link class="p-1" to="/tag/announcement">Announcements</n-link>
+				</div> -->
+				<div class="p-2 flex flex-row justify-center">
+					<div class="links grid grid-flow-row uppercase m-4">
+						<h2 class="text-gray-500">narco.news</h2>
+						<n-link class="" to="/about">About</n-link>
+						<n-link class="" to="/wire">Wire</n-link>
+						<n-link class="" to="/pa">Press Aggregate</n-link>
+						<n-link class="" to="/library">Library</n-link>
+						<n-link class="" to="/contact">Contact</n-link>
 					</div>
-				</div>
-				<!-- narco news Links -->
-				<div class="col-span-2 lg:col-span-2 p-2">
-					<span class="text-md w-full font-bold foot-title"
-						><n-link to="/">narco.news</n-link></span
-					>
-					<div class="grid grid-cols-2 lg:grid-cols-3 text-xs">
-						<n-link class="p-1" to="/about">About</n-link>
-						<n-link class="p-1" to="/contact">Contact</n-link>
-						<n-link class="p-1" to="/wire">Newswire</n-link>
-						<n-link class="p-1" to="/booklist">Book list</n-link>
-						<n-link class="p-1" to="/academia">Academic</n-link>
-						<a class="p-1" href="https://wiki.narco.news">Wiki</a>
-						<n-link class="p-1" to="/pa">Press Aggregate</n-link>
+					<div class="links grid grid-flow-row uppercase m-4">
+						<h2 class="text-gray-500">Sections</h2>
+						<n-link class="" to="/tag/united-states">United States</n-link>
+						<n-link class="" to="/tag/mexican-dto">Mexico</n-link>
+						<n-link class="" to="/tag/central-america">Central America</n-link>
+						<n-link class="" to="/tag/south-america">South America</n-link>
+						<n-link class="" to="/tag/opinion">Opinion</n-link>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="text-center">
-			<div class="trademark mx-auto px-8 md:px-14 mb-2">
-				All company, product and service names used in this website are for
-				identification purposes only. All product names, logos, and brands are
-				property of their respective owners. Use of these names, logos, and
-				brands does not imply endorsement. We disclaims proprietary interest in
-				the marks and names of others.
-			</div>
 			<div
 				class="cursor-not-allowed site text-xs flex items-center justify-center"
 			>
-				<span class="siteName mr-1 h-auto">
+				<span class="site-name mr-1 h-auto">
 					narco<span class="italic">&nbsp;dot&nbsp;</span> news</span
 				>
 				<span></span>
@@ -135,42 +88,18 @@
 </template>
 
 <script>
-import MailchimpSubscribe from 'vue-mailchimp-subscribe';
+// import MailchimpSubscribe from 'vue-mailchimp-subscribe';
 
 export default {
 	components: {
-		MailchimpSubscribe
+		// MailchimpSubscribe
 	},
 	data() {
 		return {
-			// ActAnim: Activity,
-			// LottieOptions: {
-			// 	autoplay: true,
-			// 	loop: true,
-			// 	speed: 0.5,
-			// 	width: '20px',
-			// 	height: '20px'
-			// }
 			user: process.env.userID,
 			list: process.env.listID
 		};
 	},
-	i18n: {
-		messages: {
-			en: {
-				message: {
-					os: 'open source drug war investigations'
-				}
-			},
-			es: {
-				message: {
-					os:
-						'investigaciones de código abierto sobre la guerra contra las drogas'
-				}
-			}
-		}
-	},
-
 	methods: {
 		onError() {
 			// handle error
@@ -183,6 +112,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo {
+	img {
+		-webkit-filter: invert(1);
+		filter: invert(1);
+	}
+}
+.links {
+	color: #fcfcfc;
+	font-weight: 600;
+	font-size: 11px;
+}
+.site-name {
+	font-weight: 600;
+}
 .trademark {
 	font-size: 9px;
 	font-weight: 600;
@@ -202,25 +145,5 @@ export default {
 		#ffc371,
 		#ff5f6d
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.foot-title {
-	color: #03a688;
-}
-div {
-	color: #f2f2f2;
-	font-weight: 700;
-	font-family: 'IBM Plex Sans', sans;
-}
-
-button {
-	background-color: #f2f2f2;
-	color: #0d0d0d;
-	border: solid 1px #03a688;
-	&:hover {
-		color: #f2f2f2;
-		border-color: #f2f2f2;
-		transition: ease-in 0.15s;
-		background-color: lighten(#03a688, 5%);
-	}
 }
 </style>

@@ -28,8 +28,7 @@
 		</details>
 
 		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-			<LongFeed feedTitle="El Blog del Narco" :feedUrl="ebdn" class="mb-4" />
-			<LongFeed feedTitle="El Blog del Narco 2" :feedUrl="ebdn2" class="mb-4" />
+			<LongFeed feedTitle="El Blog del Narco" :feedUrl="ebdn2" class="mb-4" />
 			<LongFeed feedTitle="Valor por Tamaulipas" :feedUrl="vpt" class="mb-4" />
 			<LongFeed feedTitle="Historias del Narco" :feedUrl="hdn" class="mb-4" />
 			<LongFeed feedTitle="Narco En Mexico" :feedUrl="nem" class="mb-4" />
@@ -43,12 +42,11 @@
 			{{ $t('message.entext') }}
 		</p>
 		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-			<LongFeed feedTitle="Borderland Beat" :feedUrl="bb" class="mb-4" />
-			<LongFeed feedTitle="Breitbart" :feedUrl="bbtx" class="mb-4" />
 			<LongFeed feedTitle="Border Report" :feedUrl="br" class="mb-4" />
 			<LongFeed feedTitle="Mexico News Daily" :feedUrl="mnd" class="mb-b" />
 			<LongFeed feedTitle="Mexico Today" :feedUrl="mt" class="mb-b" />
 			<LongFeed feedTitle="AP Mexico" :feedUrl="apmx" class="mb-4" />
+			<LongFeed feedTitle="Breitbart" :feedUrl="bbtx" class="mb-4" />
 		</div>
 		<h1 class="text-xl font-bold underline mb-2">
 			Research & Investigative

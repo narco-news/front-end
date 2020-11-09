@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="overflow-y-hidden large-barrier mx-4 lg:mx-20 bg-white shadow-inner lg:rounded-tl-md lg:rounded-tr-md"
-	>
+	<div class="overflow-y-hidden large-barrier mx-4 lg:mx-20 bg-white">
 		<div class="row">
 			<div class="mx-auto p-4 md:p-8">
 				<!-- TAGS -->
@@ -175,7 +173,7 @@
 								<!-- eslint-disable-next-line vue/no-v-html -->
 								<div class="post-text text-xl" v-html="post.html" />
 							</div>
-							<div>
+							<div class="mt-12">
 								<div class="">
 									<social-icon
 										:url="
@@ -245,10 +243,7 @@
 								<div class="inline-block text-md">
 									<div class="post-meta-date">
 										<div class="post-meta-date-info">
-											<!-- <span class="published_at font-bold uppercase">{{
-											post.published_at | dayjs
-										}}</span> -->
-											<div class="">
+											<div>
 												<span
 													v-if="post.updated_at !== post.published_at"
 													class="updated_at text-xs text-gray-500"
@@ -256,33 +251,38 @@
 													last edited
 													<span>{{ post.updated_at | daysec }}</span></span
 												>
+												<div class="post-tags-bottom uppercase">
+													<ul class="list inline">
+														<li
+															v-for="tag in post.tags.slice(1, 4)"
+															:key="tag.id"
+														>
+															<nuxt-link
+																:to="{path: '/tag/' + tag.slug}"
+																:title="tag.name"
+																class="tags-bottom hvr-sink"
+																>{{ tag.name }}</nuxt-link
+															>
+														</li>
+													</ul>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div
-								class="post-tags-bottom text-xs md:text-sm uppercase pattern-cross-dots-sm py-4 mt-4"
-							>
-								<ul class="list inline">
-									<li
-										v-for="tag in post.tags.slice(1, 4)"
-										:key="tag.id"
-										class="mx-2"
-									>
-										<nuxt-link
-											:to="{path: '/tag/' + tag.slug}"
-											:title="tag.name"
-											class="text-xs tags-bottom hvr-float"
-											>{{ tag.name }}</nuxt-link
-										>
-									</li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</article>
+			</div>
+			<div class="notice flex justify-center mb-4 p-2">
+				<p>
+					All company, product and service names used in this website are for
+					identification purposes only. All product names, logos, and brands are
+					property of their respective owners. Use of these names, logos, and
+					brands does not imply endorsement. We disclaims proprietary interest
+					in the marks and names of others.
+				</p>
 			</div>
 		</div>
 		<ScrollToTop />
@@ -292,16 +292,12 @@
 <script>
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
-// import hljs from 'highlight.js';
-
 import {ghostAPI} from '~/config/ghost';
-
 import ScrollProgressBar from '~/components/ScrollProgressBar.vue';
 import ScrollToTop from '~/components/ScrollToTop';
 import SocialIcons from '~/components/SocialIcons';
 
 dayjs.extend(advancedFormat);
-// hljs.configure({tabReplace: ''});
 
 export default {
 	name: 'PostsPage',
@@ -372,6 +368,10 @@ export default {
 	},
 
 	computed: {
+		postsIndex() {
+			return this.$store.state.postsIndex;
+		},
+
 		post() {
 			return this.$store.state.singlePost;
 		},
@@ -498,6 +498,16 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.notice {
+	color: #262626;
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
+	line-height: 1.3;
+	p {
+		max-width: 800px;
+	}
+}
 .large-barrier {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -508,8 +518,7 @@ export default {
 		height: 70%;
 		max-height: 600px;
 		width: 100%;
-		// border-radius: 0.5em;
-		// -webkit-border-radius: 0.5em;
+		border-radius: 5px;
 	}
 }
 .post-content {
@@ -517,12 +526,10 @@ export default {
 		padding: 0 1em;
 	}
 }
-
 .top {
 	padding: 0.5em;
 	background-color: #f26457;
 }
-
 .post-tags {
 	font-family: 'Source Sans Pro', sans;
 	font-weight: 600;
@@ -530,19 +537,18 @@ export default {
 	text-transform: uppercase;
 }
 .post-tags-bottom {
-	font-family: 'Courier Prime', monospace;
+	font-size: 12px;
 	font-weight: 600;
-	letter-spacing: 1px;
+	.tags-bottom {
+		box-shadow: inset 0 -10px 0 0 #f2cb05;
+		font-weight: 600;
+	}
 	a {
 		color: #0d0d0d;
 		text-decoration: none;
 	}
 	li {
-		padding: 0.5em;
-	}
-	.tags-bottom {
-		box-shadow: inset 0 -10px 0 0 #f2cb05;
-		font-weight: 700;
+		margin-right: 10px;
 	}
 }
 .post-title {
@@ -556,7 +562,6 @@ export default {
 	font-weight: 400;
 	line-height: 1.2;
 }
-
 .post-author-avatar {
 	filter: grayscale(100%);
 	transition: filter 0.2s ease;

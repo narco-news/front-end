@@ -1,18 +1,16 @@
 // Basic styles
-html {
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
-
 body {
 	width: 100%;
 	min-height: calc(100vh - #{$navbar-height + 1rem});
 	margin: 0;
 	font-family: $font-body;
-	background-color: $light;
 	color: $text-color;
 }
-
 hr {
 	margin: 2rem 1rem;
 }

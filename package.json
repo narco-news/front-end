@@ -1,6 +1,6 @@
 {
 	"name": "narco-news-front-end",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "This is the front end for the narco.news website. It is built with Nuxt JS and connected to Ghost Headless CMS to the back end.",
 	"private": true,
 	"scripts": {
@@ -26,7 +26,7 @@
 		"eslint-plugin-unicorn": "^19.0.1",
 		"hover.css": "^2.3.2",
 		"jshint": "^2.11.0",
-		"nuxt": "2.13",
+		"nuxt": "2.14",
 		"nuxt-compress": "^3.0.0",
 		"nuxt-i18n": "^6.13.1",
 		"nuxt-webfontloader": "1.1.0",
@@ -37,7 +37,7 @@
 		"tailwindcss": "^1.9.5",
 		"v-show-slide": "^1.8.3",
 		"vodal": "^2.4.0",
-		"vue": "^2.6.11",
+		"vue": "^2.6.12",
 		"vue-burger-menu": "^2.0.5",
 		"vue-clickaway": "^2.2.2",
 		"vue-cookies": "^1.7.0",

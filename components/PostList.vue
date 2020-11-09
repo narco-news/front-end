@@ -34,16 +34,14 @@
 									>
 								</div>
 							</div>
-							<div
-								class="published_at block text-xs whitespace-no-wrap text-gray-700"
-							>
+							<div class="published_at block text-xs whitespace-no-wrap">
 								{{ post.published_at | dayjs }}
 							</div>
+							<reading-time
+								:content="post.html"
+								class="reading text-xs whitespace-no-wrap"
+							/>
 						</div>
-						<reading-time
-							:content="post.html"
-							class="reading text-xs whitespace-no-wrap"
-						/>
 						<div class="title text-lg">
 							<h1 v-if="post.title">
 								<nuxt-link :to="{path: '/' + post.slug}" :title="post.title">{{
@@ -51,18 +49,12 @@
 								}}</nuxt-link>
 							</h1>
 						</div>
-						<div class="excerpt text-sm mt-2 mb-1 text-gray-700">
-							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
-							<p v-else-if="post.excerpt && !post.custom_excerpt">
-								{{ post.excerpt }}
-							</p>
-						</div>
-						<div class="author text-sm md:text-md text-gray-600">
+						<div class="author text-sm md:text-md sub-gray">
 							by
 							<nuxt-link
 								:to="{path: '/author/' + post.primary_author.slug}"
 								:title="post.primary_author.name"
-								class="font-bold uppercase"
+								class="sub-gray font-bold uppercase"
 								>{{ post.primary_author.name }}</nuxt-link
 							>
 						</div>
@@ -112,7 +104,7 @@ export default {
 
 	filters: {
 		dayjs(date) {
-			return dayjs(date).format('DD/MM/YYYY · hh:mm A');
+			return dayjs(date).format('DD/MM/YYYY');
 		}
 	},
 
@@ -238,8 +230,5 @@ article.article:nth-child(1) {
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 600;
-}
-.excerpt {
-	line-height: 1;
 }
 </style>

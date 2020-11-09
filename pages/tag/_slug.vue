@@ -1,8 +1,8 @@
 <template>
-	<div
-		class="large-barrier bg-white md:mx-12 lg:rounded-tl-md lg:rounded-tr-md shadow-inner m-4 p-4"
-	>
-		<h1 class="my-4 text-3xl text-center">{{ currentTag.name }}</h1>
+	<div class="large-barrier m-4">
+		<h1 class="m-4 text-2xl font-bold underline">
+			{{ currentTag.name }}
+		</h1>
 		<div class="row">
 			<div class="xs-12 lg-9 mx-auto">
 				<posts

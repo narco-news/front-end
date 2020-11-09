@@ -1,9 +1,9 @@
 <template>
 	<div class="my-6">
-		<h1 class="desc text-2xl md:text-3xl font-bold my-4 ml-8 md:ml-12">
+		<h1 class="desc text-xl md:text-2xl font-bold my-4 ml-8 md:ml-12">
 			{{ $t('message.faq') }}
 		</h1>
-		<div class="bg-white shadow-inner rounded-md mx-8">
+		<div class="accord shadow-inner rounded-md mx-8">
 			<Accordion :items="items" />
 		</div>
 	</div>
@@ -26,19 +26,13 @@ export default {
 					isExpanded: false
 				},
 				{
-					title: "Why'd you make this website?",
-					content:
-						'We wanted to join the conversation and have our own place to share ideas without restraint or censorship. We also needed a place to organized and compile any and all information relating to these topics.',
-					isExpanded: false
-				},
-				{
 					title: 'Are you cops?',
 					content:
 						'<strong>No.</strong> We have never been employed or had assocation with any law enforcement agencies. ',
 					isExpanded: false
 				},
 				{
-					title: 'Whose paying you?',
+					title: "Who's paying you?",
 					content: '<strong>No one.</strong> We are not funded by anyone.',
 					isExpanded: false
 				}
@@ -62,4 +56,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.accord {
+	background-color: #fafafa;
+}
+</style>

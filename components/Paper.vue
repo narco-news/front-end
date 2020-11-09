@@ -1,8 +1,6 @@
 <template>
 	<div>
-		<nuxt-link :to="infoLink">
-			<h1 style="color: #f26457;" class="text-lg font-serif">{{ title }}</h1>
-		</nuxt-link>
+		<h1 style="color: #f26457;" class="text-lg font-serif">{{ title }}</h1>
 		<p class="text-sm font-mono float-right">{{ date }}</p>
 		<p class="text-sm p-1">{{ authors }}</p>
 		<details class="px-4">
@@ -15,21 +13,9 @@
 			</p>
 		</details>
 		<div class="mt-4">
-			<!-- <h3 class="text-xs uppercase text-gray-500">Tags</h3> -->
 			<div class="flex flex-wrap flex-row">
-				<!-- <div class="inline m-2 lg:m-1">
-					<span
-						v-for="tag in tags"
-						:key="tag"
-						style="background-color: #3a656a; color: #eef3ed; font-size: 11px;"
-						class="rounded-md shadow-sm font-bold font-mono whitespace-no-wrap p-1 mr-3 flex-row text-center"
-					>
-						{{ tag }}
-					</span>
-				</div> -->
 				<div class="icons flex flex-auto justify-end">
 					<div>
-						<!-- Info icon -->
 						<a :href="infoLink" target="_blank" title="Infomation">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +30,6 @@
 						></a>
 					</div>
 					<div>
-						<!-- Download icon -->
 						<a :href="downLink" target="_blank" title="Download"
 							><svg
 								xmlns="http://www.w3.org/2000/svg"

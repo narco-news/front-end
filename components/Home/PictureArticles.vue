@@ -39,10 +39,10 @@
 							</div>
 						</div>
 						<div class="flex flex-row flex-wrap items-center">
-							<div class="date whitespace-no-wrap text-sm text-gray-600 mr-1">
+							<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
 								{{ post.published_at | dayjs }}
 							</div>
-							<div class="author text-sm md:text-md text-gray-600">
+							<div class="author text-sm md:text-md sub-gray">
 								by
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
@@ -58,7 +58,7 @@
 							>{{ post.title }}
 						</nuxt-link>
 					</h2>
-					<div class="excerpt">
+					<div class="excerpt ex-gray">
 						<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 						<p v-else-if="post.excerpt && !post.custom_excerpt">
 							{{ post.excerpt }}
@@ -144,7 +144,7 @@ export default {
 			font-weight: 600;
 		}
 		.tags {
-			color: #03a688;
+			color: #049372;
 		}
 
 		@media (min-width: 769px) {

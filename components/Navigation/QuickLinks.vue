@@ -3,7 +3,11 @@
 		class="flex flex-row flex-no-wrap whitespace-no-wrap justify-end md:justify-start"
 	>
 		<div class="item">
-			<n-link :to="localePath('/wire')" class="news flex flex-row flex-no-wrap">
+			<n-link
+				:to="localePath('/wire')"
+				title="Wire"
+				class="news flex flex-row flex-no-wrap"
+			>
 				<svg
 					class="w-4 h-4"
 					fill="none"
@@ -22,7 +26,11 @@
 			</n-link>
 		</div>
 		<div class="item">
-			<n-link :to="localePath('/pa')" class="feeds flex flex-row flex-no-wrap">
+			<n-link
+				:to="localePath('/pa')"
+				title="Press Aggregate"
+				class="feeds flex flex-row flex-no-wrap"
+			>
 				<svg
 					class="w-4 h-4"
 					fill="none"

@@ -16,16 +16,16 @@
 						</nuxt-link>
 					</div>
 					<div class="p-1">
-						<div class="flex flex-row justify-between flex-wrap-reverse">
+						<div class="flex flex-row justify-between flex-wrap">
 							<div
 								v-if="post.tags.length > 0"
-								class="flex flex-row flex-wrap justify-between whitespace-no-wrap"
+								class="flex flex-row flex-wrap whitespace-no-wrap"
 							>
-								<div v-for="tag in post.tags" :key="tag.id">
+								<div v-for="tag in post.tags" :key="tag.id" class="tags">
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="tags text-gray-700 font-bold mr-1"
+										class="mr-2"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</div>
@@ -47,7 +47,7 @@
 								}}</nuxt-link>
 							</h1>
 						</div>
-						<div class="">
+						<div class="excerpt">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
@@ -208,28 +208,32 @@ export default {
 }
 
 // Customization
-
 .featured-badge {
 	box-shadow: inset 0 -8px 0 0 #f2cb05;
 	font-weight: 700;
 	display: inline;
 	color: #0d0d0d;
 }
-
 .title {
-	color: #272727;
+	color: #262626;
 	font-weight: 700;
 	line-height: 1.2;
+	margin: 0.5em 0;
 }
-
 .published_at {
 	font-weight: 600;
 }
-
+.excerpt {
+	line-height: 1.2;
+}
 .tags {
-	color: #03a688;
-	text-transform: uppercase;
+	color: #262626;
 	font-size: 12px;
 	font-weight: 600;
+}
+.tags:nth-child(1) a {
+	color: #03a688;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 </style>
