@@ -2,17 +2,35 @@
 	<div class="navbar text-sm">
 		<div class="flex flex-row flex-no-wrap text-blue-500">
 			<!-- <n-link :to="localePath('/about')" alt="About page">About</n-link> -->
-			<n-link :to="localePath('/pa')" alt="Press Aggregate page"
-				>Press Aggregate</n-link
-			>
-			<n-link :to="localePath('/library')" alt="Book list page">Library</n-link>
+			<n-link :to="localePath('/pa')" alt="Press Aggregate page">{{
+				$t('message.pa')
+			}}</n-link>
+			<n-link :to="localePath('/library')" alt="Book list page">{{
+				$t('message.library')
+			}}</n-link>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'Navbar'
+	name: 'Navbar',
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					pa: 'Press Aggregate',
+					library: 'Library'
+				}
+			},
+			es: {
+				message: {
+					pa: 'Agregado de la prensa',
+					library: 'Biblioteca'
+				}
+			}
+		}
+	}
 };
 </script>
 
