@@ -301,7 +301,7 @@ dayjs.extend(advancedFormat);
 
 export default {
 	name: 'PostsPage',
-
+	layout: 'article',
 	components: {
 		'scroll-progress-bar': ScrollProgressBar,
 		ScrollToTop,
@@ -406,15 +406,6 @@ export default {
 	head() {
 		return {
 			title: this.post.title,
-			script: [
-				{
-					hid: 'twitter',
-					type: 'text/javascript',
-					src: '//platform.twitter.com/widgets.js',
-					async: true,
-					defer: true
-				}
-			],
 			meta: [
 				{
 					hid: 'description',

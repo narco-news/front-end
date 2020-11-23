@@ -1,8 +1,8 @@
 <template>
 	<div class="articles">
-		<article v-for="post in posts.slice(3, 10)" :key="post.id" class="article">
+		<article v-for="post in posts" :key="post.id" class="article">
 			<div v-if="post.feature_image">
-				<nuxt-link :to="{path: '/' + post.slug}">
+				<nuxt-link :to="localePath({path: '/' + post.slug})">
 					<div class="overflow-hidden img-wrap">
 						<img :src="post.feature_image" :alt="post.title" class="hvr-grow" />
 					</div>

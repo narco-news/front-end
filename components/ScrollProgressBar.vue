@@ -46,7 +46,7 @@ export default {
 
 .progress-bar {
 	position: fixed;
-	top: 24px;
+	top: 0px;
 	left: 0;
 	width: 100%;
 	background-color: transparent;

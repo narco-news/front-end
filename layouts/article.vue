@@ -1,19 +1,9 @@
 <template>
 	<div>
 		<LogoBanner />
-		<div class="nav grid grid-cols-2">
+		<!-- <div class="nav grid grid-cols-2">
 			<Navbar />
-			<div class="flex items-center justify-end">
-				<nuxt-link
-					v-for="locale in availableLocales"
-					:key="locale.code"
-					:to="switchLocalePath(locale.code)"
-					class="float-right lang-button text-sm font-bold"
-					@click.prevent.stop="setLocale(locale.code)"
-					>{{ locale.name }}</nuxt-link
-				>
-			</div>
-		</div>
+		</div> -->
 		<div id="page-wrap">
 			<nuxt />
 		</div>
@@ -23,19 +13,16 @@
 
 <script>
 import LogoBanner from '~/components/Navigation/LogoBanner';
-import Navbar from '~/components/Navigation/Navbar';
+// import Navbar from '~/components/Navigation/Navbar';
 import Footer from '~/components/Footer';
 
 export default {
 	components: {
 		LogoBanner,
-		Footer,
-		Navbar
+		Footer
+		// Navbar
 	},
 	computed: {
-		availableLocales() {
-			return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
-		},
 		pageSettings() {
 			return this.$store.state.pageSettings;
 		},
@@ -89,9 +76,8 @@ export default {
 
 <style lang="scss">
 .nav {
-	background-color: white;
 	max-width: 325px;
-	margin: 0 auto 1em auto;
+	margin: 0em auto 1em auto;
 }
 .bb {
 	height: 1px;

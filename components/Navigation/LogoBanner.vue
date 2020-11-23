@@ -11,14 +11,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'LogoBanner'
+};
 </script>
 
 <style lang="scss" scoped>
 .logo {
-	height: 65px;
-}
-img {
-	padding-top: 10px;
+	background-color: #f2f2f2;
+	height: 40px;
 }
 </style>

@@ -1,11 +1,12 @@
 <template>
-	<div
-		class="navbar flex flex-wrap justify-center items-center text-xs md:text-sm text-blue-500"
-	>
-		<n-link to="/about" alt="About page">About</n-link>
-		<n-link to="/wire" alt="Wire page">Wire</n-link>
-		<n-link to="/pa" alt="Press Aggregate page">Press Aggregate</n-link>
-		<n-link to="/library" alt="Book list page">Library</n-link>
+	<div class="navbar text-sm p-2">
+		<div class="flex flex-row flex-no-wrap text-blue-500">
+			<n-link :to="localePath('/about')" alt="About page">About</n-link>
+			<n-link :to="localePath('/pa')" alt="Press Aggregate page"
+				>Press Aggregate</n-link
+			>
+			<n-link :to="localePath('/library')" alt="Book list page">Library</n-link>
+		</div>
 	</div>
 </template>
 
@@ -17,13 +18,8 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-	background-color: #f2f2f2;
-	height: 30px;
-	width: 100%;
-	z-index: 30;
-	padding-bottom: 10px;
 	a {
-		margin: 0 0.5em;
+		margin: 0 0.25em;
 		white-space: nowrap;
 		font-weight: 600;
 		font-family: 'Source Sans Pro', serif;

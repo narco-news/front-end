@@ -19,7 +19,6 @@
 <script>
 import QuickLinks from '~/components/Wire/QuickLinks';
 import TagsBox from '~/components/TagsBox';
-
 import Posts from '~/components/PostList';
 
 export default {

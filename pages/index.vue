@@ -1,13 +1,14 @@
 <template>
-	<div class="large-barrier p-2 py-4 grid grid-cols-3 md:grid-cols-4">
-		<div class="col-span-3 barrier">
-			<PictureArticleList />
-			<hr class="py-2 mt-2" />
-			<FeaturedArticles />
-		</div>
-		<div class="list col-span-3 md:col-span-1 md:px-2">
-			<Headlines />
-			<!-- <TagsBox :filter="3" /> -->
+	<div>
+		<div class="large-barrier p-2 grid grid-cols-3 md:grid-cols-4">
+			<div class="col-span-3 barrier">
+				<PictureArticleList />
+				<FeaturedArticles />
+			</div>
+			<div class="list col-span-3 md:col-span-1 md:px-2">
+				<Headlines />
+				<!-- <TagsBox :filter="3" /> -->
+			</div>
 		</div>
 	</div>
 </template>
@@ -17,7 +18,6 @@ import PictureArticleList from '~/components/Home/PictureArticleList';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
 import Headlines from '~/components/Home/Headlines';
 // import TagsBox from '~/components/TagsBox';
-// import Popup from '~/components/Home/Popup';
 
 export default {
 	layout: 'default',
@@ -26,7 +26,6 @@ export default {
 		FeaturedArticles,
 		Headlines
 		// TagsBox
-		// Popup
 	},
 	async fetch({error, params, payload, store}) {
 		if (payload) {
@@ -39,7 +38,7 @@ export default {
 
 			try {
 				await store.dispatch('getPostsIndex', {
-					filter: '',
+					filter: store.state.lang.tag,
 					pageNumber
 				});
 			} catch (err) {
@@ -58,6 +57,11 @@ export default {
 			feature_image: 'https://narco.news/images/twt-banner.png',
 			title: 'narco.news'
 		};
+	},
+	computed: {
+		availableLocales() {
+			return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
+		}
 	},
 	head() {
 		return {
@@ -121,9 +125,5 @@ export default {
 	@media (min-width: 768px) {
 		border-left: 1px solid #e5e5e5;
 	}
-}
-hr {
-	width: 96%;
-	color: #e5e5e5;
 }
 </style>

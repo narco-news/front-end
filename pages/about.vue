@@ -28,23 +28,13 @@
 			</RoughNotation>
 			{{ $t('message.texttwo') }}
 		</div>
-		<Focus />
 		<FAQ />
-		<div
-			class="quote-2 text-sm md:text-md h-auto rounded-md shadow-md overflow-hidden"
-		>
-			<span class="float-left italic"> "{{ $t('message.dt') }}" </span>
+		<div class="inline-block text-xs md:text-sm mt-48">
+			<span class="float-left italic font-bold mb-2">
+				"{{ $t('message.dt') }}"
+			</span>
 
-			<div
-				style="
-					color: #03a688;
-					font-weight: 600;
-					font-size: 9px;
-					font-family: 'Courier Prime';
-					max-width: 300px;
-				"
-				class="mt-2 float-right text-right"
-			>
+			<div class="text-green-500 w-3/4">
 				Martin, J. M., and A. T. Romano.
 				<span class="italic"
 					>Multinational crime: Terrorism, espionage, drug and arms
@@ -56,11 +46,9 @@
 </template>
 
 <script>
-import Focus from '~/components/Home/Focus';
 import FAQ from '~/components/Home/FAQ';
 export default {
 	components: {
-		Focus,
 		FAQ
 	},
 	data() {
@@ -95,7 +83,8 @@ export default {
 			},
 			es: {
 				message: {
-					introduction: '',
+					introduction:
+						'Creamos este sitio web por la necesidad de una mejor información sobre la violencia en México. Mucha de ella en inglés no está bien documentada y a menudo se comparte sin mucho contexto. Nuestro plan es cambiar eso, documentando y proporcionando fuentes precisas para actividades significativas. También, publicando inmersiones profundas y análisis de información de código abierto con un enfoque en los medios sociales.',
 					first_quote:
 						'Un {0} realizado por Luis Ángel Hurtado, profesor e investigador de la Facultad de Ciencias Políticas y Sociales de la UNAM concluyó',
 					source: 'análisis',

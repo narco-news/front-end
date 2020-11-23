@@ -3,7 +3,6 @@
 		id="sticky-header"
 		class="grid grid-cols-4 md:grid-cols-5 gap-4 sticky top-0 py-1 z-40"
 	>
-		<div class="col-span-1 ml-2"><LanguageToggle /></div>
 		<div class="col-span-1 whitespace-no-wrap">
 			{{ $t('message.date') }}
 		</div>
@@ -18,13 +17,11 @@
 <script>
 import dayjs from 'dayjs';
 import 'dayjs/locale/es';
-import LanguageToggle from '~/components/Navigation/LanguageToggle';
 import SocialLinks from '~/components/Navigation/SocialLinks';
 
 export default {
 	name: 'StickyHeader',
 	components: {
-		LanguageToggle,
 		SocialLinks
 	},
 	i18n: {

@@ -1,7 +1,5 @@
 <template>
-	<div
-		class="large-barrier feeds p-4 md:p-8 bg-white shadow-inner lg:rounded-tr-md lg:rounded-tl-md"
-	>
+	<div class="large-barrier feeds p-4 md:p-8 bg-white">
 		<p class="intro my-2 text-sm">{{ $t('message.intro') }}</p>
 		<h1 class="text-xl font-bold underline mb-2">
 			{{ $t('message.spanishblogs') }}
