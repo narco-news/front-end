@@ -29,12 +29,9 @@
 			{{ $t('message.texttwo') }}
 		</div>
 		<FAQ />
-		<div class="inline-block text-xs md:text-sm mt-48">
-			<span class="float-left italic font-bold mb-2">
-				"{{ $t('message.dt') }}"
-			</span>
-
-			<div class="text-green-500 w-3/4">
+		<div class="inline-block bottom-quote">
+			<span class="float-left italic mb-2"> "{{ $t('message.dt') }}" </span>
+			<div class="attribute text-green-500 w-3/4">
 				Martin, J. M., and A. T. Romano.
 				<span class="italic"
 					>Multinational crime: Terrorism, espionage, drug and arms
@@ -158,18 +155,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.bottom-quote {
+	font-size: 10px;
+	padding: 1em;
+	line-height: 1.3;
+	letter-spacing: 0.5px;
+	font-weight: 500;
+	font-family: 'EB Garamond', serif;
+	.attribute {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 400;
+	}
+}
 .quote {
 	background-color: white;
 	font-family: 'EB Garamond', sans-serif;
 	padding: 1em 1em;
 	margin: 2em 2em;
-	border: 1px solid #03a688;
-}
-.quote-2 {
-	background-color: white;
-	font-family: 'EB Garamond', sans-serif;
-	padding: 1em 1em;
-	margin: 8em 2em 1em 2em;
 	border: 1px solid #03a688;
 }
 .color-soc-icons {
