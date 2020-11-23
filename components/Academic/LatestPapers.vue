@@ -1,6 +1,6 @@
 <template>
 	<div class="m-4">
-		<h1 class="text-lg underline my-2">Recent papers</h1>
+		<h1 class="text-lg underline my-2">{{ $t('message.recentpapers') }}</h1>
 		<div v-for="paper in papers" id="paper" :key="paper.id">
 			<a :href="paper.link" class="cursor-pointer" target="_blank">
 				<p class="title text-md">{{ paper.title }}</p>
@@ -35,6 +35,20 @@ export default {
 			papers: RecentPapers.papers,
 			featuresOpen: false
 		};
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					recentpapers: 'Recent papers'
+				}
+			},
+			es: {
+				message: {
+					recentpapers: 'Documentos recientes'
+				}
+			}
+		}
 	}
 };
 </script>

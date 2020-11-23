@@ -1,13 +1,13 @@
 <template>
 	<div class="m-4 md:m-8">
 		<Tabs>
-			<tab title="Books" class="tab">
+			<tab :title="$t('message.books')" class="tab">
 				<BookList />
 			</tab>
-			<tab title="Academic Books" class="tab">
+			<tab :title="$t('message.academicbooks')" class="tab">
 				<ABooks />
 			</tab>
-			<tab title="Academic Papers" class="tab">
+			<tab :title="$t('message.academicpapers')" class="tab">
 				<LatestPapers />
 			</tab>
 		</Tabs>
@@ -27,6 +27,24 @@ export default {
 		Tab,
 		ABooks,
 		LatestPapers
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					books: 'Books',
+					academicbooks: 'Academic books',
+					academicpapers: 'Academic papers'
+				}
+			},
+			es: {
+				message: {
+					books: 'Libros',
+					academicbooks: 'Libros académicos',
+					academicpapers: 'Documentos académicos'
+				}
+			}
+		}
 	}
 };
 </script>
@@ -42,6 +60,7 @@ export default {
 	padding-left: 0;
 }
 .vue-tab {
+	font-size: 12px;
 	padding: 5px 10px;
 	cursor: pointer;
 	user-select: none;
