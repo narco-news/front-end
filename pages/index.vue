@@ -121,9 +121,9 @@ export default {
 
 <style lang="scss" scoped>
 .list {
-	border-left: 0px solid #e5e5e5;
+	border-left: 0px solid #e2e8f0;
 	@media (min-width: 768px) {
-		border-left: 1px solid #e5e5e5;
+		border-left: 1px solid #e2e8f0;
 	}
 }
 </style>
