@@ -20,7 +20,7 @@ import Posts from '~/components/Posts.vue';
 
 export default {
 	name: 'Tag',
-
+	layout: 'article',
 	components: {
 		posts: Posts
 	},

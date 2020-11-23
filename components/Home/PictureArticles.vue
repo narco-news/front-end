@@ -1,6 +1,6 @@
 <template>
 	<div class="articles">
-		<article v-for="post in posts" :key="post.id" class="article">
+		<article v-for="post in posts.slice(0, 10)" :key="post.id" class="article">
 			<div v-if="post.feature_image">
 				<nuxt-link :to="localePath({path: '/' + post.slug})">
 					<div class="overflow-hidden img-wrap">
@@ -54,7 +54,9 @@
 						</div>
 					</div>
 					<h2 v-if="post.title" class="title capitalize text-xl">
-						<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
+						<nuxt-link
+							:to="localePath({path: '/' + post.slug})"
+							:title="post.title"
 							>{{ post.title }}
 						</nuxt-link>
 					</h2>

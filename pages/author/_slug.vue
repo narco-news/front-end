@@ -1,5 +1,5 @@
 <template>
-	<div class="author">
+	<div class="author mt-6">
 		<header
 			:style="{
 				backgroundImage: `${pageAuthor.cover_image}`
@@ -91,7 +91,7 @@ import PostList from '~/components/Posts.vue';
 
 export default {
 	name: 'AuthorIndex',
-
+	layout: 'article',
 	components: {
 		posts: PostList
 	},

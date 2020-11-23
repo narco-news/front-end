@@ -1,6 +1,11 @@
 <template>
 	<div class="list my-2 md:my-0">
 		<article v-for="post in posts.slice(10, 20)" :key="post.id" class="article">
+			<nuxt-link :to="localePath({path: '/' + post.slug})" class="md:hidden">
+				<div class="overflow-hidden img-wrap">
+					<img :src="post.feature_image" :alt="post.title" class="hvr-grow" />
+				</div>
+			</nuxt-link>
 			<ul>
 				<li class="mb-1">
 					<div
@@ -97,6 +102,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.img-wrap {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+img {
+	max-height: 115px;
+	width: 100%;
+	object-fit: cover;
+	@media (max-width: 375px) {
+		max-height: 160px;
+	}
+}
 .excerpt {
 	line-height: 1.2;
 }

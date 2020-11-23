@@ -1,14 +1,14 @@
 <template>
 	<div>
 		<LogoBanner />
-		<div class="nav grid grid-cols-2">
+		<div class="nav grid grid-cols-2 pt-2">
 			<Navbar />
 			<div class="flex items-center justify-end">
 				<nuxt-link
 					v-for="locale in availableLocales"
 					:key="locale.code"
 					:to="switchLocalePath(locale.code)"
-					class="float-right lang-button text-sm font-bold"
+					class="float-right lang-button text-sm font-bold underline"
 					@click.prevent.stop="setLocale(locale.code)"
 					>{{ locale.name }}</nuxt-link
 				>

@@ -5,7 +5,7 @@
 				<PictureArticleList />
 				<FeaturedArticles />
 			</div>
-			<div class="list col-span-3 md:col-span-1 md:px-2">
+			<div class="list col-span-3 md:col-span-1 md:px-2 p-2">
 				<Headlines />
 				<!-- <TagsBox :filter="3" /> -->
 			</div>

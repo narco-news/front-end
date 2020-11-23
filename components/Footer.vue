@@ -58,7 +58,7 @@
 					<div class="links grid grid-flow-row uppercase m-4">
 						<h2 class="text-gray-500">narco.news</h2>
 						<n-link class="" to="/about">About</n-link>
-						<n-link class="" to="/wire">Wire</n-link>
+						<!-- <n-link class="" to="/wire">Wire</n-link> -->
 						<n-link class="" to="/pa">Press Aggregate</n-link>
 						<n-link class="" to="/library">Library</n-link>
 						<n-link class="" to="/contact">Contact</n-link>

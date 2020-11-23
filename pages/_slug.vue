@@ -2,101 +2,36 @@
 	<div class="overflow-y-hidden large-barrier mx-4 lg:mx-20 bg-white">
 		<div class="row">
 			<div class="mx-auto p-4 md:p-8">
-				<!-- TAGS -->
-				<div class="post-tags md:mx-8">
-					<div class="float-right">
-						<social-icon
-							:url="
-								'https://www.linkedin.com/shareArticle/' +
-								'?mini=true' +
-								'&url=' +
-								blogUrl +
-								'/' +
-								post.slug
-							"
-							class="float-right"
-							click="
-							window.open(href, 'facebook-share', 'width=580,height=296');
-							return false;
-						"
-						>
-							<img
-								src="~/assets/icons/linkedin-rounded.svg"
-								alt="Share article on LinkedIn"
-								title="Share article on LinkedIn"
-								class="w-6"
-							/>
-						</social-icon>
-						<social-icon
-							:url="
-								'https://www.facebook.com/sharer.php?u=' +
-								blogUrl +
-								'/' +
-								post.slug
-							"
-							class="float-right"
-							click="
-							window.open(href, 'facebook-share', 'width=580,height=296');
-							return false;
-						"
-						>
-							<img
-								src="~/assets/icons/facebook-rounded.svg"
-								alt="Share article on Facebook"
-								title="Share article on Facebook"
-								class="w-6"
-							/>
-						</social-icon>
-						<social-icon
-							:url="
-								'https://twitter.com/share?text=' +
-								post.title +
-								'&url=' +
-								blogUrl +
-								'/' +
-								post.slug
-							"
-							class="float-right"
-							click="
-							window.open(href, 'twitter-share', 'width=550,height=235');
-							return false;
-						"
-						>
-							<img
-								src="~/assets/icons/twitter-rounded.svg"
-								alt="Share article on Twitter"
-								title="Share article on Twitter"
-								class="w-6"
-							/>
-						</social-icon>
+				<div class="flex flex-row justify-between items-center">
+					<div class="post-tags md:mx-8">
+						<div class="flex flex-col-reverse md:flex-col">
+							<ul class="list inline">
+								<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
+									<nuxt-link
+										:to="{path: '/tag/' + tag.slug}"
+										:title="tag.name"
+										class="text-xl"
+										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+									>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="flex flex-col-reverse md:flex-col">
-						<ul class="list inline">
-							<li v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
-								<nuxt-link
-									:to="{path: '/tag/' + tag.slug}"
-									:title="tag.name"
-									class="text-xl"
-									>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
-								>
-							</li>
-						</ul>
-					</div>
+					<ul class="list inline md:mx-8">
+						<li
+							v-for="tag in post.tags.slice(1, 4)"
+							:key="tag.id"
+							class="text-gray-600 text-sm"
+						>
+							<nuxt-link
+								:to="{path: '/tag/' + tag.slug}"
+								:title="tag.name"
+								class="hvr-sink underline mr-2"
+								>{{ tag.name.replace(/^(#)/, '') }}
+							</nuxt-link>
+						</li>
+					</ul>
 				</div>
-				<ul class="list inline md:mx-8">
-					<li
-						v-for="tag in post.tags.slice(1, 4)"
-						:key="tag.id"
-						class="text-gray-600 text-sm"
-					>
-						<nuxt-link
-							:to="{path: '/tag/' + tag.slug}"
-							:title="tag.name"
-							class="hvr-sink mr-1 md:mr-2"
-							>{{ tag.name.replace(/^(#)/, '') }}
-						</nuxt-link>
-					</li>
-				</ul>
 				<h1 class="post-title text-4xl mt-4 md:mx-8">
 					{{ post.title }}
 				</h1>
@@ -141,33 +76,95 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-span-1 text-right">
-						<!-- DATE -->
-						<div class="text-sm lg:text-lg">
-							<div class="post-meta-date">
-								<div
-									class="post-meta-date-info md:flex md:flex-row md:flex-no-wrap"
-								>
-									<span class="published_at font-bold">{{
-										post.published_at | dayjs
-									}}</span>
-									<!-- <br /><span
-										v-if="post.updated_at !== post.published_at"
-										class="updated_at text-xs text-gray-500 md:ml-4"
-									>
-										last edited <span>{{ post.updated_at | dayjs }}</span></span
-									> -->
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 				<article class="single-post">
 					<scroll-progress-bar />
 					<div v-if="post.feature_image" class="picture">
 						<img :src="post.feature_image" :alt="post.title" class="my-4" />
 					</div>
-					<div class="row">
+					<div class="grid grid-cols-2 mx-2">
+						<div class="col-span-1">
+							<div class="text-sm lg:text-lg">
+								<div class="post-meta-date">
+									<div
+										class="post-meta-date-info md:flex md:flex-row md:flex-no-wrap"
+									>
+										<span class="published_at font-bold">{{
+											post.published_at | dayjs
+										}}</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex justify-end">
+							<social-icon
+								:url="
+									'https://www.linkedin.com/shareArticle/' +
+									'?mini=true' +
+									'&url=' +
+									blogUrl +
+									'/' +
+									post.slug
+								"
+								class=""
+								click="
+							window.open(href, 'facebook-share', 'width=580,height=296');
+							return false;
+						"
+							>
+								<img
+									src="~/assets/icons/linkedin-rounded.svg"
+									alt="Share article on LinkedIn"
+									title="Share article on LinkedIn"
+									class="w-6"
+								/>
+							</social-icon>
+							<social-icon
+								:url="
+									'https://www.facebook.com/sharer.php?u=' +
+									blogUrl +
+									'/' +
+									post.slug
+								"
+								class=""
+								click="
+							window.open(href, 'facebook-share', 'width=580,height=296');
+							return false;
+						"
+							>
+								<img
+									src="~/assets/icons/facebook-rounded.svg"
+									alt="Share article on Facebook"
+									title="Share article on Facebook"
+									class="w-6"
+								/>
+							</social-icon>
+							<social-icon
+								:url="
+									'https://twitter.com/share?text=' +
+									post.title +
+									'&url=' +
+									blogUrl +
+									'/' +
+									post.slug
+								"
+								class=""
+								click="
+							window.open(href, 'twitter-share', 'width=550,height=235');
+							return false;
+						"
+							>
+								<img
+									src="~/assets/icons/twitter-rounded.svg"
+									alt="Share article on Twitter"
+									title="Share article on Twitter"
+									class="w-6"
+								/>
+							</social-icon>
+						</div>
+					</div>
+
+					<div class="row clear-both">
 						<div class="mx-auto">
 							<div class="antialiased post-content">
 								<!-- eslint-disable-next-line vue/no-v-html -->
@@ -513,6 +510,7 @@ export default {
 	}
 }
 .post-content {
+	padding-top: 1em;
 	@media (min-width: 768px) {
 		padding: 0 1em;
 	}

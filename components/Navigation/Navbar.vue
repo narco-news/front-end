@@ -1,7 +1,7 @@
 <template>
-	<div class="navbar text-sm p-2">
+	<div class="navbar text-sm">
 		<div class="flex flex-row flex-no-wrap text-blue-500">
-			<n-link :to="localePath('/about')" alt="About page">About</n-link>
+			<!-- <n-link :to="localePath('/about')" alt="About page">About</n-link> -->
 			<n-link :to="localePath('/pa')" alt="Press Aggregate page"
 				>Press Aggregate</n-link
 			>
