@@ -510,9 +510,9 @@ export default {
 	}
 }
 .post-content {
-	padding-top: 1em;
+	padding-top: 2em;
 	@media (min-width: 768px) {
-		padding: 0 1em;
+		padding: 2em 1em;
 	}
 }
 .top {

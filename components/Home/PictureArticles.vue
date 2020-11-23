@@ -47,7 +47,7 @@
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
 									:title="post.primary_author.name"
-									class="font-bold uppercase"
+									class="font-bold uppercase underline"
 									>{{ post.primary_author.name }}</nuxt-link
 								>
 							</div>
