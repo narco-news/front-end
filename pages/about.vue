@@ -28,10 +28,9 @@
 			</RoughNotation>
 			{{ $t('message.texttwo') }}
 		</div>
-		<FAQ />
-		<div class="inline-block bottom-quote">
+		<div class="quote shadow-md rounded-md text-sm md:text-md bottom-quote">
 			<span class="float-left italic mb-2"> "{{ $t('message.dt') }}" </span>
-			<div class="attribute text-green-500 w-3/4">
+			<div class="attribute text-green-500 w-3/4 md:w-2/4">
 				Martin, J. M., and A. T. Romano.
 				<span class="italic"
 					>Multinational crime: Terrorism, espionage, drug and arms
@@ -39,6 +38,7 @@
 				>. SAGE Publications, 1992.
 			</div>
 		</div>
+		<FAQ class="mt-20" />
 	</div>
 </template>
 
@@ -156,11 +156,9 @@ export default {
 
 <style lang="scss" scoped>
 .bottom-quote {
-	font-size: 10px;
 	padding: 1em;
 	line-height: 1.3;
 	letter-spacing: 0.5px;
-	font-weight: 500;
 	font-family: 'EB Garamond', serif;
 	.attribute {
 		font-family: 'Source Sans Pro', sans-serif;
