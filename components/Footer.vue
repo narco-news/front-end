@@ -1,7 +1,7 @@
 <template>
 	<div style="background-color: #383e42;" class="">
 		<div class="">
-			<div class="px-6 py-6">
+			<div class="px-6 py-6 lg:mx-32">
 				<!-- Mailing -->
 				<!-- <div class="col-span-5 md:col-span-3 p-2 text-center">
 					<span class="text-md w-full font-bold foot-title">Mailing list</span>
@@ -54,17 +54,41 @@
 						</mailchimp-subscribe>
 					</div>
 				</div> -->
-				<div class="links grid grid-flow-row m-4">
-					<div class="grid grid-cols-2 w-1/2 text-lg text-white pb-4">
+				<div class="links grid grid-flow-row lg:grid-flow-col m-4">
+					<!-- <div
+						class="grid grid-cols-2 text-lg text-white pb-4 whitespace-no-wrap md:w-1/2"
+					>
 						<n-link to="#">Monthly Update</n-link>
-						<n-link to="#">Analysis</n-link>
+						<n-link to="/tag/hash-ana">Analysis</n-link>
 						<n-link to="#">Research</n-link>
 						<n-link to="#">Opinion</n-link>
+					</div> -->
+					<div
+						class="social-icons flex flex-row pb-4 lg:pb-0"
+						alt="narco.news RSS feed link"
+					>
+						<a href="https://publish.narco.news/rss">
+							<img
+								src="~/assets/icons/rss-circle-white.svg"
+								title="RSS"
+								class="w-8 h-8"
+							/>
+						</a>
+						<a href="https://github.com/narco-news/front-end">
+							<img
+								src="~/assets/icons/github-white-circle.png"
+								alt="narco.news Github page link"
+								title="Github"
+								class="w-8 h-8"
+							/>
+						</a>
 					</div>
 				</div>
 				<div class="links grid grid-flow-row m-4">
 					<h2 class="text-gray-500 text-lg">narco.news</h2>
-					<div class="grid grid-cols-2 w-1/2 text-lg pb-4">
+					<div
+						class="grid grid-cols-2 text-lg pb-4 whitespace-no-wrap md:w-1/2 lg:w-1/4"
+					>
 						<n-link to="/about">About</n-link>
 						<n-link to="/pa">Press Aggregate</n-link>
 						<n-link to="/library">Library</n-link>
@@ -73,7 +97,9 @@
 				</div>
 				<div class="links grid grid-flow-row m-4">
 					<h2 class="text-gray-500 text-lg">Regions</h2>
-					<div class="grid grid-cols-2 w-1/2 text-lg pb-4">
+					<div
+						class="grid grid-cols-2 text-lg pb-4 whitespace-no-wrap md:w-1/2 lg:w-1/4"
+					>
 						<n-link to="/tag/united-states">United States</n-link>
 						<n-link to="/tag/mexican-dto">Mexico</n-link>
 						<n-link to="/tag/central-america">Central America</n-link>
@@ -81,7 +107,7 @@
 					</div>
 				</div>
 				<div class="grid grid-flow-row m-4">
-					<div class="bot-links flex w-1/2 text-md pb-4">
+					<div class="bot-links flex w-1/2 text-md pb-4 whitespace-no-wrap">
 						<n-link to="">Privacy</n-link>
 						<n-link to="">Cookie Policy</n-link>
 						<n-link to="">Accessibility</n-link>
@@ -127,6 +153,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.social-icons {
+	img {
+		margin: 0 1em;
+	}
+}
 h2 {
 	color: white;
 }
@@ -142,6 +173,9 @@ h2 {
 	border-bottom: 1px solid #7e7e7e;
 	a {
 		margin: 0.5em 0;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 .site-name {
