@@ -3,7 +3,7 @@
 		<div class="flex flex-auto flex-wrap my-5 content-center justify-center">
 			<div v-for="book in bookList" :key="book.id">
 				<BookCard
-					class="m-6"
+					class="m-4"
 					:title="book.title"
 					:date="book.datePublished"
 					:authors="book.authors"

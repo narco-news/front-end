@@ -11,7 +11,7 @@
 					<div class="book-title inline-block text-md px-2 mt-4">
 						{{ title }}
 					</div>
-					<div style="color: #f26457;" class="inline-block text-center p-1">
+					<div class="inline-block text-center p-1">
 						{{ authors }}
 					</div>
 					<div
@@ -70,7 +70,7 @@ export default {
 	max-height: 18rem;
 }
 .book-title {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'EB Garamond', serif;
 	font-weight: 600;
 	color: #262626;
 }
