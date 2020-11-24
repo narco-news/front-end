@@ -1,7 +1,7 @@
 <template>
-	<div style="background-color: #262626;" class="">
-		<div class="flex justify-center">
-			<div class="">
+	<div style="background-color: #383e42;" class="">
+		<div class="">
+			<div class="px-6 py-6">
 				<!-- Mailing -->
 				<!-- <div class="col-span-5 md:col-span-3 p-2 text-center">
 					<span class="text-md w-full font-bold foot-title">Mailing list</span>
@@ -54,22 +54,37 @@
 						</mailchimp-subscribe>
 					</div>
 				</div> -->
-				<div class="p-2 flex flex-row justify-center">
-					<div class="links grid grid-flow-row uppercase m-4">
-						<h2 class="text-gray-500">narco.news</h2>
-						<n-link class="" to="/about">About</n-link>
-						<!-- <n-link class="" to="/wire">Wire</n-link> -->
-						<n-link class="" to="/pa">Press Aggregate</n-link>
-						<n-link class="" to="/library">Library</n-link>
-						<n-link class="" to="/contact">Contact</n-link>
+				<div class="links grid grid-flow-row m-4">
+					<div class="grid grid-cols-2 w-1/2 text-lg text-white pb-4">
+						<n-link to="#">Monthly Update</n-link>
+						<n-link to="#">Analysis</n-link>
+						<n-link to="#">Research</n-link>
+						<n-link to="#">Opinion</n-link>
 					</div>
-					<div class="links grid grid-flow-row uppercase m-4">
-						<h2 class="text-gray-500">Sections</h2>
-						<n-link class="" to="/tag/united-states">United States</n-link>
-						<n-link class="" to="/tag/mexican-dto">Mexico</n-link>
-						<n-link class="" to="/tag/central-america">Central America</n-link>
-						<n-link class="" to="/tag/south-america">South America</n-link>
-						<n-link class="" to="/tag/opinion">Opinion</n-link>
+				</div>
+				<div class="links grid grid-flow-row m-4">
+					<h2 class="text-gray-500 text-lg">narco.news</h2>
+					<div class="grid grid-cols-2 w-1/2 text-lg pb-4">
+						<n-link to="/about">About</n-link>
+						<n-link to="/pa">Press Aggregate</n-link>
+						<n-link to="/library">Library</n-link>
+						<n-link to="/contact">Contact</n-link>
+					</div>
+				</div>
+				<div class="links grid grid-flow-row m-4">
+					<h2 class="text-gray-500 text-lg">Regions</h2>
+					<div class="grid grid-cols-2 w-1/2 text-lg pb-4">
+						<n-link to="/tag/united-states">United States</n-link>
+						<n-link to="/tag/mexican-dto">Mexico</n-link>
+						<n-link to="/tag/central-america">Central America</n-link>
+						<n-link to="/tag/south-america">South America</n-link>
+					</div>
+				</div>
+				<div class="grid grid-flow-row m-4">
+					<div class="bot-links flex w-1/2 text-md pb-4">
+						<n-link to="">Privacy</n-link>
+						<n-link to="">Cookie Policy</n-link>
+						<n-link to="">Accessibility</n-link>
 					</div>
 				</div>
 			</div>
@@ -112,16 +127,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.logo {
-	img {
-		-webkit-filter: invert(1);
-		filter: invert(1);
+h2 {
+	color: white;
+}
+.bot-links {
+	a {
+		color: #7e7e7e;
+		margin-right: 15px;
 	}
 }
 .links {
-	color: #fcfcfc;
+	color: #d7d7d7;
 	font-weight: 600;
-	font-size: 11px;
+	border-bottom: 1px solid #7e7e7e;
+	a {
+		margin: 0.5em 0;
+	}
 }
 .site-name {
 	font-weight: 600;
