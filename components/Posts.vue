@@ -16,21 +16,31 @@
 						</nuxt-link>
 					</div>
 					<div class="p-1">
-						<div class="flex flex-row justify-between flex-wrap">
+						<!-- <div class="flex flex-row justify-between flex-wrap">
 							<div
 								v-if="post.tags.length > 0"
 								class="flex flex-row flex-wrap whitespace-no-wrap"
 							>
-								<div v-for="tag in post.tags" :key="tag.id" class="tags">
-									<nuxt-link
-										:to="{path: '/tag/' + tag.slug}"
-										:title="tag.name"
-										class="mr-2"
-										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
-									>
+								<div
+									v-for="tag in post.tags.slice(0, 4)"
+									:key="tag.id"
+									class="tags"
+								>
+									<div v-if="tag.slug != 'hash-es'">
+										<div v-if="tag.slug != 'hash-ana'">
+											<div v-if="tag.slug != 'hash-res'">
+												<nuxt-link
+													:to="{path: '/tag/' + tag.slug}"
+													:title="tag.name"
+													class="mr-2"
+													>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+												>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div
 							v-if="post.featured"
 							class="featured-badge post-featured uppercase text-xs block"
@@ -87,8 +97,6 @@ import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
-// import ReadingTime from '~/components/ReadingTime.vue';
-
 dayjs.extend(advancedFormat);
 dayjs.extend(relativeTime);
 
@@ -99,7 +107,7 @@ export default {
 
 	filters: {
 		dayjs(date) {
-			return dayjs(date).format('DD/MM/YYYY');
+			return dayjs(date).format('MMMM D, YYYY');
 		}
 	},
 

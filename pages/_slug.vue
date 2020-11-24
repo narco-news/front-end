@@ -23,12 +23,18 @@
 							:key="tag.id"
 							class="text-gray-600 text-sm"
 						>
-							<nuxt-link
-								:to="{path: '/tag/' + tag.slug}"
-								:title="tag.name"
-								class="hvr-sink underline mr-2"
-								>{{ tag.name.replace(/^(#)/, '') }}
-							</nuxt-link>
+							<div v-if="tag.slug != 'hash-es'">
+								<div v-if="tag.slug != 'hash-res'">
+									<div v-if="tag.slug != 'hash-ana'">
+										<nuxt-link
+											:to="{path: '/tag/' + tag.slug}"
+											:title="tag.name"
+											class="hvr-sink underline mr-2"
+											>{{ tag.name.replace(/^(#)/, '') }}
+										</nuxt-link>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -254,12 +260,18 @@
 															v-for="tag in post.tags.slice(1, 4)"
 															:key="tag.id"
 														>
-															<nuxt-link
-																:to="{path: '/tag/' + tag.slug}"
-																:title="tag.name"
-																class="tags-bottom hvr-sink"
-																>{{ tag.name }}</nuxt-link
-															>
+															<div v-if="tag.slug != 'hash-es'">
+																<div v-if="tag.slug != 'hash-res'">
+																	<div v-if="tag.slug != 'hash-ana'">
+																		<nuxt-link
+																			:to="{path: '/tag/' + tag.slug}"
+																			:title="tag.name"
+																			class="tags-bottom hvr-sink"
+																			>{{ tag.name }}</nuxt-link
+																		>
+																	</div>
+																</div>
+															</div>
 														</li>
 													</ul>
 												</div>
