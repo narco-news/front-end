@@ -41,6 +41,7 @@ export default {
 		white-space: nowrap;
 		font-weight: 600;
 		font-family: 'Source Sans Pro', serif;
+		text-decoration: underline;
 		&:hover {
 			color: #7a7fe1;
 			text-decoration: underline;
