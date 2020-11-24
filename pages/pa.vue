@@ -5,7 +5,9 @@
 			{{ $t('message.spanishblogs') }}
 		</h1>
 		<details class="mb-6">
-			<summary class="text-sm select-none cursor-pointer">More info</summary>
+			<summary class="text-sm select-none cursor-pointer">{{
+				$t('message.moreinfo')
+			}}</summary>
 			<p class="text-xs px-4 py-2 mb-4">
 				<i18n path="message.sbtext" tag="p">
 					<a
@@ -143,6 +145,7 @@ export default {
 		messages: {
 			en: {
 				message: {
+					moreinfo: 'More info',
 					intro:
 						"This page is still under development. Some feeds might not always load and depending on how I'm scraping from the source, the amount of articles per source will vary. They will all automatically update when a new article is published.",
 					spanishblogs: 'Spanish Narco Blogs',
@@ -161,6 +164,7 @@ export default {
 			},
 			es: {
 				message: {
+					moreinfo: 'Más información',
 					intro:
 						'Esta página está todavía en desarrollo. Algunas fuentes no siempre se cargan y, dependiendo de cómo esté desechando la fuente, la cantidad de artículos por fuente variará. Todos se actualizarán automáticamente cuando se publique un nuevo artículo.',
 					spanishblogs: 'Los blogs de Narco Españoles',
