@@ -1,19 +1,21 @@
 <template>
 	<div>
 		<LogoBanner />
-		<div class="nav flex justify-between px-2 py-4">
-			<Navbar />
-			<nuxt-link
-				v-for="locale in availableLocales"
-				:key="locale.code"
-				:to="switchLocalePath(locale.code)"
-				class="float-right"
-				@click.prevent.stop="setLocale(locale.code)"
-			>
-				<button class="font-semibold text-xs rounded-sm p-1 lang-button">
-					{{ locale.name }}
-				</button>
-			</nuxt-link>
+		<div class="flex justify-center items-center px-2 py-4">
+			<div class="flex justify-between w-3/4 lg:w-1/2">
+				<Navbar />
+				<nuxt-link
+					v-for="locale in availableLocales"
+					:key="locale.code"
+					:to="switchLocalePath(locale.code)"
+					class="float-right"
+					@click.prevent.stop="setLocale(locale.code)"
+				>
+					<button class="font-semibold text-xs rounded-sm p-1 lang-button">
+						{{ locale.name }}
+					</button>
+				</nuxt-link>
+			</div>
 		</div>
 		<div id="page-wrap">
 			<nuxt />
@@ -99,8 +101,8 @@ export default {
 		border: 1px solid #595fd9;
 	}
 }
-.nav {
+.navb {
 	background-color: white;
-	max-width: 600px;
+	margin: 0 auto;
 }
 </style>
