@@ -7,10 +7,13 @@
 				v-for="locale in availableLocales"
 				:key="locale.code"
 				:to="switchLocalePath(locale.code)"
-				class="float-right lang-button text-sm font-bold underline"
+				class="float-right"
 				@click.prevent.stop="setLocale(locale.code)"
-				>{{ locale.name }}</nuxt-link
 			>
+				<button class="font-semibold text-xs rounded-sm p-1 lang-button">
+					{{ locale.name }}
+				</button>
+			</nuxt-link>
 		</div>
 		<div id="page-wrap">
 			<nuxt />
@@ -86,6 +89,16 @@ export default {
 </script>
 
 <style lang="scss">
+.lang-button {
+	background-color: #d7d9f6;
+	@apply text-blue-500;
+	border: 1px solid transparent;
+	padding: 5px;
+	&:hover {
+		background-color: transparent;
+		border: 1px solid #595fd9;
+	}
+}
 .nav {
 	background-color: white;
 	max-width: 600px;
