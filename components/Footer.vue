@@ -87,30 +87,62 @@
 				<div class="links grid grid-flow-row m-4">
 					<h2 class="text-gray-500 text-lg">narco.news</h2>
 					<div
-						class="grid grid-cols-2 text-lg pb-4 whitespace-no-wrap md:w-1/2 lg:w-1/4"
+						class="grid grid-cols-2 text-lg pb-4 whitespace-no-wrap md:w-1/2"
 					>
-						<n-link to="/about">About</n-link>
-						<n-link to="/pa">Press Aggregate</n-link>
-						<n-link to="/library">Library</n-link>
-						<n-link to="/contact">Contact</n-link>
+						<n-link to="/about">{{ $t('message.about') }}</n-link>
+						<n-link to="/pa">{{ $t('message.pa') }}</n-link>
+						<n-link to="/library">{{ $t('message.library') }}</n-link>
+						<n-link to="/contact">{{ $t('message.contact') }}</n-link>
 					</div>
 				</div>
 				<div class="links grid grid-flow-row m-4">
-					<h2 class="text-gray-500 text-lg">Regions</h2>
+					<h2 class="text-gray-500 text-lg">{{ $t('message.region') }}</h2>
 					<div
-						class="grid grid-cols-2 text-lg pb-4 whitespace-no-wrap md:w-1/2 lg:w-1/4"
+						class="grid grid-cols-2 text-lg pb-4 whitespace-no-wrap md:w-1/2"
 					>
-						<n-link to="/tag/united-states">United States</n-link>
-						<n-link to="/tag/mexican-dto">Mexico</n-link>
-						<n-link to="/tag/central-america">Central America</n-link>
-						<n-link to="/tag/south-america">South America</n-link>
+						<n-link to="/tag/united-states">{{ $t('message.usa') }}</n-link>
+						<n-link to="/tag/mexican-dto">{{ $t('message.mx') }}</n-link>
+						<n-link to="/tag/central-america">{{ $t('message.ca') }}</n-link>
+						<n-link to="/tag/south-america">{{ $t('message.sa') }}</n-link>
 					</div>
 				</div>
 				<div class="grid grid-flow-row m-4">
 					<div class="bot-links flex w-1/2 text-md pb-4 whitespace-no-wrap">
-						<n-link to="">Privacy</n-link>
-						<n-link to="">Cookie Policy</n-link>
-						<n-link to="">Accessibility</n-link>
+						<button
+							v-tippy="{
+								trigger: 'focus',
+								hideOnClick: false,
+								theme: 'light-border'
+							}"
+							:content="$t('message.privacytext')"
+							class="text-white"
+						>
+							{{ $t('message.privacy') }}
+						</button>
+						<!-- <button
+							v-tippy="{
+								trigger: 'focus',
+								hideOnClick: false,
+								theme: 'light-border'
+							}"
+							content="This site uses a single cookie to keep track of the language the user selects."
+							class="text-white"
+						>
+							Cookie Policy
+						</button>
+						<button
+							v-tippy="{
+								trigger: 'focus',
+								hideOnClick: false,
+								theme: 'light-border'
+							}"
+							content="
+							<b>narco.news</b> is committed to making our website accessible to all users. We have currently implemented descriptive 
+							"
+							class="text-white"
+						>
+							Accessibility
+						</button> -->
 					</div>
 				</div>
 			</div>
@@ -148,11 +180,55 @@ export default {
 		onSuccess() {
 			// handle success
 		}
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					privacy: 'Privacy',
+					privacytext:
+						'This site at the moment does not have a privacy policy. We do not collect any personal information from our users. When that changes, this will be updated and an announcement posted.',
+					region: 'Regions',
+					usa: 'United States',
+					mx: 'Mexico',
+					ca: 'Central America',
+					sa: 'South America',
+					about: 'About',
+					library: 'Library',
+					pa: 'Press Aggregate',
+					contact: 'Contact'
+				}
+			},
+			es: {
+				message: {
+					privacy: 'Privacidad',
+					privacytext:
+						'Este sitio por el momento no tiene una política de privacidad. No recogemos ninguna información personal de nuestros usuarios. Cuando esto cambie, se actualizará y se publicará un anuncio.',
+					region: 'Regiones',
+					usa: 'Estados Unidos',
+					mx: 'México',
+					ca: 'Centroamérica',
+					sa: 'América del Sur',
+					about: 'Sobre',
+					library: 'Biblioteca',
+					pa: 'Agregado de la prensa',
+					contact: 'Contacto'
+				}
+			}
+		}
 	}
 };
 </script>
 
 <style lang="scss" scoped>
+button {
+	margin-right: 1em;
+	color: #7e7e7e;
+	outline: none;
+	&:focus {
+		color: white;
+	}
+}
 .social-icons {
 	img {
 		margin: 0 1em;

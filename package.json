@@ -46,7 +46,8 @@
 		"vue-loader": "^15.9.1",
 		"vue-mailchimp-subscribe": "^1.1.0",
 		"vue-rough-notation": "^0.1.11",
-		"vue-slim-tabs": "^0.4.0"
+		"vue-slim-tabs": "^0.4.0",
+		"vue-tippy": "^4.7.2"
 	},
 	"devDependencies": {
 		"@babel/plugin-proposal-export-namespace-from": "^7.8.3",

@@ -177,7 +177,7 @@
 								<div class="post-text text-xl" v-html="post.html" />
 							</div>
 							<div class="mt-12">
-								<div class="">
+								<div class="flex flex-row">
 									<social-icon
 										:url="
 											'https://twitter.com/share?text=' +

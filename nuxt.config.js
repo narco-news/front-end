@@ -164,7 +164,8 @@ export default async () => {
 			{src: '~/plugins/vue-mailchimp-subscribe.js', ssr: false},
 			{src: '~/plugins/rough-notation.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'},
-			{src: '~/plugins/i18n.js'}
+			{src: '~/plugins/i18n.js'},
+			{src: '~/plugins/tippy.js'}
 
 		],
 
