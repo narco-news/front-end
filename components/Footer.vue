@@ -110,7 +110,7 @@
 					<div class="bot-links flex w-1/2 text-md pb-4 whitespace-no-wrap">
 						<button
 							v-tippy="{
-								trigger: 'focus',
+								trigger: 'focus mouseenter',
 								hideOnClick: false,
 								theme: 'light-border'
 							}"
@@ -225,9 +225,9 @@ button {
 	margin-right: 1em;
 	color: #7e7e7e;
 	outline: none;
-	&:focus {
-		color: white;
-	}
+	// &:focus {
+	// 	color: white;
+	// }
 }
 .social-icons {
 	img {
