@@ -21,12 +21,14 @@
 								>
 							</div>
 							<div v-for="tag in post.tags.slice(1, 2)" :key="tag.id">
-								<nuxt-link
-									:to="{path: '/tag/' + tag.slug}"
-									:title="tag.name"
-									class="tags text-xs uppercase whitespace-no-wrap"
-									>•&nbsp;&nbsp;{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
-								>
+								<div v-if="tag.slug != 'hash-es'">
+									<nuxt-link
+										:to="{path: '/tag/' + tag.slug}"
+										:title="tag.name"
+										class="tags text-xs uppercase whitespace-no-wrap"
+										>•&nbsp;&nbsp;{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
+									>
+								</div>
 							</div>
 						</div>
 						<span

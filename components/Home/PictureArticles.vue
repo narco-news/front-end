@@ -30,12 +30,14 @@
 								:key="tag.id"
 								class="tags"
 							>
-								<nuxt-link
-									:to="{path: '/tag/' + tag.slug}"
-									:title="tag.name"
-									class="text-xs uppercase whitespace-no-wrap"
-									>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
-								>
+								<div v-if="tag.slug != 'hash-es'">
+									<nuxt-link
+										:to="{path: '/tag/' + tag.slug}"
+										:title="tag.name"
+										class="text-xs uppercase whitespace-no-wrap"
+										>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
+									>
+								</div>
 							</div>
 						</div>
 						<div class="flex flex-row flex-wrap items-center">
