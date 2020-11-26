@@ -38,7 +38,7 @@
 						</li>
 					</ul>
 				</div>
-				<h1 class="post-title text-4xl mt-4 md:mx-8">
+				<h1 class="post-title text-4xl md:text-5xl mt-4 md:mt-12 md:mx-8">
 					{{ post.title }}
 				</h1>
 
@@ -83,7 +83,7 @@
 						</div>
 					</div>
 				</div>
-				<article class="single-post">
+				<article class="single-post md:mt-8">
 					<scroll-progress-bar />
 					<div v-if="post.feature_image" class="picture">
 						<img :src="post.feature_image" :alt="post.title" class="my-4" />
@@ -174,7 +174,7 @@
 						<div class="mx-auto">
 							<div class="antialiased post-content">
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-text text-xl" v-html="post.html" />
+								<div class="post-text text-xl lg:text-2xl" v-html="post.html" />
 							</div>
 							<div class="mt-12">
 								<div class="flex flex-row">

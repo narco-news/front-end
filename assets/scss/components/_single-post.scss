@@ -1,5 +1,30 @@
 // Single posts
 .single-post {
+	h2 {
+		margin: 3rem 0 1.85rem;
+		font-size: 2.5rem;
+		font-weight: 600;
+		line-height: 2.75rem;
+		letter-spacing: -1px;
+		font-family: 'Source Sans Pro', sans;
+	}
+
+	h3 {
+		margin: 3rem 0 1rem;
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 2rem;
+		font-family: 'Source Sans Pro', sans;
+	}
+
+	h4 {
+		margin: 0.5rem 0 0.25rem;
+		font-size: 1.25rem;
+		font-weight: 600;
+		line-height: 1.75rem;
+		font-family: 'Source Sans Pro', sans;
+	}
+
 	hr {
 		margin: 1em 0;
 	}
@@ -135,15 +160,6 @@
 		margin-left: 0.2rem;
 	}
 
-	h2 {
-		margin: 3rem 0 1.85rem;
-		font-size: 2rem;
-		font-weight: 600;
-		line-height: 2.75rem;
-		letter-spacing: -1px;
-		font-family: 'Source Sans Pro', sans;
-	}
-
 	.post-wrap {
 		h2 {
 			&:first-of-type {
@@ -154,21 +170,5 @@
 		p {
 			margin: 0 0 1.5rem;
 		}
-	}
-
-	h3 {
-		margin: 0.75rem 0 0.5rem;
-		font-size: 1.75rem;
-		font-weight: 600;
-		line-height: 2rem;
-		font-family: 'Source Sans Pro', sans;
-	}
-
-	h4 {
-		margin: 0.5rem 0 0.25rem;
-		font-size: 1.25rem;
-		font-weight: 600;
-		line-height: 1.75rem;
-		font-family: 'Source Sans Pro', sans;
 	}
 }
