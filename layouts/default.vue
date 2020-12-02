@@ -92,14 +92,10 @@ export default {
 
 <style lang="scss">
 .lang-button {
-	background-color: #d7d9f6;
 	@apply text-blue-500;
+	background-color: #d7d9f6;
 	border: 1px solid transparent;
 	padding: 5px;
-	&:hover {
-		background-color: transparent;
-		border: 1px solid #595fd9;
-	}
 }
 .navb {
 	background-color: white;
