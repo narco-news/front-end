@@ -3,6 +3,8 @@ import {ghostAPI, postsPerPage} from '~/config/ghost';
 export const state = () => ({
 	postNavigation: [],
 	postsIndex: [],
+	postsIndexTwo: [],
+	postsIndexFeatured: [],
 	paginationIndex: [],
 	singlePost: null,
 	pageSettings: null,
@@ -19,6 +21,16 @@ export const mutations = {
 	setPostsIndex(state, postsIndex) {
 		state.postsIndex = postsIndex;
 		state.paginationIndex = postsIndex.meta.pagination;
+	},
+
+	setPostsIndexTwo(state, postsIndexTwo) {
+		state.postsIndexTwo = postsIndexTwo;
+		state.paginationIndex = postsIndexTwo.meta.pagination;
+	},
+
+	setPostsIndexFeatured(state, postsIndexFeatured) {
+		state.postsIndexFeatured = postsIndexFeatured;
+		state.paginationIndex = postsIndexFeatured.meta.pagination;
 	},
 
 	setSinglePost(state, singlePost) {
@@ -89,5 +101,25 @@ export const actions = {
 			order: 'featured DESC, published_at DESC'
 		});
 		commit('setPostsIndex', posts);
+	},
+	async getPostsIndexTwo({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexTwo', posts);
+	},
+	async getPostsIndexFeatured({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexFeatured', posts);
 	}
 };

@@ -32,5 +32,6 @@ export default {
 
 <style lang="scss" scoped>
 .tags-box {
+	padding: 20px;
 }
 </style>

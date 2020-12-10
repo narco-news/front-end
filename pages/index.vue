@@ -1,31 +1,33 @@
 <template>
-	<div>
-		<div class="large-barrier p-2 grid grid-cols-3 md:grid-cols-4">
-			<div class="col-span-3 barrier">
-				<PictureArticleList />
-				<FeaturedArticles />
+	<div class="site-wrapper mx-auto">
+		<div class="grid grid-flow-row md:grid-cols-6">
+			<div class="col-span-4">
+				<LatestArticles class="p-6" :posts="postsIndex" />
+				<FeaturedArticles class="p-6" :posts="postsIndexFeatured" />
+				<div class="bg-gray-200">
+					<TagArticles class="p-6" title="Tamaulipas" :posts="postsIndexTwo" />
+				</div>
 			</div>
-			<div class="list col-span-3 md:col-span-1 md:px-2 p-2">
-				<Headlines />
-				<!-- <TagsBox :filter="3" /> -->
+			<div class="list col-span-4 md:col-span-2">
+				<CurrentArticles class="p-6" :posts="postsIndex" />
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import PictureArticleList from '~/components/Home/PictureArticleList';
+import LatestArticles from '~/components/Home/LatestArticles';
+import CurrentArticles from '~/components/Home/CurrentArticles';
+import TagArticles from '~/components/Home/TagArticles';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
-import Headlines from '~/components/Home/Headlines';
-// import TagsBox from '~/components/TagsBox';
 
 export default {
 	layout: 'default',
 	components: {
-		PictureArticleList,
-		FeaturedArticles,
-		Headlines
-		// TagsBox
+		LatestArticles,
+		CurrentArticles,
+		TagArticles,
+		FeaturedArticles
 	},
 	async fetch({error, params, payload, store}) {
 		if (payload) {
@@ -41,6 +43,14 @@ export default {
 					filter: store.state.lang.tag,
 					pageNumber
 				});
+				await store.dispatch('getPostsIndexTwo', {
+					filter: store.state.lang.tag + '+tag:tamaulipas',
+					pageNumber
+				});
+				await store.dispatch('getPostsIndexFeatured', {
+					filter: 'tags:-hash-es+featured:true',
+					pageNumber
+				});
 			} catch (err) {
 				error({
 					statusCode: 404,
@@ -49,6 +59,7 @@ export default {
 			}
 		}
 	},
+
 	data() {
 		return {
 			twitter_description:
@@ -59,13 +70,22 @@ export default {
 		};
 	},
 	computed: {
+		postsIndex() {
+			return this.$store.state.postsIndex;
+		},
+		postsIndexTwo() {
+			return this.$store.state.postsIndexTwo;
+		},
+		postsIndexFeatured() {
+			return this.$store.state.postsIndexFeatured;
+		},
 		availableLocales() {
 			return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
 		}
 	},
 	head() {
 		return {
-			title: 'narco.news - Home',
+			title: 'narco.news',
 			meta: [
 				{
 					hid: 'description',
@@ -120,6 +140,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.site-wrapper {
+	max-width: 1200px;
+}
 .list {
 	border-left: 0px solid #e2e8f0;
 	@media (min-width: 768px) {

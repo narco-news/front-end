@@ -133,11 +133,11 @@ export default async () => {
 
 		router: {
 			extendRoutes(routes, resolve) {
-				routes.push({
-					name: 'PostIndex',
-					path: '/page/:pageNumber',
-					component: resolve(__dirname, 'pages/wire.vue')
-				});
+				// routes.push({
+				// 	name: 'PostIndex',
+				// 	path: '/page/:pageNumber',
+				// 	component: resolve(__dirname, 'pages/wire.vue')
+				// });
 
 				routes.push({
 					name: 'TagIndex',

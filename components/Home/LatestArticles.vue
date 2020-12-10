@@ -1,6 +1,6 @@
 <template>
 	<div class="articles">
-		<article v-for="post in posts.slice(0, 10)" :key="post.id" class="article">
+		<article v-for="post in posts.slice(0, 7)" :key="post.id" class="article">
 			<div v-if="post.feature_image">
 				<nuxt-link :to="localePath({path: '/' + post.slug})">
 					<div class="overflow-hidden img-wrap">
@@ -62,7 +62,7 @@
 							>{{ post.title }}
 						</nuxt-link>
 					</h2>
-					<div class="excerpt ex-gray">
+					<div class="excerpt ex-gray mb-2">
 						<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 						<p v-else-if="post.excerpt && !post.custom_excerpt">
 							{{ post.excerpt }}
@@ -83,7 +83,7 @@ dayjs.extend(advancedFormat);
 dayjs.extend(relativeTime);
 
 export default {
-	name: 'CompactPostList',
+	name: 'LatestArticles',
 
 	components: {},
 
@@ -118,11 +118,8 @@ export default {
 		margin-bottom: 5px;
 	}
 
-	.article {
-		margin-bottom: 1em;
-	}
-
 	article {
+		margin-bottom: 20px;
 		.title {
 			@apply text-2xl;
 			font-family: 'Source Serif Pro', serif;
@@ -161,7 +158,7 @@ export default {
 	.article:nth-child(1) {
 		grid-column: 1 / -1;
 		@media (min-width: 769px) {
-			grid-column: 1 / -2;
+			grid-column: 1 / -1;
 		}
 	}
 
@@ -176,7 +173,17 @@ export default {
 	.article:nth-child(4),
 	.article:nth-child(5),
 	.article:nth-child(6),
-	.article:nth-child(7) {
+	.article:nth-child(7),
+	.article:nth-child(8),
+	.article:nth-child(9),
+	.article:nth-child(10),
+	.article:nth-child(11),
+	.article:nth-child(12),
+	.article:nth-child(13) {
+		grid-column: span 1;
+		.excerpt {
+			display: none;
+		}
 		img {
 			max-height: 115px;
 			width: 100%;

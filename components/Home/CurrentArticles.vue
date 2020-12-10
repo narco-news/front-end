@@ -1,6 +1,6 @@
 <template>
-	<div class="list my-2 md:my-0">
-		<article v-for="post in posts.slice(10, 20)" :key="post.id" class="article">
+	<div class="my-2 md:my-0">
+		<article v-for="post in posts.slice(7, 20)" :key="post.id" class="article">
 			<nuxt-link :to="localePath({path: '/' + post.slug})" class="md:hidden">
 				<div class="overflow-hidden img-wrap">
 					<img :src="post.feature_image" :alt="post.title" class="hvr-grow" />
@@ -47,7 +47,7 @@
 							>{{ post.title }}
 						</nuxt-link>
 					</h2>
-					<div class="excerpt text-sm mt-2 mb-1 ex-gray">
+					<div class="excerpt md:hidden text-sm mt-2 mb-1 ex-gray">
 						<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 						<p v-else-if="post.excerpt && !post.custom_excerpt">
 							{{ post.excerpt }}
@@ -62,7 +62,6 @@
 							>{{ post.primary_author.name }}</nuxt-link
 						>
 					</div>
-					<hr class="my-2 mx-auto" />
 				</li>
 			</ul>
 		</article>
@@ -73,9 +72,30 @@
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import updateLocale from 'dayjs/plugin/updateLocale';
 
 dayjs.extend(advancedFormat);
 dayjs.extend(relativeTime);
+
+dayjs.extend(updateLocale);
+
+dayjs.updateLocale('en', {
+	relativeTime: {
+		future: 'in %s',
+		past: '%s ago',
+		s: 'a few seconds',
+		m: 'a minute',
+		mm: '%d minutes',
+		h: 'an hour',
+		hh: '%d hours',
+		d: 'a day',
+		dd: '%d days',
+		M: '%d days',
+		MM: '%d months',
+		y: 'a year',
+		yy: '%d years'
+	}
+});
 
 export default {
 	name: 'CompactPostList',
@@ -125,27 +145,17 @@ img {
 .published_at {
 	font-weight: 600;
 }
-.list {
-	li {
-		color: #0d0d0d;
-	}
+.author {
+	margin-bottom: 1em;
 }
 .article {
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid #e2e8f0;
 	.title {
 		font-family: 'Source Serif Pro', serif;
 		font-weight: 500;
 		letter-spacing: 0.6px;
 		line-height: 1.1;
-	}
-}
-
-.blink {
-	animation: blinker 2s step-start infinite;
-	background-color: #f28177;
-}
-@keyframes blinker {
-	50% {
-		opacity: 0;
 	}
 }
 </style>
