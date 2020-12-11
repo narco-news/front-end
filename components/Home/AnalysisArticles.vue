@@ -10,31 +10,45 @@
 						<div class="date whitespace-no-wrap text-sm text-green-400 mr-1">
 							{{ post.published_at | dayjs }}
 						</div>
-						<div class="float-right text-center">
-							<div class="inline-block">
-								<img
-									v-if="post.primary_author.profile_image"
-									:src="post.primary_author.profile_image"
-									:alt="post.primary_author.name"
-									class="rounded-full w-12 h-12"
-								/>
-							</div>
-							<div class="author text-sm md:text-md sub-gray">
-								<nuxt-link
-									:to="{path: '/author/' + post.primary_author.slug}"
-									:title="post.primary_author.name"
-									class="font-bold uppercase whitespace-no-wrap"
-									>{{ post.primary_author.name }}</nuxt-link
+						<div class="grid grid-cols-4">
+							<div class="col-span-3">
+								<h2
+									v-if="post.title"
+									class="title capitalize text-lg lg:text-2xl"
 								>
+									<nuxt-link
+										:to="localePath({path: '/' + post.slug})"
+										:title="post.title"
+										>{{ post.title }}
+									</nuxt-link>
+								</h2>
+							</div>
+							<div class="col-span-1">
+								<div class="text-center">
+									<div class="inline-block">
+										<nuxt-link
+											:to="{path: '/author/' + post.primary_author.slug}"
+											:title="post.primary_author.name"
+										>
+											<img
+												v-if="post.primary_author.profile_image"
+												:src="post.primary_author.profile_image"
+												:alt="post.primary_author.name"
+												class="rounded-full w-10 h-10"
+											/>
+										</nuxt-link>
+									</div>
+									<div class="author text-sm md:text-md sub-gray">
+										<nuxt-link
+											:to="{path: '/author/' + post.primary_author.slug}"
+											:title="post.primary_author.name"
+											class="font-bold uppercase whitespace-no-wrap"
+											>{{ post.primary_author.name }}</nuxt-link
+										>
+									</div>
+								</div>
 							</div>
 						</div>
-						<h2 v-if="post.title" class="title capitalize text-xl w-3/4">
-							<nuxt-link
-								:to="localePath({path: '/' + post.slug})"
-								:title="post.title"
-								>{{ post.title }}
-							</nuxt-link>
-						</h2>
 					</div>
 				</div>
 			</article>
@@ -104,7 +118,6 @@ export default {
 		padding: 0 0.5em;
 		margin-bottom: 10px;
 		.title {
-			@apply text-2xl;
 			font-family: 'Source Serif Pro', serif;
 			font-weight: 700;
 			letter-spacing: 0.6px;
@@ -130,12 +143,6 @@ export default {
 		.tags {
 			color: #049372;
 		}
-
-		@media (min-width: 769px) {
-			.title {
-				font-size: 20px;
-			}
-		}
 	}
 
 	.article:nth-child(1),
@@ -144,9 +151,12 @@ export default {
 	.article:nth-child(4),
 	.article:nth-child(5),
 	.article:nth-child(6) {
-		grid-column: span 1;
+		grid-column: span 2;
 		@media (max-width: 414px) {
 			grid-column: span 2;
+		}
+		@media (max-width: 768px) {
+			grid-column: span 1;
 		}
 	}
 
