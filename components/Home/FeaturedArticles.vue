@@ -2,7 +2,7 @@
 	<div class="md:mx-4">
 		<h2
 			style="border-bottom-color: #ffd54f;"
-			class="text-3xl lg:text-4xl font-bold mb-4 px-4 border-b-2"
+			class="text-3xl lg:text-4xl font-semibold mb-4 px-4 border-b-2"
 		>
 			{{ $t('message.featuredArticles') }}
 		</h2>
@@ -181,6 +181,9 @@ export default {
 		grid-column: span 4;
 		padding: 1em;
 		margin-left: 3em;
+		@media (max-width: 414px) {
+			margin-left: 0;
+		}
 		.image {
 			margin-bottom: 1em;
 			div {

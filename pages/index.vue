@@ -1,16 +1,45 @@
 <template>
 	<div class="site-wrapper mx-auto">
-		<div class="grid grid-flow-row md:grid-cols-6">
+		<div class="grid grid-flow-row md:grid-cols-6 border-bottom">
 			<div class="col-span-4">
 				<LatestArticles class="p-6" :posts="postsIndex" />
+			</div>
+			<div class="col-span-4 md:hidden">
+				<AnalysisArticles class="p-6" :posts="postsIndexAnalysis" />
+			</div>
+			<div class="col-span-4 md:hidden">
 				<FeaturedArticles class="p-6" :posts="postsIndexFeatured" />
-				<div class="bg-gray-200">
-					<TagArticles class="p-6" title="Tamaulipas" :posts="postsIndexTwo" />
-				</div>
 			</div>
 			<div class="list col-span-4 md:col-span-2">
 				<CurrentArticles class="p-6" :posts="postsIndex" />
 			</div>
+		</div>
+		<div class="hidden md:inline">
+			<AnalysisArticles class="p-6" :posts="postsIndexAnalysis" />
+		</div>
+		<div class="hidden md:inline">
+			<FeaturedArticles class="px-6 md:p-6" :posts="postsIndexFeatured" />
+		</div>
+		<div class="grid grid-cols-3">
+			<div class="bg-gray-200 col-span-3">
+				<TagArticles
+					class="p-6"
+					title="Tamaulipas"
+					link="tag/tamaulipas"
+					:posts="postsIndexTagOne"
+				/>
+			</div>
+			<div class="bg-gray-200 col-span-3">
+				<TagArticles
+					class="p-6"
+					title="Guanajuato"
+					link="tag/guanajuato"
+					:posts="postsIndexTagTwo"
+				/>
+			</div>
+		</div>
+		<div class="opinion mb-6">
+			<OpinionArticles class="mt-6 px-6" :posts="postsIndexOpinions" />
 		</div>
 	</div>
 </template>
@@ -20,6 +49,8 @@ import LatestArticles from '~/components/Home/LatestArticles';
 import CurrentArticles from '~/components/Home/CurrentArticles';
 import TagArticles from '~/components/Home/TagArticles';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
+import OpinionArticles from '~/components/Home/OpinionArticles';
+import AnalysisArticles from '~/components/Home/AnalysisArticles';
 
 export default {
 	layout: 'default',
@@ -27,7 +58,9 @@ export default {
 		LatestArticles,
 		CurrentArticles,
 		TagArticles,
-		FeaturedArticles
+		FeaturedArticles,
+		OpinionArticles,
+		AnalysisArticles
 	},
 	async fetch({error, params, payload, store}) {
 		if (payload) {
@@ -43,12 +76,24 @@ export default {
 					filter: store.state.lang.tag,
 					pageNumber
 				});
-				await store.dispatch('getPostsIndexTwo', {
+				await store.dispatch('getPostsIndexTagOne', {
 					filter: store.state.lang.tag + '+tag:tamaulipas',
+					pageNumber
+				});
+				await store.dispatch('getPostsIndexTagTwo', {
+					filter: store.state.lang.tag + '+tag:guanajuato',
 					pageNumber
 				});
 				await store.dispatch('getPostsIndexFeatured', {
 					filter: 'tags:-hash-es+featured:true',
+					pageNumber
+				});
+				await store.dispatch('getPostsIndexOpinions', {
+					filter: store.state.lang.tag + '+tag:opinion',
+					pageNumber
+				});
+				await store.dispatch('getPostsIndexAnalysis', {
+					filter: store.state.lang.tag + '+tag:analysis',
 					pageNumber
 				});
 			} catch (err) {
@@ -73,11 +118,20 @@ export default {
 		postsIndex() {
 			return this.$store.state.postsIndex;
 		},
-		postsIndexTwo() {
-			return this.$store.state.postsIndexTwo;
+		postsIndexTagOne() {
+			return this.$store.state.postsIndexTagOne;
+		},
+		postsIndexTagTwo() {
+			return this.$store.state.postsIndexTagTwo;
 		},
 		postsIndexFeatured() {
 			return this.$store.state.postsIndexFeatured;
+		},
+		postsIndexOpinions() {
+			return this.$store.state.postsIndexOpinions;
+		},
+		postsIndexAnalysis() {
+			return this.$store.state.postsIndexAnalysis;
 		},
 		availableLocales() {
 			return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
@@ -140,6 +194,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.border-bottom {
+	border-bottom: 1px;
+	border-bottom-color: #e2e8f0;
+	border-bottom-style: solid;
+}
 .site-wrapper {
 	max-width: 1200px;
 }

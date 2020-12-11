@@ -3,8 +3,11 @@ import {ghostAPI, postsPerPage} from '~/config/ghost';
 export const state = () => ({
 	postNavigation: [],
 	postsIndex: [],
-	postsIndexTwo: [],
+	postsIndexTagOne: [],
+	postsIndexTagTwo: [],
 	postsIndexFeatured: [],
+	postsIndexOpinions: [],
+	postsIndexAnalysis: [],
 	paginationIndex: [],
 	singlePost: null,
 	pageSettings: null,
@@ -23,14 +26,29 @@ export const mutations = {
 		state.paginationIndex = postsIndex.meta.pagination;
 	},
 
-	setPostsIndexTwo(state, postsIndexTwo) {
-		state.postsIndexTwo = postsIndexTwo;
-		state.paginationIndex = postsIndexTwo.meta.pagination;
+	setPostsIndexTagOne(state, postsIndexTagOne) {
+		state.postsIndexTagOne = postsIndexTagOne;
+		state.paginationIndex = postsIndexTagOne.meta.pagination;
+	},
+
+	setPostsIndexTagTwo(state, postsIndexTagTwo) {
+		state.postsIndexTagTwo = postsIndexTagTwo;
+		state.paginationIndex = postsIndexTagTwo.meta.pagination;
 	},
 
 	setPostsIndexFeatured(state, postsIndexFeatured) {
 		state.postsIndexFeatured = postsIndexFeatured;
 		state.paginationIndex = postsIndexFeatured.meta.pagination;
+	},
+
+	setPostsIndexOpinions(state, postsIndexOpinions) {
+		state.postsIndexOpinions = postsIndexOpinions;
+		state.paginationIndex = postsIndexOpinions.meta.pagination;
+	},
+
+	setPostsIndexAnalysis(state, postsIndexAnalysis) {
+		state.postsIndexAnalysis = postsIndexAnalysis;
+		state.paginationIndex = postsIndexAnalysis.meta.pagination;
 	},
 
 	setSinglePost(state, singlePost) {
@@ -102,7 +120,7 @@ export const actions = {
 		});
 		commit('setPostsIndex', posts);
 	},
-	async getPostsIndexTwo({commit}, pagination) {
+	async getPostsIndexTagOne({commit}, pagination) {
 		const posts = await ghostAPI().posts.browse({
 			limit: postsPerPage,
 			page: pagination.pageNumber,
@@ -110,7 +128,17 @@ export const actions = {
 			filter: pagination.filter,
 			order: 'featured DESC, published_at DESC'
 		});
-		commit('setPostsIndexTwo', posts);
+		commit('setPostsIndexTagOne', posts);
+	},
+	async getPostsIndexTagTwo({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexTagTwo', posts);
 	},
 	async getPostsIndexFeatured({commit}, pagination) {
 		const posts = await ghostAPI().posts.browse({
@@ -121,5 +149,25 @@ export const actions = {
 			order: 'featured DESC, published_at DESC'
 		});
 		commit('setPostsIndexFeatured', posts);
+	},
+	async getPostsIndexOpinions({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexOpinions', posts);
+	},
+	async getPostsIndexAnalysis({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexAnalysis', posts);
 	}
 };

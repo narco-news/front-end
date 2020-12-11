@@ -1,6 +1,6 @@
 <template>
 	<div class="my-2 md:my-0">
-		<article v-for="post in posts.slice(7, 20)" :key="post.id" class="article">
+		<article v-for="post in posts.slice(7, 16)" :key="post.id" class="article">
 			<nuxt-link :to="localePath({path: '/' + post.slug})" class="md:hidden">
 				<div class="overflow-hidden img-wrap">
 					<img :src="post.feature_image" :alt="post.title" class="hvr-grow" />
@@ -151,6 +151,9 @@ img {
 .article {
 	margin-bottom: 0.5em;
 	border-bottom: 1px solid #e2e8f0;
+	&:last-child {
+		border-bottom: 0px;
+	}
 	.title {
 		font-family: 'Source Serif Pro', serif;
 		font-weight: 500;

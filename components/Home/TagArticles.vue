@@ -85,12 +85,12 @@
 		<div class="flex justify-end items-center">
 			<p class="text-md mr-4 uppercase">{{ $t('message.readMore') }}</p>
 			<n-link
-				to="tag/tamaulipas"
-				alt="Tamaulipas section"
-				title="Tamaulipas section"
+				:to="link"
+				:alt="title"
+				:title="title"
 				class="bg-green-400 text-gray-100 rounded-sm shadow-lg p-2 font-bold hover:bg-green-500"
 			>
-				Tamaulipas
+				{{ title }}
 			</n-link>
 		</div>
 	</div>
@@ -123,6 +123,10 @@ export default {
 		title: {
 			type: String,
 			default: 'Title'
+		},
+		link: {
+			type: String,
+			default: 'tag/'
 		}
 	},
 
@@ -197,14 +201,16 @@ export default {
 
 	.article:nth-child(1) {
 		grid-column: 1 / -1;
+		img {
+			max-height: 200px;
+			width: 100%;
+			object-fit: cover;
+			@media (max-width: 375px) {
+				max-height: 160px;
+			}
+		}
 		@media (min-width: 769px) {
 			grid-column: 1 / -1;
-		}
-	}
-
-	.article:nth-child(4) {
-		@media (min-width: 769px) {
-			grid-column: -3 / -1;
 		}
 	}
 
