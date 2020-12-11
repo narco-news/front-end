@@ -202,11 +202,11 @@ export default {
 	.article:nth-child(1) {
 		grid-column: 1 / -1;
 		img {
-			max-height: 200px;
+			max-height: 400px;
 			width: 100%;
 			object-fit: cover;
 			@media (max-width: 375px) {
-				max-height: 160px;
+				max-height: 200px;
 			}
 		}
 		@media (min-width: 769px) {
