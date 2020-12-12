@@ -1,6 +1,6 @@
 <template>
 	<div class="articles">
-		<article v-for="post in posts.slice(0, 7)" :key="post.id" class="article">
+		<article v-for="post in posts.slice(0, 9)" :key="post.id" class="article">
 			<div v-if="post.feature_image">
 				<nuxt-link :to="localePath({path: '/' + post.slug})">
 					<div class="overflow-hidden img-wrap">
@@ -165,6 +165,14 @@ export default {
 	.article:nth-child(4) {
 		@media (min-width: 769px) {
 			grid-column: -3 / -1;
+		}
+	}
+
+	.article:nth-child(8),
+	.article:nth-child(9) {
+		@apply hidden;
+		@media (min-width: 900px) {
+			display: inline;
 		}
 	}
 

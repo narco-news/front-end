@@ -1,13 +1,20 @@
 <template>
-	<div class="flex flex-row flex-wrap md:grid tags-box p-1 m-2 text-right">
-		<div v-for="tag in pageTags" :key="tag.id">
-			<div v-if="tag.count.posts >= filter">
-				<nuxt-link
-					:to="{path: '/tag/' + tag.slug}"
-					class="text-blue-500 hover:text-blue-300 hover:underline text-sm font-semibold whitespace-no-wrap px-1"
-					:title="tag.name"
-					>{{ tag.name }} ({{ tag.count.posts }})
-				</nuxt-link>
+	<div>
+		<h2
+			class="text-2xl lg:text-3xl font-bold mb-4 px-4 border-b-2 border-green-300 m-6"
+		>
+			Tags
+		</h2>
+		<div class="tag-box flex flex-row flex-wrap items-center justify-center">
+			<div v-for="tag in pageTags" :key="tag.id">
+				<div v-if="tag.count.posts >= filter">
+					<nuxt-link
+						:to="{path: '/tag/' + tag.slug}"
+						:title="tag.name"
+						class="whitespace-no-wrap bg-gray-300 hover:bg-gray-400 hover:text-blue-500 text-blue-400 mx-4 p-2 rounded-md text-sm md:text-md"
+						>{{ tag.name }} ({{ tag.count.posts }})
+					</nuxt-link>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -31,7 +38,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tags-box {
-	padding: 20px;
+.tag-box {
+	margin: 1em 0;
+	height: 400px;
+	@media (min-width: 415px) {
+		height: 200px;
+	}
 }
 </style>

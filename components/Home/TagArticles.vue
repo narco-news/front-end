@@ -6,7 +6,7 @@
 			{{ title }}
 		</h2>
 		<div class="articles border-b-2 mb-6">
-			<article v-for="post in posts.slice(0, 4)" :key="post.id" class="article">
+			<article v-for="post in posts.slice(0, 5)" :key="post.id" class="article">
 				<div v-if="post.feature_image">
 					<nuxt-link :to="localePath({path: '/' + post.slug})">
 						<div class="overflow-hidden img-wrap">
@@ -18,10 +18,7 @@
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div
-							v-if="post.tags.length > 0"
-							class="flex flex-row flex-wrap justify-between"
-						>
+						<div v-if="post.tags.length > 0" class="flex flex-col">
 							<div class="flex flex-row">
 								<div
 									v-for="tag in post.tags.slice(0, 1)"
@@ -83,12 +80,14 @@
 			</article>
 		</div>
 		<div class="flex justify-end items-center">
-			<p class="text-md mr-4 uppercase">{{ $t('message.readMore') }}</p>
+			<p class="text-sm md:text-md mr-4 uppercase">
+				{{ $t('message.readMore') }}
+			</p>
 			<n-link
 				:to="link"
 				:alt="title"
 				:title="title"
-				class="bg-green-400 text-gray-100 rounded-sm shadow-lg p-2 font-bold hover:bg-green-500"
+				class="bg-green-400 text-gray-100 rounded-md shadow-lg p-2 font-bold hover:bg-green-500"
 			>
 				{{ title }}
 			</n-link>
@@ -214,28 +213,26 @@ export default {
 		}
 	}
 
+	.article:nth-child(5) {
+		@media (min-width: 415px) {
+			@apply hidden;
+		}
+	}
+
 	.article:nth-child(2),
 	.article:nth-child(3),
 	.article:nth-child(4),
-	.article:nth-child(5),
-	.article:nth-child(6),
-	.article:nth-child(7),
-	.article:nth-child(8),
-	.article:nth-child(9),
-	.article:nth-child(10),
-	.article:nth-child(11),
-	.article:nth-child(12),
-	.article:nth-child(13) {
+	.article:nth-child(5) {
 		grid-column: span 1;
 		.excerpt {
 			display: none;
 		}
 		img {
-			max-height: 115px;
+			max-height: 150px;
 			width: 100%;
 			object-fit: cover;
-			@media (max-width: 375px) {
-				max-height: 160px;
+			@media (max-width: 414px) {
+				max-height: 120px;
 			}
 		}
 		@media (min-width: 415px) {

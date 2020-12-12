@@ -4,23 +4,29 @@
 			<div class="col-span-4">
 				<LatestArticles class="p-6" :posts="postsIndex" />
 			</div>
+			<!-- Hidden on iPad screens -->
 			<div class="col-span-4 md:hidden">
 				<AnalysisArticles class="p-6" :posts="postsIndexAnalysis" />
 			</div>
 			<div class="col-span-4 md:hidden">
 				<FeaturedArticles class="p-6" :posts="postsIndexFeatured" />
 			</div>
+			<!-- End -->
 			<div class="list col-span-4 md:col-span-2">
 				<CurrentArticles class="p-6" :posts="postsIndex" />
 			</div>
 		</div>
+		<!-- Hidden on Phone Screens -->
 		<div class="hidden md:inline">
 			<AnalysisArticles class="p-6" :posts="postsIndexAnalysis" />
 		</div>
 		<div class="hidden md:inline">
 			<FeaturedArticles class="px-6 md:p-6" :posts="postsIndexFeatured" />
 		</div>
-		<div class="grid grid-cols-3">
+		<!-- End -->
+		<div
+			class="grid grid-cols-3 border-gray-300 border-b-2 border-t-2 shadow-sm"
+		>
 			<div class="bg-gray-200 col-span-3">
 				<TagArticles
 					class="p-6"
@@ -37,9 +43,12 @@
 					:posts="postsIndexTagTwo"
 				/>
 			</div>
+			<div class="bg-gray-200 col-span-3">
+				<TagsBox />
+			</div>
 		</div>
-		<div class="opinion mb-6">
-			<OpinionArticles class="mt-6 px-6" :posts="postsIndexOpinions" />
+		<div class="opinion p-6">
+			<OpinionArticles class="my-6" :posts="postsIndexOpinions" />
 		</div>
 	</div>
 </template>
@@ -51,6 +60,8 @@ import TagArticles from '~/components/Home/TagArticles';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
 import OpinionArticles from '~/components/Home/OpinionArticles';
 import AnalysisArticles from '~/components/Home/AnalysisArticles';
+// import AroundTheWeb from '~/components/Home/AroundTheWeb';
+import TagsBox from '~/components/TagsBox';
 
 export default {
 	layout: 'default',
@@ -60,7 +71,9 @@ export default {
 		TagArticles,
 		FeaturedArticles,
 		OpinionArticles,
-		AnalysisArticles
+		AnalysisArticles,
+		TagsBox
+		// AroundTheWeb
 	},
 	async fetch({error, params, payload, store}) {
 		if (payload) {
@@ -73,7 +86,7 @@ export default {
 
 			try {
 				await store.dispatch('getPostsIndex', {
-					filter: store.state.lang.tag,
+					filter: store.state.lang.tag + '+tag:-sigact' + '+tag:-links',
 					pageNumber
 				});
 				await store.dispatch('getPostsIndexTagOne', {
@@ -189,11 +202,33 @@ export default {
 				}
 			]
 		};
+	},
+	i18n: {
+		messages: {
+			en: {
+				message: {
+					atw: 'Around the web',
+					sigActs: 'Significant Activities'
+				}
+			},
+			es: {
+				message: {
+					atw: 'Alrededor de la red',
+					sigActs: 'Actividades significativas'
+				}
+			}
+		}
 	}
 };
 </script>
 
 <style lang="scss" scoped>
+.sig-act {
+	border-left: 1px dotted black;
+	@media (max-width: 414px) {
+		border-left: 0px;
+	}
+}
 .border-bottom {
 	border-bottom: 1px;
 	border-bottom-color: #e2e8f0;

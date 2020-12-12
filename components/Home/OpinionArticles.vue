@@ -1,8 +1,17 @@
 <template>
 	<div>
-		<h2 class="text-3xl lg:text-4xl font-semibold mb-4 px-4 border-b-2">
-			{{ $t('message.opinion') }}
-		</h2>
+		<div
+			class="border-b-2 pb-2 flex flex-row justify-between items-center mb-4"
+		>
+			<h2 class="text-2xl lg:text-3xl font-semibold px-4">
+				{{ $t('message.opinion') }}
+			</h2>
+			<div
+				class="bg-green-400 hover:bg-green-500 px-2 py-1 rounded-md text-white text-xs font-semibold h-full mr-2"
+			>
+				<n-link to="/tag/opinion">More</n-link>
+			</div>
+		</div>
 		<div class="articles">
 			<article v-for="post in posts.slice(0, 6)" :key="post.id" class="article">
 				<div v-if="post.feature_image">
@@ -21,7 +30,7 @@
 								</h2>
 							</div>
 							<div class="col-span-1">
-								<div class="text-center">
+								<div class="flex flex-col items-center">
 									<div class="inline-block">
 										<nuxt-link
 											:to="{path: '/author/' + post.primary_author.slug}"
@@ -39,7 +48,7 @@
 										<nuxt-link
 											:to="{path: '/author/' + post.primary_author.slug}"
 											:title="post.primary_author.name"
-											class="font-bold uppercase whitespace-no-wrap"
+											class="uppercase whitespace-no-wrap"
 											>{{ post.primary_author.name }}</nuxt-link
 										>
 									</div>
@@ -154,12 +163,15 @@ export default {
 	.article:nth-child(4),
 	.article:nth-child(5),
 	.article:nth-child(6) {
-		grid-column: span 2;
-		@media (max-width: 414px) {
+		grid-column: span 3;
+		@media (min-width: 415px) {
 			grid-column: span 2;
 		}
-		@media (max-width: 768px) {
+		@media (min-width: 768px) {
 			grid-column: span 1;
+		}
+		@media (min-width: 900px) {
+			grid-column: span 2;
 		}
 	}
 

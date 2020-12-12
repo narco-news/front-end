@@ -1,5 +1,10 @@
 <template>
 	<div class="my-2 md:my-0">
+		<h2
+			class="text-3xl lg:text-4xl font-semibold mb-4 px-4 border-b-2 md:hidden"
+		>
+			News wire
+		</h2>
 		<article v-for="post in posts.slice(7, 16)" :key="post.id" class="article">
 			<nuxt-link :to="localePath({path: '/' + post.slug})" class="md:hidden">
 				<div class="overflow-hidden img-wrap">
@@ -31,10 +36,6 @@
 								</div>
 							</div>
 						</div>
-						<span
-							class="published_at text-xs md:text-sm whitespace-no-wrap sub-gray"
-							>{{ post.published_at | dayjs }}</span
-						>
 					</div>
 					<h2
 						v-if="post.title"
@@ -53,14 +54,20 @@
 							{{ post.excerpt }}
 						</p>
 					</div>
-					<div class="author text-sm md:text-md sub-gray">
-						by
-						<nuxt-link
-							:to="{path: '/author/' + post.primary_author.slug}"
-							:title="post.primary_author.name"
-							class="font-bold uppercase underline"
-							>{{ post.primary_author.name }}</nuxt-link
+					<div class="flex">
+						<span
+							class="published_at text-xs md:text-sm whitespace-no-wrap sub-gray mr-1"
+							>{{ post.published_at | dayjs }}</span
 						>
+						<div class="author text-sm md:text-md sub-gray">
+							by
+							<nuxt-link
+								:to="{path: '/author/' + post.primary_author.slug}"
+								:title="post.primary_author.name"
+								class="font-bold uppercase underline"
+								>{{ post.primary_author.name }}</nuxt-link
+							>
+						</div>
 					</div>
 				</li>
 			</ul>
@@ -147,6 +154,10 @@ img {
 }
 .author {
 	margin-bottom: 1em;
+}
+
+.article:nth-child(1),
+.article:nth-child(2) {
 }
 .article {
 	margin-bottom: 0.5em;

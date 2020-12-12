@@ -38,7 +38,7 @@ export default {
 
 			try {
 				await store.dispatch('getPostsIndex', {
-					filter: 'tags:' + params.slug,
+					filter: 'tags:' + params.slug + '+tags:-hash-es',
 					pageNumber
 				});
 			} catch (err) {

@@ -1,8 +1,8 @@
 <template>
-	<div class="md:mx-4">
+	<div class="">
 		<h2
 			style="border-bottom-color: #ffd54f;"
-			class="text-3xl lg:text-4xl font-semibold mb-4 px-4 border-b-2"
+			class="text-2xl lg:text-3xl font-semibold mb-4 px-4 border-b-2"
 		>
 			{{ $t('message.featuredArticles') }}
 		</h2>
@@ -10,7 +10,7 @@
 			<article v-for="post in posts.slice(0, 3)" :key="post.id" class="article">
 				<div v-if="post.feature_image" class="">
 					<nuxt-link :to="{path: '/' + post.slug}">
-						<div class="image">
+						<div style="color: #ffd54f;" class="image pattern-dots-md">
 							<div class="overflow-hidden">
 								<img
 									:src="post.feature_image"
@@ -21,16 +21,17 @@
 						</div>
 					</nuxt-link>
 					<div class="title-box">
-						<div class="flex flex-col flex-wrap md:flex-row md:justify-between">
+						<div class="flex flex-row flex-wrap md:flex-row items-center">
 							<div class="author uppercase text-sm md:text-md">
-								<span>BY</span>
+								<span class="mr-1">BY</span>
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
 									:title="post.primary_author.name"
-									class="font-bold whitespace-no-wrap sub-gray"
+									class="font-bold whitespace-no-wrap underline sub-gray"
 									>{{ post.primary_author.name }}</nuxt-link
 								>
 							</div>
+							<p class="sub-gray px-2">•</p>
 							<div class="date text-sm sub-gray">
 								{{ post.published_at | dayjs }}
 							</div>
@@ -84,7 +85,7 @@ export default {
 
 	filters: {
 		dayjs(date) {
-			return dayjs(date).format('MMMM Do, YYYY');
+			return dayjs(date).format('MMMM D, YYYY');
 		}
 	},
 
@@ -159,35 +160,44 @@ export default {
 	}
 	.article:nth-child(1) {
 		grid-column: 1 / -1;
+		margin-bottom: 1em;
 		.title {
 			text-transform: capitalize;
 			font-size: 28px;
 		}
 		.image {
-			box-shadow: 10px 10px #ffd54f;
-			margin-bottom: 1.5em;
+			// box-shadow: 10px 10px #ffd54f;
+			margin-bottom: 1em;
 			div {
 				border: 1px solid #0d0d0d;
+				@apply shadow-md;
 			}
 		}
 		img {
 			height: 300px;
 			width: 100%;
 			object-fit: cover;
+			@media (max-width: 414px) {
+				height: 225px;
+			}
 		}
 	}
 	.article:nth-child(2),
 	.article:nth-child(3) {
 		grid-column: span 4;
-		padding: 1em;
-		margin-left: 3em;
+		margin-left: 1em;
+		margin: 1em 0;
 		@media (max-width: 414px) {
 			margin-left: 0;
 		}
 		.image {
 			margin-bottom: 1em;
+			@apply pr-6;
+			@apply pb-6;
 			div {
-				border: 3px solid #ffd54f;
+				border: 1px solid #000;
+				@apply shadow-md;
+				@apply rounded-sm;
 			}
 		}
 		.title {
@@ -195,7 +205,7 @@ export default {
 			font-size: 20px;
 		}
 		img {
-			height: 200px;
+			height: 165px;
 			width: 100%;
 			object-fit: cover;
 		}
