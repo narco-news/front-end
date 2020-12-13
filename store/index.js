@@ -8,6 +8,8 @@ export const state = () => ({
 	postsIndexFeatured: [],
 	postsIndexOpinions: [],
 	postsIndexAnalysis: [],
+	postsIndexATW: [],
+	postsIndexSIGACT: [],
 	paginationIndex: [],
 	singlePost: null,
 	pageSettings: null,
@@ -49,6 +51,16 @@ export const mutations = {
 	setPostsIndexAnalysis(state, postsIndexAnalysis) {
 		state.postsIndexAnalysis = postsIndexAnalysis;
 		state.paginationIndex = postsIndexAnalysis.meta.pagination;
+	},
+
+	setPostsIndexATW(state, postsIndexATW) {
+		state.postsIndexATW = postsIndexATW;
+		state.paginationIndex = postsIndexATW.meta.pagination;
+	},
+
+	setPostsIndexSIGACT(state, postsIndexSIGACT) {
+		state.postsIndexSIGACT = postsIndexSIGACT;
+		state.paginationIndex = postsIndexSIGACT.meta.pagination;
 	},
 
 	setSinglePost(state, singlePost) {
@@ -169,5 +181,25 @@ export const actions = {
 			order: 'featured DESC, published_at DESC'
 		});
 		commit('setPostsIndexAnalysis', posts);
+	},
+	async getPostsIndexATW({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexATW', posts);
+	},
+	async getPostsIndexSIGACT({commit}, pagination) {
+		const posts = await ghostAPI().posts.browse({
+			limit: postsPerPage,
+			page: pagination.pageNumber,
+			include: 'tags,authors',
+			filter: pagination.filter,
+			order: 'featured DESC, published_at DESC'
+		});
+		commit('setPostsIndexSIGACT', posts);
 	}
 };

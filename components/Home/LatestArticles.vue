@@ -1,78 +1,84 @@
 <template>
-	<div class="articles">
-		<article v-for="post in posts.slice(0, 9)" :key="post.id" class="article">
-			<div v-if="post.feature_image">
-				<nuxt-link :to="localePath({path: '/' + post.slug})">
-					<div class="overflow-hidden img-wrap">
-						<img :src="post.feature_image" :alt="post.title" class="hvr-grow" />
-					</div>
-				</nuxt-link>
-				<div class="title-box">
-					<div
-						v-if="post.tags.length > 0"
-						class="flex flex-row justify-between items-center mx-1 mb-1 flex-wrap md:flex-col md:items-start"
-					>
-						<div class="flex flex-row">
-							<div
-								v-for="tag in post.tags.slice(0, 1)"
-								:key="tag.id"
-								class="tags"
-							>
-								<nuxt-link
-									:to="{path: '/tag/' + tag.slug}"
-									:title="tag.name"
-									class="text-xs uppercase mr-1 font-semibold whitespace-no-wrap"
-									>{{ tag.name }}</nuxt-link
+	<div>
+		<div class="articles">
+			<article v-for="post in posts.slice(0, 9)" :key="post.id" class="article">
+				<div v-if="post.feature_image">
+					<nuxt-link :to="localePath({path: '/' + post.slug})">
+						<div class="overflow-hidden img-wrap">
+							<img
+								:src="post.feature_image"
+								:alt="post.title"
+								class="hvr-grow"
+							/>
+						</div>
+					</nuxt-link>
+					<div class="title-box">
+						<div
+							v-if="post.tags.length > 0"
+							class="flex flex-row justify-between items-center mx-1 mb-1 flex-wrap md:flex-col md:items-start"
+						>
+							<div class="flex flex-row">
+								<div
+									v-for="tag in post.tags.slice(0, 1)"
+									:key="tag.id"
+									class="tags"
 								>
-							</div>
-							<div
-								v-for="tag in post.tags.slice(1, 2)"
-								:key="tag.id"
-								class="tags"
-							>
-								<div v-if="tag.slug != 'hash-es'">
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="text-xs uppercase whitespace-no-wrap"
-										>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
+										class="text-xs uppercase mr-1 font-semibold whitespace-no-wrap"
+										>{{ tag.name }}</nuxt-link
+									>
+								</div>
+								<div
+									v-for="tag in post.tags.slice(1, 2)"
+									:key="tag.id"
+									class="tags"
+								>
+									<div v-if="tag.slug != 'hash-es'">
+										<nuxt-link
+											:to="{path: '/tag/' + tag.slug}"
+											:title="tag.name"
+											class="text-xs uppercase whitespace-no-wrap"
+											>&nbsp;•&nbsp;&nbsp;{{ tag.name }}</nuxt-link
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="flex flex-row flex-wrap items-center lg:flex-col lg:items-start"
+							>
+								<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
+									{{ post.published_at | dayjs }}
+								</div>
+								<div class="author text-sm md:text-md sub-gray">
+									by
+									<nuxt-link
+										:to="{path: '/author/' + post.primary_author.slug}"
+										:title="post.primary_author.name"
+										class="font-bold uppercase underline"
+										>{{ post.primary_author.name }}</nuxt-link
 									>
 								</div>
 							</div>
 						</div>
-						<div
-							class="flex flex-row flex-wrap items-center lg:flex-col lg:items-start"
-						>
-							<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
-								{{ post.published_at | dayjs }}
-							</div>
-							<div class="author text-sm md:text-md sub-gray">
-								by
-								<nuxt-link
-									:to="{path: '/author/' + post.primary_author.slug}"
-									:title="post.primary_author.name"
-									class="font-bold uppercase underline"
-									>{{ post.primary_author.name }}</nuxt-link
-								>
-							</div>
+						<h2 v-if="post.title" class="title capitalize text-xl">
+							<nuxt-link
+								:to="localePath({path: '/' + post.slug})"
+								:title="post.title"
+								>{{ post.title }}
+							</nuxt-link>
+						</h2>
+						<div class="excerpt ex-gray mb-2">
+							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
+							<p v-else-if="post.excerpt && !post.custom_excerpt">
+								{{ post.excerpt }}
+							</p>
 						</div>
 					</div>
-					<h2 v-if="post.title" class="title capitalize text-xl">
-						<nuxt-link
-							:to="localePath({path: '/' + post.slug})"
-							:title="post.title"
-							>{{ post.title }}
-						</nuxt-link>
-					</h2>
-					<div class="excerpt ex-gray mb-2">
-						<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
-						<p v-else-if="post.excerpt && !post.custom_excerpt">
-							{{ post.excerpt }}
-						</p>
-					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 	</div>
 </template>
 

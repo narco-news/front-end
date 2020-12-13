@@ -5,6 +5,14 @@
 				<LatestArticles class="p-6" :posts="postsIndex" />
 			</div>
 			<!-- Hidden on iPad screens -->
+			<div class="atw col-span-4 md:hidden md:grid-cols-2">
+				<div>
+					<AroundTheWeb class="p-6" :posts="postsIndexATW" />
+				</div>
+				<div>
+					<SignificantActivities class="p-6" :posts="postsIndexSIGACT" />
+				</div>
+			</div>
 			<div class="col-span-4 md:hidden">
 				<AnalysisArticles class="p-6" :posts="postsIndexAnalysis" />
 			</div>
@@ -17,6 +25,14 @@
 			</div>
 		</div>
 		<!-- Hidden on Phone Screens -->
+		<div class="atw hidden md:grid md:grid-cols-2">
+			<div>
+				<AroundTheWeb class="p-6" :posts="postsIndexATW" />
+			</div>
+			<div>
+				<SignificantActivities class="p-6" :posts="postsIndexSIGACT" />
+			</div>
+		</div>
 		<div class="hidden md:inline">
 			<AnalysisArticles class="p-6" :posts="postsIndexAnalysis" />
 		</div>
@@ -60,8 +76,9 @@ import TagArticles from '~/components/Home/TagArticles';
 import FeaturedArticles from '~/components/Home/FeaturedArticles';
 import OpinionArticles from '~/components/Home/OpinionArticles';
 import AnalysisArticles from '~/components/Home/AnalysisArticles';
-// import AroundTheWeb from '~/components/Home/AroundTheWeb';
+import AroundTheWeb from '~/components/Home/AroundTheWeb';
 import TagsBox from '~/components/TagsBox';
+import SignificantActivities from '~/components/Home/SignificantActivities';
 
 export default {
 	layout: 'default',
@@ -72,8 +89,9 @@ export default {
 		FeaturedArticles,
 		OpinionArticles,
 		AnalysisArticles,
-		TagsBox
-		// AroundTheWeb
+		TagsBox,
+		AroundTheWeb,
+		SignificantActivities
 	},
 	async fetch({error, params, payload, store}) {
 		if (payload) {
@@ -86,7 +104,10 @@ export default {
 
 			try {
 				await store.dispatch('getPostsIndex', {
-					filter: store.state.lang.tag + '+tag:-sigact' + '+tag:-links',
+					filter:
+						store.state.lang.tag +
+						'+tag:-around-the-web' +
+						'+tag:-significant-activity',
 					pageNumber
 				});
 				await store.dispatch('getPostsIndexTagOne', {
@@ -107,6 +128,14 @@ export default {
 				});
 				await store.dispatch('getPostsIndexAnalysis', {
 					filter: store.state.lang.tag + '+tag:analysis',
+					pageNumber
+				});
+				await store.dispatch('getPostsIndexATW', {
+					filter: 'tag:around-the-web',
+					pageNumber
+				});
+				await store.dispatch('getPostsIndexSIGACT', {
+					filter: 'tag:significant-activity',
 					pageNumber
 				});
 			} catch (err) {
@@ -145,6 +174,12 @@ export default {
 		},
 		postsIndexAnalysis() {
 			return this.$store.state.postsIndexAnalysis;
+		},
+		postsIndexATW() {
+			return this.$store.state.postsIndexATW;
+		},
+		postsIndexSIGACT() {
+			return this.$store.state.postsIndexSIGACT;
 		},
 		availableLocales() {
 			return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale);
@@ -202,27 +237,19 @@ export default {
 				}
 			]
 		};
-	},
-	i18n: {
-		messages: {
-			en: {
-				message: {
-					atw: 'Around the web',
-					sigActs: 'Significant Activities'
-				}
-			},
-			es: {
-				message: {
-					atw: 'Alrededor de la red',
-					sigActs: 'Actividades significativas'
-				}
-			}
-		}
 	}
 };
 </script>
 
 <style lang="scss" scoped>
+.atw {
+	border-bottom: 1px solid #e2e8f0;
+	@apply mb-6;
+	@media (max-width: 414px) {
+		border-top: 1px solid #e2e8f0;
+		padding: 1em 0;
+	}
+}
 .sig-act {
 	border-left: 1px dotted black;
 	@media (max-width: 414px) {

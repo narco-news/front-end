@@ -283,6 +283,7 @@
 						</div>
 					</div>
 				</article>
+				<a href="#" class="link-button"></a>
 			</div>
 			<div class="notice flex justify-center mb-4 p-2">
 				<p>
@@ -577,7 +578,7 @@ export default {
 }
 
 .published_at {
-	font-family: 'Source Sans Pro', sans;
+	font-family: 'Source Sans Pro', sans-serif;
 
 	color: #03a688;
 }
@@ -589,5 +590,36 @@ export default {
 .updated_at {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
+}
+a.link-button {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #cdcff4;
+	border: 2px solid #595fd9;
+	color: #595fd9;
+	margin: 3em 0;
+	@apply inline-block;
+	@apply shadow-lg;
+	@apply rounded-md;
+	@apply py-3;
+	@apply px-4;
+	@apply font-semibold;
+	@media (min-width: 375px) {
+		font-size: 16px;
+		margin-left: 2em;
+	}
+	@media (min-width: 415px) {
+		font-size: 14px;
+		margin-left: 3em;
+	}
+	&::before {
+		content: '🔗';
+		margin-right: 10px;
+	}
+	&::after {
+		content: 'Article Link';
+	}
+	&:hover {
+		background-color: #dedff7;
+	}
 }
 </style>
