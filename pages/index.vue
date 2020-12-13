@@ -111,11 +111,19 @@ export default {
 					pageNumber
 				});
 				await store.dispatch('getPostsIndexTagOne', {
-					filter: store.state.lang.tag + '+tag:tamaulipas',
+					filter:
+						store.state.lang.tag +
+						'+tag:tamaulipas' +
+						'+tag:-around-the-web' +
+						'+tag:-significant-activity',
 					pageNumber
 				});
 				await store.dispatch('getPostsIndexTagTwo', {
-					filter: store.state.lang.tag + '+tag:guanajuato',
+					filter:
+						store.state.lang.tag +
+						'+tag:guanajuato' +
+						'+tag:-around-the-web' +
+						'+tag:-significant-activity',
 					pageNumber
 				});
 				await store.dispatch('getPostsIndexFeatured', {

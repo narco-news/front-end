@@ -47,7 +47,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="flex flex-row flex-wrap items-center">
+							<div
+								class="flex flex-row flex-wrap items-center md:flex-col md:items-start"
+							>
 								<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
 									{{ post.published_at | dayjs }}
 								</div>
