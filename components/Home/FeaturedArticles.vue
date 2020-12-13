@@ -185,6 +185,10 @@ export default {
 	.article:nth-child(2),
 	.article:nth-child(3) {
 		grid-column: span 4;
+		@media (min-width: 1024px) {
+			grid-column: span 6;
+			margin-left: 2em;
+		}
 		margin-left: 1em;
 		margin: 1em 0;
 		@media (max-width: 414px) {

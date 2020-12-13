@@ -213,6 +213,7 @@
 	}
 
 	.kg-gallery-card {
+		margin: 2em auto;
 		+ .kg-image-card.kg-width-wide,
 		+ .kg-gallery-card {
 			margin: 0 auto;
@@ -253,7 +254,7 @@
 	.kg-image-card {
 		align-self: center;
 		width: 80%;
-		margin: 10px auto;
+		margin: 2em auto;
 
 		&.kg-width-wide {
 			+ .kg-gallery-card,

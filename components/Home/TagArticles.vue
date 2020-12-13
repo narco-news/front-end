@@ -217,6 +217,9 @@ export default {
 		@media (min-width: 415px) {
 			@apply hidden;
 		}
+		@media (min-width: 1024px) {
+			@apply inline;
+		}
 	}
 
 	.article:nth-child(2),
@@ -224,6 +227,13 @@ export default {
 	.article:nth-child(4),
 	.article:nth-child(5) {
 		grid-column: span 1;
+		@media (min-width: 1024px) {
+			grid-column: span 2;
+		}
+		@media (min-width: 1025px) {
+			grid-column: span 3;
+			margin: 1em 1em;
+		}
 		.excerpt {
 			display: none;
 		}
