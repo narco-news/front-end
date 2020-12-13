@@ -192,3 +192,37 @@ main {
 		content: 'This article contains graphic and disturbing content. Reader discretion is advised.';
 	}
 }
+
+a.link-button {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #cdcff4;
+	border: 2px solid #595fd9;
+	color: #595fd9 !important;
+	margin: 3em 0 1em 0;
+	text-decoration: none !important;
+	font-weight: 600 !important;
+	@apply inline-block;
+	@apply shadow-lg;
+	@apply rounded-md;
+	@apply py-3;
+	@apply px-4;
+	@apply font-semibold;
+	@media (min-width: 375px) {
+		font-size: 16px;
+		margin-left: 1em;
+	}
+	@media (min-width: 415px) {
+		font-size: 14px;
+		margin-left: 2em;
+	}
+	&::before {
+		content: '🔗';
+		margin-right: 10px;
+	}
+	&::after {
+		content: 'Article Link';
+	}
+	&:hover {
+		background-color: #dedff7;
+	}
+}

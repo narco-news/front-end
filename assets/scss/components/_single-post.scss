@@ -35,7 +35,6 @@
 
 	a {
 		color: #f26457;
-		text-decoration: underline;
 		font-weight: 500;
 		overflow-wrap: break-word;
 		word-wrap: break-word;
@@ -49,6 +48,9 @@
 	.post-content {
 		display: flex;
 		flex-direction: column;
+		a {
+			text-decoration: underline;
+		}
 
 		.post-featured {
 			font-weight: 600;
