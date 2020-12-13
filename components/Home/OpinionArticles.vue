@@ -1,8 +1,6 @@
 <template>
 	<div>
-		<div
-			class="border-b-2 pb-2 flex flex-row justify-between items-center mb-4"
-		>
+		<div class="border-b-2 flex flex-row justify-between items-center mb-4">
 			<h2 class="text-2xl lg:text-3xl font-semibold px-4">
 				{{ $t('message.opinion') }}
 			</h2>

@@ -54,7 +54,7 @@
 							{{ post.excerpt }}
 						</p>
 					</div>
-					<div class="flex">
+					<div class="flex flex-wrap">
 						<span
 							class="published_at text-xs md:text-sm whitespace-no-wrap sub-gray mr-1"
 							>{{ post.published_at | dayjs }}</span

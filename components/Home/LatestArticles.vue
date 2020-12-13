@@ -8,10 +8,7 @@
 					</div>
 				</nuxt-link>
 				<div class="title-box">
-					<div
-						v-if="post.tags.length > 0"
-						class="flex flex-row flex-wrap justify-between"
-					>
+					<div v-if="post.tags.length > 0" class="flex flex-col flex-wrap">
 						<div class="flex flex-row">
 							<div
 								v-for="tag in post.tags.slice(0, 1)"
