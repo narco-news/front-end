@@ -283,7 +283,6 @@
 						</div>
 					</div>
 				</article>
-				<a href="#" class="link-button"></a>
 			</div>
 			<div class="notice flex justify-center mb-4 p-2">
 				<p>
