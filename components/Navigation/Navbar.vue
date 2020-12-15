@@ -37,10 +37,10 @@ export default {
 <style lang="scss" scoped>
 .navbar {
 	a {
+		@apply font-sans;
 		margin: 0 0.25em;
 		white-space: nowrap;
-		font-weight: 600;
-		font-family: 'Source Sans Pro', serif;
+		font-weight: 500;
 		text-decoration: underline;
 		&:hover {
 			color: #7a7fe1;

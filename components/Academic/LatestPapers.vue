@@ -64,6 +64,5 @@ export default {
 	color: #03a688;
 }
 .date-published {
-	font-family: 'Courier Prime', monospace;
 }
 </style>

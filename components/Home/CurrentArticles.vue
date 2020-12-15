@@ -44,7 +44,7 @@
 						<nuxt-link
 							:to="{path: '/' + post.slug}"
 							:title="post.title"
-							class="hvr-forward font-bold"
+							class="title hvr-forward font-serif"
 							>{{ post.title }}
 						</nuxt-link>
 					</h2>
@@ -54,17 +54,16 @@
 							{{ post.excerpt }}
 						</p>
 					</div>
-					<div class="flex flex-wrap">
-						<span
-							class="published_at text-xs md:text-sm whitespace-no-wrap sub-gray mr-1"
-							>{{ post.published_at | dayjs }}</span
-						>
-						<div class="author text-sm md:text-md sub-gray">
-							by
+					<div class="flex flex-wrap items-center my-2 mb-4 md:mb-0">
+						<div class="published_at text-sm whitespace-no-wrap sub-gray mr-1">
+							{{ post.published_at | dayjs }}
+						</div>
+						<span class="sub-gray text-sm mr-2">by</span>
+						<div class="author text-sm ex-gray">
 							<nuxt-link
 								:to="{path: '/author/' + post.primary_author.slug}"
 								:title="post.primary_author.name"
-								class="font-bold uppercase underline"
+								class="uppercase underline"
 								>{{ post.primary_author.name }}</nuxt-link
 							>
 						</div>
@@ -149,16 +148,7 @@ img {
 .tags {
 	color: #03a688;
 }
-.published_at {
-	font-weight: 600;
-}
-.author {
-	margin-bottom: 1em;
-}
 
-.article:nth-child(1),
-.article:nth-child(2) {
-}
 .article {
 	margin-bottom: 0.5em;
 	border-bottom: 1px solid #e2e8f0;
@@ -166,8 +156,7 @@ img {
 		border-bottom: 0px;
 	}
 	.title {
-		font-family: 'Source Serif Pro', serif;
-		font-weight: 500;
+		font-weight: 700;
 		letter-spacing: 0.6px;
 		line-height: 1.1;
 	}

@@ -173,10 +173,8 @@ export default {
 li {
 	span {
 		color: #f28177;
-		font-family: 'Courier Prime', monospace;
 	}
 	p {
-		font-family: 'IBM Plex Sans', sans-serif;
 		line-height: 1.1;
 		font-weight: 400;
 	}

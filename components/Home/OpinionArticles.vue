@@ -122,7 +122,7 @@ export default {
 		padding: 0 0.5em;
 		margin-bottom: 10px;
 		.title {
-			font-family: 'Source Serif Pro', serif;
+			@apply font-serif;
 			font-weight: 700;
 			letter-spacing: 0.6px;
 			line-height: 1.1;

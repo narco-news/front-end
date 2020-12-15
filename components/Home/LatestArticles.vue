@@ -51,18 +51,18 @@
 								<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
 									{{ post.published_at | dayjs }}
 								</div>
-								<div class="author text-sm md:text-md sub-gray">
-									by
+								<span class="sub-gray text-sm mr-1">by</span>
+								<div class="author text-sm md:text-md ex-gray">
 									<nuxt-link
 										:to="{path: '/author/' + post.primary_author.slug}"
 										:title="post.primary_author.name"
-										class="font-bold uppercase underline"
+										class="uppercase underline"
 										>{{ post.primary_author.name }}</nuxt-link
 									>
 								</div>
 							</div>
 						</div>
-						<h2 v-if="post.title" class="title capitalize text-xl">
+						<h2 v-if="post.title" class="title capitalize text-xl font-serif">
 							<nuxt-link
 								:to="localePath({path: '/' + post.slug})"
 								:title="post.title"
@@ -129,8 +129,8 @@ export default {
 	article {
 		margin-bottom: 20px;
 		.title {
+			font-weight: 700;
 			@apply text-2xl;
-			font-family: 'Source Serif Pro', serif;
 			font-weight: 700;
 			letter-spacing: 0.6px;
 			line-height: 1.1;
@@ -148,9 +148,6 @@ export default {
 				text-decoration: underline;
 				text-decoration-thickness: 2px;
 			}
-		}
-		.date {
-			font-weight: 600;
 		}
 		.tags {
 			color: #049372;

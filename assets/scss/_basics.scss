@@ -116,7 +116,8 @@ p {
 }
 
 blockquote {
-	font-size: 14px;
+	@apply font-sans;
+	font-size: 13px;
 	background-color: #e6f6f3;
 	color: #3c403d;
 	@apply shadow-md;
@@ -125,13 +126,11 @@ blockquote {
 	padding: 1.5rem 2rem 1.5rem 3rem;
 	font-style: italic;
 	font-weight: 500;
-	font-family: 'Source Sans Pro';
 	word-wrap: break-word;
-	line-height: 1.2;
+	line-height: 1.3;
 
 	a {
 		font-size: 11px;
-		font-family: 'Courier Prime', monospace;
 		font-weight: 400;
 	}
 
@@ -142,6 +141,7 @@ blockquote {
 		content: '\201C';
 		color: #03a688;
 		font-size: 3.25rem;
+		@apply font-serif;
 	}
 
 	&::after {
@@ -151,6 +151,7 @@ blockquote {
 		content: '\201D';
 		color: #03a688;
 		font-size: 3.25rem;
+		@apply font-serif;
 	}
 
 	span {
@@ -177,6 +178,7 @@ main {
 }
 
 .warning {
+	@apply font-sans;
 	width: 85%;
 	height: 100%;
 	margin: 1em 0em;
@@ -187,14 +189,13 @@ main {
 	color: #f26457;
 	font-size: 12px;
 	font-weight: 600;
-	font-family: 'Source Sans Pro', sans-serif;
 	&::after {
 		content: 'This article contains graphic and disturbing content. Reader discretion is advised.';
 	}
 }
 
 a.link-button {
-	font-family: 'Source Sans Pro', sans-serif;
+	@apply font-sans;
 	background-color: #cdcff4;
 	border: 2px solid #595fd9;
 	color: #595fd9 !important;

@@ -150,14 +150,12 @@ a {
 	position: relative;
 	margin: 1em 0;
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
 }
 #mid {
 	position: relative;
 	margin: 1em 0 1em;
 	color: #f2f2f2;
 	font-weight: 500;
-	font-family: 'Source Serif Pro', serif;
 	span {
 		&:hover {
 			color: #595fd9;

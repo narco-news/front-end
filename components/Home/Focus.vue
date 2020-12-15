@@ -117,7 +117,6 @@ export default {
 	}
 }
 h2 {
-	font-family: 'IBM Plex Sans', sans;
 	color: #03a688;
 	line-height: 1.3;
 }

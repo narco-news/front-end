@@ -70,7 +70,6 @@ h5,
 h6 {
 	color: #f16b6f;
 	font-weight: 500;
-	font-family: 'IBM Plex Sans';
 }
 hr {
 	border-color: #c5c6b6;

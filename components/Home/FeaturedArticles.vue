@@ -23,11 +23,11 @@
 					<div class="title-box">
 						<div class="flex flex-row flex-wrap md:flex-row items-center">
 							<div class="author uppercase text-sm md:text-md">
-								<span class="mr-1">BY</span>
+								<span class="mr-1 sub-gray">BY</span>
 								<nuxt-link
 									:to="{path: '/author/' + post.primary_author.slug}"
 									:title="post.primary_author.name"
-									class="font-bold whitespace-no-wrap underline sub-gray"
+									class="whitespace-no-wrap underline ex-gray"
 									>{{ post.primary_author.name }}</nuxt-link
 								>
 							</div>
@@ -49,7 +49,7 @@
 								/>
 							</svg>
 						</div>
-						<h2 v-if="post.title" class="title">
+						<h2 v-if="post.title" class="title font-serif">
 							<nuxt-link :to="{path: '/' + post.slug}" :title="post.title"
 								>{{ post.title }}
 							</nuxt-link>
@@ -134,7 +134,6 @@ export default {
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	grid-auto-flow: dense;
 	.title {
-		font-family: 'Source Serif Pro', serif;
 		font-weight: 700;
 		letter-spacing: 0.6px;
 		line-height: 1.1;

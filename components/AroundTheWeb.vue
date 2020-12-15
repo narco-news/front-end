@@ -64,7 +64,6 @@ export default {
 <style lang="scss" scoped>
 ul#articles li {
 	display: inline;
-	font-family: 'EB Garamond', sans-serif;
 }
 li:nth-child(8) {
 	margin-right: 5em;

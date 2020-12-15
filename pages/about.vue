@@ -159,15 +159,12 @@ export default {
 	padding: 1em;
 	line-height: 1.3;
 	letter-spacing: 0.5px;
-	font-family: 'EB Garamond', serif;
 	.attribute {
-		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
 	}
 }
 .quote {
 	background-color: white;
-	font-family: 'EB Garamond', sans-serif;
 	padding: 1em 1em;
 	margin: 2em 2em;
 	border: 1px solid #03a688;

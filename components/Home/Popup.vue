@@ -87,7 +87,6 @@ export default {
 	color: #f2f2f2;
 }
 .words {
-	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 500;
 }
 </style>

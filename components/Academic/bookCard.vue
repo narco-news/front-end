@@ -70,7 +70,7 @@ export default {
 	max-height: 18rem;
 }
 .book-title {
-	font-family: 'EB Garamond', serif;
+	@apply font-serif;
 	font-weight: 600;
 	color: #262626;
 }

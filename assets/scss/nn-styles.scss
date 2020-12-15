@@ -8,8 +8,10 @@
 	padding: 0.5em;
 }
 .sub-gray {
-	color: #9cacbe;
+	// color: #9cacbe;
+	@apply text-gray-500;
 }
 .ex-gray {
-	color: #677a92;
+	// color: #677a92;
+	@apply text-gray-600;
 }

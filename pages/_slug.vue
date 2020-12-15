@@ -10,7 +10,7 @@
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="text-xl"
+										class="text-md"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</li>
@@ -38,7 +38,9 @@
 						</li>
 					</ul>
 				</div>
-				<h1 class="post-title text-4xl md:text-5xl mt-4 md:mt-12 md:mx-8">
+				<h1
+					class="post-title font-serif text-4xl md:text-5xl mt-4 md:mt-12 md:mx-8"
+				>
 					{{ post.title }}
 				</h1>
 
@@ -95,7 +97,7 @@
 									<div
 										class="post-meta-date-info md:flex md:flex-row md:flex-no-wrap"
 									>
-										<span class="published_at font-bold">{{
+										<span class="published_at font-sans">{{
 											post.published_at | dayjs
 										}}</span>
 									</div>
@@ -254,7 +256,7 @@
 													last edited
 													<span>{{ post.updated_at | daysec }}</span></span
 												>
-												<div class="post-tags-bottom uppercase">
+												<div class="post-tags-bottom uppercase font-mono">
 													<ul class="list inline">
 														<li
 															v-for="tag in post.tags.slice(1, 4)"
@@ -532,7 +534,6 @@ export default {
 	background-color: #f26457;
 }
 .post-tags {
-	font-family: 'Source Sans Pro', sans;
 	font-weight: 600;
 	color: #03a688;
 	text-transform: uppercase;
@@ -553,13 +554,11 @@ export default {
 	}
 }
 .post-title {
-	font-family: 'Source Serif Pro', serif;
 	font-weight: 600;
 	line-height: 1.2;
 	text-transform: capitalize;
 }
 .post-excerpt {
-	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 }
@@ -572,22 +571,17 @@ export default {
 }
 .post-author-info-name {
 	color: #0d0d0d;
-	font-weight: 600;
-	font-family: 'Source Sans Pro', sans;
+	font-weight: 500;
 }
 
 .published_at {
-	font-family: 'Source Sans Pro', sans-serif;
-
 	color: #03a688;
 }
 .post-text {
-	font-family: 'EB Garamond', serif;
 	font-weight: 400;
 	color: #252525;
 }
 .updated_at {
-	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 }
 </style>

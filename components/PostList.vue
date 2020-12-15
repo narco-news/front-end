@@ -218,7 +218,6 @@ article.article:nth-child(1) {
 	color: #272727;
 	font-weight: 700;
 	line-height: 1.2;
-	font-family: 'Source Serif Pro', serif;
 }
 
 .published_at {

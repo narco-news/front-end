@@ -21,7 +21,7 @@
 							<div class="col-span-3">
 								<h2
 									v-if="post.title"
-									class="title capitalize text-lg lg:text-2xl"
+									class="title capitalize text-xl lg:text-2xl font-serif font-bold"
 								>
 									<nuxt-link
 										:to="localePath({path: '/' + post.slug})"
@@ -125,7 +125,6 @@ export default {
 		padding: 0 0.5em;
 		margin-bottom: 10px;
 		.title {
-			font-family: 'Source Serif Pro', serif;
 			font-weight: 700;
 			letter-spacing: 0.6px;
 			line-height: 1.1;

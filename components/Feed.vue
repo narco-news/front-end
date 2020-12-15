@@ -69,13 +69,11 @@ export default {
 ol {
 	list-style-type: decimal;
 	font-size: 16px;
-	font-family: 'EB Garamond', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
 
 	li {
 		a {
-			font-family: 'Source Sans Pro', sans;
 			font-size: 12px;
 			font-weight: 600;
 			letter-spacing: 0.5px;

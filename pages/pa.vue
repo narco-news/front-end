@@ -27,7 +27,9 @@
 			</p>
 		</details>
 
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+		<div
+			class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-serif"
+		>
 			<LongFeed feedTitle="El Blog del Narco" :feedUrl="ebdn2" class="mb-4" />
 			<LongFeed feedTitle="Valor por Tamaulipas" :feedUrl="vpt" class="mb-4" />
 			<LongFeed feedTitle="Historias del Narco" :feedUrl="hdn" class="mb-4" />
@@ -41,7 +43,9 @@
 		<p class="text-xs px-4 mb-4">
 			{{ $t('message.entext') }}
 		</p>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+		<div
+			class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-serif"
+		>
 			<LongFeed feedTitle="Border Report" :feedUrl="br" class="mb-4" />
 			<LongFeed feedTitle="Mexico News Daily" :feedUrl="mnd" class="mb-b" />
 			<LongFeed feedTitle="Mexico Today" :feedUrl="mt" class="mb-b" />
@@ -51,7 +55,9 @@
 		<h1 class="text-xl font-bold underline mb-2">
 			Research & Investigative
 		</h1>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+		<div
+			class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-serif"
+		>
 			<LongFeed feedTitle="InSight Crime" :feedUrl="ic" class="mb-4" />
 			<LongFeed feedTitle="El Centro" :feedUrl="swec" class="mb-4" />
 		</div>
@@ -61,7 +67,9 @@
 		<p class="text-xs px-4 mb-4">
 			{{ $t('message.tamtext') }}
 		</p>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+		<div
+			class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-serif"
+		>
 			<LongFeed feedTitle="Hoy Tamaulipas" :feedUrl="ht" class="mb-4" />
 			<LongFeed feedTitle="El Mañana Reynosa" :feedUrl="em" class="mb-4" />
 			<LongFeed feedTitle="El Mañana NL" :feedUrl="emnl" class="mb-4" />
@@ -80,7 +88,9 @@
 		<p class="text-xs px-4 mb-4">
 			{{ $t('message.gtext') }}
 		</p>
-		<div class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+		<div
+			class="feeds-wrapper grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-serif"
+		>
 			<LongFeed feedTitle="El Sol de Bajío" :feedUrl="esdb" class="mb-4" />
 			<LongFeed feedTitle="Noticieros En Línea" :feedUrl="nel" class="mb-4" />
 			<LongFeed feedTitle="El Heraldo de León" :feedUrl="ehdl" class="mb-4" />

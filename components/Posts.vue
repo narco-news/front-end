@@ -1,7 +1,11 @@
 <template>
 	<div class="grid grid-cols-1">
 		<div class="archive mx-2 lg:mx-8">
-			<article v-for="post in posts" :key="post.id" class="article rounded-sm">
+			<article
+				v-for="post in posts"
+				:key="post.id"
+				class="article rounded-sm mb-4"
+			>
 				<div class="grid grid-cols-1">
 					<div
 						v-if="post.feature_image"
@@ -47,17 +51,17 @@
 						>
 							Featured
 						</div>
-						<div class="published_at text-sm block text-gray-600">
+						<div class="text-sm sub-gray mt-1">
 							{{ post.published_at | dayjs }}
 						</div>
-						<div class="title text-xl">
+						<div class="title text-2xl font-serif">
 							<h1 v-if="post.title">
 								<nuxt-link :to="{path: '/' + post.slug}" :title="post.title">{{
 									post.title
 								}}</nuxt-link>
 							</h1>
 						</div>
-						<div class="excerpt">
+						<div class="excerpt ex-gray">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
@@ -225,14 +229,15 @@ export default {
 .title {
 	color: #262626;
 	font-weight: 700;
-	line-height: 1.2;
-	margin: 0.5em 0;
+	line-height: 1.3;
+	margin: 0 0;
 }
 .published_at {
 	font-weight: 600;
 }
 .excerpt {
 	line-height: 1.2;
+	@apply mt-2;
 }
 .tags {
 	color: #262626;
