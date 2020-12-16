@@ -51,8 +51,8 @@
 								<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
 									{{ post.published_at | dayjs }}
 								</div>
-								<span class="sub-gray text-sm mr-1">by</span>
 								<div class="author text-sm md:text-md ex-gray">
+									<span class="sub-gray text-sm mr-1">by</span>
 									<nuxt-link
 										:to="{path: '/author/' + post.primary_author.slug}"
 										:title="post.primary_author.name"
