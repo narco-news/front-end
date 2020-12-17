@@ -225,7 +225,7 @@
 			display: flex;
 			grid-template-columns: 1fr 1fr;
 			margin: 0 auto;
-			padding: 1em 0.5em;
+			padding: 0em 0.5em;
 
 			.kg-gallery-row {
 				margin: 0 auto;
@@ -274,7 +274,6 @@
 
 		figcaption {
 			@apply font-sans;
-			padding: 0.5em 2rem;
 		}
 	}
 
