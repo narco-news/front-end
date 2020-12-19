@@ -1,11 +1,12 @@
 // Koenig styles - related to single posts only
 .single-post {
 	font-family: 'EB Garamond', serif;
-	iframe {
-		margin: 2em auto;
-		max-height: 400px;
-		width: 100%;
-	}
+	// iframe {
+	// 	margin: 2em auto;
+	// 	max-height: 400px;
+	// 	height: 100%;
+	// 	width: 100%;
+	// }
 	.post-content ul {
 		list-style: disc;
 		padding-left: 10px;
@@ -238,7 +239,7 @@
 						display: block;
 						width: 100%;
 						height: 100%;
-						border-radius: 5px;
+						border-radius: 3px;
 					}
 				}
 			}
@@ -270,6 +271,7 @@
 			height: 100%;
 			max-width: 800px;
 			margin: 0 auto;
+			border-radius: 3px;
 		}
 
 		figcaption {
@@ -282,17 +284,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
+		margin: 2em 0;
 
 		.kg-embed-card::after {
 			display: block;
 			content: '';
-		}
-
-		.kg-embed-card iframe {
-			position: absolute;
-			display: block;
-			margin: 0 auto;
 		}
 	}
 }

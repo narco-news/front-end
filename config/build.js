@@ -15,7 +15,7 @@ export default {
 	// Import mapbox with webpack
 	// plugins: [
 	// 	new webpack.ProvidePlugin({
-	// 		mapboxgl: 'mapbox-gl'
+	// 		// mapboxgl: 'mapbox-gl'
 	// 	})
 	// ],
 

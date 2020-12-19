@@ -159,8 +159,8 @@ export default async () => {
 			{src: '~/plugins/rough-notation.js', ssr: false},
 			{src: '~/plugins/vue-formulate.js'},
 			{src: '~/plugins/i18n.js'},
-			{src: '~/plugins/tippy.js'}
-
+			{src: '~/plugins/tippy.js'},
+			// {src: '~/plugins/reframe.js', ssr: false},
 		],
 
 		build

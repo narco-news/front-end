@@ -301,6 +301,7 @@
 </template>
 
 <script>
+import reframe from 'reframe.js';
 import dayjs from 'dayjs';
 import advancedFormat from 'dayjs/plugin/advancedFormat';
 import {ghostAPI} from '~/config/ghost';
@@ -397,22 +398,18 @@ export default {
 				.split('/')[0];
 		}
 	},
-
+	mounted() {
+		reframe('iframe');
+	},
 	beforemounted() {
-		// window.addEventListener('load', () => {
-		// 	document.querySelectorAll('pre > code').forEach(block => {
-		// 		hljs.highlightBlock(block);
-		// 	});
-		// });
-
-		const cards = document.getElementsByClassName('kg-embed-card');
-		for (const card of cards) {
-			const iframe = card.firstElementChild;
-			const iframeHeight = iframe.getAttribute('height');
-			if (iframeHeight) {
-				iframe.style.height = iframeHeight + 'px';
-			}
-		}
+		// const cards = document.getElementsByClassName('kg-embed-card');
+		// for (const card of cards) {
+		// 	const iframe = card.firstElementChild;
+		// 	const iframeHeight = iframe.getAttribute('height');
+		// 	if (iframeHeight) {
+		// 		iframe.style.height = iframeHeight + 'px';
+		// 	}
+		// }
 	},
 	head() {
 		return {

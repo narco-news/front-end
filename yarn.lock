@@ -9660,6 +9660,11 @@ reduce-css-calc@^2.1.6:
     css-unit-converter "^1.1.1"
     postcss-value-parser "^3.3.0"
 
+reframe.js@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/reframe.js/-/reframe.js-3.0.2.tgz#8c97c591f3c3266f74a1baf6d7261e4224f51bc0"
+  integrity sha512-R39DRjAdwwsKeBBue1VukDktqdjfP8SFvZk/FtXtELC3Axutvk48VIrhj0IRK2nW1impTeDJKBKTm9smy+P90w==
+
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/regenerate-unicode-properties/-/regenerate-unicode-properties-8.2.0.tgz#e5de7111d655e7ba60c057dbe9ff37c87e65cdec"
