@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2
-			class="text-2xl lg:text-3xl font-bold mb-4 px-4 border-b-2 border-green-300 m-6"
+			class="text-2xl lg:text-3xl font-bold mb-4 px-4 border-b-2 border-shamrock-300 m-6"
 		>
 			Tags
 		</h2>

@@ -14,7 +14,7 @@
 					clip-rule="evenodd"
 				/>
 			</svg>
-			<span class="uppercase ml-2 font-semibold text-green-400">{{
+			<span class="uppercase ml-2 font-semibold text-shamrock-400">{{
 				$t('message.atw')
 			}}</span>
 		</div>
@@ -39,7 +39,7 @@
 		<n-link
 			to="tag/around-the-web"
 			title="More articles"
-			class="bg-green-400 hover:bg-green-500 text-white p-1 px-2 text-xs font-semibold rounded-md"
+			class="bg-shamrock-400 hover:bg-shamrock-500 text-white p-1 px-2 text-xs font-semibold rounded-md"
 			>More</n-link
 		>
 	</div>

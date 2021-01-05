@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2
-			class="text-3xl lg:text-4xl font-bold mb-4 px-4 border-b-2 border-green-300"
+			class="text-3xl lg:text-4xl font-bold mb-4 px-4 border-b-2 border-shamrock-300"
 		>
 			{{ title }}
 		</h2>
@@ -92,7 +92,7 @@
 				:to="link"
 				:alt="title"
 				:title="title"
-				class="bg-green-400 text-gray-100 rounded-md shadow-lg p-2 font-bold hover:bg-green-500"
+				class="bg-shamrock-400 text-gray-100 rounded-md shadow-lg p-2 font-bold hover:bg-shamrock-500"
 			>
 				{{ title }}
 			</n-link>

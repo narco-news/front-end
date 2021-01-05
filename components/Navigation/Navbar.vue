@@ -1,7 +1,9 @@
 <template>
-	<div class="navbar text-sm">
-		<div class="flex flex-row flex-no-wrap text-blue-500">
-			<!-- <n-link :to="localePath('/about')" alt="About page">About</n-link> -->
+	<div
+		class="navbar flex flex-row flex-no-wrap items-center text-xs md:text-sm text-shamrock-600"
+	>
+		<div class="flex flex-row flex-no-wrap">
+			<n-link :to="localePath('/about')" alt="About page">About</n-link>
 			<n-link :to="localePath('/pa')" alt="Press Aggregate page">{{
 				$t('message.pa')
 			}}</n-link>
@@ -37,17 +39,19 @@ export default {
 <style lang="scss" scoped>
 .navbar {
 	a {
-		@apply font-sans;
 		margin: 0 0.25em;
-		white-space: nowrap;
-		font-weight: 500;
-		text-decoration: underline;
-		&:hover {
-			color: #7a7fe1;
-			text-decoration: underline;
-		}
+		padding: 5px;
+		@apply rounded-md;
+		-webkit-tap-highlight-color: transparent;
 		&:active {
-			color: #7a7fe1;
+			@apply bg-gray-200;
+			@apply text-shamrock-400;
+		}
+	}
+	@media (hover: hover) and (pointer: fine) {
+		a:hover {
+			@apply bg-gray-200;
+			@apply text-shamrock-400;
 		}
 	}
 }

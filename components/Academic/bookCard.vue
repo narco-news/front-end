@@ -3,7 +3,7 @@
 		<div class="relative h-64 pt-5 md:my-4 mb-6">
 			<div class="book-box relative bg-white rounded shadow-lg w-56 z-10">
 				<div
-					class="book-date absolute bg-green-500 text-white text-xs font-extrabold top-0 right-0 p-1 rounded"
+					class="book-date absolute bg-shamrock-500 text-white text-xs font-extrabold top-0 right-0 p-1 rounded"
 				>
 					{{ date }}
 				</div>

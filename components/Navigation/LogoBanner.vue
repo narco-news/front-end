@@ -1,5 +1,5 @@
 <template>
-	<div class="logo flex justify-center items-center md:h-12 lg:h-16">
+	<div class="logo-box flex justify-center items-center h-16 bg-gray-500">
 		<n-link :to="localePath('/')">
 			<img
 				src="~/assets/images/bw-nn-logo.png"
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.logo {
-	background-color: #f2f2f2;
+.logo-box {
+	border-bottom: 1px solid #262626;
 }
 </style>

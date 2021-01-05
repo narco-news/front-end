@@ -1,7 +1,7 @@
 <template>
 	<div class="large-barrier m-4">
 		<h1
-			class="border-b-2 border-green-300 text-3xl lg:text-4xl font-semibold m-6"
+			class="border-b-2 border-shamrock-300 text-3xl lg:text-4xl font-semibold m-6"
 		>
 			{{ currentTag.name }}
 		</h1>

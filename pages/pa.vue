@@ -12,13 +12,13 @@
 				<i18n path="message.sbtext" tag="p">
 					<a
 						href="https://en.wikipedia.org/wiki/Blog_del_Narco"
-						class="text-red underline font-bold"
+						class="text-cerise-600 underline font-bold"
 						target="_blank"
 						>{{ $t('message.ebdn') }}</a
 					>
 					<a
 						href="https://en.wikipedia.org/wiki/Valor_por_Tamaulipas"
-						class="text-red underline font-bold"
+						class="text-cerise-600 underline font-bold"
 						target="_blank"
 					>
 						{{ $t('message.vpt') }}
