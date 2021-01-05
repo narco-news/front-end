@@ -10,7 +10,7 @@
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="text-md"
+										class="text-sm md:text-md"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</li>
@@ -176,10 +176,47 @@
 						<div class="mx-auto">
 							<div class="antialiased post-content">
 								<!-- eslint-disable-next-line vue/no-v-html -->
-								<div class="post-text text-xl lg:text-2xl" v-html="post.html" />
+								<div class="post-text text-lg lg:text-2xl" v-html="post.html" />
 							</div>
+
 							<div class="mt-12">
-								<div class="flex flex-row">
+								<div class="inline-block text-md">
+									<div class="post-meta-date">
+										<div class="post-meta-date-info">
+											<div>
+												<span
+													v-if="post.updated_at !== post.published_at"
+													class="updated_at text-xs text-gray-500 font-sans"
+												>
+													Last edited
+													<span>{{ post.updated_at | daysec }}</span></span
+												>
+												<div class="post-tags-bottom uppercase font-mono">
+													<ul class="list inline">
+														<li
+															v-for="tag in post.tags.slice(1, 4)"
+															:key="tag.id"
+														>
+															<div v-if="tag.slug != 'hash-es'">
+																<div v-if="tag.slug != 'hash-res'">
+																	<div v-if="tag.slug != 'hash-ana'">
+																		<nuxt-link
+																			:to="{path: '/tag/' + tag.slug}"
+																			:title="tag.name"
+																			class="tags-bottom hvr-sink"
+																			>{{ tag.name }}</nuxt-link
+																		>
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flex flex-row mt-4">
 									<social-icon
 										:url="
 											'https://twitter.com/share?text=' +
@@ -245,48 +282,13 @@
 										/>
 									</social-icon>
 								</div>
-								<div class="inline-block text-md">
-									<div class="post-meta-date">
-										<div class="post-meta-date-info">
-											<div>
-												<span
-													v-if="post.updated_at !== post.published_at"
-													class="updated_at text-xs text-gray-500"
-												>
-													last edited
-													<span>{{ post.updated_at | daysec }}</span></span
-												>
-												<div class="post-tags-bottom uppercase font-mono">
-													<ul class="list inline">
-														<li
-															v-for="tag in post.tags.slice(1, 4)"
-															:key="tag.id"
-														>
-															<div v-if="tag.slug != 'hash-es'">
-																<div v-if="tag.slug != 'hash-res'">
-																	<div v-if="tag.slug != 'hash-ana'">
-																		<nuxt-link
-																			:to="{path: '/tag/' + tag.slug}"
-																			:title="tag.name"
-																			class="tags-bottom hvr-sink"
-																			>{{ tag.name }}</nuxt-link
-																		>
-																	</div>
-																</div>
-															</div>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
 				</article>
 			</div>
-			<div class="notice flex justify-center mb-4 p-2">
+			<hr />
+			<div class="notice flex justify-center my-4 p-2">
 				<p>
 					All company, product and service names used in this website are for
 					identification purposes only. All product names, logos, and brands are

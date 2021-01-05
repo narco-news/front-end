@@ -198,14 +198,17 @@ export default {
 			display: none;
 		}
 		img {
-			max-height: 115px;
+			max-height: 175px;
 			width: 100%;
 			object-fit: cover;
 			@media (max-width: 375px) {
-				max-height: 160px;
+				max-height: 175px;
 			}
 		}
 		@media (min-width: 415px) {
+			img {
+				max-height: 120px;
+			}
 			.excerpt {
 				display: none;
 			}
