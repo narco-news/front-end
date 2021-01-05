@@ -11,7 +11,7 @@ export const mutations = {
   changeFilter(state) {
       state.changedToSpanish = true
       if (state.changedToSpanish === true) {
-          state.tag = 'tags:hash-es'
+          state.tag = 'tags:hash-es+featured:false'
       }
   },
 }
