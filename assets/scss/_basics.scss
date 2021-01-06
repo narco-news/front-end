@@ -194,6 +194,23 @@ main {
 	}
 }
 
+.warning-es {
+	@apply font-sans;
+	width: 85%;
+	height: 100%;
+	margin: 1em 0em;
+	padding: 0.25em 1em;
+	background-color: #fce0dd;
+	border-left: 4px solid #f26457;
+	text-align: center;
+	color: #f26457;
+	font-size: 12px;
+	font-weight: 600;
+	&::after {
+		content: 'Este artículo tiene un contenido gráfico e inquietante. Se aconseja la discreción del lector.';
+	}
+}
+
 a.link-button {
 	@apply font-sans;
 	background-color: #cdcff4;

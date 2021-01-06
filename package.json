@@ -19,7 +19,7 @@
 		"@nuxtjs/feed": "^1.1.0",
 		"@tryghost/content-api": "^1.4.1",
 		"animate.css": "^4.0.0",
-		"axios": "^0.19.2",
+		"axios": "^0.21.1",
 		"css-loader": "^3.5.3",
 		"dayjs": "^1.8.24",
 		"eslint-config-xo-vue": "^3.1.1",

@@ -15,7 +15,7 @@
 					<div class="title-box">
 						<div
 							v-if="post.tags.length > 0"
-							class="flex flex-row justify-between items-center mx-1 mb-1 flex-wrap md:flex-col md:items-start"
+							class="flex flex-col mx-1 mb-1 flex-wrap md:flex-col md:items-start"
 						>
 							<div class="flex flex-row text-teal-700">
 								<div
@@ -194,14 +194,17 @@ export default {
 			display: none;
 		}
 		img {
-			max-height: 115px;
+			max-height: 175px;
 			width: 100%;
 			object-fit: cover;
 			@media (max-width: 375px) {
-				max-height: 160px;
+				max-height: 175px;
 			}
 		}
 		@media (min-width: 415px) {
+			img {
+				max-height: 120px;
+			}
 			.excerpt {
 				display: none;
 			}
