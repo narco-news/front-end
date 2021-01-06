@@ -1,5 +1,5 @@
 <template>
-	<div class="logo-box flex justify-center items-center h-16 bg-gray-500">
+	<div class="logo-box flex justify-center items-center h-16 bg-gray-200">
 		<n-link :to="localePath('/')">
 			<img
 				src="~/assets/images/bw-nn-logo.png"

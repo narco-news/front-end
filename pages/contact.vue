@@ -9,7 +9,7 @@
 			</p>
 			<div class="p-4">
 				<div class="bg-white rounded border-red border-2 m-2 p-2">
-					<p class="text-sm text-cerise-600 font-bold my-2">
+					<p class="text-sm text-red-600 font-bold my-2">
 						{{ $t('message.question') }}
 					</p>
 					<p class="text-sm mx-2">
@@ -193,7 +193,7 @@ export default {
 }
 .success {
 	@apply text-sm;
-	@apply text-cerise-600;
+	@apply text-red-600;
 	font-weight: 700;
 	letter-spacing: 1.2px;
 }
