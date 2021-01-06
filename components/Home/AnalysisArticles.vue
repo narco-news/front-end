@@ -1,11 +1,13 @@
 <template>
 	<div>
-		<div class="border-b-2 flex flex-row justify-between items-center mb-4">
+		<div
+			class="border-b-2 border-teal-700 flex flex-row justify-between items-center mb-4"
+		>
 			<h2 class="text-2xl lg:text-3xl font-semibold px-4">
 				{{ $t('message.analysis') }}
 			</h2>
 			<div
-				class="bg-shamrock-400 hover:bg-shamrock-500 px-2 py-1 rounded-md text-white text-xs font-semibold h-full mr-2"
+				class="px-2 py-1 rounded-md text-xs h-full mr-2 bg-gray-100 hover:bg-gray-200"
 			>
 				<n-link to="/tag/analysis">More</n-link>
 			</div>
@@ -14,14 +16,14 @@
 			<article v-for="post in posts.slice(0, 6)" :key="post.id" class="article">
 				<div v-if="post.feature_image">
 					<div>
-						<div class="date whitespace-no-wrap text-sm text-shamrock-400 mr-1">
+						<div class="date whitespace-no-wrap text-sm text-gray-400 mr-1">
 							{{ post.published_at | dayjs }}
 						</div>
 						<div class="grid grid-cols-4">
 							<div class="col-span-3">
 								<h2
 									v-if="post.title"
-									class="title capitalize text-xl lg:text-2xl font-serif font-bold"
+									class="title capitalize text-lg lg:text-2xl font-serif font-bold"
 								>
 									<nuxt-link
 										:to="localePath({path: '/' + post.slug})"
@@ -45,7 +47,7 @@
 											/>
 										</nuxt-link>
 									</div>
-									<div class="text-sm md:text-md sub-gray">
+									<div class="text-sm md:text-md text-gray-600">
 										<nuxt-link
 											:to="{path: '/author/' + post.primary_author.slug}"
 											:title="post.primary_author.name"

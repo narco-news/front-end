@@ -1,7 +1,7 @@
 <template>
 	<div class="my-2 md:my-0">
 		<h2
-			class="text-3xl lg:text-4xl font-semibold mb-4 px-4 border-b-2 md:hidden"
+			class="text-3xl lg:text-4xl font-semibold mb-4 px-4 border-b-2 border-teal-700 md:hidden"
 		>
 			News wire
 		</h2>

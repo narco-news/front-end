@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="navbar flex flex-row flex-no-wrap items-center text-xs md:text-sm text-royal-400"
+		class="navbar flex flex-row flex-no-wrap items-center text-xs md:text-sm text-blue-500"
 	>
 		<div class="flex flex-row flex-no-wrap">
 			<n-link :to="localePath('/about')" alt="About page">
@@ -50,7 +50,7 @@ export default {
 		-webkit-tap-highlight-color: transparent;
 		&:active {
 			@apply bg-gray-100;
-			@apply text-royal-600;
+			@apply text-blue-600;
 			text-decoration: none;
 		}
 	}

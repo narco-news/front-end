@@ -5,7 +5,7 @@
 				{{ $t('message.opinion') }}
 			</h2>
 			<div
-				class="bg-shamrock-400 hover:bg-shamrock-500 px-2 py-1 rounded-md text-white text-xs font-semibold h-full mr-2"
+				class="bg-teal-600 hover:bg-teal-700 px-2 py-1 rounded-md text-white text-xs font-semibold h-full mr-2"
 			>
 				<n-link to="/tag/opinion">More</n-link>
 			</div>
@@ -14,7 +14,7 @@
 			<article v-for="post in posts.slice(0, 6)" :key="post.id" class="article">
 				<div v-if="post.feature_image">
 					<div>
-						<div class="date whitespace-no-wrap text-sm text-shamrock-400 mr-1">
+						<div class="date whitespace-no-wrap text-sm text-teal-600 mr-1">
 							{{ post.published_at | dayjs }}
 						</div>
 						<div class="grid grid-cols-4">

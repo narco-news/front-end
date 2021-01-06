@@ -6,12 +6,12 @@
 				<div>
 					<Navbar />
 				</div>
-				<div>
+				<div class="lang-button">
 					<nuxt-link
 						v-for="locale in availableLocales"
 						:key="locale.code"
 						:to="switchLocalePath(locale.code)"
-						class="text-xs md:text-sm bg-blue-100 hover:bg-blue-400 text-blue-500 hover:text-blue-100 py-2 px-3 rounded-full"
+						class="text-xs md:text-sm py-2 px-3 rounded-full"
 						@click.prevent.stop="setLocale(locale.code)"
 					>
 						{{ locale.name }}
@@ -107,6 +107,25 @@ export default {
 .reveal {
 	svg {
 		display: none;
+	}
+}
+.lang-button {
+	a {
+		-webkit-tap-highlight-color: transparent;
+		@apply text-blue-500;
+		@apply bg-blue-100;
+		&:active {
+			@apply bg-blue-400;
+			@apply text-white;
+			text-decoration: none;
+		}
+	}
+	@media (hover: hover) and (pointer: fine) {
+		a:hover {
+			@apply bg-blue-400;
+			@apply text-white;
+			text-decoration: none;
+		}
 	}
 }
 </style>
