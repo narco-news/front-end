@@ -9,7 +9,7 @@
 					href="https://mexicobusiness.news/policyandeconomy/news/mexico-ranks-second-fake-news-generation"
 					rel="nofollow"
 					target="_blank"
-					class="underline text-green-500"
+					class="underline text-shamrock-500"
 					>{{ $t('message.source') }}</a
 				>
 			</i18n>
@@ -30,7 +30,7 @@
 		</div>
 		<div class="quote shadow-md rounded-md text-sm md:text-md bottom-quote">
 			<span class="float-left italic mb-2"> "{{ $t('message.dt') }}" </span>
-			<div class="attribute text-green-500 w-3/4 md:w-2/4">
+			<div class="attribute text-shamrock-500 w-3/4 md:w-2/4">
 				Martin, J. M., and A. T. Romano.
 				<span class="italic"
 					>Multinational crime: Terrorism, espionage, drug and arms

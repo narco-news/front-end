@@ -10,7 +10,7 @@
 									<nuxt-link
 										:to="{path: '/tag/' + tag.slug}"
 										:title="tag.name"
-										class="text-sm md:text-md"
+										class="text-sm md:text-md text-teal-700"
 										>{{ tag.name.replace(/^(#)/, '') }}</nuxt-link
 									>
 								</li>
@@ -21,7 +21,7 @@
 						<li
 							v-for="tag in post.tags.slice(1, 4)"
 							:key="tag.id"
-							class="text-gray-600 text-sm"
+							class="text-gray-500 text-sm"
 						>
 							<div v-if="tag.slug != 'hash-es'">
 								<div v-if="tag.slug != 'hash-res'">
@@ -46,7 +46,7 @@
 
 				<div>
 					<div class="flex flex-auto my-2 mb-4 md:mx-8">
-						<div class="post-excerpt">
+						<div class="post-excerpt text-gray-700">
 							<p v-if="post.custom_excerpt">
 								{{ post.custom_excerpt }}
 							</p>
@@ -78,6 +78,7 @@
 									<nuxt-link
 										:to="{path: '/author/' + post.primary_author.slug}"
 										:title="post.primary_author.name"
+										class="text-gray-700"
 										>{{ post.primary_author.name }}</nuxt-link
 									>
 								</div>
@@ -97,7 +98,7 @@
 									<div
 										class="post-meta-date-info md:flex md:flex-row md:flex-no-wrap"
 									>
-										<span class="published_at font-sans">{{
+										<span class="published_at font-sans text-teal-700">{{
 											post.published_at | dayjs
 										}}</span>
 									</div>
@@ -534,7 +535,6 @@ export default {
 }
 .post-tags {
 	font-weight: 600;
-	color: #03a688;
 	text-transform: uppercase;
 }
 .post-tags-bottom {
@@ -573,9 +573,6 @@ export default {
 	font-weight: 500;
 }
 
-.published_at {
-	color: #03a688;
-}
 .post-text {
 	font-weight: 400;
 	color: #252525;

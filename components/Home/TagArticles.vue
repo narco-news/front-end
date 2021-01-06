@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2
-			class="text-3xl lg:text-4xl font-bold mb-4 px-4 border-b-2 border-green-300"
+			class="text-3xl lg:text-4xl font-bold mb-4 px-4 border-b-2 border-teal-600"
 		>
 			{{ title }}
 		</h2>
@@ -19,7 +19,7 @@
 					</nuxt-link>
 					<div class="title-box">
 						<div v-if="post.tags.length > 0" class="flex flex-col">
-							<div class="flex flex-row">
+							<div class="flex flex-row text-teal-700">
 								<div
 									v-for="tag in post.tags.slice(0, 1)"
 									:key="tag.id"
@@ -50,11 +50,11 @@
 							<div
 								class="flex flex-row flex-wrap items-center md:flex-col md:items-start"
 							>
-								<div class="date whitespace-no-wrap text-sm sub-gray mr-1">
+								<div class="date whitespace-no-wrap text-sm text-gray-600 mr-1">
 									{{ post.published_at | dayjs }}
 								</div>
-								<div class="author text-sm md:text-md ex-gray">
-									<span class="sub-gray text-sm mr-1">by</span>
+								<div class="author text-sm md:text-md text-gray-700">
+									<span class="text-gray-600 text-sm mr-1">by</span>
 									<nuxt-link
 										:to="{path: '/author/' + post.primary_author.slug}"
 										:title="post.primary_author.name"
@@ -74,7 +74,7 @@
 								>{{ post.title }}
 							</nuxt-link>
 						</h2>
-						<div class="excerpt ex-gray mb-2">
+						<div class="excerpt text-gray-700 mb-2">
 							<p v-if="post.custom_excerpt">{{ post.custom_excerpt }}</p>
 							<p v-else-if="post.excerpt && !post.custom_excerpt">
 								{{ post.excerpt }}
@@ -85,14 +85,14 @@
 			</article>
 		</div>
 		<div class="flex justify-end items-center">
-			<p class="text-sm md:text-md mr-4 uppercase">
+			<p class="text-sm md:text-md mr-4 uppercase text-gray-600">
 				{{ $t('message.readMore') }}
 			</p>
 			<n-link
 				:to="link"
 				:alt="title"
 				:title="title"
-				class="bg-green-400 text-gray-100 rounded-md shadow-lg p-2 font-bold hover:bg-green-500"
+				class="bg-teal-600 text-gray-100 rounded-md shadow-lg p-2 font-bold hover:bg-teal-700 hover:text-white"
 			>
 				{{ title }}
 			</n-link>
@@ -186,9 +186,6 @@ export default {
 				text-decoration: underline;
 				text-decoration-thickness: 2px;
 			}
-		}
-		.tags {
-			color: #049372;
 		}
 	}
 

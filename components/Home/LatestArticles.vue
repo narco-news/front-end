@@ -17,7 +17,7 @@
 							v-if="post.tags.length > 0"
 							class="flex flex-col mx-1 mb-1 flex-wrap md:flex-col md:items-start"
 						>
-							<div class="flex flex-row">
+							<div class="flex flex-row text-teal-700">
 								<div
 									v-for="tag in post.tags.slice(0, 1)"
 									:key="tag.id"
@@ -149,10 +149,6 @@ export default {
 				text-decoration-thickness: 2px;
 			}
 		}
-		.tags {
-			color: #049372;
-		}
-
 		@media (min-width: 769px) {
 			.title {
 				font-size: 20px;

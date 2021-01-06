@@ -1,20 +1,22 @@
 <template>
 	<div>
 		<LogoBanner />
-		<div class="flex justify-center items-center px-2 py-4">
-			<div class="flex justify-between w-3/4 lg:w-1/2">
-				<Navbar />
-				<nuxt-link
-					v-for="locale in availableLocales"
-					:key="locale.code"
-					:to="switchLocalePath(locale.code)"
-					class="float-right"
-					@click.prevent.stop="setLocale(locale.code)"
-				>
-					<button class="font-semibold text-xs rounded-sm p-1 lang-button">
+		<div class="p-2 md:py-2 md:px-6">
+			<div class="flex items-center justify-around">
+				<div>
+					<Navbar />
+				</div>
+				<div>
+					<nuxt-link
+						v-for="locale in availableLocales"
+						:key="locale.code"
+						:to="switchLocalePath(locale.code)"
+						class="text-xs md:text-sm bg-blue-100 hover:bg-blue-400 text-blue-500 hover:text-blue-100 py-2 px-3 rounded-full"
+						@click.prevent.stop="setLocale(locale.code)"
+					>
 						{{ locale.name }}
-					</button>
-				</nuxt-link>
+					</nuxt-link>
+				</div>
 			</div>
 		</div>
 		<div id="page-wrap">
@@ -71,6 +73,13 @@ export default {
 			document.getElementsByTagName('body')[0].appendChild(footInject);
 		}
 	},
+	methods: {
+		clicked() {
+			const element = document.getElementById('nav');
+			element.classList.add('reveal');
+		}
+	},
+
 	head() {
 		const i18nSeo = this.$nuxtI18nSeo();
 		return {
@@ -91,14 +100,13 @@ export default {
 </script>
 
 <style lang="scss">
-.lang-button {
-	@apply text-blue-500;
-	background-color: #d7d9f6;
-	border: 1px solid transparent;
-	padding: 5px;
-}
 .navb {
 	background-color: white;
 	margin: 0 auto;
+}
+.reveal {
+	svg {
+		display: none;
+	}
 }
 </style>

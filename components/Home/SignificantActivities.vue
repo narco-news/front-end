@@ -16,7 +16,7 @@
 					d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
 				/>
 			</svg>
-			<span class="uppercase ml-2 font-semibold text-green-400">{{
+			<span class="uppercase ml-2 font-semibold text-shamrock-400">{{
 				$t('message.sigact')
 			}}</span>
 		</div>
@@ -41,7 +41,7 @@
 		<n-link
 			to="tag/significant-activity"
 			title="More articles"
-			class="bg-green-400 hover:bg-green-500 text-white p-1 px-2 text-xs font-semibold rounded-md"
+			class="bg-shamrock-400 hover:bg-shamrock-500 text-white p-1 px-2 text-xs font-semibold rounded-md"
 			>More</n-link
 		>
 	</div>

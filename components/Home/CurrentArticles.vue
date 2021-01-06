@@ -14,7 +14,7 @@
 			<ul>
 				<li class="mb-1">
 					<div
-						class="flex flex-col flex-wrap lg:flex-row lg:justify-between lg:items-center"
+						class="flex flex-col flex-wrap lg:flex-row lg:justify-between lg:items-center text-teal-700"
 					>
 						<div v-if="post.tags.length > 0" class="flex flex-row">
 							<div v-for="tag in post.tags.slice(0, 1)" :key="tag.id">
@@ -144,9 +144,6 @@ img {
 }
 .excerpt {
 	line-height: 1.2;
-}
-.tags {
-	color: #03a688;
 }
 
 .article {

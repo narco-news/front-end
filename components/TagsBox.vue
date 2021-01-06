@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h2
-			class="text-2xl lg:text-3xl font-bold mb-4 px-4 border-b-2 border-green-300 m-6"
+			class="text-2xl lg:text-3xl font-bold mb-4 px-4 border-b-2 border-teal-600 m-6"
 		>
 			Tags
 		</h2>
@@ -11,7 +11,7 @@
 					<nuxt-link
 						:to="{path: '/tag/' + tag.slug}"
 						:title="tag.name"
-						class="whitespace-no-wrap bg-gray-300 hover:bg-gray-400 hover:text-blue-500 text-blue-400 mx-4 p-2 rounded-md text-sm md:text-md"
+						class="whitespace-no-wrap mx-4 p-2 rounded-md text-sm md:text-md text-blue-500 bg-royal-100 hover:text-royal-100 hover:bg-blue-400"
 						>{{ tag.name }} ({{ tag.count.posts }})
 					</nuxt-link>
 				</div>

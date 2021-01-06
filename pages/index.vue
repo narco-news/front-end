@@ -43,7 +43,7 @@
 		<div
 			class="grid grid-cols-3 border-gray-300 border-b-2 border-t-2 shadow-sm"
 		>
-			<div class="bg-gray-200 col-span-3">
+			<div class="bg-gray-100 col-span-3">
 				<TagArticles
 					class="p-6"
 					title="Tamaulipas"
@@ -51,7 +51,7 @@
 					:posts="postsIndexTagOne"
 				/>
 			</div>
-			<div class="bg-gray-200 col-span-3">
+			<div class="bg-gray-100 col-span-3">
 				<TagArticles
 					class="p-6"
 					title="Guanajuato"
@@ -59,7 +59,7 @@
 					:posts="postsIndexTagTwo"
 				/>
 			</div>
-			<div class="bg-gray-200 col-span-3">
+			<div class="bg-gray-100 col-span-3">
 				<TagsBox />
 			</div>
 		</div>

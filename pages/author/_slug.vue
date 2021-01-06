@@ -18,7 +18,7 @@
 							<h1 v-if="pageAuthor.name" class="text-xl font-bold mr-4">
 								{{ pageAuthor.name }}
 							</h1>
-							<div class="text-green-500">
+							<div class="text-shamrock-500">
 								{{ pageAuthor.count.posts }} posts
 							</div>
 						</div>
