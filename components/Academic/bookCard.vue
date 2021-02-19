@@ -1,21 +1,23 @@
 <template>
 	<div class="flex flex-auto justify-center">
-		<div class="relative h-64 pt-5 md:my-4 mb-6">
-			<div class="book-box relative bg-white rounded shadow-lg w-56 z-10">
+		<div class="relative pt-5 md:my-4 mb-6">
+			<div class="relative bg-white rounded shadow-lg h-72 w-56 z-10 ml-16">
 				<div
-					class="book-date absolute bg-shamrock-500 text-white text-xs font-extrabold top-0 right-0 p-1 rounded"
+					class="book-date absolute text-xs font-serif font-extrabold top-0 right-0 p-1 text-gray-600"
 				>
 					{{ date }}
 				</div>
 				<div class="static flex flex-col">
-					<div class="book-title inline-block text-md px-2 mt-4">
+					<div class="book-title inline-block text-md font-semibold p-2">
 						{{ title }}
 					</div>
-					<div class="inline-block text-center p-1">
+					<div
+						class="inline-block text-center text-sm font-serif lg:text-md text-gray-700 my-1"
+					>
 						{{ authors }}
 					</div>
 					<div
-						class="book-desc hideScroll inline-block text-xs overflow-auto rounded px-2 italic text-gray-700"
+						class="hideScroll inline-block h-40 overflow-auto m-2 p-1 shadow-inner rounded text-xs italic text-gray-600"
 					>
 						{{ desc }}
 					</div>
@@ -64,24 +66,13 @@ export default {
 </script>
 
 <style lang="scss">
-.book-box {
-	background-color: white;
-	margin-left: 75px;
-	max-height: 18rem;
-}
 .book-title {
-	@apply font-serif;
-	font-weight: 600;
 	color: #262626;
-}
-.book-desc {
-	height: 7rem;
-	max-height: 8rem;
-	margin-bottom: 0.5rem;
+	line-height: 1.2;
 }
 .book-date {
-	margin-top: -15px;
-	margin-right: 15px;
+	margin-top: -20px;
+	margin-right: 20px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
