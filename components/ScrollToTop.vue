@@ -1,6 +1,8 @@
 <template>
 	<a v-show="visible" class="bottom-right" @click="scrollTop">
-		<p class="bg-red rounded-md p-1 animate__animated animate__slideInRight">
+		<p
+			class="bg-red-500 rounded-md p-1 animate__animated animate__slideInRight"
+		>
 			<img
 				src="~/assets/icons/arrow-up.svg"
 				alt="Scroll to top"
