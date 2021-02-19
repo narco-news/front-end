@@ -2,9 +2,7 @@
 	<div class="flex flex-auto justify-center">
 		<div class="relative pt-5 md:my-4 mb-6">
 			<div class="relative bg-white rounded shadow-lg h-72 w-56 z-10 ml-16">
-				<div
-					class="book-date absolute text-xs font-serif font-extrabold top-0 right-0 p-1 text-gray-600"
-				>
+				<div class="book-date absolute text-xs top-0 right-0 p-1 text-gray-600">
 					{{ date }}
 				</div>
 				<div class="static flex flex-col">
@@ -12,7 +10,7 @@
 						{{ title }}
 					</div>
 					<div
-						class="inline-block text-center text-sm font-serif lg:text-md text-gray-700 my-1"
+						class="inline-block text-center text-sm font-serif lg:text-md text-gray-700 my-1 mx-3"
 					>
 						{{ authors }}
 					</div>
@@ -71,8 +69,8 @@ export default {
 	line-height: 1.2;
 }
 .book-date {
-	margin-top: -20px;
-	margin-right: 20px;
+	margin-top: -23px;
+	margin-right: 25px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
