@@ -31,7 +31,7 @@
 		"nuxt-i18n": "^6.13.1",
 		"nuxt-webfontloader": "1.1.0",
 		"pattern.css": "^1.0.0",
-		"postcss": "^7.0.27",
+		"postcss": "^8.2.10",
 		"reframe.js": "^3.0.2",
 		"rss-parser": "^3.9.0",
 		"sass": "^1.26.5",
